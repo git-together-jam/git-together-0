@@ -74,7 +74,7 @@
             "Key": "0cc861f3-0fbb-4f65-a56a-53dd668d2ff8",
             "Value": {
                 "id": "04341bd0-a377-481c-8dbb-195b18fc5f94",
-                "resourcePath": "notes\\Instructions.yy",
+                "resourcePath": "notes\\Objects Guide.yy",
                 "resourceType": "GMNotes"
             }
         },
@@ -140,6 +140,14 @@
                 "id": "43270cd8-b1ca-4c89-8778-81da1d5e73f4",
                 "resourcePath": "views\\232b41dd-f9cc-4735-91ed-626f1febd986.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "27be1a1c-ef1d-4459-b1ca-51f349aa4cba",
+            "Value": {
+                "id": "c03eed1a-9d1d-4af1-b691-6ba36ef27e14",
+                "resourcePath": "notes\\Game Creation Guide.yy",
+                "resourceType": "GMNotes"
             }
         },
         {
