@@ -27,7 +27,7 @@ switch (type) {
 		} else {
 			if (xscale <= .1) instance_destroy();
 		}
-		xscale = lerp(xscale, !changeRoom*_targScale, .15);
+		xscale = lerp(xscale, !changeRoom*_targScale, .1);
 		yscale = xscale;
 	break;
 	#endregion

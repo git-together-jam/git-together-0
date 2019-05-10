@@ -1,14 +1,15 @@
 /// @func room_goto_transition(target_room, type, color*)
-/// @param type
 /// @param target_room
+/// @param type
 /// @param color*
 
 enum TransType {
 	screenFade, checkerboard
 }
 
-var _t = instance_create_depth(0, 0, -100000, obj_Transition);
+if (instance_exists(obj_Transition)) return -1;
 
+var _t = instance_create_depth(0, 0, -100000, obj_Transition);
 with (_t) {
 	targetRoom = argument[0];
 	

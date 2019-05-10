@@ -6,8 +6,6 @@ switch (type) {
 	case TransType.screenFade:
 		xscale = display_get_gui_width() + buff*2;
 		yscale = display_get_gui_height() + buff*2;
-		hnum = 1;
-		vnum = 1;
 		alpha = 0;
 	break;
 	#endregion
