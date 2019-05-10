@@ -12,6 +12,7 @@ enum arc {
 	basic1
 }
 
+// Make sure to add the array entries for your arcade game
 // Arcade sprites
 global.arcSpr[arc.basic1] = sArcadeBasic1;
 

@@ -1,0 +1,8 @@
+HOW TO CREATE A NEW ARCADE MINIGAME
+
+	Open scr_init
+		Add a new entry in the arc enum
+		Add entries for the arcade's sprite, room and name in their respective arrays
+	
+	
+	

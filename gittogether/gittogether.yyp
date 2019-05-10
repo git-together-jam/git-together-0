@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0cc861f3-0fbb-4f65-a56a-53dd668d2ff8",
+            "Value": {
+                "id": "04341bd0-a377-481c-8dbb-195b18fc5f94",
+                "resourcePath": "notes\\Instructions.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "0d66dd0c-64b7-4de9-baff-d68898a27cf8",
             "Value": {
                 "id": "a988d002-8c2e-4d28-9dbe-57d028488cc9",
