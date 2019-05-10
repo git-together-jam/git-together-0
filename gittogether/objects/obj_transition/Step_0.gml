@@ -32,6 +32,17 @@ switch (type) {
 	break;
 	#endregion
 	
+	#region
+	case TransType.circle:
+		if (!changeRoom) {
+			if (rad >= radTarg - .1) event_user(15);
+		} else {
+			if (rad <= .1) instance_destroy();
+		}
+		rad = lerp(rad, !changeRoom * radTarg, .15);
+	break;
+	#endregion
+	
 	default:
 	break;
 }

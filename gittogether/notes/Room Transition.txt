@@ -5,13 +5,14 @@
 Instead of calling room_goto(), you'd need to call room_goto_transition().
 
 Arguments:
-
-1. Type
-	a. TransType.screenFade : Screen fade to color
-	b. TransType.checkerboard : Checkerboard squares
 	
-2. Target Room
+1. Target Room
 	- Sets the target room to go to
+
+2. Type
+	a. TransType.screenFade : Screen fade to color
+	b. TransType.checkerboard : Checkerboard squares in-out from vertex
+	c. TransType.cirle : Circle in-out from center
 	
 3. Color*
 	- Optional argument : can be used to set the color of the transition

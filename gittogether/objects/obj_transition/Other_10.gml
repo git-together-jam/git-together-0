@@ -17,6 +17,14 @@ switch (type) {
 		alpha = 1;
 	break;
 	#endregion
+
+	#region
+	case TransType.circle:
+		xx = display_get_gui_width()/2;
+		yy = display_get_gui_height()/2;
+		radTarg = point_distance(xx, yy, -buff, -buff);
+	break;
+	#endregion
 	
 	default:
 	break;
