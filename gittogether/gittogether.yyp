@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "8ee0fdf9-fe03-4f0c-be80-3378aba28f79",
+            "Value": {
+                "id": "95694d6b-24c2-44a6-9bde-50260d87deea",
+                "resourcePath": "scripts\\draw_polygon\\draw_polygon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8fd3eb21-43af-4b74-8532-b26be83d36c3",
             "Value": {
                 "id": "daaf1fbd-6db8-4288-84e1-067f59d2c329",
@@ -590,6 +598,7 @@
         "ffbaaeb0-b0a4-40fe-855a-013e9b779ee0",
         "a91eb8a5-4c4b-4440-be5b-c0121a7b290b",
         "f306224a-a83c-4189-b8dd-8c09ab5be4f2",
+        "8ee0fdf9-fe03-4f0c-be80-3378aba28f79",
         "3b2a4cb6-765f-496c-99c6-3a88c1dc00eb",
         "409e849a-61f2-42b8-8882-6a5b4dce65a7"
     ],

@@ -8,7 +8,8 @@ Arguments:
 
 1. Type
 	a. TransType.screenFade : Screen fade to color
-	b. TransType.checkerboard : Checkerboard squares
+	b. TransType.checkerboard : Checkerboard squares in-out from vertex
+	c. TransType.circle : Circle in-out from the center
 	
 2. Target Room
 	- Sets the target room to go to

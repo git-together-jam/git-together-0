@@ -12,8 +12,13 @@ changeRoom = false;
 buff = 2;
 checkerboardSize = 16;
 
+xx = 0;
+yy = 0;
 xscale = 0;
 yscale = 0;
 alpha  = 0;
 hnum   = 0;
 vnum   = 0;
+
+rad = 0;
+radTarg = 0;
