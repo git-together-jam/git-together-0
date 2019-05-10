@@ -13,6 +13,8 @@ Arguments:
 	b. TransType.checkerboard : Checkerboard squares in-out from vertex
 	c. TransType.cirle : Circle in-out from center
 	
+	** TransType.rand : Chooses a random one from the existing transition types
+	
 3. Color*
 	- Optional argument : can be used to set the color of the transition
 	- Default color is black

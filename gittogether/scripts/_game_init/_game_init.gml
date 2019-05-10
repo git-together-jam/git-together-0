@@ -1,6 +1,6 @@
 gml_pragma("global", "_game_init()");
 
-// Arcade types (Each arcade is a minigame)
+// Game Types - Enter your game entry here
 enum Game {
 	none,
 	basic1,
@@ -8,7 +8,8 @@ enum Game {
 	asteroids
 }
 
-// Make sure to add the array entries for your arcade game
+// Make sure to add your game here
+// arcade_game_add(type, name, arcade_machine_sprite, game_room)
 
 arcade_game_add(Game.none, "<NONE>", spr_arcade, rm_Overworld);
 

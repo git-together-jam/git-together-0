@@ -16,6 +16,8 @@ with (_t) {
 	targetRoom = argument[0];
 	
 	type  = argument[1];
+	if (type == TransType.rand) type = irandom(TransType.rand-1);
+	
 	color = (argument_count > 2) ? argument[2] : c_black;
 	
 	event_user(0);		// Update transition with the selected type
