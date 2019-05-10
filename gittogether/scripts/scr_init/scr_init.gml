@@ -16,15 +16,15 @@ enum Arc {
 
 // Make sure to add the array entries for your arcade game
 
-global.arcSpr[Arc.basic1] = spr_ArcadeBasic1;
-global.arcRoom[Arc.basic1] = rm_B1_Main;
-global.arcMiniName[Arc.basic1] = "Basic 1";
+global.ArcSpr[Arc.basic1] = spr_ArcadeBasic1;
+global.ArcRoom[Arc.basic1] = rm_B1_Main;
+global.ArcMiniName[Arc.basic1] = "Basic 1";
 
-global.arcSpr[Arc.dungandrompa]		 = spr_arcade_dungandompa;
-global.arcRoom[Arc.dungandrompa]	 = rm_dungandrompa;
-global.arcMiniName[Arc.dungandrompa] = "Dungandrompa";
+global.ArcSpr[Arc.dungandrompa]		 = spr_arcade_dungandompa;
+global.ArcRoom[Arc.dungandrompa]	 = rm_dungandrompa;
+global.ArcMiniName[Arc.dungandrompa] = "Dungandrompa";
 
-global.arc[Arc.asteroids]		  = spr_arcade_asteroids;
-global.arcRoom[Arc.asteroids]	  = rm_Asteroids;
-global.arcMiniName[Arc.asteroids] = "Asteroids";
+global.ArcSpr[Arc.asteroids]		  = spr_arcade_asteroids;
+global.ArcRoom[Arc.asteroids]	  = rm_Asteroids;
+global.ArcMiniName[Arc.asteroids] = "Asteroids";
 #endregion

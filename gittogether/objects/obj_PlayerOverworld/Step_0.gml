@@ -22,6 +22,6 @@ arcade = instance_place(x, y-4, obj_ArcadeParent);
 
 if (global.iSelect && arcade) {
 	// Get room
-	var _rm = global.arcRoom[arcade.type];
+	var _rm = global.ArcRoom[arcade.type];
 	start_minigame(_rm, arcade.type, arcade.trans, arcade.transColor);
 }
