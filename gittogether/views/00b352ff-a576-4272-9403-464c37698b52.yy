@@ -7,7 +7,7 @@
         "10d5fbe8-5deb-494b-8550-709d857b1e70"
     ],
     "filterType": "GMRoom",
-    "folderName": "Minigames",
+    "folderName": "__ Minigame Rooms",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
