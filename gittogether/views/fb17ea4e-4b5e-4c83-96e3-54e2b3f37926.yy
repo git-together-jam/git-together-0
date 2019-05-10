@@ -6,7 +6,8 @@
     "children": [
         "ef9677e7-e8cf-4681-854a-ca04bf560534",
         "f1b8276d-0eb3-4619-9f24-de1f1bf330fc",
-        "7f93a0d9-35f3-4754-8bcc-2585958d7c61"
+        "7f93a0d9-35f3-4754-8bcc-2585958d7c61",
+        "5a0e0b63-510e-4785-9458-a3cc3f9932c6"
     ],
     "filterType": "GMSprite",
     "folderName": "__ Minigame Sprites",
