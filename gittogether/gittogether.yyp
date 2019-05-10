@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "45b625fe-aad6-4f2d-911a-da6b2abc42f8",
+            "Value": {
+                "id": "d6fc3ede-f97e-4360-82af-39af52988768",
+                "resourcePath": "views\\45b625fe-aad6-4f2d-911a-da6b2abc42f8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "45e4d7f3-972b-4311-8cc1-54412222e3c5",
             "Value": {
                 "id": "e70c0814-dc7e-4ab4-87a0-08d18e2487c2",
@@ -623,6 +631,14 @@
             }
         },
         {
+            "Key": "9c175e66-e9b3-438c-9d8b-972cb76cfd55",
+            "Value": {
+                "id": "348c2a95-4807-4541-be65-b63ad39ecbdc",
+                "resourcePath": "objects\\obj_po_player\\obj_po_player.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a06ab4f6-d9e1-4f01-965f-281b4ff17195",
             "Value": {
                 "id": "72df55b4-132f-4f2f-a4b5-66709df4ad6d",
@@ -700,6 +716,14 @@
                 "id": "6967223a-40c4-455a-a49c-682388ca5536",
                 "resourcePath": "scripts\\surface_clear\\surface_clear.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "acbc03a2-b769-4765-84b0-f125bebafd11",
+            "Value": {
+                "id": "210b9447-2f26-4854-b12e-d2b5aa06347b",
+                "resourcePath": "sprites\\spr_po_ball\\spr_po_ball.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -943,6 +967,14 @@
             }
         },
         {
+            "Key": "d8bc15ac-bb5e-4b5c-b02e-d69de5b9d569",
+            "Value": {
+                "id": "845fcb07-c77a-4c0c-b51f-b241eb6fd6e9",
+                "resourcePath": "sprites\\spr_po_paddle\\spr_po_paddle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "da4c4aa9-b26d-459f-9eea-8e719c94aba3",
             "Value": {
                 "id": "c0debbd9-ed5e-4d30-b55a-6fa48aa0bd53",
@@ -999,6 +1031,14 @@
             }
         },
         {
+            "Key": "dfc51142-a333-4081-94a8-8201bc250e7a",
+            "Value": {
+                "id": "e3faba59-8bfb-404b-9342-f8e2bdf9ee10",
+                "resourcePath": "objects\\obj_po_enemy\\obj_po_enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e1cc918a-c5bf-4272-a9e8-090f8eed0f2d",
             "Value": {
                 "id": "f74a1240-0b9f-4fd4-a8a3-22092e24fbbe",
@@ -1012,6 +1052,30 @@
                 "id": "487b115f-7c7c-4343-b489-597a7733dd10",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e4356c74-9020-454b-a22e-b8fda2a5a2a2",
+            "Value": {
+                "id": "3c252a80-b388-402b-a2d6-acc77d3f1f2c",
+                "resourcePath": "views\\e4356c74-9020-454b-a22e-b8fda2a5a2a2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e73f1bd2-bb2a-4184-ba14-2c8bdd84458f",
+            "Value": {
+                "id": "9e59c6c4-1983-4bc5-a76c-6309ba9c4a19",
+                "resourcePath": "sprites\\spr_line\\spr_line.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eaf2b097-aba9-4f47-b2ca-39fca510f92d",
+            "Value": {
+                "id": "28cc1d06-63bd-48ba-a429-8094f1eb0455",
+                "resourcePath": "objects\\obj_po_line\\obj_po_line.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1116,6 +1180,14 @@
                 "id": "7585f953-195c-446e-a9cd-30c65ae928fb",
                 "resourcePath": "notes\\Room Transition.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "f658f12c-1a47-49eb-bba1-2341dc6a7d65",
+            "Value": {
+                "id": "223ebaa6-d67e-40aa-8474-9ca8754c20de",
+                "resourcePath": "objects\\obj_po_ball\\obj_po_ball.yy",
+                "resourceType": "GMObject"
             }
         },
         {
