@@ -24,7 +24,7 @@ global.ArcSpr[Arc.dungandrompa]		 = spr_arcade_dungandompa;
 global.ArcRoom[Arc.dungandrompa]	 = rm_dungandrompa;
 global.ArcMiniName[Arc.dungandrompa] = "Dungandrompa";
 
-global.ArcSpr[Arc.asteroids]		  = spr_arcade_asteroids;
+global.ArcSpr[Arc.asteroids]	  = spr_arcade_asteroids;
 global.ArcRoom[Arc.asteroids]	  = rm_Asteroids;
 global.ArcMiniName[Arc.asteroids] = "Asteroids";
 #endregion
