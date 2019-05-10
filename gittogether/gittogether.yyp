@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "092cde85-2332-4c50-84eb-cb8c4617763a",
+            "Value": {
+                "id": "e223ba16-f631-4136-9db3-b7eadb1ef58f",
+                "resourcePath": "rooms\\rm_breakout\\rm_breakout.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0cc861f3-0fbb-4f65-a56a-53dd668d2ff8",
             "Value": {
                 "id": "04341bd0-a377-481c-8dbb-195b18fc5f94",
@@ -188,6 +196,14 @@
                 "id": "b0a8ed64-9f9f-46ea-bd0e-c6b13d22a771",
                 "resourcePath": "objects\\obj_ArcadeBasic1\\obj_ArcadeBasic1.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3fa85772-dfe4-473b-ab29-f3424afa8624",
+            "Value": {
+                "id": "60d51c7f-9fe3-43c0-8fb6-38e905abf102",
+                "resourcePath": "views\\3fa85772-dfe4-473b-ab29-f3424afa8624.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -759,6 +775,14 @@
             }
         },
         {
+            "Key": "e6db4b36-600a-4067-a283-1e932aa44dda",
+            "Value": {
+                "id": "c57c0804-38d7-47c1-b593-385a688035eb",
+                "resourcePath": "views\\e6db4b36-600a-4067-a283-1e932aa44dda.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ebd76277-edad-48b9-9c82-f09889d0980a",
             "Value": {
                 "id": "fd2a3ee5-a785-4dd0-93e7-4e0db172395d",
@@ -892,6 +916,14 @@
                 "id": "86449cbe-6bd1-47db-be8e-e1d31a7fde60",
                 "resourcePath": "datafiles_yy\\dungandrompa_dialogue.txt.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "fe05eaec-9f68-4582-a300-0fcb080a9ec9",
+            "Value": {
+                "id": "449c764b-9c76-4377-98a9-a9c97999c290",
+                "resourcePath": "views\\fe05eaec-9f68-4582-a300-0fcb080a9ec9.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

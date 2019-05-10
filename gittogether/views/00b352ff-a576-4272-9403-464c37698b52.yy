@@ -6,7 +6,8 @@
     "children": [
         "64e14320-cf3f-4716-9ffe-24377f9f7891",
         "c72a2308-cf8e-4534-a0b8-f265d0c67925",
-        "8da67b84-0766-47fd-91b6-3235994ac8d7"
+        "8da67b84-0766-47fd-91b6-3235994ac8d7",
+        "e6db4b36-600a-4067-a283-1e932aa44dda"
     ],
     "filterType": "GMRoom",
     "folderName": "__ Minigame Rooms",
