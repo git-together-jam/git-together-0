@@ -18,7 +18,7 @@ switch (type) {
 	break;
 	#endregion
 	
-	#region Circle
+	#region
 	case TransType.circle:
 		xx = display_get_gui_width()/2;
 		yy = display_get_gui_height()/2;
