@@ -3,12 +3,17 @@
 rot += random_range(-3, 3);
 
 // Outside room
-if (x < margin || x > room_width-margin || y < margin || y>room_height-margin) {
-	direction += 5;
+if (!stillEntering && (x < margin || x > room_width-margin || y < margin || y>room_height-margin)) {
+	direction += 3;
 }
 // Inside room
 else {
-	direction += rot;
+	if (!stillEntering) direction += rot/10;
+	
+	// Entered
+	if (stillEntering && (x > margin && x < room_width-margin && y > margin && y < room_height-margin)) {
+		stillEntering = false;
+	}
 }
 
 // Click

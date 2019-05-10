@@ -19,4 +19,7 @@ global.enmSpr[enm.basic1] = sEnemyBasic1;
 
 // Enemy rooms
 global.enmRoom[enm.basic1] = rmB1_Main;
+
+// Minigame names
+global.enmMiniName[enm.basic1] = "Basic 1";
 #endregion
