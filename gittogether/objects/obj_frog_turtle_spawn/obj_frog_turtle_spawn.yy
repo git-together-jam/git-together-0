@@ -1,38 +1,28 @@
 {
-    "id": "48b16645-072c-4ae9-b58e-f3e8baa3c8a1",
+    "id": "1e8d5542-56d6-4778-b58f-544171d4fd99",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_frogger_player",
+    "name": "obj_frog_turtle_spawn",
     "eventList": [
         {
-            "id": "3f9c780a-bde1-4858-84aa-e2689a010f7a",
+            "id": "3f7744c2-c7d7-40ab-82d2-97117a9b254e",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "48b16645-072c-4ae9-b58e-f3e8baa3c8a1"
+            "m_owner": "1e8d5542-56d6-4778-b58f-544171d4fd99"
         },
         {
-            "id": "574b9b17-b644-4e99-9f64-38f15e3d23d5",
+            "id": "b484c682-ea07-4442-8b63-1b938384252e",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "48b16645-072c-4ae9-b58e-f3e8baa3c8a1"
-        },
-        {
-            "id": "7c26a13d-a371-4e92-8e0d-e96fc6e05921",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "48b16645-072c-4ae9-b58e-f3e8baa3c8a1"
+            "m_owner": "1e8d5542-56d6-4778-b58f-544171d4fd99"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -53,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "6bf86b0a-15aa-44ea-9d2e-ac1357ebcdde",
+    "spriteId": "db13ddde-a0fa-4013-b891-175918d3164f",
     "visible": true
 }
