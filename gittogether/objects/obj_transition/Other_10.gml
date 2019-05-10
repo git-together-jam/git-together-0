@@ -6,15 +6,17 @@ switch (type) {
 	case TransType.screenFade:
 		xscale = display_get_gui_width() + buff*2;
 		yscale = display_get_gui_height() + buff*2;
-		hNum = 1;
-		vNum = 1;
+		hnum = 1;
+		vnum = 1;
 		alpha = 0;
 	break;
 	#endregion
 	
-	#region Checkboard
-	case TransType.checkboard:
-	
+	#region Checkerboard
+	case TransType.checkerboard:
+		hnum = ceil((display_get_gui_width()+buff*2)/checkerboardSize);
+		vnum = ceil((display_get_gui_height()+buff*2)/checkerboardSize);
+		alpha = 1;
 	break;
 	#endregion
 	

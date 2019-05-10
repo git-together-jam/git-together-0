@@ -8,7 +8,7 @@ Arguments:
 
 1. Type
 	a. TransType.screenFade : Screen fade to color
-	b. (To be added)
+	b. TransType.checkerboard : Checkerboard squares
 	
 2. Target Room
 	- Sets the target room to go to

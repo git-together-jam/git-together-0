@@ -106,7 +106,7 @@
             "Key": "3482e9a8-b997-4558-8386-0242a6448243",
             "Value": {
                 "id": "617cc04d-c6aa-404c-b01d-035dda3f2f1d",
-                "resourcePath": "objects\\obj_transition\\obj_transition.yy",
+                "resourcePath": "objects\\obj_Transition\\obj_Transition.yy",
                 "resourceType": "GMObject"
             }
         },

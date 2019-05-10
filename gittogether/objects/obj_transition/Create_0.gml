@@ -10,9 +10,10 @@ surf = noone;
 
 changeRoom = false;
 buff = 2;
+checkerboardSize = 16;
 
 xscale = 0;
 yscale = 0;
 alpha  = 0;
-hNum   = 0;
-vNum   = 0;
+hnum   = 0;
+vnum   = 0;
