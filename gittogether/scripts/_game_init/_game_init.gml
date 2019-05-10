@@ -2,6 +2,7 @@ gml_pragma("global", "_game_init()");
 
 // Arcade types (Each arcade is a minigame)
 enum Arc {
+	none,
 	basic1,
 	dungandrompa,
 	asteroids
