@@ -23,7 +23,7 @@ global.arcRoom[Arc.basic1] = rm_B1_Main;
 // Minigame names
 global.arcMiniName[Arc.basic1] = "Basic 1";
 
-global.arcSpr[Arc.dungandrompa]		 = spr_arcade_dungandompa;
+global.arcSpr[Arc.dungandrompa]		 = spr_arcade_dungandrompa;
 global.arcRoom[Arc.dungandrompa]	 = rm_dungandrompa;
 global.arcMiniName[Arc.dungandrompa] = "Dungandrompa";
 #endregion

@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "9f0c7ba5-211c-4475-9299-cbfada9aa8ae",
+            "Value": {
+                "id": "a3a42cf7-f16f-448e-bb26-d362a7213a89",
+                "resourcePath": "views\\9f0c7ba5-211c-4475-9299-cbfada9aa8ae.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "0b446e62-47bf-4920-b407-180f275b9f2a",
@@ -455,6 +463,14 @@
             }
         },
         {
+            "Key": "d96ffdf6-dd57-43c5-990c-71336654c59f",
+            "Value": {
+                "id": "248492d9-a11a-4765-9800-fc54080d31cd",
+                "resourcePath": "sprites\\spr_arcade_dungandrompa\\spr_arcade_dungandrompa.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dc4908b6-5e2f-4e4e-9d52-c1e531026f3b",
             "Value": {
                 "id": "f55bdce6-cb96-49d4-81dc-5d838aede841",
@@ -492,6 +508,14 @@
                 "id": "487b115f-7c7c-4343-b489-597a7733dd10",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e5946c93-4eb0-4de6-92a4-095c77a6c246",
+            "Value": {
+                "id": "7a7ceae3-68a8-4d45-a58e-bf58766c5cc5",
+                "resourcePath": "rooms\\rm_dungandrompa\\rm_dungandrompa.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
