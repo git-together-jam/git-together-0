@@ -418,7 +418,7 @@
             "Key": "cf219f18-1048-4ab8-a98d-9801dec17ee5",
             "Value": {
                 "id": "fc836c65-3e54-4066-b8a1-4e8e3dc010f8",
-                "resourcePath": "sprites\\sGUIPlay\\sGUIPlay.yy",
+                "resourcePath": "sprites\\spr_GUIPlay\\spr_GUIPlay.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -458,7 +458,7 @@
             "Key": "dc4908b6-5e2f-4e4e-9d52-c1e531026f3b",
             "Value": {
                 "id": "f55bdce6-cb96-49d4-81dc-5d838aede841",
-                "resourcePath": "sprites\\spr_pixel\\spr_pixel.yy",
+                "resourcePath": "sprites\\spr_Pixel\\spr_Pixel.yy",
                 "resourceType": "GMSprite"
             }
         },
