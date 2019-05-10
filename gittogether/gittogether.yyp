@@ -671,6 +671,14 @@
             }
         },
         {
+            "Key": "fd758b97-f6aa-4157-9255-9c543d1539ac",
+            "Value": {
+                "id": "86449cbe-6bd1-47db-be8e-e1d31a7fde60",
+                "resourcePath": "datafiles_yy\\dungandrompa_dialogue.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "ffbaaeb0-b0a4-40fe-855a-013e9b779ee0",
             "Value": {
                 "id": "797b36ec-9223-4bcf-a0a8-c5e3882b9f71",
