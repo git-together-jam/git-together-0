@@ -2,7 +2,7 @@
     "id": "ddf8cc01-0881-4be5-8fff-257fca35b966",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oArcadeParent",
+    "name": "obj_ArcadeParent",
     "eventList": [
         
     ],

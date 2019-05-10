@@ -58,7 +58,7 @@
             "Key": "0d66dd0c-64b7-4de9-baff-d68898a27cf8",
             "Value": {
                 "id": "a988d002-8c2e-4d28-9dbe-57d028488cc9",
-                "resourcePath": "rooms\\rmOverworld\\rmOverworld.yy",
+                "resourcePath": "rooms\\rm_Overworld\\rm_Overworld.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -66,7 +66,7 @@
             "Key": "10d5fbe8-5deb-494b-8550-709d857b1e70",
             "Value": {
                 "id": "1bd9574f-6ec9-4ee2-8cd9-46a9faf3cffc",
-                "resourcePath": "rooms\\rmB1_Main\\rmB1_Main.yy",
+                "resourcePath": "rooms\\rm_B1_Main\\rm_B1_Main.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -146,7 +146,7 @@
             "Key": "3ea2081a-074c-45d5-810a-ba340615210c",
             "Value": {
                 "id": "b0a8ed64-9f9f-46ea-bd0e-c6b13d22a771",
-                "resourcePath": "objects\\oArcadeBasic1\\oArcadeBasic1.yy",
+                "resourcePath": "objects\\obj_ArcadeBasic1\\obj_ArcadeBasic1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -346,7 +346,7 @@
             "Key": "af63d8f2-344a-4ee8-9d30-c3cada5f25e2",
             "Value": {
                 "id": "b7324fa3-0508-48dd-9f59-b0e9dbbed460",
-                "resourcePath": "objects\\oB1_EnemySpawns\\oB1_EnemySpawns.yy",
+                "resourcePath": "objects\\obj_B1_EnemySpawns\\obj_B1_EnemySpawns.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -402,7 +402,7 @@
             "Key": "c5ed9a52-4385-46b2-9b64-951aec94c839",
             "Value": {
                 "id": "a3251c71-d941-4700-9428-2525ed74be8f",
-                "resourcePath": "objects\\oPlayerOverworld\\oPlayerOverworld.yy",
+                "resourcePath": "objects\\obj_PlayerOverworld\\obj_PlayerOverworld.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -434,7 +434,7 @@
             "Key": "d2fb915b-c895-4802-ad61-f1701a734f41",
             "Value": {
                 "id": "f7cbdd45-c472-48f7-8d8d-ee1e30dae034",
-                "resourcePath": "objects\\oB1_Controller\\oB1_Controller.yy",
+                "resourcePath": "objects\\obj_B1_Controller\\obj_B1_Controller.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -450,7 +450,7 @@
             "Key": "d3f66eb7-b58a-4337-88df-3a0c622e283b",
             "Value": {
                 "id": "ec461a34-69a7-4bcb-b395-cfbd60b65053",
-                "resourcePath": "sprites\\sArcadeBasic1\\sArcadeBasic1.yy",
+                "resourcePath": "sprites\\spr_ArcadeBasic1\\spr_ArcadeBasic1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -466,7 +466,7 @@
             "Key": "ddf8cc01-0881-4be5-8fff-257fca35b966",
             "Value": {
                 "id": "b08e9505-3d7a-4896-9264-591a45974e8d",
-                "resourcePath": "objects\\oArcadeParent\\oArcadeParent.yy",
+                "resourcePath": "objects\\obj_ArcadeParent\\obj_ArcadeParent.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -570,7 +570,7 @@
             "Key": "fcd98fdd-cebb-46ae-81f9-4a9a991b673e",
             "Value": {
                 "id": "d1f66492-932c-4496-a6c8-aad684823946",
-                "resourcePath": "objects\\oController\\oController.yy",
+                "resourcePath": "objects\\obj_Controller\\obj_Controller.yy",
                 "resourceType": "GMObject"
             }
         },
