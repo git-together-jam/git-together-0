@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "049184d5-853f-4f34-a703-23d9acb516cb",
+            "Value": {
+                "id": "25199bdc-59a0-4f12-8fa8-8261a146a582",
+                "resourcePath": "scripts\\dr_prepare_text_target\\dr_prepare_text_target.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "05943763-beb4-4d10-9dbf-a0ae8ee4e477",
             "Value": {
                 "id": "bb3a10a1-bf25-4f81-a953-44a9cb706766",
@@ -335,6 +343,14 @@
             }
         },
         {
+            "Key": "74175d0d-51c9-4051-85fd-f786d5bd048d",
+            "Value": {
+                "id": "e7a7f993-8424-4aab-95aa-3a3b471da870",
+                "resourcePath": "scripts\\string_concat\\string_concat.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "daf05e6a-f0ef-45ac-ad01-a3bd95caeaaa",
@@ -415,10 +431,26 @@
             }
         },
         {
+            "Key": "96821caa-be72-43f7-8ebf-9905e8b00b7e",
+            "Value": {
+                "id": "5297c58c-f2bf-42c1-80cd-fcf257f2dfec",
+                "resourcePath": "sprites\\spr_dr_minty\\spr_dr_minty.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "97e08913-df34-4b3c-9077-2e3f3d730cf4",
             "Value": {
                 "id": "0954fb1c-5719-4781-bfda-1ecaec1fe51c",
                 "resourcePath": "views\\97e08913-df34-4b3c-9077-2e3f3d730cf4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9aa16df7-8bc9-46cb-8e6b-1820ff421b22",
+            "Value": {
+                "id": "679e75f8-1ea4-472f-9cd3-a3b398838191",
+                "resourcePath": "views\\9aa16df7-8bc9-46cb-8e6b-1820ff421b22.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -711,6 +743,14 @@
             }
         },
         {
+            "Key": "df6e6b19-9196-427d-aaa2-ef230e663c9f",
+            "Value": {
+                "id": "88c11c84-b43b-4145-9b08-450d99a6b6b4",
+                "resourcePath": "fonts\\fnt_pixel\\fnt_pixel.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "e1cc918a-c5bf-4272-a9e8-090f8eed0f2d",
             "Value": {
                 "id": "f74a1240-0b9f-4fd4-a8a3-22092e24fbbe",
@@ -890,8 +930,10 @@
         "a91eb8a5-4c4b-4440-be5b-c0121a7b290b",
         "f06116af-68fa-4580-9a0e-a22c945e32f5",
         "481d1d60-541b-405a-a848-f2b94c6bef41",
+        "74175d0d-51c9-4051-85fd-f786d5bd048d",
         "3b2a4cb6-765f-496c-99c6-3a88c1dc00eb",
-        "409e849a-61f2-42b8-8882-6a5b4dce65a7"
+        "409e849a-61f2-42b8-8882-6a5b4dce65a7",
+        "049184d5-853f-4f34-a703-23d9acb516cb"
     ],
     "tutorial": ""
 }
