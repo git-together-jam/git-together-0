@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "71eb1077-58c7-402b-9f72-b17fb57732a0",
+            "Value": {
+                "id": "789a65c4-1780-4320-8bd6-37a449a2ad96",
+                "resourcePath": "fonts\\fntNormal\\fntNormal.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "72139d97-9a3f-4133-b341-315ec3b399f3",
             "Value": {
                 "id": "c7e8a2c9-0123-4570-84b5-d136bedaf27b",
@@ -335,6 +343,14 @@
             }
         },
         {
+            "Key": "be10b09f-de94-4524-97bf-01ce431ea2d7",
+            "Value": {
+                "id": "b30b4589-f8a3-4061-b0fc-e45ed0982c12",
+                "resourcePath": "fonts\\fntBig\\fntBig.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "c5ed9a52-4385-46b2-9b64-951aec94c839",
             "Value": {
                 "id": "a3251c71-d941-4700-9428-2525ed74be8f",
@@ -348,6 +364,14 @@
                 "id": "cca429f0-a820-4552-b7a0-a749ff363e3c",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cf9a8d31-8528-43d3-a006-2c60967ffacd",
+            "Value": {
+                "id": "3b5f2432-f7cf-4848-b5cd-af11bcbf0b5d",
+                "resourcePath": "views\\cf9a8d31-8528-43d3-a006-2c60967ffacd.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -431,6 +455,14 @@
             }
         },
         {
+            "Key": "f306224a-a83c-4189-b8dd-8c09ab5be4f2",
+            "Value": {
+                "id": "12f19e73-01b3-4fcf-82e1-b0d7980b07c4",
+                "resourcePath": "scripts\\draw_text_center\\draw_text_center.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "bf067808-1460-4d11-ace3-937f2ac3b888",
@@ -459,6 +491,7 @@
         "6ba5a2fa-8be7-4c2d-8018-a18baa20edee",
         "6ef509e2-28b6-4f11-8b6b-11a6a34e55a0",
         "a91eb8a5-4c4b-4440-be5b-c0121a7b290b",
+        "f306224a-a83c-4189-b8dd-8c09ab5be4f2",
         "3b2a4cb6-765f-496c-99c6-3a88c1dc00eb",
         "409e849a-61f2-42b8-8882-6a5b4dce65a7"
     ],

@@ -6,5 +6,5 @@ if (enemy) {
 	// Get room
 	var rm = global.enmRoom[enemy.type];
 	
-	startMinigame(rm);
+	startMinigame(rm, enemy.type);
 }
