@@ -18,5 +18,5 @@ enum enm {
 global.enmSpr[enm.basic1] = sEnemyBasic1;
 
 // Enemy rooms
-global.enmRoom[enm.basic1] = rmBasic1;
+global.enmRoom[enm.basic1] = rmB1_Main;
 #endregion
