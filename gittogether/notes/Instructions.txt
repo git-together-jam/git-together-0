@@ -1,8 +1,20 @@
 HOW TO CREATE A NEW ARCADE MINIGAME
 
-	Open scr_init
+	> Open scr_init
 		Add a new entry in the arc enum
+		
 		Add entries for the arcade's sprite, room and name in their respective arrays
 	
+	> Create a new arcade machine object under the "Arcade Machines" Objects group
+		You can create a sprite for it too, under the "Arcade Machines" Sprites group
+		
+		Make sure to make the arcade object a child of "oArcadeParent"
+		
+		Set its type in the Create event, using the arc enum
+		
+		Place it in the room
+	
+	> Create a room for your minigame, under "__ Minigame Rooms"
+		This room will open when you select your arcade machine
 	
 	
