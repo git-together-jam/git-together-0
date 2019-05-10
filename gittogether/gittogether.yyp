@@ -578,7 +578,7 @@
             "Key": "cf219f18-1048-4ab8-a98d-9801dec17ee5",
             "Value": {
                 "id": "fc836c65-3e54-4066-b8a1-4e8e3dc010f8",
-                "resourcePath": "sprites\\sGUIPlay\\sGUIPlay.yy",
+                "resourcePath": "sprites\\spr_GUIPlay\\spr_GUIPlay.yy",
                 "resourceType": "GMSprite"
             }
         },
