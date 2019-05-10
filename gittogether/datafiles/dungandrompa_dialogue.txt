@@ -2,7 +2,7 @@ tony: No, that's wrong!
 tony: If we approach this completely blindly, it may end in disaster, yes, 
 tony: however, if we get stuck discussing semantics we'll never make anything!
 tony: Let's make up a structure for some things like resources, management and a general game direction.
-tony: Then we focus or energy on creating rather than arguing!
+tony: Then we focus our energy on creating rather than arguing!
 yellowaf: He's right. A game needs creating more than anything.
 sahaun: I suppose you're right.
 pope: Whatever gets you plebs working.
