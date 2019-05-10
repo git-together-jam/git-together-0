@@ -2,9 +2,28 @@
     "id": "04316734-9dd7-4337-b7ff-ce89002641c4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_dr_pope",
+    "name": "obj_dr_trial",
     "eventList": [
-        
+        {
+            "id": "02feb3fd-32bf-4df6-ba66-3410c60dbd6e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "04316734-9dd7-4337-b7ff-ce89002641c4"
+        },
+        {
+            "id": "424c6d94-b706-4702-9174-69b5c50b3f8d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "04316734-9dd7-4337-b7ff-ce89002641c4"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
