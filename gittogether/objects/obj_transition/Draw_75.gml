@@ -20,7 +20,7 @@ switch (type) {
 	break;
 	#endregion
 
-	#region
+	#region Circle
 	case TransType.circle:
 		draw_circle_color(xx, yy, rad, color, color, false);
 	break;

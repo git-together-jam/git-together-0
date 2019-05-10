@@ -32,7 +32,7 @@ switch (type) {
 	break;
 	#endregion
 	
-	#region
+	#region Circle
 	case TransType.circle:
 		if (!changeRoom) {
 			if (rad >= radTarg - .1) event_user(15);
