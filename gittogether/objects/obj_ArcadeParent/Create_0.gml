@@ -1,4 +1,3 @@
 /// @desc 
 
-trans	   = TransType.screenFade;
-transColor = c_black;
+sprite_index = global.ArcSpr[type];
