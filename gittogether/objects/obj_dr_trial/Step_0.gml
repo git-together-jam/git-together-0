@@ -13,7 +13,7 @@ if (mouse_check_button_pressed(mb_left)) {
 		if (dialogue_index < dialogue_count - 1) {
 			var _dial = dialogue[| dialogue_index];
 			text_target = dr_prepare_text_target(_dial[? "text"], room_width - text_padding * 2);
-		} else text_target = "The End"
+		} else text_target = "The End";
 		text_target_length = string_length(text_target);
 		text_length = 0;
 		log(text_target);
