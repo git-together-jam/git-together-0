@@ -1,7 +1,7 @@
-/// @func room_goto_transition(target_room, type, color*)
+/// @func room_goto_transition(target_room, type, color)
 /// @param target_room
 /// @param type
-/// @param color*
+/// @param color
 
 enum TransType {
 	screenFade, checkerboard, circle
@@ -14,7 +14,7 @@ with (_t) {
 	targetRoom = argument[0];
 	
 	type  = argument[1];
-	color = (argument_count > 2) ? argument[2] : c_black;
+	color = argument[2];
 	
 	event_user(0);		// Update transition with the selected type
 }
