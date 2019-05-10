@@ -2,7 +2,7 @@
     "id": "dc4908b6-5e2f-4e4e-9d52-c1e531026f3b",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_pixel",
+    "name": "spr_Pixel",
     "For3D": false,
     "HTile": false,
     "VTile": false,

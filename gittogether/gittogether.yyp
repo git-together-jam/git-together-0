@@ -426,7 +426,7 @@
             "Key": "cf219f18-1048-4ab8-a98d-9801dec17ee5",
             "Value": {
                 "id": "fc836c65-3e54-4066-b8a1-4e8e3dc010f8",
-                "resourcePath": "sprites\\sGUIPlay\\sGUIPlay.yy",
+                "resourcePath": "sprites\\spr_GUIPlay\\spr_GUIPlay.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -474,7 +474,7 @@
             "Key": "dc4908b6-5e2f-4e4e-9d52-c1e531026f3b",
             "Value": {
                 "id": "f55bdce6-cb96-49d4-81dc-5d838aede841",
-                "resourcePath": "sprites\\spr_pixel\\spr_pixel.yy",
+                "resourcePath": "sprites\\spr_Pixel\\spr_Pixel.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -596,14 +596,6 @@
                 "id": "d1f66492-932c-4496-a6c8-aad684823946",
                 "resourcePath": "objects\\obj_Controller\\obj_Controller.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "fd758b97-f6aa-4157-9255-9c543d1539ac",
-            "Value": {
-                "id": "86449cbe-6bd1-47db-be8e-e1d31a7fde60",
-                "resourcePath": "datafiles_yy\\dungandrompa_dialogue.txt.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
