@@ -1,4 +1,7 @@
+//Movement
 if (moveTimer <= 0){
+	xMove = 0;
+	yMove = 0;
 	if(global.iMoveX != 0){
 		moveTimer = moveTime;
 		xscale = .6;
@@ -15,11 +18,21 @@ if (moveTimer <= 0){
 		xMove = 0;
 		yMove = global.iMoveY*moveSpeed;
 	}
-}else{
-	x+=xMove;
-	y+=yMove;
-	moveTimer--;
 }
+//On the river
+if (instance_place(x,y,obj_frog_water)){
+	if (instance_place(x,y,obj_frog_turtle)){
+		with (instance_place(x,y,obj_frog_turtle)){
+			if (other.moveTimer <= 0) other.xMove += vx;
+		}
+	}else{
+		room_goto_transition(rm_frogger,TransType.checkerboard,c_black);
+	}
+}
+
+x+=xMove;
+y+=yMove;
+moveTimer--;
 	
 
 //squash and stretch

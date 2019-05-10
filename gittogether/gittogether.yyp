@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "1e8d5542-56d6-4778-b58f-544171d4fd99",
+            "Value": {
+                "id": "b5e6a61d-3c10-41a1-a0dd-ff32274e5ee0",
+                "resourcePath": "objects\\obj_frog_turtle_spawn\\obj_frog_turtle_spawn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1f3931b0-f181-4df1-91f6-648b0a57633a",
             "Value": {
                 "id": "f4fa016d-3366-415f-b701-eae4eee9c128",
@@ -274,7 +282,7 @@
             "Key": "48b16645-072c-4ae9-b58e-f3e8baa3c8a1",
             "Value": {
                 "id": "fc8607ad-3b3c-4be0-8bef-011c8e9d5470",
-                "resourcePath": "objects\\o_frogger_player\\o_frogger_player.yy",
+                "resourcePath": "objects\\obj_frog_player\\obj_frog_player.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -300,6 +308,14 @@
                 "id": "68dbe921-c27f-469c-8049-6d62f3511aee",
                 "resourcePath": "sprites\\spr_table_round\\spr_table_round.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "56e47629-68bf-474f-a559-6b3d593e58c4",
+            "Value": {
+                "id": "53cec74a-b9bc-4758-adc8-cf1f89519e0f",
+                "resourcePath": "objects\\obj_frog_turtle\\obj_frog_turtle.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -410,7 +426,7 @@
             "Key": "6bf86b0a-15aa-44ea-9d2e-ac1357ebcdde",
             "Value": {
                 "id": "2b8ceca9-a231-47a9-ab55-ccc8f59e8f5e",
-                "resourcePath": "sprites\\spr_frogger_player\\spr_frogger_player.yy",
+                "resourcePath": "sprites\\spr_frog_player\\spr_frog_player.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -967,6 +983,22 @@
             }
         },
         {
+            "Key": "d578456f-e081-4854-9f02-1dd4518871ce",
+            "Value": {
+                "id": "6c9b9536-8767-4899-9872-bc91b2f8e740",
+                "resourcePath": "sprites\\spr_frog_turtle3\\spr_frog_turtle3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d6d4e9a5-6da0-4ddb-913f-67f9835e681a",
+            "Value": {
+                "id": "9ab84a3f-9c47-42e7-8c53-93458e09b88c",
+                "resourcePath": "sprites\\spr_frog_water\\spr_frog_water.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d8bc15ac-bb5e-4b5c-b02e-d69de5b9d569",
             "Value": {
                 "id": "845fcb07-c77a-4c0c-b51f-b241eb6fd6e9",
@@ -983,11 +1015,27 @@
             }
         },
         {
+            "Key": "db13ddde-a0fa-4013-b891-175918d3164f",
+            "Value": {
+                "id": "4caa546c-ff02-4028-aa9c-a7568199c1c4",
+                "resourcePath": "sprites\\spr_frog_turtle2\\spr_frog_turtle2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dc4908b6-5e2f-4e4e-9d52-c1e531026f3b",
             "Value": {
                 "id": "f55bdce6-cb96-49d4-81dc-5d838aede841",
                 "resourcePath": "sprites\\spr_pixel\\spr_pixel.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dc4e5830-6f10-4dbe-869c-daf90837bd5d",
+            "Value": {
+                "id": "489d4764-4434-4298-b902-4ebd837a8fa8",
+                "resourcePath": "objects\\obj_frog_water\\obj_frog_water.yy",
+                "resourceType": "GMObject"
             }
         },
         {

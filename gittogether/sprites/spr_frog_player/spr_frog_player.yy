@@ -2,7 +2,7 @@
     "id": "6bf86b0a-15aa-44ea-9d2e-ac1357ebcdde",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_frogger_player",
+    "name": "spr_frog_player",
     "For3D": false,
     "HTile": false,
     "VTile": false,
