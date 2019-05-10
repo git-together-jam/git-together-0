@@ -1,11 +1,11 @@
 {
-    "id": "76aca91a-3269-4b82-aa42-024245baa81e",
+    "id": "8522c8f7-2cf1-47a4-a954-cc394f254cd1",
     "modelName": "GMFolder",
     "mvc": "1.1",
-    "name": "76aca91a-3269-4b82-aa42-024245baa81e",
+    "name": "8522c8f7-2cf1-47a4-a954-cc394f254cd1",
     "children": [
-        "be10b09f-de94-4524-97bf-01ce431ea2d7",
-        "71eb1077-58c7-402b-9f72-b17fb57732a0"
+        "71eb1077-58c7-402b-9f72-b17fb57732a0",
+        "be10b09f-de94-4524-97bf-01ce431ea2d7"
     ],
     "filterType": "GMFont",
     "folderName": "fonts",
