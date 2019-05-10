@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////////////////
+---------------------------- USING ROOM TRANSITION -----------------------------
+///////////////////////////////////////////////////////////////////////////////
+
+Instead of calling room_goto(), you'd need to call room_goto_transition().
+
+Arguments:
+
+1. Type
+	a. TransType.screenFade : Screen fade to color
+	b. (To be added)
+	
+2. Target Room
+	- Sets the target room to go to
+	
+3. Color*
+	- Optional argument : can be used to set the color of the transition
+	- Default color is black

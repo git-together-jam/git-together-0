@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "05943763-beb4-4d10-9dbf-a0ae8ee4e477",
+            "Value": {
+                "id": "bb3a10a1-bf25-4f81-a953-44a9cb706766",
+                "resourcePath": "views\\05943763-beb4-4d10-9dbf-a0ae8ee4e477.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0cc861f3-0fbb-4f65-a56a-53dd668d2ff8",
             "Value": {
                 "id": "04341bd0-a377-481c-8dbb-195b18fc5f94",
@@ -92,6 +100,14 @@
                 "id": "5215fdf7-4aad-40e2-84d3-323be8994de5",
                 "resourcePath": "views\\2fee34f3-369c-48df-9421-33a87d15d03e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3482e9a8-b997-4558-8386-0242a6448243",
+            "Value": {
+                "id": "617cc04d-c6aa-404c-b01d-035dda3f2f1d",
+                "resourcePath": "objects\\obj_transition\\obj_transition.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -204,6 +220,14 @@
                 "id": "c7e8a2c9-0123-4570-84b5-d136bedaf27b",
                 "resourcePath": "views\\72139d97-9a3f-4133-b341-315ec3b399f3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7309583b-7abc-46e8-b5f1-0d90a23c50d0",
+            "Value": {
+                "id": "2826c832-d6ef-4148-92b3-dd2ce3ac2006",
+                "resourcePath": "scripts\\approach\\approach.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -367,6 +391,14 @@
             }
         },
         {
+            "Key": "c019ec67-4894-4632-8f8f-39b9070852fc",
+            "Value": {
+                "id": "d8ff55db-4819-4b16-bdc6-ec91a34768bd",
+                "resourcePath": "views\\c019ec67-4894-4632-8f8f-39b9070852fc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c5ed9a52-4385-46b2-9b64-951aec94c839",
             "Value": {
                 "id": "a3251c71-d941-4700-9428-2525ed74be8f",
@@ -419,6 +451,14 @@
             "Value": {
                 "id": "ec461a34-69a7-4bcb-b395-cfbd60b65053",
                 "resourcePath": "sprites\\spr_ArcadeBasic1\\spr_ArcadeBasic1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dc4908b6-5e2f-4e4e-9d52-c1e531026f3b",
+            "Value": {
+                "id": "f55bdce6-cb96-49d4-81dc-5d838aede841",
+                "resourcePath": "sprites\\spr_pixel\\spr_pixel.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -487,6 +527,14 @@
             }
         },
         {
+            "Key": "f0446e64-8dbf-4226-91fc-39d97d1462d4",
+            "Value": {
+                "id": "01a46c92-faaf-4fda-8a9b-864e01cbdd98",
+                "resourcePath": "views\\f0446e64-8dbf-4226-91fc-39d97d1462d4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f306224a-a83c-4189-b8dd-8c09ab5be4f2",
             "Value": {
                 "id": "12f19e73-01b3-4fcf-82e1-b0d7980b07c4",
@@ -500,6 +548,14 @@
                 "id": "bf067808-1460-4d11-ace3-937f2ac3b888",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f4f0ecce-815f-4b7e-ba54-ba1a63b6366b",
+            "Value": {
+                "id": "7585f953-195c-446e-a9cd-30c65ae928fb",
+                "resourcePath": "notes\\Room Transition.yy",
+                "resourceType": "GMNotes"
             }
         },
         {
@@ -517,11 +573,21 @@
                 "resourcePath": "objects\\obj_Controller\\obj_Controller.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "ffbaaeb0-b0a4-40fe-855a-013e9b779ee0",
+            "Value": {
+                "id": "797b36ec-9223-4bcf-a0a8-c5e3882b9f71",
+                "resourcePath": "scripts\\room_goto_transition\\room_goto_transition.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
         "6ba5a2fa-8be7-4c2d-8018-a18baa20edee",
         "6ef509e2-28b6-4f11-8b6b-11a6a34e55a0",
+        "7309583b-7abc-46e8-b5f1-0d90a23c50d0",
+        "ffbaaeb0-b0a4-40fe-855a-013e9b779ee0",
         "a91eb8a5-4c4b-4440-be5b-c0121a7b290b",
         "f306224a-a83c-4189-b8dd-8c09ab5be4f2",
         "3b2a4cb6-765f-496c-99c6-3a88c1dc00eb",
