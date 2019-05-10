@@ -5,7 +5,7 @@
     "name": "8fd3eb21-43af-4b74-8532-b26be83d36c3",
     "children": [
         "d3f66eb7-b58a-4337-88df-3a0c622e283b",
-        "d96ffdf6-dd57-43c5-990c-71336654c59f"
+        "7607cb8a-3a44-4435-9235-bd74d7ab90bd"
     ],
     "filterType": "GMSprite",
     "folderName": "Arcade Machines",
