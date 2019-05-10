@@ -1,9 +1,15 @@
 
-
 if (dialogue_index < dialogue_count - 1) {
+	
+	var _soffr = round(seat_offset);
+	for (var i = _soffr - 1; i <= _soffr; i++) {
+		var _index = (i + seat_count) % seat_count;
+		var _char = characters[? seat[_index]];
+		draw_sprite(_char[? "sprite"], 0, _index * room_width - seat_offset * room_width, 0);
+	}
+	
 	var _dial = dialogue[| dialogue_index];
 	var _char = characters[? _dial[? "name"]];
-	draw_sprite(_char[? "sprite"], 0, 0, 0);
 
 	draw_set_font(text_font);
 

@@ -1,11 +1,4 @@
 
-sprites_index = (
-	sprites_index + sprites_count +
-	keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left)
-) % sprites_count;
-
-sprite_index = sprites[sprites_index];
-
 if (text_length != text_target_length && !--text_timer) {
 	text += string_char_at(text_target, ++text_length);
 	text_timer = text_time;
@@ -29,4 +22,21 @@ if (mouse_check_button_pressed(mb_left)) {
 		text = text_target;
 		text_length = text_target_length;
 	}
+}
+
+if (dialogue_index < dialogue_count - 1) {
+	var _dial = dialogue[| dialogue_index];
+	var _char = characters[? _dial[? "name"]];
+	var _target = _char[? "seat"];
+	
+	if (_target - seat_offset > seat_count / 2) { // go left
+		seat_offset = lerp(seat_offset, seat_offset - _target, .12);
+		
+	} else if (_target - seat_offset < -seat_count / 2) { // go left
+		seat_offset = lerp(seat_offset, seat_offset - _target, .12);
+		
+	} else seat_offset = lerp(seat_offset, _target, .12);
+	
+	if (seat_offset < 0) seat_offset = seat_count;
+	if (seat_offset > seat_count) seat_offset = 0;
 }

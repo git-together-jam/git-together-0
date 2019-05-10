@@ -1,47 +1,42 @@
 
-#region sprites
-
-sprites = [
-	spr_dr_tonystr,
-	spr_dr_matharoo,
-	spr_dr_pope,
-	spr_dr_sahaun,
-	spr_dr_yellowaf,
-	spr_dr_minty
-];
-sprites_count = array_length_1d(sprites)
-sprites_index = 0;
-
-#endregion;
-
 #region characters
 
 characters = json_decode(string_concat(@'{ 
 	"tony": {
 		"full_name": "TonyStr",
-		"sprite": ', spr_dr_tonystr, @'
+		"sprite": ', spr_dr_tonystr, @',
+		"seat": 0
 	},
 	"math": {
 		"full_name": "Matharoo",
-		"sprite": ', spr_dr_matharoo, @'
+		"sprite": ', spr_dr_matharoo, @',
+		"seat": 1
 	},
 	"pope": {
 		"full_name": "Jon Pope",
-		"sprite": ', spr_dr_pope, @'
+		"sprite": ', spr_dr_pope, @',
+		"seat": 2
 	},
 	"sahaun": {
 		"full_name": "Sahaun",
-		"sprite": ', spr_dr_sahaun, @'
+		"sprite": ', spr_dr_sahaun, @',
+		"seat": 3
 	},
 	"yellowaf": {
 		"full_name": "YellowAfterlife",
-		"sprite": ', spr_dr_yellowaf, @'
+		"sprite": ', spr_dr_yellowaf, @',
+		"seat": 4
 	},
 	"minty": {
 		"full_name": "YellowAfterlife",
-		"sprite": ', spr_dr_minty, @'
+		"sprite": ', spr_dr_minty, @',
+		"seat": 5
 	}
 }'));
+
+seat = ["tony", "math", "pope", "sahaun", "yellowaf", "minty"];
+seat_offset = 0;
+seat_count	= array_length_1d(seat);
 
 #endregion;
 
