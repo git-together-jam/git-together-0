@@ -1,6 +1,6 @@
 /// @description 
 // Play with arcade machine
-arcade = instance_place(x, y, oArcadeParent);
+arcade = instance_place(x, y, obj_ArcadeParent);
 
 if (global.iSelect && arcade) {
 	// Get room

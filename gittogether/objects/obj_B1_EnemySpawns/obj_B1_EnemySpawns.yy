@@ -1,23 +1,33 @@
 {
-    "id": "3ea2081a-074c-45d5-810a-ba340615210c",
+    "id": "af63d8f2-344a-4ee8-9d30-c3cada5f25e2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oArcadeBasic1",
+    "name": "obj_B1_EnemySpawns",
     "eventList": [
         {
-            "id": "64e3ae60-449e-4041-a572-6021573c4bdd",
+            "id": "19d0565f-bab0-4fa2-840c-ea90792b1767",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "3ea2081a-074c-45d5-810a-ba340615210c"
+            "m_owner": "af63d8f2-344a-4ee8-9d30-c3cada5f25e2"
+        },
+        {
+            "id": "ab25e558-1b0d-4eb8-9492-f01c9a1c11fa",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "af63d8f2-344a-4ee8-9d30-c3cada5f25e2"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "ddf8cc01-0881-4be5-8fff-257fca35b966",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "d3f66eb7-b58a-4337-88df-3a0c622e283b",
+    "spriteId": "effc7e3a-8cbe-4eec-8a0b-e44944d60268",
     "visible": true
 }

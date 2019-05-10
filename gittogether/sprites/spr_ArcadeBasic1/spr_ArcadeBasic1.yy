@@ -2,7 +2,7 @@
     "id": "d3f66eb7-b58a-4337-88df-3a0c622e283b",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sArcadeBasic1",
+    "name": "spr_ArcadeBasic1",
     "For3D": false,
     "HTile": false,
     "VTile": false,

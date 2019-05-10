@@ -8,17 +8,17 @@ gml_pragma("global", "scr_init()");
 
 #region Game
 // Arcade types (Each arcade is a minigame)
-enum arc {
+enum Arc {
 	basic1
 }
 
 // Make sure to add the array entries for your arcade game
 // Arcade sprites
-global.arcSpr[arc.basic1] = sArcadeBasic1;
+global.arcSpr[Arc.basic1] = spr_ArcadeBasic1;
 
 // Arcade rooms
-global.arcRoom[arc.basic1] = rmB1_Main;
+global.arcRoom[Arc.basic1] = rm_B1_Main;
 
 // Minigame names
-global.arcMiniName[arc.basic1] = "Basic 1";
+global.arcMiniName[Arc.basic1] = "Basic 1";
 #endregion

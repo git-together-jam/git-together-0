@@ -10,5 +10,5 @@ var type = argument[1];
 room_goto(rm);
 
 // Set data
-oController.miniType = type;
-oController.miniTitleAlpha = 2;
+obj_Controller.miniType = type;
+obj_Controller.miniTitleAlpha = 2;
