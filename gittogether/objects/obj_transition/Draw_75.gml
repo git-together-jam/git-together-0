@@ -1,7 +1,5 @@
 /// @desc 
 
-draw_text(8,8,alpha);
-
 switch (type) {
 	
 	#region Screen Fade

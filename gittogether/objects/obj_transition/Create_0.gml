@@ -6,6 +6,8 @@ targetRoom = -1;
 color	   = c_black;
 
 // Required variables
+surf = noone;
+
 changeRoom = false;
 buff = 2;
 
