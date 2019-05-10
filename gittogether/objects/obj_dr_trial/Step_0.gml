@@ -4,7 +4,7 @@ if (text_length != text_target_length && !--text_timer) {
 	text_timer = text_time;
 }
 
-if (mouse_check_button_pressed(mb_left)) {
+if (mouse_check_button_pressed(mb_left) || global.iSelect) {
 	text_timer -= room_speed * .04;
 
 	if (text_length >= text_target_length) {
