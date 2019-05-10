@@ -2,3 +2,5 @@
 // Minigame vars
 miniTitleAlpha = 0;
 miniType = -1;
+
+randomize();
