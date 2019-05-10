@@ -11,7 +11,7 @@ enum Game {
 // Make sure to add your game here
 // arcade_game_add(type, name, arcade_machine_sprite, game_room)
 
-arcade_game_add(Game.none, "<NONE>", spr_arcade, rm_Overworld);
+arcade_game_add(Game.none, "<NONE>", spr_arcade_machine, rm_Overworld);
 
 arcade_game_add(Game.basic1, "Basic 1", spr_ArcadeBasic1, rm_B1_Main);
 arcade_game_add(Game.dungandrompa, "Dungandrompa", spr_arcade_dungandompa, rm_dungandrompa);

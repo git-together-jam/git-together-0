@@ -210,7 +210,7 @@
             "Key": "3dba7c61-1358-49c3-8012-7739b851b4a3",
             "Value": {
                 "id": "2f16bd77-8a7c-4de5-b19f-f9d026e933d3",
-                "resourcePath": "sprites\\spr_arcade\\spr_arcade.yy",
+                "resourcePath": "sprites\\spr_arcade_machine\\spr_arcade_machine.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -220,6 +220,14 @@
                 "id": "c5e2f137-3863-4ecd-ab86-19cdddce203c",
                 "resourcePath": "scripts\\end_minigame\\end_minigame.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "45e4d7f3-972b-4311-8cc1-54412222e3c5",
+            "Value": {
+                "id": "e70c0814-dc7e-4ab4-87a0-08d18e2487c2",
+                "resourcePath": "objects\\par_Collide\\par_Collide.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -375,6 +383,14 @@
             }
         },
         {
+            "Key": "7206799e-87b1-47a0-a46d-5bcf35e4619d",
+            "Value": {
+                "id": "b696a80b-6ffd-455d-bfc3-a0866e93c1d7",
+                "resourcePath": "objects\\obj_Table_round\\obj_Table_round.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "72139d97-9a3f-4133-b341-315ec3b399f3",
             "Value": {
                 "id": "c7e8a2c9-0123-4570-84b5-d136bedaf27b",
@@ -468,6 +484,14 @@
                 "id": "44314e9d-915b-453b-8f7f-e17f9e000a24",
                 "resourcePath": "views\\8da67b84-0766-47fd-91b6-3235994ac8d7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8e0ad934-a9a1-405b-aff0-e10711c1d354",
+            "Value": {
+                "id": "88061de5-7493-4530-8651-842991885f39",
+                "resourcePath": "objects\\obj_Chair\\obj_Chair.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -820,6 +844,14 @@
                 "id": "ec461a34-69a7-4bcb-b395-cfbd60b65053",
                 "resourcePath": "sprites\\spr_ArcadeBasic1\\spr_ArcadeBasic1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d4990db5-94b8-4351-b4ed-425f0248fb45",
+            "Value": {
+                "id": "290c5005-b2c3-400e-abae-7919f6f4d359",
+                "resourcePath": "objects\\obj_Trashcan\\obj_Trashcan.yy",
+                "resourceType": "GMObject"
             }
         },
         {

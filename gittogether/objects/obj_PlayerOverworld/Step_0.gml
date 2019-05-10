@@ -7,13 +7,13 @@ vsp = global.iMoveY * moveSpeed;
 // Horizontal:
 repeat(abs(hsp)) {
 	
-	if instance_place(x+sign(hsp), y, obj_ArcadeMachine) break;
+	if instance_place(x+sign(hsp), y, par_Collide) break;
 	x+=sign(hsp);
 }
 // Vertical:
 repeat(abs(vsp)) {
 	
-	if instance_place(x, y+sign(vsp), obj_ArcadeMachine) break;
+	if instance_place(x, y+sign(vsp), par_Collide) break;
 	y+=sign(vsp);
 }
 

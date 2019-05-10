@@ -21,7 +21,7 @@
 	   Example : (See under "Rooms > __ Minigame Rooms" folder)
 	   
 4. You need to create a sprite for your arcade machine. It should be under "Sprites > Arcade Machines" folder, following the naming convention.
-   [Take "spr_arcade" as the base template, located under "Sprites > Overworld Assets".]
+   [Take "spr_arcade_machine" as the base template, located under "Sprites > Overworld Assets".]
 
 5. You need to create room(s) for your game. They should be under "Rooms > __ Minigame Rooms > ~Game-Name~" folder, following the naming convention.
 
