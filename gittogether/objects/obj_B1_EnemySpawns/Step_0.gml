@@ -19,5 +19,5 @@ else {
 // Click
 if (hover() && global.iMouseL_P) {
 	instance_destroy();
-	oB1_Controller.myScore++;
+	obj_B1_Controller.myScore++;
 }

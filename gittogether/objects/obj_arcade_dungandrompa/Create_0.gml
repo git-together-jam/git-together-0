@@ -1,6 +1,6 @@
 /// @description 
 // Initialize type
-type = arc.dungandrompa;
+type = Arc.dungandrompa;
 
 // Run parent Create
 event_inherited();
