@@ -1,5 +1,12 @@
-(Really basic at this point)
+Naming conventions for the jam:
+- spr_sprite, obj_object, rm_room, snd_sound
+- script_name
+- instanceVariables
+- var _localVariables
+- global.GlobalVariables
+- EnumName.value
+- MACRO_NAME
 
 Your sprites/objects/scripts/room(s) for your minigames go into their separate groups, under the parent group "__ Minigame <Resources>".
 
-Use a prefix unique to your minigame. For example, the prefix for my minigame "Basic1" is "B1". So my resources are named like this: sB1_Sprite, oB1_Object, rmB1_Room.
+Use a prefix unique to your minigame. For example, the prefix for my minigame "Basic1" is "B1". So my resources are named like this: spr_B1_sprite, obj_B1_object, rm_B1_room.
