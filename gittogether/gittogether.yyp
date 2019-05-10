@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "256f1d23-9461-4606-b980-5dccde86b502",
+            "Value": {
+                "id": "90877831-d9ff-4e00-a71c-e4a71b94d83d",
+                "resourcePath": "sprites\\spr_GUITicket\\spr_GUITicket.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "27be1a1c-ef1d-4459-b1ca-51f349aa4cba",
             "Value": {
                 "id": "c03eed1a-9d1d-4af1-b691-6ba36ef27e14",
@@ -532,6 +540,14 @@
                 "id": "3d5d1719-9a9b-402e-b224-dbbbabb4c235",
                 "resourcePath": "options\\ios\\options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "895a09d2-ab01-4e3a-80d2-9f007abf9121",
+            "Value": {
+                "id": "f3780ecb-f136-4409-9bf2-fda7952aed7c",
+                "resourcePath": "sprites\\spr_GUICoin\\spr_GUICoin.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1052,14 +1068,6 @@
                 "id": "487b115f-7c7c-4343-b489-597a7733dd10",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
-            }
-        },
-        {
-            "Key": "e4356c74-9020-454b-a22e-b8fda2a5a2a2",
-            "Value": {
-                "id": "3c252a80-b388-402b-a2d6-acc77d3f1f2c",
-                "resourcePath": "views\\e4356c74-9020-454b-a22e-b8fda2a5a2a2.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
