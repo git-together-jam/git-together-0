@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "1a095e74-9bdc-459d-be08-a4f9e6bc0af8",
+            "Value": {
+                "id": "ccb30df2-7203-4c7c-9906-d50a8ce8a8e4",
+                "resourcePath": "views\\1a095e74-9bdc-459d-be08-a4f9e6bc0af8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1f3931b0-f181-4df1-91f6-648b0a57633a",
             "Value": {
                 "id": "f4fa016d-3366-415f-b701-eae4eee9c128",
@@ -218,7 +226,7 @@
             "Key": "c5ed9a52-4385-46b2-9b64-951aec94c839",
             "Value": {
                 "id": "a3251c71-d941-4700-9428-2525ed74be8f",
-                "resourcePath": "objects\\oPlayer\\oPlayer.yy",
+                "resourcePath": "objects\\oPlayerOverworld\\oPlayerOverworld.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -300,6 +308,14 @@
                 "id": "bf067808-1460-4d11-ace3-937f2ac3b888",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fcd98fdd-cebb-46ae-81f9-4a9a991b673e",
+            "Value": {
+                "id": "d1f66492-932c-4496-a6c8-aad684823946",
+                "resourcePath": "objects\\oController\\oController.yy",
+                "resourceType": "GMObject"
             }
         }
     ],
