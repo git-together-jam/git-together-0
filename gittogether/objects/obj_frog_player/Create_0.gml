@@ -1,7 +1,7 @@
 //movement
-moveTime = .1*room_speed;
+moveTime = 6;
 moveTimer = 0;
-moveSpeed = 3;
+moveSpeed = 16/6;
 xMove = 0;
 yMove = 0;
 
