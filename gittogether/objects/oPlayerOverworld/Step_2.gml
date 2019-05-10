@@ -1,10 +1,12 @@
 /// @description 
-// Collide with enemies
-var enemy = instance_place(x, y, oEnemyParent);
+// Play with arcade machine
+if (global.iSelect) {
+	var arcade = instance_place(x, y, oArcadeParent);
 
-if (enemy) {
-	// Get room
-	var rm = global.enmRoom[enemy.type];
+	if (arcade) {
+		// Get room
+		var rm = global.arcRoom[arcade.type];
 	
-	startMinigame(rm, enemy.type);
+		startMinigame(rm, arcade.type);
+	}
 }

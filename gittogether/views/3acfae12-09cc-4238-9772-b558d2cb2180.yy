@@ -8,7 +8,7 @@
         "3ea2081a-074c-45d5-810a-ba340615210c"
     ],
     "filterType": "GMObject",
-    "folderName": "Enemies",
+    "folderName": "Arcades",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

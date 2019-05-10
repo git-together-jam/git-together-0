@@ -1,6 +1,6 @@
 /// @description 
 // Initialize type
-type = enm.basic1;
+type = arc.basic1;
 
 // Run parent Create
 event_inherited();

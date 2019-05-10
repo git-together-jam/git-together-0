@@ -6,3 +6,12 @@ if (instance_exists(oPlayerOverworld)) {
 	
 	camera_set_view_pos(view_camera[0], _x, _y);
 }
+
+// Overworld depth
+if (room == rmOverworld) {
+	with (all) {
+		if (sprite_exists(sprite_index)) {
+			depth = -bbox_bottom;
+		}
+	}
+}

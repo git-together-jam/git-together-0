@@ -122,7 +122,7 @@
             "Key": "3ea2081a-074c-45d5-810a-ba340615210c",
             "Value": {
                 "id": "b0a8ed64-9f9f-46ea-bd0e-c6b13d22a771",
-                "resourcePath": "objects\\oEnemyBasic1\\oEnemyBasic1.yy",
+                "resourcePath": "objects\\oArcadeBasic1\\oArcadeBasic1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "97e08913-df34-4b3c-9077-2e3f3d730cf4",
+            "Value": {
+                "id": "0954fb1c-5719-4781-bfda-1ecaec1fe51c",
+                "resourcePath": "views\\97e08913-df34-4b3c-9077-2e3f3d730cf4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "0b446e62-47bf-4920-b407-180f275b9f2a",
@@ -367,6 +375,14 @@
             }
         },
         {
+            "Key": "cf219f18-1048-4ab8-a98d-9801dec17ee5",
+            "Value": {
+                "id": "fc836c65-3e54-4066-b8a1-4e8e3dc010f8",
+                "resourcePath": "sprites\\sGUIPlay\\sGUIPlay.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cf9a8d31-8528-43d3-a006-2c60967ffacd",
             "Value": {
                 "id": "3b5f2432-f7cf-4848-b5cd-af11bcbf0b5d",
@@ -394,7 +410,7 @@
             "Key": "d3f66eb7-b58a-4337-88df-3a0c622e283b",
             "Value": {
                 "id": "ec461a34-69a7-4bcb-b395-cfbd60b65053",
-                "resourcePath": "sprites\\sEnemyBasic1\\sEnemyBasic1.yy",
+                "resourcePath": "sprites\\sArcadeBasic1\\sArcadeBasic1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -402,7 +418,7 @@
             "Key": "ddf8cc01-0881-4be5-8fff-257fca35b966",
             "Value": {
                 "id": "b08e9505-3d7a-4896-9264-591a45974e8d",
-                "resourcePath": "objects\\oEnemyParent\\oEnemyParent.yy",
+                "resourcePath": "objects\\oArcadeParent\\oArcadeParent.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -452,6 +468,14 @@
                 "id": "a1f7539b-f72b-4ec9-93bd-5ee4c6a8d363",
                 "resourcePath": "views\\ef9677e7-e8cf-4681-854a-ca04bf560534.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "effc7e3a-8cbe-4eec-8a0b-e44944d60268",
+            "Value": {
+                "id": "23364605-b8d9-4306-afff-713d28b73cc5",
+                "resourcePath": "sprites\\sB1_Enemy\\sB1_Enemy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

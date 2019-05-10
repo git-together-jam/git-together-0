@@ -7,19 +7,17 @@ gml_pragma("global", "scr_init()");
 #endregion
 
 #region Game
-// Enemy types (Each enemy is a minigame)
-// This can also be used as an arcade machine instead of an enemy if you want to go that way
-// So each enemy would instead be an arcade machine
-enum enm {
+// Arcade types (Each arcade is a minigame)
+enum arc {
 	basic1
 }
 
-// Enemy sprites
-global.enmSpr[enm.basic1] = sEnemyBasic1;
+// Arcade sprites
+global.arcSpr[arc.basic1] = sArcadeBasic1;
 
-// Enemy rooms
-global.enmRoom[enm.basic1] = rmB1_Main;
+// Arcade rooms
+global.arcRoom[arc.basic1] = rmB1_Main;
 
 // Minigame names
-global.enmMiniName[enm.basic1] = "Basic 1";
+global.arcMiniName[arc.basic1] = "Basic 1";
 #endregion
