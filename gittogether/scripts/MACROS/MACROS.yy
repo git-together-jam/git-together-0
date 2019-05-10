@@ -1,8 +1,8 @@
 {
-    "id": "6ef509e2-28b6-4f11-8b6b-11a6a34e55a0",
+    "id": "b0b0b4fa-c9ce-4569-89e5-e2c3cec7a4d0",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "_globalInput",
+    "name": "MACROS",
     "IsCompatibility": false,
     "IsDnD": false
 }

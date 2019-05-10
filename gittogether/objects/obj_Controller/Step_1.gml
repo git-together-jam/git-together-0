@@ -1,3 +1,3 @@
 /// @description 
 // Get input
-_globalInput();
+_global_input();

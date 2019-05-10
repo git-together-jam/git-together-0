@@ -1,12 +1,5 @@
-gml_pragma("global", "scr_init()");
+gml_pragma("global", "_game_init()");
 
-#region Resolution
-#macro RES_W 320
-#macro RES_H 180
-#macro RES_S 4
-#endregion
-
-#region Game
 // Arcade types (Each arcade is a minigame)
 enum Arc {
 	basic1,
@@ -27,4 +20,3 @@ global.ArcMiniName[Arc.dungandrompa] = "Dungandrompa";
 global.ArcSpr[Arc.asteroids]	  = spr_arcade_asteroids;
 global.ArcRoom[Arc.asteroids]	  = rm_Asteroids;
 global.ArcMiniName[Arc.asteroids] = "Asteroids";
-#endregion

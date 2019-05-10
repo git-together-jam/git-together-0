@@ -290,7 +290,7 @@
             "Key": "6ba5a2fa-8be7-4c2d-8018-a18baa20edee",
             "Value": {
                 "id": "4a2b21f5-ba43-4ce1-9123-cc780c9fef1e",
-                "resourcePath": "scripts\\scr_init\\scr_init.yy",
+                "resourcePath": "scripts\\_game_init\\_game_init.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -298,7 +298,7 @@
             "Key": "6ef509e2-28b6-4f11-8b6b-11a6a34e55a0",
             "Value": {
                 "id": "0ee898d5-cec2-4c83-ace9-40f532db8ec8",
-                "resourcePath": "scripts\\_globalInput\\_globalInput.yy",
+                "resourcePath": "scripts\\_global_input\\_global_input.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -500,6 +500,14 @@
                 "id": "b7324fa3-0508-48dd-9f59-b0e9dbbed460",
                 "resourcePath": "objects\\obj_B1_EnemySpawns\\obj_B1_EnemySpawns.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b0b0b4fa-c9ce-4569-89e5-e2c3cec7a4d0",
+            "Value": {
+                "id": "722ed445-3a7a-48e2-b6e2-fc9f8920aaa9",
+                "resourcePath": "scripts\\MACROS\\MACROS.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -864,9 +872,10 @@
         }
     ],
     "script_order": [
+        "b0b0b4fa-c9ce-4569-89e5-e2c3cec7a4d0",
         "6ba5a2fa-8be7-4c2d-8018-a18baa20edee",
-        "6ef509e2-28b6-4f11-8b6b-11a6a34e55a0",
         "ffbaaeb0-b0a4-40fe-855a-013e9b779ee0",
+        "6ef509e2-28b6-4f11-8b6b-11a6a34e55a0",
         "7309583b-7abc-46e8-b5f1-0d90a23c50d0",
         "f306224a-a83c-4189-b8dd-8c09ab5be4f2",
         "06ab0466-fd62-4cf4-92ca-06e2250f4019",
