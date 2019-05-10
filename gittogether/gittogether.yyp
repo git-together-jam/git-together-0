@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "2fef7ccb-7135-4388-9c5b-15d5361dcbd6",
+            "Value": {
+                "id": "68d396a4-4600-4f4a-9125-8148ed5b56cc",
+                "resourcePath": "rooms\\rm_frogger\\rm_frogger.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3482e9a8-b997-4558-8386-0242a6448243",
             "Value": {
                 "id": "617cc04d-c6aa-404c-b01d-035dda3f2f1d",
@@ -235,6 +243,14 @@
             "Value": {
                 "id": "4c59b518-559b-4006-8513-b0430207f7dd",
                 "resourcePath": "views\\4644716e-78e0-46e0-8bb4-58274d0b8238.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "46fdab57-41bd-49fb-a828-b59633f23c84",
+            "Value": {
+                "id": "0e7d18e1-f844-438e-b6e3-f48f3a175d47",
+                "resourcePath": "views\\46fdab57-41bd-49fb-a828-b59633f23c84.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -527,6 +543,14 @@
             }
         },
         {
+            "Key": "96369e11-5919-42b2-9c7b-15a154366f26",
+            "Value": {
+                "id": "f377cc48-95fe-4f82-9257-40c8082e8eb2",
+                "resourcePath": "sprites\\spr_arcade_frogger\\spr_arcade_frogger.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "96821caa-be72-43f7-8ebf-9905e8b00b7e",
             "Value": {
                 "id": "5297c58c-f2bf-42c1-80cd-fcf257f2dfec",
@@ -691,6 +715,14 @@
             "Value": {
                 "id": "86008049-a29d-471f-b51f-37abd3292fc3",
                 "resourcePath": "views\\b2e2a629-ccc3-4015-8736-c2a8d535b9a3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b5a695aa-ecd8-4879-91ce-c0ba89e0231c",
+            "Value": {
+                "id": "06846b0e-f592-4166-8c29-511a5c0c7849",
+                "resourcePath": "views\\b5a695aa-ecd8-4879-91ce-c0ba89e0231c.yy",
                 "resourceType": "GMFolder"
             }
         },
