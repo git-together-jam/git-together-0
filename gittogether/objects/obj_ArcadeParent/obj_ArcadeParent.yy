@@ -42,12 +42,40 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "Arc.Basic1",
+            "value": "Arc.none",
             "varName": "type",
-            "varType": 0
+            "varType": 1
+        },
+        {
+            "id": "872c6dd8-9f23-4c59-8465-7949b437491d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "TransType.screenFade",
+            "varName": "trans",
+            "varType": 1
+        },
+        {
+            "id": "f2eac282-277b-437c-be0a-2c55b9f209aa",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "$FF000000",
+            "varName": "transColor",
+            "varType": 7
         }
     ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "3dba7c61-1358-49c3-8012-7739b851b4a3",
     "visible": true
 }

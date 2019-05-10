@@ -1,4 +1,7 @@
 /// @description Persistent background controller
+
+randomize();
+
 // Minigame vars
 miniTitleAlpha = 0;
 miniType = -1;
@@ -6,4 +9,6 @@ miniType = -1;
 exitTime = .5*room_speed;
 exitTimer = exitTime;
 
-randomize();
+// Globals
+global.Coins = 0;
+global.Tickets = 0;

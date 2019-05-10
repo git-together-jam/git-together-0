@@ -1,5 +1,9 @@
 /// @description
 // Minigame title
+
+draw_text(8, 8, "TICKETS : " + string(global.Tickets));
+draw_text(8, 8, "COINS : " + string(global.Coins));
+
 if (miniTitleAlpha > 0) {
 	draw_set_font(fntBig);
 
