@@ -5,5 +5,5 @@
 /// @param room		- Room of the game
 
 global.GameName[argument0] = argument1;
-global.GameSpr[argument0]	  = argument2;
-global.GameRoom[argument0]	  = argument3;
+global.GameSpr[argument0]  = argument2;
+global.GameRoom[argument0] = argument3;

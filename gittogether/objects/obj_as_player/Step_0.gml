@@ -12,7 +12,7 @@ var _hdir = _rInput - _lInput;
 var _vdir = _dInput - _uInput;
 
 if (_hdir != 0) {
-	image_angle -= _hdir*4;
+	image_angle -= _hdir*3;
 	direction = image_angle;
 }
 if (_vdir != 0) speed = clamp(speed-.05*_vdir, .1, maxSpeed);
