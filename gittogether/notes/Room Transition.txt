@@ -6,8 +6,7 @@ Instead of calling room_goto(), you'd need to call room_goto_transition().
 
 Arguments:
 	
-1. Target Room
-	- Sets the target room to go to
+1. Target Room - Sets the target room to go to
 
 2. Type
 	a. TransType.screenFade : Screen fade to color

@@ -23,6 +23,12 @@ HOW TO CREATE A NEW ARCADE MINIGAME
 		Set its type in the Create event, using the arc enum
 		
 		Place it in the overworld room
+		
+		If you want a custom transition, set "trans = TransType.<transition>".
+		Default is "TransType.screenFade".
+		You can also set custom color to your transition, using "transCol = <col>".
+		Default is "c_black".
+		For more, read the "Room Transition" Note.
 	
 	> Create a room for your minigame, under "__ Minigame Rooms"
 		This room will open when you select your arcade machine, if you set it in the array in scr_init for your arcade type
@@ -32,4 +38,4 @@ HOW TO CREATE A NEW ARCADE MINIGAME
 
 IN YOUR MINIGAME
 
-	When your minigame ends, use endMinigame() to come back to the overworld.
+	When your minigame ends, use end_minigame() to come back to the overworld.
