@@ -42,7 +42,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "Arc.none",
+            "value": "Game.none",
             "varName": "type",
             "varType": 1
         },
