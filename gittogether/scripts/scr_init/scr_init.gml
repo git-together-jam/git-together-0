@@ -15,10 +15,10 @@ enum arc {
 
 // Make sure to add the array entries for your arcade game
 // Arcade sprites
-global.arcSpr[arc.basic1] = sArcadeBasic1;
+global.arcSpr[arc.basic1] = spr_ArcadeBasic1;
 
 // Arcade rooms
-global.arcRoom[arc.basic1] = rmB1_Main;
+global.arcRoom[arc.basic1] = rm_B1_Main;
 
 // Minigame names
 global.arcMiniName[arc.basic1] = "Basic 1";

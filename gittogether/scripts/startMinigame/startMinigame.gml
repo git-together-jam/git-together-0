@@ -7,8 +7,8 @@ var rm = argument[0];
 var type = argument[1];
 
 // Start
-room_goto(rm);
+room_goto_transition(rm,TransType.screenFade);
 
 // Set data
-oController.miniType = type;
-oController.miniTitleAlpha = 2;
+obj_Controller.miniType = type;
+obj_Controller.miniTitleAlpha = 2;
