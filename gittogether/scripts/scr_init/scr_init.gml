@@ -1,4 +1,4 @@
-gml_pragma("global", "scr_init");
+gml_pragma("global", "scr_init()");
 
 #region Resolution
 #macro RES_W 320

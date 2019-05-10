@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "oPlayerOverworld",
     "eventList": [
-        
+        {
+            "id": "52bd1a60-4479-4d90-bca1-fabe001714ea",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "c5ed9a52-4385-46b2-9b64-951aec94c839"
+        },
+        {
+            "id": "99cb938a-92c5-4b42-a9bf-a976937757f5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "c5ed9a52-4385-46b2-9b64-951aec94c839"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
