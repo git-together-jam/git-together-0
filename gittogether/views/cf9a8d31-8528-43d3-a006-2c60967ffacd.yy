@@ -4,8 +4,7 @@
     "mvc": "1.1",
     "name": "cf9a8d31-8528-43d3-a006-2c60967ffacd",
     "children": [
-        "f306224a-a83c-4189-b8dd-8c09ab5be4f2",
-        "8ee0fdf9-fe03-4f0c-be80-3378aba28f79"
+        "f306224a-a83c-4189-b8dd-8c09ab5be4f2"
     ],
     "filterType": "GMScript",
     "folderName": "Drawing",
