@@ -162,7 +162,7 @@
             "Key": "3b2a4cb6-765f-496c-99c6-3a88c1dc00eb",
             "Value": {
                 "id": "4c4f9309-58fb-493f-a31c-4b9c70382c3a",
-                "resourcePath": "scripts\\startMinigame\\startMinigame.yy",
+                "resourcePath": "scripts\\start_minigame\\start_minigame.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -186,7 +186,7 @@
             "Key": "409e849a-61f2-42b8-8882-6a5b4dce65a7",
             "Value": {
                 "id": "c5e2f137-3863-4ecd-ab86-19cdddce203c",
-                "resourcePath": "scripts\\endMinigame\\endMinigame.yy",
+                "resourcePath": "scripts\\end_minigame\\end_minigame.yy",
                 "resourceType": "GMScript"
             }
         },

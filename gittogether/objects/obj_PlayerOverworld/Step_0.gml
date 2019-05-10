@@ -24,5 +24,5 @@ if (global.iSelect && arcade) {
 	// Get room
 	var _rm = global.arcRoom[arcade.type];
 	
-	startMinigame(_rm, arcade.type);
+	start_minigame(_rm, arcade.type);
 }
