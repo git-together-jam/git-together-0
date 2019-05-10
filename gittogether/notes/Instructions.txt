@@ -1,3 +1,13 @@
+OBJECTS GUIDE
+
+	oController is a persistent background manager that keeps running
+	
+	oPlayerOverworld is the player object that SHOULD ONLY EXIST IN THE OVERWORLD ROOM
+		Your minigames should have separate player objects
+	
+	oArcadeParent should parent all arcade machine objects
+		So each arcade minigame machine should be a separate object, as a child of oArcadeParent
+
 HOW TO CREATE A NEW ARCADE MINIGAME
 
 	> Open scr_init
@@ -12,9 +22,14 @@ HOW TO CREATE A NEW ARCADE MINIGAME
 		
 		Set its type in the Create event, using the arc enum
 		
-		Place it in the room
+		Place it in the overworld room
 	
 	> Create a room for your minigame, under "__ Minigame Rooms"
-		This room will open when you select your arcade machine
+		This room will open when you select your arcade machine, if you set it in the array in scr_init for your arcade type
 	
-	
+	> You can start adding your sprite/object resources under the "__ Minigame <Resources>" group of a resource
+		Make sure to create a separate group for your minigame under the "__ Minigame <Resources>" group
+
+IN YOUR MINIGAME
+
+	When your minigame ends, use endMinigame() to come back to the overworld.
