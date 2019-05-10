@@ -1,2 +1,2 @@
-Tony: hi
-Juju: bye
+Tony: hi;
+Juju: bye;
