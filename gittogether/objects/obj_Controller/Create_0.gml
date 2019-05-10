@@ -12,3 +12,6 @@ exitTimer = exitTime;
 // Globals
 global.Coins = 0;
 global.Tickets = 0;
+
+//Controller Support
+global.Controller = gamepad_get_first(0);
