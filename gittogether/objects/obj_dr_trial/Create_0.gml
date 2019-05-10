@@ -87,7 +87,6 @@ dialogue_count = ds_list_size(dialogue);
 
 #region text
 
-text_font = fnt_pixel;
 text_padding = 12;
 var _dial = dialogue[| 0];
 text_target = dr_prepare_text_target(_dial[? "text"], room_width - text_padding * 2);
@@ -96,6 +95,10 @@ text = "";
 text_length = 0;
 text_timer = 0;
 text_time = room_speed * .02;
+text_font = fnt_pixel;
+text_name_padding = 4;
+draw_set_font(text_font);
+text_height = string_height("ASIUDH87asdhajsdnaNUi");
 
 #endregion;
 
