@@ -522,7 +522,7 @@
             "Key": "bddaaadf-2ce4-48cc-8df7-9430f10136a9",
             "Value": {
                 "id": "dca3b8c8-904d-4076-b0fd-012eaded5c15",
-                "resourcePath": "sprites\\sB1_Background\\sB1_Background.yy",
+                "resourcePath": "sprites\\spr_B1_Background\\spr_B1_Background.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -698,7 +698,7 @@
             "Key": "effc7e3a-8cbe-4eec-8a0b-e44944d60268",
             "Value": {
                 "id": "23364605-b8d9-4306-afff-713d28b73cc5",
-                "resourcePath": "sprites\\sB1_Enemy\\sB1_Enemy.yy",
+                "resourcePath": "sprites\\spr_B1_Enemy\\spr_B1_Enemy.yy",
                 "resourceType": "GMSprite"
             }
         },
