@@ -4,7 +4,7 @@
 /// @param color*
 
 enum TransType {
-	screenFade, checkerboard
+	screenFade, checkerboard, circle
 }
 
 if (instance_exists(obj_Transition)) return -1;
