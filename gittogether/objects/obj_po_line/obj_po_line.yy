@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_po_line",
     "eventList": [
-        
+        {
+            "id": "25a085f1-7384-4beb-9ab8-fe97839488c4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "eaf2b097-aba9-4f47-b2ca-39fca510f92d"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

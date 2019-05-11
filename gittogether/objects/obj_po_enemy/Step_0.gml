@@ -1,6 +1,6 @@
-///@desc Move.
+///@desc Handle movement.
 
 if instance_exists(obj_po_ball) {
 	
-	y = y*.9+.1*obj_po_ball.y;
+	vspeed = .92*vspeed+.04*(obj_po_ball.y-y+random(20)-10)*obj_po_ball.start;
 }
