@@ -19,4 +19,4 @@ global.Controller = gamepad_get_first(0);
 
 // For Drawing the GUI
 guiXOffset = 8;
-guiYOffset = RES_H-24;
+guiYOffset = RES_H-16;

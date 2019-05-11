@@ -6,6 +6,8 @@
 // Draw only if we are in the Overworld
 
 if room = rm_Overworld {
+	
+	draw_set_font(fnt_pixel)
 
 	// Setup temporary variables
 	var _ticketSprXOffset = sprite_get_width(spr_GUITicket);
@@ -17,7 +19,8 @@ if room = rm_Overworld {
 
 	// Putting this here to neaten up the offets a bit
 	var _coinXOffset = guiXOffset + _ticketSprXOffset + _ticketStringXOffset;
-
+	
+	draw_set_valign(fa_middle);
 	// Tickets
 	draw_sprite(spr_GUITicket, 0, guiXOffset, guiYOffset);
 	draw_text(_ticketSprXOffset + guiXOffset, guiYOffset, _ticketString);
