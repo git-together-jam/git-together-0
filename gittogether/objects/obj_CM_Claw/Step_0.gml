@@ -5,6 +5,12 @@
 	
 }*/
 
+if (state == CMClawState.idle) {
+	if ClawTries == 0 {
+		game_end();	
+	}
+}
+
 if (state == CMClawState.idle) && (global.iMoveY > 0) {
 	state = CMClawState.moving;	
 }

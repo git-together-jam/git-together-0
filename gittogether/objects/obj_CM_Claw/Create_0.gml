@@ -2,6 +2,7 @@
 hsp = 0;
 vsp = 0;
 spd = 1;
+randomize();
 
 enum CMClawState {
 	idle,
@@ -15,8 +16,10 @@ enum CMClawState {
 clawDropOff = 82;
 startingPos = room_width/2;
 sprYOffset = sprite_get_bbox_bottom(sprite_index)/2;
-grabXOffset = 0;
-grabYOffset = 0;
+//grabXOffset = 0;
+//grabYOffset = 0;
+dropRate = 200;
+ClawTries = 2;
 
 grabbed = false;
 prizeGrabbed = noone;
