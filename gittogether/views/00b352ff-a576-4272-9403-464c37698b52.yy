@@ -1,3 +1,4 @@
+
 {
     "id": "00b352ff-a576-4272-9403-464c37698b52",
     "modelName": "GMFolder",
@@ -17,4 +18,3 @@
     "folderName": "__ Minigame Rooms",
     "isDefaultView": false,
     "localisedFolderName": ""
-}
