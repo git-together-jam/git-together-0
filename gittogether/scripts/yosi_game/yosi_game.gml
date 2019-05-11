@@ -74,23 +74,23 @@ if (argument[0] == YosiFunction.init)
 				[
 				30,
 					[
-					[YosiObType.zapper,room_width,60],
-					[YosiObType.zapper,room_width,room_height-60],
+					[YosiObType.zapper,room_width,40],
+					[YosiObType.zapper,room_width,room_height-40],
+					],
+				60,
+					[
+					[YosiObType.zapper,room_width,45],
+					[YosiObType.zapper,room_width,room_height-45],
 					],
 				30,
 					[
-					[YosiObType.zapper,room_width,70],
-					[YosiObType.zapper,room_width,room_height-70],
-					],
-				30,
-					[
-					[YosiObType.zapper,room_width,80],
-					[YosiObType.zapper,room_width,room_height-80],
+					[YosiObType.zapper,room_width,50],
+					[YosiObType.zapper,room_width,room_height-50],
 					],
 				],
 				//2
 				[
-				50,
+				30,
 					[
 					[YosiObType.zapper,room_width,60],
 					[YosiObType.zapper,room_width,room_height-60],
@@ -112,8 +112,10 @@ if (argument[0] == YosiFunction.init)
 			//Flood
 			//Spikes
 		];
+	section = 0;
+	sub = 0;
 	phase = 0;
-	frame = 0;
+	frame = 180;
 	draw_set_font(fnt_pixel);
 	draw_set_color(c_white);
 	}
@@ -165,6 +167,16 @@ else if (argument[0] == YosiFunction.main)
 				yosi_game(YosiFunction.move_ground);
 				//debug
 				if (mouse_check_button_pressed(mb_left)) {ds_list_add(obstacle_list,yosi_game(YosiFunction.new_zapper,mouse_x,mouse_y));}
+				//Create new obstacles from blueprint
+				if (yosi_game(YosiFunction.blueprint_read))
+					{
+					section = 0; //Zappers
+					sub = irandom(array_length_1d(blueprints[section])-1);
+					phase = 0;
+					var _temp = blueprints[section];
+					_temp = _temp[sub];
+					frame = _temp[0];
+					}
 				//Move
 				for(var i=0;i<ds_list_size(obstacle_list);i++)
 					{
@@ -259,13 +271,10 @@ else if (argument[0] == YosiFunction.main)
 				draw_text_transformed(5,5,string(distance),0.5,0.5,0);
 				break;
 			case YosiGameState.lose:
-				//Draw player
-				yosi_game(YosiFunction.rect,player[@YosiPlayer.X],player[@YosiPlayer.Y],YosiBlocksize,YosiBlocksize);
-				//Screen Fade
-				screen_flash = 0.7;
+				draw_clear(c_black);
 				//Results
-				draw_text_center(room_width/2,64,"YOU LOSE",1,1,0,c_black,1);
-				draw_text_center(room_width/2,96 + round(sin(current_time/500)*5),"Score: " + string(distance),0.5,0.5,0,c_black,1);
+				draw_text_center(room_width/2,64,"YOU LOSE",1,1,0,c_white,1);
+				draw_text_center(room_width/2,96 + round(sin(current_time/500)*4),"Score: " + string(distance),0.5,0.5,0,c_white,1);
 				break;
 			}
 		surface_reset_target();
@@ -328,9 +337,8 @@ else
 			return;
 			break;
 		case YosiFunction.blueprint_read:
-			///@func blueprint_read(section,subsection)
-			var _section = blueprints[argument[1]];
-			var _sub = _section[argument[2]];
+			var _section = blueprints[section];
+			var _sub = _section[sub];
 			//Action based on the frame
 			if (phase < array_length_1d(_sub) && is_array(_sub[phase]))
 				{
@@ -353,6 +361,7 @@ else
 					{
 					frame = _sub[phase];
 					}
+				else return true;
 				}
 			else
 				{
@@ -363,7 +372,7 @@ else
 					phase++;
 					}
 				}
-			return;
+			return false;
 			break;
 		default: show_debug_message("Function not found"); break;
 		}
