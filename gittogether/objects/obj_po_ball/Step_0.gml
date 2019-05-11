@@ -9,7 +9,8 @@ if (abs(y+vspeed-RES_H/2) >= RES_H/2) {
 }
 
 //Handle the start or when the ball goes out the sides.
-if (!start && global.iMouseL_P) || (abs(x+hspeed-RES_W/2) >= RES_W/2) {
+var pressStart = !start && (global.iMouseL_P || global.iSelect);
+if pressStart || (abs(x+hspeed-RES_W/2) >= RES_W/2) {
 	
 	if start {
 		

@@ -727,6 +727,14 @@
             }
         },
         {
+            "Key": "67d9e922-e8a0-4751-8b59-74cbf8816c4a",
+            "Value": {
+                "id": "d68a06b7-5e2e-42c3-bf1b-6890481d439a",
+                "resourcePath": "shaders\\shd_retro\\shd_retro.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "680fc1c2-8cfe-4729-8aa2-74b9363bb9fd",
             "Value": {
                 "id": "6e09deff-edea-4ebf-bcd0-5d15a0426f2f",

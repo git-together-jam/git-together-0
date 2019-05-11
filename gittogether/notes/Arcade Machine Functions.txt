@@ -18,5 +18,5 @@ You can use this "_myGame" variable to control extra behavious. The associated f
 	- game_id : Your unique game_id, stored in the variable.
 	- bool : Boolean - Enable/Disable the save system.
 	
-	>> Note : No need to use this one if you want to disable the save system.]
+	>> Note : No need to use this one if you want to disable the save system.
 	
