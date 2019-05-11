@@ -1,3 +1,3 @@
-///@desc Move.
+///@desc Handle movement.
 
 y = mouse_y;

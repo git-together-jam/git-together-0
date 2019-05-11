@@ -1122,7 +1122,7 @@
             "Key": "e73f1bd2-bb2a-4184-ba14-2c8bdd84458f",
             "Value": {
                 "id": "9e59c6c4-1983-4bc5-a76c-6309ba9c4a19",
-                "resourcePath": "sprites\\spr_line\\spr_line.yy",
+                "resourcePath": "sprites\\spr_po_line\\spr_po_line.yy",
                 "resourceType": "GMSprite"
             }
         },
