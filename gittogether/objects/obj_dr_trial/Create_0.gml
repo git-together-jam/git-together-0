@@ -12,29 +12,34 @@ characters = json_decode(string_concat(@'{
 		"sprite": ', spr_dr_matharoo, @',
 		"seat": 1
 	},
+	"jxm": {
+		"full_name": "Juju",
+		"sprite": ', spr_dr_juju, @',
+		"seat": 2
+	},
 	"pope": {
 		"full_name": "Jon Pope",
 		"sprite": ', spr_dr_pope, @',
-		"seat": 2
+		"seat": 3
 	},
 	"sahaun": {
 		"full_name": "Sahaun",
 		"sprite": ', spr_dr_sahaun, @',
-		"seat": 3
+		"seat": 4
 	},
 	"yellowaf": {
 		"full_name": "YellowAfterlife",
 		"sprite": ', spr_dr_yellowaf, @',
-		"seat": 4
+		"seat": 5
 	},
 	"minty": {
 		"full_name": "YellowAfterlife",
 		"sprite": ', spr_dr_minty, @',
-		"seat": 5
+		"seat": 6
 	}
 }'));
 
-seat = ["tony", "math", "pope", "sahaun", "yellowaf", "minty"];
+seat = ["tony", "math", "jxm", "pope", "sahaun", "yellowaf", "minty"];
 seat_offset = 0;
 seat_count	= array_length_1d(seat);
 
@@ -46,32 +51,86 @@ dialogue = ds_list_create();
 dialogue_index = 0;
 
 var _file = file_text_open_read("dungandrompa_dialogue.txt");
+var _read_state = 0;
+var _bullets = ds_list_create();
 
 while (!file_text_eof(_file)) {
 	var _str = file_text_readln(_file);
 	
-	var _size = string_length(_str);
-	var _name_found = false;
-	var _name = "";
-	var _text = "";
+	if (string_pos("[BULLETS]", _str) == 1)  { _read_state = 1; continue; ds_list_destroy_maps(_bullets) }
+	if (string_pos("[/BULLETS]", _str) == 1) { continue; }
+	if (string_pos("[NSD]", _str) == 1)	     { _read_state = 2; continue; }
+	if (string_pos("[/NSD]", _str) == 1)	 { _read_state = 0; continue; }
+	
+	switch (_read_state) {
+		
+		case 0: #region normal dialogue
+		
+			var _size = string_length(_str);
+			var _name_found = false;
+			var _name_found_first = false;
+			var _status = "";
+			var _name = "";
+			var _text = "";
 
-	for (var i = 1; i <= _size; i++) {
-		var _chr = string_char_at(_str, i);
+			for (var i = 1; i <= _size; i++) {
+				var _chr = string_char_at(_str, i);
 	
-		if (_name_found) {
-			if (_chr != "\n" && _chr != "\r") _text += _chr;
-		} else {
-			if (_chr == ":") {
-				_name_found = true;
-				i++; // skip following whitespace
-			} else _name += _chr;
-		}
+				if (_name_found) {
+					if (_chr != "\n" && _chr != "\r") _text += _chr;
+				} else {
+					if (_chr == ".") {
+						_name_found_first = true;
+					} else if (_chr == ":") {
+						_name_found = true;
+						i++; // skip following whitespace
+					} else if (_name_found_first) {
+						_status += _chr;
+					} else {
+						_name += _chr;
+					}
+				}
+			}
+	
+			var _map = ds_map_create();
+			_map[? "name"] = _name;
+			_map[? "text"] = _text;
+			_map[? "status"] = _status;
+			ds_list_add_map(dialogue, _map);
+		
+		break; #endregion;
+			
+		case 1: #region bullets
+		
+			var _size = string_length(_str);
+			var _name_found = false;
+			var _name = "";
+			var _target = "";
+			for (var i = 1; i <= _size; i++) {
+				var _chr = string_char_at(_str, i);
+	
+				if (_name_found) {
+					if (_chr == string_digits(_chr)) _target += _chr;
+				} else {
+					if (_chr == ":") {
+						_name_found = true;
+						i++; // skip following whitespace
+					} else {
+						_name += _chr;
+					}
+				}
+			}
+			var _bullet = ds_map_create();
+			_bullet[? "name"] = _name;
+			_bullet[? "target"] = string_length(_target) ? string_digits(_target) : -1;
+			ds_list_add_map(_bullets, _bullet);
+			
+		break; #endregion;
+			
+		case 2: #region non-stop debate
+		
+		break; #endregion
 	}
-	
-	var _map = ds_map_create();
-	_map[? "name"] = _name;
-	_map[? "text"] = _text;
-	ds_list_add_map(dialogue, _map);
 }
 
 file_text_close(_file);

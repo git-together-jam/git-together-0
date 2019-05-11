@@ -1,3 +1,95 @@
+tony.self: The familiar look of an empty repository stood before me.
+tony.self: This is where I'll spend the next week, 
+tony.self: developing my coding skills and making new friends.
+tony.self: I am however a bit intimidated
+tony.self: All the contributors are highly talented individuals specializing in different areas of code.
+tony.self: But I was only let in because of the IDE skins I've made.
+tony.self: Regardless, I have nothing but hope for the future!
+tony.self: ...
+tony.self: I let out a sigh and opened the door to the locale we'd been given to work in.
+tony.self: Inside awaited me...
+tony.self: a...
+tony.self: ...
+tony.self: ...
+minty: ...
+yellowaf: ...
+math: Hello? Who are you? What's going on?
+yellowaf: It would appear we've fallen asleep, and someone brought us here
+minty: Yeah about that, where is here?
+jxm: Welcome to the famous git-together gamejam!
+tony: !!
+tony: But then this has to be...
+jxm: Shut up and let me speak. 
+jxm: You've all come here of your own free will.
+jxm: Now you will make a game, of your own free will.
+pope: What if I will not?
+jxm: Then I will make you will do it!
+minty: You make me will me make it?
+jxm: That's right
+minty: How do me make will me make of free will it from you?
+jxm: Oh it's simple really
+jxm: You will make a game, 
+jxm: like three-in-a-row or whatever, 
+jxm: in in one week. Or..
+jxm: I will kill you all.
+tony: !!
+tony: How can you say such a thing!
+jxm: I said shut up and I meant it.
+jxm: If you break the silence again, I'll make you the first example.
+tony: ...
+jxm: Any questions?
+tony.self: (yes...)
+math: May I ask a question?
+jxm: Don't ask if you can ask a question.
+jxm: There's hardly any reason to ask if you can ask when you've already asked, is there?
+math: ...
+math: What do we have to do to live?
+jxm: Now you're asking questions I've already answered?
+jxm: Make a game!
+sahaun: And what is a game?
+jxm: Huh? ...
+jxm: You don't know what a game is?
+sahaun: If my life is riding on this task, I need to know exactly how I can prevent death.
+sahaun: Is three in a row a game? Is Tetris a game? Is conversation a game?
+jxm: ...
+pope: Hah! Who would make a game about conversation?
+pope: That's the lamest idea I've ever heard!
+yellowaf: Even so, it is an issue that needs answering.
+yellowaf: If that pug's idea of a game does not match our idea of a game, 
+yellowaf: we're risking a lot more than sleep without supper.
+jxm: I have decided!
+jxm: Figuring out what a game is will be part of your task!
+jxm: If you make a game that satisfies me,
+jxm: You will be freed.
+jxm: However, I will not judge lightly.
+jxm: So, enough with this prologue, let the game begin!
+[NSD]
+[BULLETS]
+Games aren't real
+Digital games
+Educational games
+Juju said: 4
+Game of thrones
+[/BULLETS]
+sahaun: Alright, so we know he wants a game.
+sahaun: But *what is a game?*
+pope: That's a stupid question.
+pope: It's just *something you can play*!
+math: But you can play all kinds of things
+minty: Like a flute
+sahaun: Or a *board game*
+sahaun: If a board game is considered a game 
+sahaun: just as much as a first person shooter
+sahaun: or an action adventure game...
+sahaun: Then we could simply *remake three in a row*!
+yellowaf: *I don't think that's the kind of game he wants us to make*
+yellowaf: We've been given a git repository
+yellowaf: you *can't put a board game on a machine*
+minty: Why not?
+minty: There's *nothing stopping* us from making a digital version of 
+minty: *Choo Choo Train - Learn Math Fun!*
+math: Except certain death.
+[/NSD]
 tony: No, that's wrong!
 tony: If we approach this completely blindly, it may end in disaster, yes, 
 tony: however, if we get stuck discussing semantics we'll never make anything!
