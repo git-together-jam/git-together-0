@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "1bc326ca-f6a9-489b-9215-f6f817ba7d04",
+            "Value": {
+                "id": "988f45f3-51da-45d1-b649-1097882b4677",
+                "resourcePath": "objects\\obj_BR_brick\\obj_BR_brick.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1e8d5542-56d6-4778-b58f-544171d4fd99",
             "Value": {
                 "id": "b5e6a61d-3c10-41a1-a0dd-ff32274e5ee0",
@@ -199,11 +207,27 @@
             }
         },
         {
+            "Key": "30567fb1-fc8c-43ce-8b45-c5239a06f10b",
+            "Value": {
+                "id": "259d4abe-e45c-4ab5-90a9-db2343055cf8",
+                "resourcePath": "objects\\obj_BR_paddle\\obj_BR_paddle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3482e9a8-b997-4558-8386-0242a6448243",
             "Value": {
                 "id": "617cc04d-c6aa-404c-b01d-035dda3f2f1d",
                 "resourcePath": "objects\\obj_Transition\\obj_Transition.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "35861964-da16-4cbc-b807-062e5e1a0a17",
+            "Value": {
+                "id": "e1234541-6346-413a-b7f8-ba4b5579d734",
+                "resourcePath": "sprites\\spr_BR_brick\\spr_BR_brick.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -447,11 +471,27 @@
             }
         },
         {
+            "Key": "65526157-4bac-4418-9f21-0edaee11b00b",
+            "Value": {
+                "id": "6e7f49cc-988a-466f-95a7-d9f1fad254ae",
+                "resourcePath": "scripts\\collision_normal\\collision_normal.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "659355d7-471e-490e-a68c-71c96eb06071",
             "Value": {
                 "id": "688e01d0-0e9e-437f-be59-901f0b1535ae",
                 "resourcePath": "scripts\\gamepad_get_first\\gamepad_get_first.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "680fc1c2-8cfe-4729-8aa2-74b9363bb9fd",
+            "Value": {
+                "id": "6e09deff-edea-4ebf-bcd0-5d15a0426f2f",
+                "resourcePath": "sprites\\spr_BR_paddle\\spr_BR_paddle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -823,6 +863,14 @@
             }
         },
         {
+            "Key": "b09750eb-f906-48a1-bed5-a6e6dd60ed67",
+            "Value": {
+                "id": "69f5a373-bf34-4787-988a-25dfb2346365",
+                "resourcePath": "sprites\\spr_BR_ball\\spr_BR_ball.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b0b0b4fa-c9ce-4569-89e5-e2c3cec7a4d0",
             "Value": {
                 "id": "722ed445-3a7a-48e2-b6e2-fc9f8920aaa9",
@@ -1055,6 +1103,14 @@
             }
         },
         {
+            "Key": "d39f7567-b983-4b2a-ac4c-612f01bd09e9",
+            "Value": {
+                "id": "ed12dc74-f5ca-435f-aab8-c647651c2d5d",
+                "resourcePath": "rooms\\rm_Init\\rm_Init.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "d3f66eb7-b58a-4337-88df-3a0c622e283b",
             "Value": {
                 "id": "ec461a34-69a7-4bcb-b395-cfbd60b65053",
@@ -1196,6 +1252,14 @@
                 "id": "487b115f-7c7c-4343-b489-597a7733dd10",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e5db5ec4-e664-4968-bede-21ba74831b09",
+            "Value": {
+                "id": "c8745b52-f5a1-455b-a63d-fb09f1857e1e",
+                "resourcePath": "objects\\obj_BR_ball\\obj_BR_ball.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1381,6 +1445,7 @@
         "6ef509e2-28b6-4f11-8b6b-11a6a34e55a0",
         "ffbaaeb0-b0a4-40fe-855a-013e9b779ee0",
         "7309583b-7abc-46e8-b5f1-0d90a23c50d0",
+        "65526157-4bac-4418-9f21-0edaee11b00b",
         "f306224a-a83c-4189-b8dd-8c09ab5be4f2",
         "06ab0466-fd62-4cf4-92ca-06e2250f4019",
         "ee65e55d-a512-4e42-9151-706710feceac",
