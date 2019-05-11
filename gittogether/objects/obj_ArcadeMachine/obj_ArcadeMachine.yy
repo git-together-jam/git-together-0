@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "obj_ArcadeMachine",
     "eventList": [
-        {
-            "id": "034cd800-9289-4c4e-8c97-3c5da81e6f06",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "ddf8cc01-0881-4be5-8fff-257fca35b966"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -32,48 +23,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "301ef176-e240-42c0-a44d-a378dde58a21",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "Game.none",
-            "varName": "type",
-            "varType": 1
-        },
-        {
-            "id": "872c6dd8-9f23-4c59-8465-7949b437491d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "TransType.screenFade",
-            "varName": "trans",
-            "varType": 1
-        },
-        {
-            "id": "f2eac282-277b-437c-be0a-2c55b9f209aa",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "$FF000000",
-            "varName": "transColor",
-            "varType": 7
-        }
+        
     ],
     "solid": false,
     "spriteId": "3dba7c61-1358-49c3-8012-7739b851b4a3",

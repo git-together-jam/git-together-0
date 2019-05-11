@@ -1,5 +1,7 @@
 gml_pragma("global", "_game_init()");
 
+global.ArcadeMachineList = ds_list_create();
+
 _sys_save_init(true);
 // Game Types - Enter your game entry here
 enum Game {
@@ -15,9 +17,7 @@ enum Game {
 // Make sure to add your game here
 // arcade_game_add(type, name, arcade_machine_sprite, game_room)
 
-arcade_game_add(Game.none, "<NONE>", spr_arcade_machine, rm_Overworld);
-
-// Example Arcade Game.
+// Example Arcade Game
 arcade_game_add(Game.basic1, "Basic 1", spr_ArcadeBasic1, rm_B1_Main, true);
 
 arcade_game_add(Game.dungandrompa, "Dungandrompa", spr_arcade_dungandompa, rm_dungandrompa);

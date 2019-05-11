@@ -4,7 +4,8 @@ randomize();
 
 // Minigame vars
 miniTitleAlpha = 0;
-miniType = -1;
+miniName = "";
+maxMachinesPerRow = 8;
 
 exitTime = .5*room_speed;
 exitTimer = exitTime;

@@ -37,7 +37,5 @@ y = clamp(y,_bbox_top,room_height-_bbox_bottom);
 arcade = instance_place(x, y-4, obj_ArcadeMachine);
 
 if (global.iSelect && arcade) {
-	// Get room
-	var _rm = global.GameRoom[arcade.type];
-	start_minigame(_rm, arcade.type, arcade.trans, arcade.transColor);
+	start_minigame(arcade.gameRoom, arcade.name, arcade.trans, arcade.transCol);
 }

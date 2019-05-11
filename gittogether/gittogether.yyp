@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0b43f4a7-21d6-4931-a990-bf2eced18f39",
+            "Value": {
+                "id": "8bc58a65-c3e5-4f83-9a6f-ea5101d059c0",
+                "resourcePath": "views\\0b43f4a7-21d6-4931-a990-bf2eced18f39.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0cc861f3-0fbb-4f65-a56a-53dd668d2ff8",
             "Value": {
                 "id": "04341bd0-a377-481c-8dbb-195b18fc5f94",
@@ -164,6 +172,14 @@
                 "id": "ccb30df2-7203-4c7c-9906-d50a8ce8a8e4",
                 "resourcePath": "views\\1a095e74-9bdc-459d-be08-a4f9e6bc0af8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1a1cdeda-e3c0-4e22-be1d-f44dc9e88698",
+            "Value": {
+                "id": "19d316b2-45ec-4d91-8494-f3943eda0a85",
+                "resourcePath": "notes\\Putting Arcade Machines.yy",
+                "resourceType": "GMNotes"
             }
         },
         {
@@ -852,6 +868,14 @@
                 "id": "263e1986-150b-4e47-b0ae-45bc4af84e6d",
                 "resourcePath": "sprites\\spr_arcade_breakout\\spr_arcade_breakout.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "94e1002f-fc9a-4962-8f89-3f464ee212bd",
+            "Value": {
+                "id": "20d11420-2a7c-4af5-88e1-eadc8a531df8",
+                "resourcePath": "scripts\\ds_destroy\\ds_destroy.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1671,6 +1695,7 @@
         "577e71c6-0a7d-4c0d-9a26-6a850b390bd4",
         "61a350a5-1029-4eab-9384-10a0e588d478",
         "5ea76bd9-e3c3-4eb3-a135-59e64017a2ab",
+        "94e1002f-fc9a-4962-8f89-3f464ee212bd",
         "ac4d89ad-8617-4e5e-b95d-aec818302582",
         "b292ed51-a525-480f-ab78-ced1b8def08b",
         "659355d7-471e-490e-a68c-71c96eb06071",
