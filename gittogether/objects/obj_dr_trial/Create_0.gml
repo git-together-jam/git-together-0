@@ -33,7 +33,7 @@ characters = json_decode(string_concat(@'{
 		"seat": 5
 	},
 	"minty": {
-		"full_name": "YellowAfterlife",
+		"full_name": "Minty Python",
 		"sprite": ', spr_dr_minty, @',
 		"seat": 6
 	}
@@ -129,6 +129,38 @@ while (!file_text_eof(_file)) {
 			
 		case 2: #region non-stop debate
 		
+			var _size = string_length(_str);
+			var _name_found = false;
+			var _name_found_first = false;
+			var _status = "";
+			var _name = "";
+			var _text = "";
+
+			for (var i = 1; i <= _size; i++) {
+				var _chr = string_char_at(_str, i);
+	
+				if (_name_found) {
+					if (_chr != "\n" && _chr != "\r") _text += _chr;
+				} else {
+					if (_chr == ".") {
+						_name_found_first = true;
+					} else if (_chr == ":") {
+						_name_found = true;
+						i++; // skip following whitespace
+					} else if (_name_found_first) {
+						_status += _chr;
+					} else {
+						_name += _chr;
+					}
+				}
+			}
+	
+			var _map = ds_map_create();
+			_map[? "name"] = _name;
+			_map[? "text"] = _text;
+			_map[? "status"] = _status;
+			ds_list_add_map(dialogue, _map);
+		
 		break; #endregion
 	}
 }
@@ -142,17 +174,16 @@ dialogue_count = ds_list_size(dialogue);
 #region text
 
 text_padding = 12;
-var _dial = dialogue[| 0];
-text_target = dr_prepare_text_target(_dial[? "text"], room_width - text_padding * 2);
-text_target_length = string_length(text_target);
-text = "";
-text_length = 0;
-text_timer = 0;
-text_time = room_speed * .02;
-text_font = fnt_pixel;
-text_name_padding = 4;
+text_list	= ds_list_create();
+var _dial	= dialogue[| 0];
+text_font	= fnt_pixel;
 draw_set_font(text_font);
 text_height = string_height("ASIUDH87asdhajsdnaNUi");
+text_target_length = dr_prepare_text_target(_dial[? "text"], room_width - text_padding * 2, text_list, 0);
+text_length = 0;
+text_timer	= 0;
+text_time	= room_speed * .02;
+text_name_padding = 4;
 
 #endregion;
 
@@ -166,3 +197,5 @@ for (var i = 0; i < _ls; i++) {
 log("]");
 
 #endregion;
+
+// nyeh
