@@ -8,7 +8,7 @@ var _len = string_length(_str);
 var _str_new = "";
 var _last_newline_index = 0;
 
-// TODO: skip drawing newline time
+draw_set_font(fnt_pixel);
 
 for (var i = 1; i <= _len; i++) {
 	var _chr = string_char_at(_str, i);

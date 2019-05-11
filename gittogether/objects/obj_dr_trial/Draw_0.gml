@@ -20,5 +20,5 @@ if (dialogue_index < dialogue_count - 1) {
 }
 
 draw_rect(0, room_height * .79, room_width, room_height, $100205, .6);
-draw_text(text_padding, room_height * .8, text);
+draw_text_ext(text_padding, room_height * .8, text, text_height + 2, room_width);
 draw_set_color($ffffff);
