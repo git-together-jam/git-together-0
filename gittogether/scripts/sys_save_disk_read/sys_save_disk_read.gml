@@ -4,7 +4,7 @@
 var _clearSave = argument0;
 
 // Load file
-var _buff = buffer_load(SavePath);
+var _buff = buffer_load(SAVE_PATH);
 
 // Read from file
 buffer_seek(_buff,buffer_seek_start,0);
