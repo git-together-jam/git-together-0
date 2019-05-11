@@ -11,6 +11,7 @@ enum YosiFunction
 	new_zapper,
 	move_ground,
 	rect,
+	blueprint_read
 	}
 enum YosiGameState
 	{
@@ -35,7 +36,7 @@ enum YosiObType
 	laser,
 	missiles,
 	spikes,
-	flood,
+	flood
 	}
 enum YosiZapper
 	{
@@ -111,6 +112,8 @@ if (argument[0] == YosiFunction.init)
 			//Flood
 			//Spikes
 		];
+	phase = 0;
+	frame = 0;
 	draw_set_font(fnt_pixel);
 	draw_set_color(c_white);
 	}
@@ -324,5 +327,44 @@ else
 				);
 			return;
 			break;
+		case YosiFunction.blueprint_read:
+			///@func blueprint_read(section,subsection)
+			var _section = blueprints[argument[1]];
+			var _sub = _section[argument[2]];
+			//Action based on the frame
+			if (phase < array_length_1d(_sub) && is_array(_sub[phase]))
+				{
+				var _obstacles = _sub[phase];
+				//Loop through array and create obstacles
+				for(var i=0;i<array_length_1d(_obstacles);i++)
+					{
+					var _ob = _obstacles[i];
+					switch(_ob[0])
+						{
+						case YosiObType.zapper:
+							ds_list_add(obstacle_list,yosi_game(YosiFunction.new_zapper,_ob[1],_ob[2]));
+							break;
+						default: break;
+						}
+					}
+				//Next phase
+				phase++;
+				if (phase < array_length_1d(_sub) && is_real(_sub[phase]))
+					{
+					frame = _sub[phase];
+					}
+				}
+			else
+				{
+				//Count down the frame
+				frame--;
+				if (frame <= 0)
+					{
+					phase++;
+					}
+				}
+			return;
+			break;
+		default: show_debug_message("Function not found"); break;
 		}
 	}
