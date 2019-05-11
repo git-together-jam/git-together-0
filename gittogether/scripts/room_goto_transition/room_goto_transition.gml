@@ -6,7 +6,7 @@
 enum TransType {
 	screenFade, checkerboard, circle,
 	
-	rand
+	rand, none
 }
 
 if (instance_exists(obj_Transition)) return -1;

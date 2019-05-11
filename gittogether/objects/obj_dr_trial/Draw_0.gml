@@ -16,7 +16,9 @@ if (dialogue_index < dialogue_count - 1) {
 	var _full_name = _char[? "full_name"];
 	draw_rect(0, room_height * .8 - text_height - text_name_padding * 2, text_padding * 2 + string_width(_full_name), room_height * .79, $100005, .6);
 	draw_text(text_padding, room_height * .79 - text_height - text_name_padding, _full_name);
+	if (_dial[? "status"] == "self") draw_set_color($f18746);
 }
 
 draw_rect(0, room_height * .79, room_width, room_height, $100205, .6);
 draw_text(text_padding, room_height * .8, text);
+draw_set_color($ffffff);
