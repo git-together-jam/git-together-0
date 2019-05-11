@@ -24,10 +24,35 @@ y += vsp;
 hsp = 0;
 vsp = 0;
 
-x = clamp(x,sprite_get_bbox_left(sprite_index),room_width-sprite_get_bbox_right(sprite_index));
 //y = clamp(y,sprite_get_bbox_top(sprite_index),room_height-sprite_get_bbox_bottom(sprite_index));
 
-if (state == CMClawState.moving) && (y > room_height-sprite_get_bbox_bottom(sprite_index)-4) {
+if (state == CMClawState.moving) && (y > room_height-sprite_get_bbox_bottom(sprite_index)-8) {
 	alarm[0] = 60;
+	image_speed = 1;
 	state = CMClawState.grabbing;	
 }
+
+if (state == CMClawState.dropping) {
+	if y != ystart {
+		y--;	
+	}
+	
+	if (x < clawDropOff) x++;
+	if (x > clawDropOff) x--;
+	
+	if (x == clawDropOff) && (y == ystart) {
+		state = CMClawState.dropped;
+		alarm[1] = 30;
+	}
+	
+}
+
+if (state == CMClawState.reset) {
+	if (x < startingPos) x++;
+	if (x > startingPos) x--;
+	
+	if (x == startingPos) state = CMClawState.idle;
+}
+
+//show_debug_message(x);
+x = clamp(x,round(sprite_get_bbox_right(sprite_index)/2),round(room_width-(sprite_get_bbox_right(sprite_index)/2)));
