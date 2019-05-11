@@ -20,6 +20,9 @@
 	d. Room : The room in which your game should be played. (See point 5)
 	   Example : (See under "Rooms > __ Minigame Rooms" folder)
 	   
+	e. Use Save System: Optional. This determines whether or not to add a database to the Save System, using the Name of your game.
+		Example: (See Under "Notes" > Save System)
+	   
 4. You need to create a sprite for your arcade machine. It should be under "Sprites > Arcade Machines" folder, following the naming convention.
    [Take "spr_arcade_machine" as the base template, located under "Sprites > Overworld Assets".]
 
