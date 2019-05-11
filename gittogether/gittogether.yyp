@@ -887,6 +887,14 @@
             }
         },
         {
+            "Key": "95a7aaba-2f03-43ac-9edc-d53ad4dcaf6d",
+            "Value": {
+                "id": "e1aaba90-ee7b-4def-8bff-7b31f5e6ca30",
+                "resourcePath": "scripts\\arcade_game_enable_save\\arcade_game_enable_save.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "96369e11-5919-42b2-9c7b-15a154366f26",
             "Value": {
                 "id": "f377cc48-95fe-4f82-9257-40c8082e8eb2",
@@ -1383,6 +1391,14 @@
             }
         },
         {
+            "Key": "d9d450bb-e90f-4429-829e-f81116f485cf",
+            "Value": {
+                "id": "6a695798-655f-4d7f-885a-193287bb3c9f",
+                "resourcePath": "scripts\\arcade_game_set_transition\\arcade_game_set_transition.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "da4c4aa9-b26d-459f-9eea-8e719c94aba3",
             "Value": {
                 "id": "c0debbd9-ed5e-4d30-b55a-6fa48aa0bd53",
@@ -1745,7 +1761,9 @@
         "3b2a4cb6-765f-496c-99c6-3a88c1dc00eb",
         "409e849a-61f2-42b8-8882-6a5b4dce65a7",
         "049184d5-853f-4f34-a703-23d9acb516cb",
-        "dc54a773-006a-4641-89f5-981816b289dd"
+        "dc54a773-006a-4641-89f5-981816b289dd",
+        "d9d450bb-e90f-4429-829e-f81116f485cf",
+        "95a7aaba-2f03-43ac-9edc-d53ad4dcaf6d"
     ],
     "tutorial": ""
 }
