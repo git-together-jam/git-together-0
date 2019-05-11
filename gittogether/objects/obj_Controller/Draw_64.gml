@@ -37,7 +37,7 @@ if room = rm_Overworld {
 if (miniTitleAlpha > 0) {
 	draw_set_font(fntBig);
 
-	var str = "Minigame\n\n" + global.GameName[miniType];
+	var str = "Minigame\n\n" + miniName;
 	draw_text_center(RES_W/2, RES_H/2, str, 1, 1, 0, c_dkgray, miniTitleAlpha);
 
 	// Reduce alpha

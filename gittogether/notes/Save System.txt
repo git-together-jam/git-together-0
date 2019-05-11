@@ -12,6 +12,82 @@ To use the Save System for your Arcade Game, please read the relative informatio
 If you don't wish to use the Save System, just leave it as it is.
 
 //////////////////////////////////////////////////////////////////////////
+---------------------------------- General -------------------------------
+//////////////////////////////////////////////////////////////////////////
+
+This is for the more generic functionality. A lot which may never really be used/looked at.
+
+//////////////////////////////////
+sys_save_get_map([arcade]);
+/////////////////////////////////
+
+Returns: ds_map or undefined.
+This is specifically for those who want to get a specific ds_map from the Save System.
+If you wish to use Global, just leave it blank. Otherwise, you may use an argument to point towards 
+an arcade game. i.e. sys_save_get_map("Basic 1");
+
+//////////////////////////////////////////////////////////////////////////
+-------------------------------- Underlying -----------------------------
+//////////////////////////////////////////////////////////////////////////
+
+These should NEVER be messed with, or possibly even used, 
+unless you have a very good idea on what you're doing with them.
+
+//////////////////////////////////
+_sys_save_init([ClearSave]);
+/////////////////////////////////
+
+Returns: N/A
+Begins setting up the Database. 
+Optional Argument clears the database if the Build Version is newer than the last save.
+(Mostly for debugging)
+
+//////////////////////////////////
+_sys_save_create();
+/////////////////////////////////
+
+Returns: N/A
+Creates the necessary database for the Save System to use.
+
+//////////////////////////////////
+__sys_save_destroy();
+/////////////////////////////////
+
+Returns: N/A
+Destroys the Save System. Freeing it from memory and all of it's contents.
+
+//////////////////////////////////
+_sys_save_clear();
+/////////////////////////////////
+
+Returns: N/A
+Clears all of the entries (but not the databases) of the Save System.
+Then readds the Version.
+
+//////////////////////////////////
+sys_save_disk_write();
+/////////////////////////////////
+
+Returns: N/A
+Writes the contents of the Save System as a Json file to Disk.
+
+//////////////////////////////////
+sys_save_disk_read([ClearSave]);
+/////////////////////////////////
+
+Returns: N/A
+Reads the contents of the Save System from Disk.
+Optional Argument is passed from _sys_save_init.
+
+//////////////////////////////////
+_sys_save_arcade_add(arcade_name);
+/////////////////////////////////
+
+Returns: N/A
+Adds the arcade game to the save system. 
+arcade_game_add takes in an optional argument that either adds an entry or not.
+
+//////////////////////////////////////////////////////////////////////////
 ---------------------------------- Global -------------------------------
 //////////////////////////////////////////////////////////////////////////
 

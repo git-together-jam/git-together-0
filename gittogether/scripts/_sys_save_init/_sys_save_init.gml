@@ -8,7 +8,7 @@ if argument_count == 1 {
 	_clearSave = argument[0];	
 }
 
-if file_exists(SavePath) {
+if file_exists(SAVE_PATH) {
 	sys_save_disk_read(_clearSave);
 	
 } else {
