@@ -95,7 +95,11 @@ else if (argument[0] == YosiFunction.main)
 			{
 			case YosiGameState.title:
 				draw_text_center(room_width/2,room_height/2,"PRESS SPACE",1,1,0,c_white,abs(round(sin(current_time/300))));
-				if (global.iSelect) game_state = YosiGameState.playing;
+				if (global.iSelect) 
+					{
+					game_state = YosiGameState.playing;
+					player[@YosiPlayer.state] = YosiPlayerState.playing;
+					}
 				break;
 			case YosiGameState.playing:
 				//Move the ground every frame
@@ -123,15 +127,39 @@ else if (argument[0] == YosiFunction.main)
 								true
 								);
 							//Out of room
-							if (_ob[@YosiZapper.X] < 0) obstacle_list[|i] = noone;
+							if (_ob[@YosiZapper.X] < -YosiBlocksize) obstacle_list[|i] = noone;
 							break;
 						}
 					}
-				//Player
+				//Player Control
 				switch(player[@YosiPlayer.state])
 					{
 					case YosiPlayerState.cutscene:
-						
+						break;
+					case YosiPlayerState.playing:
+						//Jetpack
+						if (global.iMoveY < 0)
+							{
+							player[@YosiPlayer.vsp] -= 0.25;
+							}
+						else
+							{
+							player[@YosiPlayer.vsp] += 0.15;
+							}
+						//Movement
+						player[@YosiPlayer.Y] += round(player[YosiPlayer.vsp]);
+						//Move away from floor & ceiling
+						var _x_ref = (player[YosiPlayer.X] + YosiBlocksize) div 2;
+						if (player[YosiPlayer.Y] < ceiling_list[|_x_ref])
+							{
+							player[@YosiPlayer.Y] = ceiling_list[|_x_ref];
+							player[@YosiPlayer.vsp] = max(player[YosiPlayer.vsp],0);
+							}
+						if (player[YosiPlayer.Y] > floor_list[|_x_ref] - YosiBlocksize)
+							{
+							player[@YosiPlayer.Y] = floor_list[|_x_ref] - YosiBlocksize;
+							player[@YosiPlayer.vsp] = min(player[YosiPlayer.vsp],0);
+							}
 						break;
 					}
 				//Draw player
