@@ -1,17 +1,29 @@
-// Setup the path to the file
+/// @func sys_save_disk_read
+
+// Get arguments
+var _clearSave = argument0;
+
+// Load file
 var _buff = buffer_load(SavePath);
+
+// Read from file
 buffer_seek(_buff,buffer_seek_start,0);
-var _json = buffer_read(_buff,buffer_string);
+var _json = buffer_read(_buff,buffer_text);
+
+// Free from RAM.
 buffer_delete(_buff);
 
+// Decode & turn into a ds_map
 global.SaveSystem = json_decode(_json);
 
-// Check if we're out of date
-if sys_save_global_read("Version",-1) != GM_build_date {
-	var _key = ds_map_find_first(global.SaveSystem);
-	while(!is_undefined(_key)) {
-		ds_map_clear(ds_map_find_value(global.SaveSystem,_key));	
-		_key = ds_map_find_next(global.SaveSystem,_key);
+// Check if ds_map even exists
+if global.SaveSystem = -1 {
+	_sys_save_create();	
+}
+
+// Check build version and clear it
+if (_clearSave) {
+	if sys_save_global_read("Version",-1) != GM_build_date {
+		_sys_save_clear();
 	}
-	sys_save_global_write("Version",GM_build_date);
 }

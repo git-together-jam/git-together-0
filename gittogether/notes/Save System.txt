@@ -1,0 +1,59 @@
+//////////////////////////////////////////////////////////////////////////
+---------------------- How to use the Save System -----------------------
+//////////////////////////////////////////////////////////////////////////
+
+The Save System is a relatively new, but yet decently friendly set of scripts designed to allow
+us (the programmers) to save values to a global database that manages saving/loading to disk automatically!
+
+In _game_init, _sys_save_init accepts an optional argument to clear the database after each build.
+By default, it's set to false. But for development purposes, it's set to true.
+
+To use the Save System for your Arcade Game, please read the relative information below "Arcade."
+If you don't wish to use the Save System, just leave it as it is.
+
+//////////////////////////////////////////////////////////////////////////
+---------------------------------- Global -------------------------------
+//////////////////////////////////////////////////////////////////////////
+
+The sys_save_global_* functions are specifically designed to target only the "Global" Database.
+This is where stats like Coins, Tickets, etc. are stored at all times.
+
+//////////////////////////////////
+sys_save_global_read(key, value);
+/////////////////////////////////
+
+Returns: Value from Key or Value as determined by the argument "Value". 
+This returns a value from the "Global" Database.
+
+//////////////////////////////////
+sys_save_global_write(key, value);
+/////////////////////////////////
+
+Returns: N/A
+This writes to the "Global" Database. 
+
+//////////////////////////////////////////////////////////////////////////
+---------------------------------- Arcade -------------------------------
+//////////////////////////////////////////////////////////////////////////
+
+The sys_save_arcade_* is very similar to the sys_save_global functions, 
+but contains an additional argument that points to an arcade game.
+
+Arcade Games can optionally use the Save System. But if you're not going to, 
+either set the last argument to "false" or don't fill it in. 
+
+(Someone reword this pls ty)
+
+//////////////////////////////////
+sys_save_arcade_read(name, key, value);
+/////////////////////////////////
+
+Returns: Value from Key or Value as determined by the argument "Value". 
+This returns a value from the "Arcade" Database of your choice.
+
+//////////////////////////////////
+sys_save_arcade_write(name, key, value);
+/////////////////////////////////
+
+Returns: N/A
+This writes to the "Arcade" Database of your choice. 

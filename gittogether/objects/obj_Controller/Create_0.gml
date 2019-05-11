@@ -12,9 +12,7 @@ exitTimer = exitTime;
 // Globals
 global.Coins = sys_save_global_read("Coins",100);
 global.Tickets = sys_save_global_read("Tickets",0);
-global.CheatsUsed = sys_save_global_read("CheatsUsed",0);
-show_debug_message(sys_save_global_read("Version",0));
-sys_save_disk_write();
+//global.CheatsUsed = sys_save_global_read("CheatsUsed",0);
 
 //Controller Support
 global.Controller = gamepad_get_first(0);
