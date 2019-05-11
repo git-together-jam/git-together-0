@@ -49,8 +49,9 @@ if (argument[0] == YosiFunction.init)
 	{
 	surf = surface_create(room_width,room_height);
 	game_state = YosiGameState.title;
+	distance = 0;
 	screen_flash = 0;
-	player = yosi_game(YosiFunction.new_player,40,room_height div 2);
+	player = yosi_game(YosiFunction.new_player,50,room_height div 2);
 	obstacle_list = ds_list_create();
 	ceiling_y = 20;
 	ceiling_list = ds_list_create();
@@ -181,6 +182,7 @@ else if (argument[0] == YosiFunction.main)
 						break;
 					case YosiPlayerState.playing:
 						//Jetpack
+						distance++;
 						if (global.iMoveY < 0)
 							{
 							player[@YosiPlayer.vsp] -= 0.25;
@@ -214,6 +216,9 @@ else if (argument[0] == YosiFunction.main)
 					player[@YosiPlayer.Y] + YosiBlocksize,
 					false
 					);
+				//Draw score
+				draw_rectangle_color(0,1,40,17,c_black,c_black,c_black,c_black,false);
+				draw_text_transformed(5,5,string(distance),0.5,0.5,0);
 				break;
 			case YosiGameState.lose:
 				//Draw player
@@ -229,7 +234,7 @@ else if (argument[0] == YosiFunction.main)
 				screen_flash = 0.7;
 				//Results
 				draw_text_center(room_width/2,64,"YOU LOSE",1,1,0,c_black,1);
-				draw_text_center(room_width/2,96,"Score: 100",0.5,0.5,0,c_black,1);
+				draw_text_center(room_width/2,96 + round(sin(current_time/500)*5),"Score: " + string(distance),0.5,0.5,0,c_black,1);
 				break;
 			}
 		surface_reset_target();
