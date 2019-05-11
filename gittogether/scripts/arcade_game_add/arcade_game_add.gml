@@ -7,3 +7,6 @@
 global.GameName[argument0] = argument1;
 global.GameSpr[argument0]  = argument2;
 global.GameRoom[argument0] = argument3;
+
+// Adds to save system
+_sys_save_arcade_add(argument1);

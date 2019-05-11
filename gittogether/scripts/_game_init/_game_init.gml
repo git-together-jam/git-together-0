@@ -1,5 +1,7 @@
 gml_pragma("global", "_game_init()");
 
+_sys_save_init();
+
 // Game Types - Enter your game entry here
 enum Game {
 	none,
