@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////////////////////////////
+------------------------- ENHANCING ARCADE MACHINES ---------------------------
+///////////////////////////////////////////////////////////////////////////////
+
+"arcade_game_add()" returns a unique ID of your game. You need to store the ID in a variable to use it afterwards.
+Like this:
+"var _myGame = arcade_game_add("My Game Name", spr_Sprite, rm_Room);"
+You can use this "_myGame" variable to control extra behavious. The associated functions and arguments are as follows.
+
+[Note: OA = Optional Argument : Denoted by an asterisk(*)]
+
+1. arcade_game_set_transition(game_id, transition_type, color*)
+	- game_id : Your unique game_id, stored in the variable.
+	- transition_type : Selects the transition type.
+	- color : OA - Selects the transition color. [Default: c_black]
+	
+2. arcade_game_enable_save(game_id, bool)
+	- game_id : Your unique game_id, stored in the variable.
+	- bool : Boolean - Enable/Disable the save system.
+	
+	>> Note : No need to use this one if you want to disable the save system.]
+	
