@@ -1,9 +1,9 @@
 /// @func collision_normal(x1, y1, obj [,rad [,res]])
-/// @arg x1
-/// @arg y1
-/// @arg obj
-/// @arg [radius]
-/// @arg [restitution]
+/// @arg {real} x1
+/// @arg {real} y1
+/// @arg {real} obj
+/// @arg {real} [radius]
+/// @arg {real} [restitution]
 //
 //  Returns a 2D "surface normal" (in degrees) at a given point 
 //  on or near an instance detected within a circular test area.
@@ -13,7 +13,7 @@
 //      x1,y1       point on the surface, real
 //      obj         object or instance (or all), real
 //      rad         radius of test area (default 4), real
-//      res         resolution of test (default 1), real
+//      res         restitution test (default 1), real
 //
 /// GMLscripts.com/license
 var xx  = argument[0];
