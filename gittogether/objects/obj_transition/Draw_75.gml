@@ -26,6 +26,12 @@ switch (type) {
 	break;
 	#endregion
 
+	#region None
+	case TransType.none:
+		
+	break;
+	#endregion
+	
 	default:
 	break;
 }
