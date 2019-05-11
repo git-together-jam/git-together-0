@@ -1,3 +1,4 @@
+
 {
     "id": "59b93331-1929-4808-9b69-a5bf8340f981",
     "modelName": "GMFolder",
@@ -10,7 +11,7 @@
         "45b625fe-aad6-4f2d-911a-da6b2abc42f8",
         "b5a695aa-ecd8-4879-91ce-c0ba89e0231c",
         "ba9206bf-0da3-4924-b075-566bae5a14f4",
-        "f9d6c7bf-2a59-406a-b2b9-88d40a5e2d3c"
+        "85cd2268-d570-4912-acb3-b7af2187dc1b"
     ],
     "filterType": "GMObject",
     "folderName": "__ Minigame Objects",

@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "1bb78aaf-774c-48d2-9b6f-0bfa7c3118a8",
+            "Value": {
+                "id": "63be76d9-d7b9-4f97-84b9-05e44ea2737a",
+                "resourcePath": "views\\1bb78aaf-774c-48d2-9b6f-0bfa7c3118a8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1bc326ca-f6a9-489b-9215-f6f817ba7d04",
             "Value": {
                 "id": "988f45f3-51da-45d1-b649-1097882b4677",
@@ -623,6 +631,15 @@
             }
         },
         {
+
+            "Key": "62d918e9-f2fb-449d-85ff-805ecb32f1cf",
+            "Value": {
+                "id": "2287330b-037d-4c67-a456-37ba87d9051f",
+                "resourcePath": "rooms\\rm_yosi\\rm_yosi.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+      {
             "Key": "62473740-e9fd-4d2d-ba06-aaa1c3239442",
             "Value": {
                 "id": "424ece82-c441-4937-b456-eead9d8df013",
@@ -815,6 +832,14 @@
             }
         },
         {
+            "Key": "83653018-a142-4148-b276-dc43a2fbf3b7",
+            "Value": {
+                "id": "89b25402-71c2-4325-90ef-4cf54914aa7b",
+                "resourcePath": "scripts\\yosi_game\\yosi_game.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
             "Value": {
                 "id": "3d5d1719-9a9b-402e-b224-dbbbabb4c235",
@@ -828,6 +853,14 @@
                 "id": "82361677-5c35-42ca-8d3f-8c1b54703b88",
                 "resourcePath": "sounds\\snd_po_music\\snd_po_music.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "85cd2268-d570-4912-acb3-b7af2187dc1b",
+            "Value": {
+                "id": "eaf7c2b1-cc4a-4a12-a249-039840f7e263",
+                "resourcePath": "views\\85cd2268-d570-4912-acb3-b7af2187dc1b.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -923,6 +956,14 @@
             "Value": {
                 "id": "20d11420-2a7c-4af5-88e1-eadc8a531df8",
                 "resourcePath": "scripts\\ds_destroy\\ds_destroy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "95a7aaba-2f03-43ac-9edc-d53ad4dcaf6d",
+            "Value": {
+                "id": "e1aaba90-ee7b-4def-8bff-7b31f5e6ca30",
+                "resourcePath": "scripts\\arcade_game_enable_save\\arcade_game_enable_save.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1100,6 +1141,14 @@
                 "id": "210b9447-2f26-4854-b12e-d2b5aa06347b",
                 "resourcePath": "sprites\\spr_po_ball\\spr_po_ball.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ad4cd10f-dbbc-4071-9cd3-55614313ce46",
+            "Value": {
+                "id": "56a80d12-a4db-4b8d-bc9d-70c117b3701e",
+                "resourcePath": "objects\\obj_yosi\\obj_yosi.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1295,6 +1344,14 @@
             }
         },
         {
+            "Key": "c5f889a0-f0ec-4cfb-a17e-64989e57bb10",
+            "Value": {
+                "id": "3baad7ad-ca67-4641-9164-cf18e96c36f6",
+                "resourcePath": "views\\c5f889a0-f0ec-4cfb-a17e-64989e57bb10.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c63eedd4-4716-4774-88ab-1102f5f66f3c",
             "Value": {
                 "id": "56f77760-0175-432b-a88e-29d5fbb30e43",
@@ -1436,6 +1493,14 @@
                 "id": "845fcb07-c77a-4c0c-b51f-b241eb6fd6e9",
                 "resourcePath": "sprites\\spr_po_paddle\\spr_po_paddle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d9d450bb-e90f-4429-829e-f81116f485cf",
+            "Value": {
+                "id": "6a695798-655f-4d7f-885a-193287bb3c9f",
+                "resourcePath": "scripts\\arcade_game_set_transition\\arcade_game_set_transition.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1817,7 +1882,10 @@
         "3b2a4cb6-765f-496c-99c6-3a88c1dc00eb",
         "409e849a-61f2-42b8-8882-6a5b4dce65a7",
         "049184d5-853f-4f34-a703-23d9acb516cb",
-        "dc54a773-006a-4641-89f5-981816b289dd"
+        "83653018-a142-4148-b276-dc43a2fbf3b7",
+        "dc54a773-006a-4641-89f5-981816b289dd",
+        "d9d450bb-e90f-4429-829e-f81116f485cf",
+        "95a7aaba-2f03-43ac-9edc-d53ad4dcaf6d"
     ],
     "tutorial": ""
 }

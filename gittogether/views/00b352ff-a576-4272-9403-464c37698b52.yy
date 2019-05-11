@@ -1,3 +1,4 @@
+
 {
     "id": "00b352ff-a576-4272-9403-464c37698b52",
     "modelName": "GMFolder",
@@ -11,10 +12,9 @@
         "46fdab57-41bd-49fb-a828-b59633f23c84",
         "10387676-2dd0-4002-9957-3a12558593ef",
         "9dc6ae63-ce4a-47ae-8e03-b1d83e739357",
-        "a3aa330b-a1f1-4bee-ad67-bba101b0321b"
+        "c5f889a0-f0ec-4cfb-a17e-64989e57bb10"
     ],
     "filterType": "GMRoom",
     "folderName": "__ Minigame Rooms",
     "isDefaultView": false,
     "localisedFolderName": ""
-}

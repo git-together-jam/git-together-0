@@ -26,6 +26,11 @@ switch (type) {
 	break;
 	#endregion
 	
+	#region None
+	case TransType.none:
+		event_user(15);
+	break;
+	#endregion
 	default:
 	break;
 }
