@@ -19,6 +19,20 @@ if (dialogue_index < dialogue_count - 1) {
 	if (_dial[? "status"] == "self") draw_set_color($f18746);
 }
 
+var _len = 0;
+var _size = ds_list_size(text_list);
 draw_rect(0, room_height * .79, room_width, room_height, $100205, .6);
-draw_text_ext(text_padding, room_height * .8, text, text_height + 2, room_width);
+for (var i = 0; i < _size; i++) {
+	var _text = text_list[| i];
+	var _str  = _text[? "text"];
+	var _ilen = string_length(_str);
+	
+	if (_len + _ilen > text_length) {
+		_str = string_copy(_str, 0, text_length - _len);
+		_size = 0; // to break early, but after iteration
+	}
+	_len += _ilen;
+
+	draw_text(text_padding + _text[? "x"], room_height * .8 + _text[? "y"], _str);
+}
 draw_set_color($ffffff);
