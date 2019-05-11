@@ -11,7 +11,8 @@
         "46fdab57-41bd-49fb-a828-b59633f23c84",
         "10387676-2dd0-4002-9957-3a12558593ef",
         "9dc6ae63-ce4a-47ae-8e03-b1d83e739357",
-        "c5f889a0-f0ec-4cfb-a17e-64989e57bb10"
+        "c5f889a0-f0ec-4cfb-a17e-64989e57bb10",
+        "6bdd03b0-783f-4016-b0e6-731e542bdd6f"
     ],
     "filterType": "GMRoom",
     "folderName": "__ Minigame Rooms",
