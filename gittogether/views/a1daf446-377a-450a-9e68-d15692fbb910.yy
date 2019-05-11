@@ -4,7 +4,8 @@
     "mvc": "1.1",
     "name": "a1daf446-377a-450a-9e68-d15692fbb910",
     "children": [
-        "9aa16df7-8bc9-46cb-8e6b-1820ff421b22"
+        "9aa16df7-8bc9-46cb-8e6b-1820ff421b22",
+        "19150889-266f-4e32-98e7-769c1be31348"
     ],
     "filterType": "GMScript",
     "folderName": "__ Minigame Scripts",

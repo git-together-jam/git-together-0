@@ -22,3 +22,4 @@ arcade_game_add("Pong", spr_arcade_pong, rm_pong);
 arcade_game_add("Frogger", spr_arcade_frogger, rm_frogger);
 
 arcade_game_add("Wking", spr_arcade_wking, rm_wking_menu);
+
