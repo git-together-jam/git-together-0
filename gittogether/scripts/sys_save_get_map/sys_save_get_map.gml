@@ -13,7 +13,7 @@ if argument_count == 1 {
 
 var _map;
 
-
+// Check for Optional Argument
 if _arcade != "" {
 	_map = ds_map_find_value(global.SaveSystem,_arcade);
 } else _map = ds_map_find_value(global.SaveSystem,"Global");

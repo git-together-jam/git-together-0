@@ -1,2 +1,3 @@
-/// @description Free Save System
-_sys_save_destroy();
+/// @desc 
+
+ds_destroy(global.ArcadeMachineList, ds_type_list);

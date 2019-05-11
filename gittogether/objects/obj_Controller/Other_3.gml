@@ -7,3 +7,6 @@ sys_save_global_write("Tickets",global.Tickets);
 
 // Save to disk
 sys_save_disk_write();
+
+// Free Memory
+_sys_save_destroy();

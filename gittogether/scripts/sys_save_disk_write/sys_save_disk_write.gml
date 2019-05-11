@@ -15,7 +15,7 @@ buffer_seek(_buff,buffer_seek_start,0);
 buffer_write(_buff,buffer_text,_json);
 
 // Save it to disk
-buffer_save(_buff,SavePath);
+buffer_save(_buff,SAVE_PATH);
 
 // Free the buffer from RAM
 buffer_delete(_buff);
