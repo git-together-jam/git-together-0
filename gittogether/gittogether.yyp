@@ -95,6 +95,22 @@
             }
         },
         {
+            "Key": "0f5e363a-8c54-40a3-b7a4-e31a8d78ea17",
+            "Value": {
+                "id": "59253b1e-62e8-49c3-a261-fd2381eef86c",
+                "resourcePath": "views\\0f5e363a-8c54-40a3-b7a4-e31a8d78ea17.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "10387676-2dd0-4002-9957-3a12558593ef",
+            "Value": {
+                "id": "49c85488-5f2e-4868-a875-5cb5cdb45761",
+                "resourcePath": "views\\10387676-2dd0-4002-9957-3a12558593ef.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "10d5fbe8-5deb-494b-8550-709d857b1e70",
             "Value": {
                 "id": "1bd9574f-6ec9-4ee2-8cd9-46a9faf3cffc",
@@ -236,6 +252,14 @@
                 "id": "b1c3ea42-abee-4558-9c4d-5c896b78519a",
                 "resourcePath": "views\\3b7fa5c0-a82d-47a1-b7e7-95a3e47da326.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3caee409-a543-48c2-8156-87ed82317ad4",
+            "Value": {
+                "id": "6f855912-a38c-4f4d-b9b3-71c84e2de7e1",
+                "resourcePath": "rooms\\rm_BR_game\\rm_BR_game.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -852,6 +876,14 @@
                 "id": "37b7d51a-1d99-4c80-a9be-13950e7bab73",
                 "resourcePath": "sprites\\spr_as_Player\\spr_as_Player.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba9206bf-0da3-4924-b075-566bae5a14f4",
+            "Value": {
+                "id": "4cc065b7-39c1-40cd-a8fd-6451e21a465c",
+                "resourcePath": "views\\ba9206bf-0da3-4924-b075-566bae5a14f4.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
