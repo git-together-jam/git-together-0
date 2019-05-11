@@ -8,5 +8,5 @@ gml_pragma("global", "MACROS()");
 #macro CONTROLLER_DEADZONE 0.3
 
 // Save System Support
-#macro SaveFileName "game_save.json"
-#macro SavePath game_save_id + "\\" + SaveFileName
+#macro SAVE_FILE_NAME "game_save.json"
+#macro SAVE_PATH game_save_id + "\\" + SAVE_FILE_NAME
