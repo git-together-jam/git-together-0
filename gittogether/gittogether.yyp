@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "4339ebef-a3cd-42c2-aa3d-358e59245eb5",
+            "Value": {
+                "id": "d3fea072-5efa-452d-af62-01a894064639",
+                "resourcePath": "rooms\\rm_wking_menu\\rm_wking_menu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "4390655e-0d59-48b6-aa1d-10b66ca6546a",
             "Value": {
                 "id": "9eadc6be-be7f-4ba2-ba74-d956ed28dc26",
@@ -911,6 +919,14 @@
             }
         },
         {
+            "Key": "9dc6ae63-ce4a-47ae-8e03-b1d83e739357",
+            "Value": {
+                "id": "d90624af-dbee-47f2-a3c3-34d2de73eea4",
+                "resourcePath": "views\\9dc6ae63-ce4a-47ae-8e03-b1d83e739357.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a06ab4f6-d9e1-4f01-965f-281b4ff17195",
             "Value": {
                 "id": "72df55b4-132f-4f2f-a4b5-66709df4ad6d",
@@ -1092,6 +1108,14 @@
                 "id": "06846b0e-f592-4166-8c29-511a5c0c7849",
                 "resourcePath": "views\\b5a695aa-ecd8-4879-91ce-c0ba89e0231c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b708bf13-6679-4929-b127-aa007fa8cd7c",
+            "Value": {
+                "id": "c25d8166-4032-490e-b15d-bbb28c051d43",
+                "resourcePath": "sprites\\spr_arcade_wking\\spr_arcade_wking.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
