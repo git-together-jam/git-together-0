@@ -3,6 +3,7 @@
 /// @desc LOL
 #macro YosiBasics hsp,vsp,X,Y,length
 #macro YosiBlocksize 16
+#macro YosiHeightHalf 90
 enum YosiFunction
 	{
 	init,
@@ -72,38 +73,89 @@ if (argument[0] == YosiFunction.init)
 			[
 				//1
 				[
-				30,
+				60,
 					[
-					[YosiObType.zapper,room_width,40],
 					[YosiObType.zapper,room_width,room_height-40],
 					],
 				60,
 					[
 					[YosiObType.zapper,room_width,45],
-					[YosiObType.zapper,room_width,room_height-45],
 					],
 				30,
 					[
-					[YosiObType.zapper,room_width,50],
 					[YosiObType.zapper,room_width,room_height-50],
 					],
 				],
 				//2
 				[
-				30,
+				60,
 					[
 					[YosiObType.zapper,room_width,60],
-					[YosiObType.zapper,room_width,room_height-60],
+					[YosiObType.zapper,room_width,76],
 					],
 				50,
 					[
-					[YosiObType.zapper,room_width,80],
-					[YosiObType.zapper,room_width,room_height-80],
+					[YosiObType.zapper,room_width,120],
+					[YosiObType.zapper,room_width,136],
 					],
 				50,
 					[
-					[YosiObType.zapper,room_width,100],
-					[YosiObType.zapper,room_width,room_height-100],
+					[YosiObType.zapper,room_width,24],
+					[YosiObType.zapper,room_width,40],
+					],
+				],
+				//3
+				[
+				20,
+					[
+					[YosiObType.zapper,room_width,30],
+					[YosiObType.zapper,room_width,room_height-30],
+					],
+				20,
+					[
+					[YosiObType.zapper,room_width,30],
+					[YosiObType.zapper,room_width,room_height-30],
+					],
+				20,
+					[
+					[YosiObType.zapper,room_width,30],
+					[YosiObType.zapper,room_width,room_height-30],
+					],
+				20,
+					[
+					[YosiObType.zapper,room_width,30],
+					[YosiObType.zapper,room_width,room_height-30],
+					],
+				20,
+					[
+					[YosiObType.zapper,room_width,30],
+					[YosiObType.zapper,room_width,room_height-30],
+					],
+				20,
+					[
+					[YosiObType.zapper,room_width,30],
+					[YosiObType.zapper,room_width,room_height-30],
+					],
+				],
+				//4
+				[
+				70,
+					[
+					[YosiObType.zapper,room_width,room_height-20],
+					[YosiObType.zapper,room_width,room_height-45],
+					[YosiObType.zapper,room_width,room_height-70],
+					],
+				70,
+					[
+					[YosiObType.zapper,room_width,20],
+					[YosiObType.zapper,room_width,45],
+					[YosiObType.zapper,room_width,70],
+					],
+				70,
+					[
+					[YosiObType.zapper,room_width,YosiHeightHalf],
+					[YosiObType.zapper,room_width,YosiHeightHalf-25],
+					[YosiObType.zapper,room_width,YosiHeightHalf+25],
 					],
 				],
 			],
@@ -162,8 +214,8 @@ else if (argument[0] == YosiFunction.main)
 				break;
 			case YosiGameState.playing:
 				//Move the ground every frame
-				ceiling_y = 20 + sin(current_time / 1000)*10;
-				floor_y = room_height - 20 + cos(current_time / 1000)*10;
+				ceiling_y = 20 + sin(current_time / 1000)*5;
+				floor_y = room_height - 20 + cos(current_time / 1000)*5;
 				yosi_game(YosiFunction.move_ground);
 				//debug
 				if (mouse_check_button_pressed(mb_left)) {ds_list_add(obstacle_list,yosi_game(YosiFunction.new_zapper,mouse_x,mouse_y));}
