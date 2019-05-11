@@ -26,11 +26,10 @@ if (room == rm_Overworld) {
 			with (_machine) {
 				var _map = global.ArcadeMachineList[| (_i+_j)];
 				sprite_index = _map[? "sprite"];
-				type	 = _map[? "type"];
 				gameRoom = _map[? "room"];
 				name	 = _map[? "name"];
-				trans	 = TransType.screenFade;
-				transCol = c_black;
+				trans	 = _map[? "trans"];
+				transCol = _map[? "transCol"];
 			}
 		}
 	}
