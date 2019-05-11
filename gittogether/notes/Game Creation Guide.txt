@@ -30,23 +30,6 @@
 
 6. For your resources in-game, you need to create them under "__ Minigame ~Resource~ > ~Game-Name~" folder, following the naming convention.
 
-
-////////////////////////////////////////////////////////////////////////////////
---------------------- PUTTING YOUR GAME ARCADE MACHINE IN ---------------------
-///////////////////////////////////////////////////////////////////////////////
-
-1. Open up the room "rm_Overworld". 
-
-2. Drag an instance of "obj_ArcadeMachine" in the room. Double click to open up the properties. Open up the Variables tab.
-
-3. Set the "type" to your entry in the "Game" enum. Done!
-
-4. The default transition is set to "TransType.screenFade". If you want to have a different one, or to know more about the transitions,
-   see the note "Room Transition".
-   
-5. The default transition color is set to black. You can give it any color of your wish.
-
-
 ////////////////////////////////////////////////////////////////////////////////
 ------------------------------- ENDING THE GAME -------------------------------
 ///////////////////////////////////////////////////////////////////////////////
