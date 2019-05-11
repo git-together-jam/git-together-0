@@ -43,8 +43,3 @@ if (miniTitleAlpha > 0) {
 	// Reduce alpha
 	miniTitleAlpha -= 0.02;
 }
-
-shader_set(shd_retro);
-
-draw_surface_ext(application_surface,0,0,1/RES_S,1/RES_S,0,-1,1);
-shader_reset();
