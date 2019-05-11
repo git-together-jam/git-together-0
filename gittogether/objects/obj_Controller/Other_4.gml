@@ -10,7 +10,8 @@ view_set_camera(0, cam);
 // Create the arcade machines
 
 if (room == rm_Overworld) {
-	ds_list_shuffle(global.ArcadeMachineList);
+	
+	if (!machinesPlaced) ds_list_shuffle(global.ArcadeMachineList);
 	
 	var _xx, _yy;
 	for (var _i = 0; _i < ds_list_size(global.ArcadeMachineList)/maxMachinesPerRow; ++_i) {
@@ -33,6 +34,8 @@ if (room == rm_Overworld) {
 			}
 		}
 	}
+	
+	machinesPlaced = true;
 }
 
 
