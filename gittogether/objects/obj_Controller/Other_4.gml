@@ -14,17 +14,20 @@ if (room == rm_Overworld) {
 	if (!machinesPlaced) ds_list_shuffle(global.ArcadeMachineList);
 	
 	var _xx, _yy;
-	for (var _i = 0; _i < ds_list_size(global.ArcadeMachineList) div maxMachinesPerRow; ++_i) {
+
+	var _max = ds_list_size(global.ArcadeMachineList) div maxMachinesPerRow;
+	for (var _i = 0; _i < _max; ++_i) {
 		for (var _j = 0; _j < maxMachinesPerRow; ++_j) {
 			
-			if (is_undefined(global.ArcadeMachineList[| (_i+_j)])) break;
+			var _arcade = global.ArcadeMachineList[| (_i + _j)]
+			if (_arcade == undefined) break;
 			
-			_xx = 100 + 64*_j;
-			_yy = 140 + 96*_i;
+			_xx = 100 + 64 * _j;
+			_yy = 140 + 96 * _i;
 			
 			var _machine = instance_create_layer(_xx, _yy, "Instances", obj_ArcadeMachine);
 			with (_machine) {
-				var _map = global.ArcadeMachineList[| (_i+_j)];
+				var _map = _arcade;
 				sprite_index = _map[? "sprite"];
 				gameRoom = _map[? "room"];
 				name	 = _map[? "name"];
