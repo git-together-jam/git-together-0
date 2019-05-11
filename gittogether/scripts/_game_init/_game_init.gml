@@ -7,7 +7,8 @@ enum Game {
 	dungandrompa,
 	asteroids,
 	pong,
-	frogger
+	frogger,
+	yosi,
 }
 
 // Make sure to add your game here
@@ -20,3 +21,4 @@ arcade_game_add(Game.dungandrompa, "Dungandrompa", spr_arcade_dungandompa, rm_du
 arcade_game_add(Game.asteroids, "Asteroids", spr_arcade_asteroids, rm_Asteroids);
 arcade_game_add(Game.pong, "Pong", spr_arcade_pong, rm_pong);
 arcade_game_add(Game.frogger, "Frogger", spr_arcade_frogger, rm_frogger);
+arcade_game_add(Game.yosi, "Yosi", spr_arcade_yosi, rm_yosi);

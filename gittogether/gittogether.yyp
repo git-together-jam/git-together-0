@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "58ae8376-a732-4b06-9c9c-532c29b6baf4",
+            "Value": {
+                "id": "6df40415-28a7-451a-acf7-68eb5aac1243",
+                "resourcePath": "views\\58ae8376-a732-4b06-9c9c-532c29b6baf4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "59b93331-1929-4808-9b69-a5bf8340f981",
             "Value": {
                 "id": "90baff3a-5e4e-40a9-97ed-7f1c9c2ad1ec",
@@ -540,6 +548,14 @@
                 "id": "58169b46-6d19-42f0-8253-f11fd8e4125d",
                 "resourcePath": "views\\76aca91a-3269-4b82-aa42-024245baa81e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7abe39fc-12f4-4146-8014-4e596709da55",
+            "Value": {
+                "id": "e6b8fa69-2d1a-45fd-9aef-3bea098fffb6",
+                "resourcePath": "sprites\\spr_arcade_yosi\\spr_arcade_yosi.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -748,6 +764,14 @@
                 "id": "0044d9f7-58e7-4b63-bacf-8dd7aceb4758",
                 "resourcePath": "notes\\Naming Conventions.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "aa17a1eb-1413-482f-b546-3406bb2328f6",
+            "Value": {
+                "id": "972d9840-1620-4ebf-8112-0bf772859d47",
+                "resourcePath": "rooms\\rm_yosi\\rm_yosi.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
