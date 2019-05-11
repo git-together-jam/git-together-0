@@ -10,9 +10,11 @@ enum YosiFunction
 	main,
 	new_player,
 	new_zapper,
+	new_laser,
 	move_ground,
 	rect,
-	blueprint_read
+	blueprint_read,
+	player_die,
 	}
 enum YosiGameState
 	{
@@ -35,13 +37,10 @@ enum YosiObType
 	{
 	zapper,
 	laser,
-	missiles,
-	spikes,
-	flood
 	}
 enum YosiZapper
 	{
-	type,scale,angle,YosiBasics
+	type,scale,YosiBasics
 	}
 enum YosiLaser
 	{
@@ -160,9 +159,57 @@ if (argument[0] == YosiFunction.init)
 				],
 			],
 			//Lasers
-			//Missiles
-			//Flood
-			//Spikes
+			[
+				//1
+				[
+				60,
+					[
+					[YosiObType.laser,room_width+50,YosiHeightHalf,0],
+					],
+				240,
+				],
+				//2
+				[
+				90,
+					[
+					[YosiObType.laser,room_width+50,40,0],
+					[YosiObType.laser,room_width+50,room_height-40,0],
+					],
+				240,
+				],
+				//3
+				[
+				90,
+					[
+					[YosiObType.laser,room_width+50,20,0],
+					[YosiObType.laser,room_width+50,50,0],
+					[YosiObType.laser,room_width+50,room_height-20,0],
+					[YosiObType.laser,room_width+50,room_height-50,0],
+					],
+				110,
+					[
+					[YosiObType.laser,room_width+50,YosiHeightHalf-18,0],
+					[YosiObType.laser,room_width+50,YosiHeightHalf+18,0],
+					],
+				240,
+				],
+				//4
+				[
+				60,
+					[
+					[YosiObType.laser,room_width+50,YosiHeightHalf,-1],
+					],
+				240,
+				],
+				//5
+				[
+				60,
+					[
+					[YosiObType.laser,room_width+50,YosiHeightHalf,1],
+					],
+				240,
+				],
+			],
 		];
 	section = 0;
 	sub = 0;
@@ -218,11 +265,11 @@ else if (argument[0] == YosiFunction.main)
 				floor_y = room_height - 20 + cos(current_time / 1000)*5;
 				yosi_game(YosiFunction.move_ground);
 				//debug
-				if (mouse_check_button_pressed(mb_left)) {ds_list_add(obstacle_list,yosi_game(YosiFunction.new_zapper,mouse_x,mouse_y));}
+				if (mouse_check_button_pressed(mb_left)) {ds_list_add(obstacle_list,yosi_game(YosiFunction.new_laser,mouse_x,mouse_y,0));}
 				//Create new obstacles from blueprint
 				if (yosi_game(YosiFunction.blueprint_read))
 					{
-					section = 0; //Zappers
+					section = distance > 1500 ? choose(0,1) : 0; //Choose obstacle type
 					sub = irandom(array_length_1d(blueprints[section])-1);
 					phase = 0;
 					var _temp = blueprints[section];
@@ -239,7 +286,7 @@ else if (argument[0] == YosiFunction.main)
 							_ob[@YosiZapper.X] += _ob[YosiZapper.hsp];
 							_ob[@YosiZapper.Y] += _ob[YosiZapper.vsp];
 							//Render
-							yosi_game(YosiFunction.rect,_ob[@YosiZapper.X],_ob[@YosiZapper.Y],YosiBlocksize,YosiBlocksize,true);
+							yosi_game(YosiFunction.rect,_ob[YosiZapper.X],_ob[YosiZapper.Y],YosiBlocksize,YosiBlocksize,true);
 							//Out of room
 							if (_ob[@YosiZapper.X] < -YosiBlocksize) obstacle_list[|i] = noone;
 							//Collision with player
@@ -256,10 +303,77 @@ else if (argument[0] == YosiFunction.main)
 								_ob[@YosiZapper.Y] + YosiBlocksize
 								))
 								{
-								//Player dies
-								player[@YosiPlayer.state] = YosiPlayerState.dead;
-								player[@YosiPlayer.vsp] = -15;
-								screen_flash = 2;
+								yosi_game(YosiFunction.player_die);
+								}
+							break;
+						case YosiObType.laser:
+							switch(_ob[YosiLaser.state])	
+								{
+								case 0:
+									if (_ob[YosiLaser.X] < room_width - 30)
+										{
+										_ob[@YosiLaser.hsp] = 0;
+										_ob[@YosiLaser.timer] += 1;
+										if (_ob[YosiLaser.timer] > 120)
+											{
+											_ob[@YosiLaser.state] = 1;
+											_ob[@YosiLaser.timer] = 0;
+											break;
+											}
+										}
+									else
+										{
+										//Move in
+										_ob[@YosiLaser.hsp] = -1;
+										}
+									break;
+								case 1:
+									//No movement
+									_ob[@YosiLaser.hsp] = 0;
+									//Count timer until laser is done
+									_ob[@YosiLaser.timer] += 1;
+									if (_ob[YosiLaser.timer] > 60)
+										{
+										_ob[@YosiLaser.state] = 2;
+										break;
+										}
+									break;
+								case 2:
+									//Move out
+									_ob[@YosiLaser.hsp] = 3;
+									//Out of room
+									if (_ob[@YosiLaser.X] > room_width) obstacle_list[|i] = noone;
+									break;
+								}
+							//Movement
+							_ob[@YosiLaser.X] += _ob[YosiLaser.hsp];
+							_ob[@YosiLaser.Y] += _ob[YosiLaser.vsp];
+							//Bounce off sides
+							if (_ob[YosiLaser.Y] > room_height-YosiBlocksize && _ob[YosiLaser.vsp] > 0)
+								_ob[@YosiLaser.vsp] *= -1;
+							if (_ob[YosiLaser.Y] < 0 && _ob[YosiLaser.vsp] < 0)
+								_ob[@YosiLaser.vsp] *= -1;
+							//Render
+							yosi_game(YosiFunction.rect,_ob[YosiLaser.X],_ob[YosiLaser.Y],YosiBlocksize,YosiBlocksize,true);
+							if (_ob[YosiLaser.state] == 1)
+								{
+								yosi_game(YosiFunction.rect,0,_ob[YosiLaser.Y],_ob[YosiLaser.X],YosiBlocksize);
+								}
+							//Collision with player
+							if (_ob[YosiLaser.state] == 1 && player[YosiPlayer.state] == YosiPlayerState.playing && 
+								rectangle_in_rectangle
+								(
+								player[@YosiPlayer.X],
+								player[@YosiPlayer.Y],
+								player[@YosiPlayer.X] + YosiBlocksize,
+								player[@YosiPlayer.Y] + YosiBlocksize,
+								0,
+								_ob[@YosiLaser.Y],
+								_ob[@YosiLaser.X],
+								_ob[@YosiLaser.Y] + YosiBlocksize
+								))
+								{
+								yosi_game(YosiFunction.player_die);
 								}
 							break;
 						}
@@ -366,7 +480,16 @@ else
 			_new[YosiZapper.Y] = argument[2];
 			_new[YosiZapper.hsp] = -2;
 			_new[YosiZapper.vsp] = 0;
-			_new[YosiZapper.angle] = irandom(360);
+			return _new;
+			break;
+		case YosiFunction.new_laser:
+			var _new = array_create(YosiLaser.length);
+			_new[YosiLaser.type] = YosiObType.laser;
+			_new[YosiLaser.X] = argument[1];
+			_new[YosiLaser.Y] = argument[2];
+			_new[YosiLaser.hsp] = -2;
+			_new[YosiLaser.vsp] = argument[3];
+			_new[YosiLaser.state] = 0;
 			return _new;
 			break;
 		case YosiFunction.move_ground:
@@ -404,6 +527,9 @@ else
 						case YosiObType.zapper:
 							ds_list_add(obstacle_list,yosi_game(YosiFunction.new_zapper,_ob[1],_ob[2]));
 							break;
+						case YosiObType.laser:
+							ds_list_add(obstacle_list,yosi_game(YosiFunction.new_laser,_ob[1],_ob[2],_ob[3]));
+							break;
 						default: break;
 						}
 					}
@@ -422,9 +548,20 @@ else
 				if (frame <= 0)
 					{
 					phase++;
+					if (phase >= array_length_1d(_sub))
+						{
+						return true;
+						}
 					}
 				}
 			return false;
+			break;
+		case YosiFunction.player_die:
+			//Player dies
+			player[@YosiPlayer.state] = YosiPlayerState.dead;
+			player[@YosiPlayer.vsp] = -15;
+			screen_flash = 2;
+			return;
 			break;
 		default: show_debug_message("Function not found"); break;
 		}
