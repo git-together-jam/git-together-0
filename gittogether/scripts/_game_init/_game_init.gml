@@ -12,7 +12,8 @@ enum Game {
 	breakout,
 	pong,
 	frogger,
-	wking
+	wking,
+	adventure
 }
 
 // Make sure to add your game here
@@ -27,3 +28,4 @@ arcade_game_add(Game.breakout, "Breakout", spr_arcade_breakout, rm_BR_game);
 arcade_game_add(Game.pong, "Pong", spr_arcade_pong, rm_pong);
 arcade_game_add(Game.frogger, "Frogger", spr_arcade_frogger, rm_frogger);
 arcade_game_add(Game.wking, "Wking", spr_arcade_wking, rm_wking_menu);
+arcade_game_add(Game.adventure, "Adventure", spr_arcade_pong, rm_ad_start);
