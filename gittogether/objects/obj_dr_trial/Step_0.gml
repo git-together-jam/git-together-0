@@ -26,17 +26,21 @@ if (mouse_check_button_pressed(mb_left) || global.iSelect) {
 
 if (dialogue_index < dialogue_count - 1) {
 	var _dial = dialogue[| dialogue_index];
-	var _char = characters[? _dial[? "name"]];
-	var _target = _char[? "seat"];
+	var _name = _dial[? "name"];
+	if (_name != undefined) {
+		log("_dial: ", json_encode(_dial));	
+		var _char = characters[? _name];
+		var _target = _char[? "seat"];
 	
-	if (_target - seat_offset > seat_count / 2) { // go left
-		seat_offset = lerp(seat_offset, seat_offset - _target, .12);
+		if (_target - seat_offset > seat_count / 2) { // go left
+			seat_offset = lerp(seat_offset, seat_offset - _target, .12);
 		
-	} else if (_target - seat_offset < -seat_count / 2) { // go left
-		seat_offset = lerp(seat_offset, seat_offset - _target, .12);
+		} else if (_target - seat_offset < -seat_count / 2) { // go left
+			seat_offset = lerp(seat_offset, seat_offset - _target, .12);
 		
-	} else seat_offset = lerp(seat_offset, _target, .12);
+		} else seat_offset = lerp(seat_offset, _target, .12);
 	
-	if (seat_offset < 0) seat_offset = seat_count;
-	if (seat_offset > seat_count) seat_offset = 0;
+		if (seat_offset < 0) seat_offset = seat_count;
+		if (seat_offset > seat_count) seat_offset = 0;
+	}
 }
