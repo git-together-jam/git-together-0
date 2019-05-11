@@ -2,6 +2,7 @@
 /// @arg parameters...
 /// @desc LOL
 #macro YosiBasics hsp,vsp,X,Y,length
+#macro YosiBlocksize 16
 enum YosiFunction
 	{
 	init,
@@ -48,7 +49,7 @@ if (argument[0] == YosiFunction.init)
 	{
 	surf = surface_create(room_width,room_height);
 	game_state = YosiGameState.title;
-	player_staet = YosiPlayerState.cutscene;
+	player = yosi_game(YosiFunction.new_player,40,room_height div 2);
 	obstacle_list = ds_list_create();
 	ceiling_y = 20;
 	ceiling_list = ds_list_create();
@@ -60,6 +61,7 @@ if (argument[0] == YosiFunction.init)
 		ds_list_add(floor_list,floor_y);
 		}
 	draw_set_font(fnt_pixel);
+	draw_set_color(c_white);
 	}
 //Main Loop
 else if (argument[0] == YosiFunction.main)
@@ -77,15 +79,15 @@ else if (argument[0] == YosiFunction.main)
 		draw_primitive_begin(pr_trianglestrip);
 		for(var i=0;i<ds_list_size(ceiling_list);i++)
 			{
-			draw_vertex_color(i*2,ceiling_list[|i],c_dkgray,1);
-			draw_vertex_color(i*2,0,c_black,1);
+			draw_vertex_color(i*2,ceiling_list[|i],c_white,1);
+			draw_vertex_color(i*2,0,c_white,1);
 			}
 		draw_primitive_end();
 		draw_primitive_begin(pr_trianglestrip);
 		for(var i=0;i<ds_list_size(floor_list);i++)
 			{
-			draw_vertex_color(i*2,floor_list[|i],c_dkgray,1);
-			draw_vertex_color(i*2,room_height,c_black,1);
+			draw_vertex_color(i*2,floor_list[|i],c_white,1);
+			draw_vertex_color(i*2,room_height,c_white,1);
 			}
 		draw_primitive_end();
 		//Game State
@@ -93,7 +95,7 @@ else if (argument[0] == YosiFunction.main)
 			{
 			case YosiGameState.title:
 				draw_text_center(room_width/2,room_height/2,"PRESS SPACE",1,1,0,c_white,abs(round(sin(current_time/300))));
-				if (keyboard_check_pressed(vk_space)) game_state = YosiGameState.playing;
+				if (global.iSelect) game_state = YosiGameState.playing;
 				break;
 			case YosiGameState.playing:
 				//Move the ground every frame
@@ -112,12 +114,35 @@ else if (argument[0] == YosiFunction.main)
 							_ob[@YosiZapper.X] += _ob[YosiZapper.hsp];
 							_ob[@YosiZapper.Y] += _ob[YosiZapper.vsp];
 							//Render
-							draw_rectangle(_ob[@YosiZapper.X],_ob[@YosiZapper.Y],_ob[@YosiZapper.X] + 32,_ob[@YosiZapper.Y] + 32,true);
+							draw_rectangle
+								(
+								_ob[@YosiZapper.X],
+								_ob[@YosiZapper.Y],
+								_ob[@YosiZapper.X] + YosiBlocksize,
+								_ob[@YosiZapper.Y] + YosiBlocksize,
+								true
+								);
 							//Out of room
 							if (_ob[@YosiZapper.X] < 0) obstacle_list[|i] = noone;
 							break;
 						}
 					}
+				//Player
+				switch(player[@YosiPlayer.state])
+					{
+					case YosiPlayerState.cutscene:
+						
+						break;
+					}
+				//Draw player
+				draw_rectangle
+					(
+					player[@YosiPlayer.X],
+					player[@YosiPlayer.Y],
+					player[@YosiPlayer.X] + YosiBlocksize,
+					player[@YosiPlayer.Y] + YosiBlocksize,
+					false
+					);
 				break;
 			}
 		surface_reset_target();
@@ -135,16 +160,20 @@ else if (argument[0] == YosiFunction.main)
 			} 
 		i++
 		}
-	//*/
 	}
 else
 	{
-	//Functions
+	//Functions / Constructors
 	switch(argument[0])
 		{
 		case YosiFunction.new_player:
-			//var _new = array_create(YosiPlayer.length);
-			return;
+			var _new = array_create(YosiPlayer.length);
+			_new[YosiPlayer.state] = YosiPlayerState.cutscene;
+			_new[YosiPlayer.X] = argument[1];
+			_new[YosiPlayer.Y] = argument[2];
+			_new[YosiPlayer.hsp] = 0;
+			_new[YosiPlayer.vsp] = 0;
+			return _new;
 			break;
 		case YosiFunction.new_zapper:
 			var _new = array_create(YosiZapper.length);
