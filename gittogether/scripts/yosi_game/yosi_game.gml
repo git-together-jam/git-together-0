@@ -215,6 +215,22 @@ else if (argument[0] == YosiFunction.main)
 					false
 					);
 				break;
+			case YosiGameState.lose:
+				//Draw player
+				draw_rectangle
+					(
+					player[@YosiPlayer.X],
+					player[@YosiPlayer.Y],
+					player[@YosiPlayer.X] + YosiBlocksize,
+					player[@YosiPlayer.Y] + YosiBlocksize,
+					false
+					);
+				//Screen Fade
+				screen_flash = 0.7;
+				//Results
+				draw_text_center(room_width/2,64,"YOU LOSE",1,1,0,c_black,1);
+				draw_text_center(room_width/2,96,"Score: 100",0.5,0.5,0,c_black,1);
+				break;
 			}
 		surface_reset_target();
 		//Draw the surface
