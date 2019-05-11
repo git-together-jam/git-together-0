@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "47b6b9b6-a022-412e-83d8-b31c8df1ccdb",
+            "Value": {
+                "id": "fd952d5c-a561-4fa3-a28c-d858b01f115f",
+                "resourcePath": "views\\47b6b9b6-a022-412e-83d8-b31c8df1ccdb.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "481d1d60-541b-405a-a848-f2b94c6bef41",
             "Value": {
                 "id": "520343d7-d7f5-49ae-af39-6537a900d228",
@@ -1868,6 +1876,14 @@
                 "id": "86449cbe-6bd1-47db-be8e-e1d31a7fde60",
                 "resourcePath": "datafiles_yy\\dungandrompa_dialogue.txt.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "fe040975-222f-41fa-b78b-7d7e1e259bd4",
+            "Value": {
+                "id": "2393f7f8-bca6-48c1-accf-d7a99f0337aa",
+                "resourcePath": "notes\\Arcade Machine Functions.yy",
+                "resourceType": "GMNotes"
             }
         },
         {

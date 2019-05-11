@@ -1,34 +1,39 @@
 ////////////////////////////////////////////////////////////////////////////////
------------------------------- CREATING MINIGAME ------------------------------
+--------------------------- CREATING BASIC MINIGAME ---------------------------
 ///////////////////////////////////////////////////////////////////////////////
 
 1. Open the script "_game_init".
 
-2. Add a new entry to the "Game" enum.
-
-3. Call the function "arcade_game_add()" to add your game. Required Arguments are as follows.
+2. Call the function "arcade_game_add()" to add your game. Required Arguments are as follows.
 	
-	a. Type : Entry of your game in the "Game" enum.
-	   Example : Game.myGameName
-	
-	b. Name : Name for your game - String.
+	a. Name : Name for your game - String.
 	   Example : "My Game Name"
 	
-	c. Sprite : A sprite for your arcade machine. (See point 4)
+	b. Sprite : A sprite for your arcade machine. (See "CREATING THE RESOURCES")
 	   Example : (See under "Sprites > Arcade Machines" folder)
 	
-	d. Room : The room in which your game should be played. (See point 5)
+	c. Room : The room in which your game should be played. (See "CREATING THE RESOURCES")
 	   Example : (See under "Rooms > __ Minigame Rooms" folder)
+		
+3. There, you have a basic system ready. But, it only has the default boring properties.
+   - Transition : TransType.none
+   - Transition Color : c_black
+   - Save system enabled? : false
+   
+   To change the default properties and add more effects on your arcade machines, see the note "Arcade Machine Functions".
+   
+
+////////////////////////////////////////////////////////////////////////////////
+---------------------------- CREATING THE RESOURCES ---------------------------
+///////////////////////////////////////////////////////////////////////////////
 	   
-	e. Use Save System: Optional. This determines whether or not to add a database to the Save System, using the Name of your game.
-		Example: (See Under "Notes" > Save System)
-	   
-4. You need to create a sprite for your arcade machine. It should be under "Sprites > Arcade Machines" folder, following the naming convention.
+1. You need to create a sprite for your arcade machine. It should be under "Sprites > Arcade Machines" folder, following the naming convention.
    [Take "spr_arcade_machine" as the base template, located under "Sprites > Overworld Assets".]
 
-5. You need to create room(s) for your game. They should be under "Rooms > __ Minigame Rooms > ~Game-Name~" folder, following the naming convention.
+2. You need to create room(s) for your game. They should be under "Rooms > __ Minigame Rooms > ~Game-Name~" folder, following the naming convention.
 
-6. For your resources in-game, you need to create them under "__ Minigame ~Resource~ > ~Game-Name~" folder, following the naming convention.
+3. For your resources in-game, you need to create them under "__ Minigame ~Resource~ > ~Game-Name~" folder, following the naming convention.
+
 
 ////////////////////////////////////////////////////////////////////////////////
 ------------------------------- ENDING THE GAME -------------------------------

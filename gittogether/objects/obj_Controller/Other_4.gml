@@ -14,6 +14,7 @@ if (room == rm_Overworld) {
 	if (!machinesPlaced) ds_list_shuffle(global.ArcadeMachineList);
 	
 	var _xx, _yy;
+
 	var _max = ds_list_size(global.ArcadeMachineList) div maxMachinesPerRow;
 	for (var _i = 0; _i < _max; ++_i) {
 		for (var _j = 0; _j < maxMachinesPerRow; ++_j) {
