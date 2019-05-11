@@ -11,6 +11,8 @@ var name = argument[1];
 var trans = argument[2];
 var transCol = argument[3];
 
+instance_destroy(obj_Transition);
+
 // Start
 room_goto_transition(rm,trans,transCol);
 
