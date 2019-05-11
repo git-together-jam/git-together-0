@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "19150889-266f-4e32-98e7-769c1be31348",
+            "Value": {
+                "id": "81295770-2ffe-4a97-a850-88c782927f20",
+                "resourcePath": "views\\19150889-266f-4e32-98e7-769c1be31348.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1a095e74-9bdc-459d-be08-a4f9e6bc0af8",
             "Value": {
                 "id": "ccb30df2-7203-4c7c-9906-d50a8ce8a8e4",
@@ -564,6 +572,14 @@
                 "id": "f3780ecb-f136-4409-9bf2-fda7952aed7c",
                 "resourcePath": "sprites\\spr_GUICoin\\spr_GUICoin.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8b1b806f-d389-4d4c-82f9-0213c5f024eb",
+            "Value": {
+                "id": "a3285df1-3d63-4c1c-81b3-1232ee77bea8",
+                "resourcePath": "scripts\\yosi_game\\yosi_game.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1319,6 +1335,7 @@
         "3b2a4cb6-765f-496c-99c6-3a88c1dc00eb",
         "409e849a-61f2-42b8-8882-6a5b4dce65a7",
         "049184d5-853f-4f34-a703-23d9acb516cb",
+        "8b1b806f-d389-4d4c-82f9-0213c5f024eb",
         "dc54a773-006a-4641-89f5-981816b289dd"
     ],
     "tutorial": ""
