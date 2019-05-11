@@ -23,3 +23,4 @@ arcade_game_add("Frogger", spr_arcade_frogger, rm_frogger);
 
 arcade_game_add("Wking", spr_arcade_wking, rm_wking_menu);
 
+arcade_game_add("Yosi", spr_arcade_machine, rm_yosi);
