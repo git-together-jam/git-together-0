@@ -1,8 +1,7 @@
 OBJECTS GUIDE
 
-1. oController is a persistent background manager that keeps running
+1. oController is a persistent background manager that keeps running.
 	
-oPlayerOverworld is the player object that SHOULD ONLY EXIST IN THE OVERWORLD ROOM
-	Your minigames should have separate player objects
+2. oPlayerOverworld is the player object that SHOULD ONLY EXIST IN THE OVERWORLD ROOM.
 	
-obj_ArcadeMachine should parent all arcade machine objects
+3. obj_ArcadeMachine should parent all arcade machine objects.
