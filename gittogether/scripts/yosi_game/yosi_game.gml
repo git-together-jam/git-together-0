@@ -10,6 +10,7 @@ enum YosiFunction
 	new_player,
 	new_zapper,
 	move_ground,
+	rect,
 	}
 enum YosiGameState
 	{
@@ -62,6 +63,54 @@ if (argument[0] == YosiFunction.init)
 		ds_list_add(ceiling_list,ceiling_y);
 		ds_list_add(floor_list,floor_y);
 		}
+	//Prefabs for obstacle design
+	//Frame number, then LW object blueprint
+	blueprints = 
+		[
+			//Zappers
+			[
+				//1
+				[
+				30,
+					[
+					[YosiObType.zapper,room_width,60],
+					[YosiObType.zapper,room_width,room_height-60],
+					],
+				30,
+					[
+					[YosiObType.zapper,room_width,70],
+					[YosiObType.zapper,room_width,room_height-70],
+					],
+				30,
+					[
+					[YosiObType.zapper,room_width,80],
+					[YosiObType.zapper,room_width,room_height-80],
+					],
+				],
+				//2
+				[
+				50,
+					[
+					[YosiObType.zapper,room_width,60],
+					[YosiObType.zapper,room_width,room_height-60],
+					],
+				50,
+					[
+					[YosiObType.zapper,room_width,80],
+					[YosiObType.zapper,room_width,room_height-80],
+					],
+				50,
+					[
+					[YosiObType.zapper,room_width,100],
+					[YosiObType.zapper,room_width,room_height-100],
+					],
+				],
+			],
+			//Lasers
+			//Missiles
+			//Flood
+			//Spikes
+		];
 	draw_set_font(fnt_pixel);
 	draw_set_color(c_white);
 	}
@@ -123,14 +172,7 @@ else if (argument[0] == YosiFunction.main)
 							_ob[@YosiZapper.X] += _ob[YosiZapper.hsp];
 							_ob[@YosiZapper.Y] += _ob[YosiZapper.vsp];
 							//Render
-							draw_rectangle
-								(
-								_ob[@YosiZapper.X],
-								_ob[@YosiZapper.Y],
-								_ob[@YosiZapper.X] + YosiBlocksize,
-								_ob[@YosiZapper.Y] + YosiBlocksize,
-								true
-								);
+							yosi_game(YosiFunction.rect,_ob[@YosiZapper.X],_ob[@YosiZapper.Y],YosiBlocksize,YosiBlocksize,true);
 							//Out of room
 							if (_ob[@YosiZapper.X] < -YosiBlocksize) obstacle_list[|i] = noone;
 							//Collision with player
@@ -208,28 +250,14 @@ else if (argument[0] == YosiFunction.main)
 						break;
 					}
 				//Draw player
-				draw_rectangle
-					(
-					player[@YosiPlayer.X],
-					player[@YosiPlayer.Y],
-					player[@YosiPlayer.X] + YosiBlocksize,
-					player[@YosiPlayer.Y] + YosiBlocksize,
-					false
-					);
+				yosi_game(YosiFunction.rect,player[@YosiPlayer.X],player[@YosiPlayer.Y],YosiBlocksize,YosiBlocksize);
 				//Draw score
 				draw_rectangle_color(0,1,40,17,c_black,c_black,c_black,c_black,false);
 				draw_text_transformed(5,5,string(distance),0.5,0.5,0);
 				break;
 			case YosiGameState.lose:
 				//Draw player
-				draw_rectangle
-					(
-					player[@YosiPlayer.X],
-					player[@YosiPlayer.Y],
-					player[@YosiPlayer.X] + YosiBlocksize,
-					player[@YosiPlayer.Y] + YosiBlocksize,
-					false
-					);
+				yosi_game(YosiFunction.rect,player[@YosiPlayer.X],player[@YosiPlayer.Y],YosiBlocksize,YosiBlocksize);
 				//Screen Fade
 				screen_flash = 0.7;
 				//Results
@@ -283,6 +311,17 @@ else
 			ds_list_delete(floor_list,0);
 			ds_list_add(ceiling_list,ceiling_y);
 			ds_list_add(floor_list,floor_y);
+			return;
+			break;
+		case YosiFunction.rect:
+			draw_rectangle
+				(
+				argument[1],
+				argument[2],
+				argument[1] + argument[3],
+				argument[2] + argument[4],
+				argument_count > 5 ? argument[5] : false
+				);
 			return;
 			break;
 		}
