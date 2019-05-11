@@ -434,7 +434,7 @@ else if (argument[0] == YosiFunction.main)
 				yosi_game(YosiFunction.rect,player[@YosiPlayer.X],player[@YosiPlayer.Y],YosiBlocksize,YosiBlocksize);
 				//Draw score
 				draw_rectangle_color(0,1,40,17,c_black,c_black,c_black,c_black,false);
-				draw_text_transformed(5,5,string(distance),0.5,0.5,0);
+				draw_text_transformed(3,5,string(distance),0.5,0.5,0);
 				break;
 			case YosiGameState.lose:
 				draw_clear(c_black);
