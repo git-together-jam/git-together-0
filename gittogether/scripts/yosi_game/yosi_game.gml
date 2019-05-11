@@ -49,6 +49,7 @@ if (argument[0] == YosiFunction.init)
 	{
 	surf = surface_create(room_width,room_height);
 	game_state = YosiGameState.title;
+	screen_flash = 0;
 	player = yosi_game(YosiFunction.new_player,40,room_height div 2);
 	obstacle_list = ds_list_create();
 	ceiling_y = 20;
@@ -75,6 +76,9 @@ else if (argument[0] == YosiFunction.main)
 		{
 		surface_set_target(surf);
 		draw_clear_alpha(c_black,1);
+		//Screen flash
+		screen_flash = lerp(screen_flash,0,0.1);
+		if (screen_flash > 0.1) draw_clear(merge_color(c_black,c_white,min(screen_flash,1)));
 		//Floor & ceiling
 		draw_primitive_begin(pr_trianglestrip);
 		for(var i=0;i<ds_list_size(ceiling_list);i++)
@@ -142,7 +146,10 @@ else if (argument[0] == YosiFunction.main)
 								_ob[@YosiZapper.Y] + YosiBlocksize
 								))
 								{
+								//Player dies
 								player[@YosiPlayer.state] = YosiPlayerState.dead;
+								player[@YosiPlayer.vsp] = -15;
+								screen_flash = 2;
 								}
 							break;
 						}
@@ -157,10 +164,19 @@ else if (argument[0] == YosiFunction.main)
 						player[@YosiPlayer.vsp] += 0.15;
 						player[@YosiPlayer.Y] += round(player[YosiPlayer.vsp]);
 						var _x_ref = (player[YosiPlayer.X] + YosiBlocksize) div 2;
+						if (player[YosiPlayer.Y] < ceiling_list[|_x_ref])
+							{
+							player[@YosiPlayer.Y] = ceiling_list[|_x_ref];
+							if (player[YosiPlayer.vsp] < 0) player[@YosiPlayer.vsp] *= -1;
+							}
 						if (player[YosiPlayer.Y] > floor_list[|_x_ref] - YosiBlocksize)
 							{
 							player[@YosiPlayer.Y] = floor_list[|_x_ref] - YosiBlocksize;
-							player[@YosiPlayer.vsp] = min(player[YosiPlayer.vsp],0);
+							if (player[YosiPlayer.vsp] > 0) player[@YosiPlayer.vsp] *= -0.6;
+							if (abs(player[YosiPlayer.vsp]) < 1)
+								{
+								game_state = YosiGameState.lose;
+								}
 							}
 						break;
 					case YosiPlayerState.playing:
