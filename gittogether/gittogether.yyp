@@ -727,6 +727,14 @@
             }
         },
         {
+            "Key": "e54dcb5e-ae29-4e92-9721-92c66de12088",
+            "Value": {
+                "id": "403d800b-5381-4f1c-affc-e930cd0c6463",
+                "resourcePath": "rooms\\rm_CM_Main1\\rm_CM_Main1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "ebd76277-edad-48b9-9c82-f09889d0980a",
             "Value": {
                 "id": "fd2a3ee5-a785-4dd0-93e7-4e0db172395d",
@@ -812,6 +820,14 @@
                 "id": "7585f953-195c-446e-a9cd-30c65ae928fb",
                 "resourcePath": "notes\\Room Transition.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "f9d40498-22f6-4473-94af-7b0b03e5a295",
+            "Value": {
+                "id": "8d42c101-ee5a-4097-abc6-e3e8cc1da683",
+                "resourcePath": "objects\\obj_Arcade_ClawMachine\\obj_Arcade_ClawMachine.yy",
+                "resourceType": "GMObject"
             }
         },
         {
