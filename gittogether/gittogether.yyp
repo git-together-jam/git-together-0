@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "1bb78aaf-774c-48d2-9b6f-0bfa7c3118a8",
+            "Value": {
+                "id": "63be76d9-d7b9-4f97-84b9-05e44ea2737a",
+                "resourcePath": "views\\1bb78aaf-774c-48d2-9b6f-0bfa7c3118a8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1bc326ca-f6a9-489b-9215-f6f817ba7d04",
             "Value": {
                 "id": "988f45f3-51da-45d1-b649-1097882b4677",
@@ -772,6 +780,14 @@
                 "id": "b6fd7587-7fe0-4615-90cc-9cddb90a9dd8",
                 "resourcePath": "views\\82c266df-e0b9-4360-8303-d985bc8c3b7e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "83653018-a142-4148-b276-dc43a2fbf3b7",
+            "Value": {
+                "id": "89b25402-71c2-4325-90ef-4cf54914aa7b",
+                "resourcePath": "scripts\\yosi_game\\yosi_game.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1761,6 +1777,7 @@
         "3b2a4cb6-765f-496c-99c6-3a88c1dc00eb",
         "409e849a-61f2-42b8-8882-6a5b4dce65a7",
         "049184d5-853f-4f34-a703-23d9acb516cb",
+        "83653018-a142-4148-b276-dc43a2fbf3b7",
         "dc54a773-006a-4641-89f5-981816b289dd",
         "d9d450bb-e90f-4429-829e-f81116f485cf",
         "95a7aaba-2f03-43ac-9edc-d53ad4dcaf6d"
