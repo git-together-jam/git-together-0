@@ -128,6 +128,22 @@ else if (argument[0] == YosiFunction.main)
 								);
 							//Out of room
 							if (_ob[@YosiZapper.X] < -YosiBlocksize) obstacle_list[|i] = noone;
+							//Collision with player
+							if (player[YosiPlayer.state] == YosiPlayerState.playing && 
+								rectangle_in_rectangle
+								(
+								player[@YosiPlayer.X],
+								player[@YosiPlayer.Y],
+								player[@YosiPlayer.X] + YosiBlocksize,
+								player[@YosiPlayer.Y] + YosiBlocksize,
+								_ob[@YosiZapper.X],
+								_ob[@YosiZapper.Y],
+								_ob[@YosiZapper.X] + YosiBlocksize,
+								_ob[@YosiZapper.Y] + YosiBlocksize
+								))
+								{
+								player[@YosiPlayer.state] = YosiPlayerState.dead;
+								}
 							break;
 						}
 					}
@@ -135,6 +151,17 @@ else if (argument[0] == YosiFunction.main)
 				switch(player[@YosiPlayer.state])
 					{
 					case YosiPlayerState.cutscene:
+						break;
+					case YosiPlayerState.dead:
+						//Movement
+						player[@YosiPlayer.vsp] += 0.15;
+						player[@YosiPlayer.Y] += round(player[YosiPlayer.vsp]);
+						var _x_ref = (player[YosiPlayer.X] + YosiBlocksize) div 2;
+						if (player[YosiPlayer.Y] > floor_list[|_x_ref] - YosiBlocksize)
+							{
+							player[@YosiPlayer.Y] = floor_list[|_x_ref] - YosiBlocksize;
+							player[@YosiPlayer.vsp] = min(player[YosiPlayer.vsp],0);
+							}
 						break;
 					case YosiPlayerState.playing:
 						//Jetpack
