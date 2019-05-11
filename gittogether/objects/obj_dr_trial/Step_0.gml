@@ -28,7 +28,6 @@ if (dialogue_index < dialogue_count - 1) {
 	var _dial = dialogue[| dialogue_index];
 	var _name = _dial[? "name"];
 	if (_name != undefined) {
-		log("_dial: ", json_encode(_dial));	
 		var _char = characters[? _name];
 		var _target = _char[? "seat"];
 	

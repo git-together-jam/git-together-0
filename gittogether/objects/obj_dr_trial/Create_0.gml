@@ -33,7 +33,7 @@ characters = json_decode(string_concat(@'{
 		"seat": 5
 	},
 	"minty": {
-		"full_name": "YellowAfterlife",
+		"full_name": "Minty Python",
 		"sprite": ', spr_dr_minty, @',
 		"seat": 6
 	}
