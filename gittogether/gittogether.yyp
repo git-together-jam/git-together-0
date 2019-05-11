@@ -711,6 +711,14 @@
             }
         },
         {
+            "Key": "92ce4f20-01e6-4c69-a444-893af99b2edf",
+            "Value": {
+                "id": "263e1986-150b-4e47-b0ae-45bc4af84e6d",
+                "resourcePath": "sprites\\spr_arcade_breakout\\spr_arcade_breakout.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "96369e11-5919-42b2-9c7b-15a154366f26",
             "Value": {
                 "id": "f377cc48-95fe-4f82-9257-40c8082e8eb2",
