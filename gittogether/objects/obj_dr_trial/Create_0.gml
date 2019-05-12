@@ -51,6 +51,7 @@ seat_width = room_width * .7;
 
 event_time = room_speed * 5;
 event_timer = -1;
+timer = 0; // increments infinitely
 
 #region dialogue
 
@@ -62,6 +63,7 @@ var _file = file_text_open_read("dungandrompa_dialogue.txt");
 // var _read_state = 0;
 var _bullets = ds_list_create();
 var _state_stack = ds_stack_create();
+var _nsd = -1;
 ds_stack_push(_state_stack, dialogue_state);
 
 while (!file_text_eof(_file)) {
@@ -81,7 +83,15 @@ while (!file_text_eof(_file)) {
 			case "BULLETS": #region;
 			
 				ds_stack_push(_state_stack, 1); 
-				ds_list_destroy_maps(_bullets);
+				
+			break; #endregion;
+				
+			case "/BULLETS": #region;
+			
+				var _list = ds_list_create();
+				ds_list_copy(_list, _bullets);
+				_nsd[? "bullets"] = _list;
+				ds_list_clear(_bullets);
 				
 			break; #endregion;
 				
@@ -92,7 +102,10 @@ while (!file_text_eof(_file)) {
 				_map[? "name"] = "nsd_begin";
 				_map[? "text"] = "Make your argument!";
 				_map[? "status"] = "event";
+				_map[? "bullets"] = -1;
 				ds_list_add_map(dialogue, _map);
+				
+				_nsd = _map;
 				
 			break; #endregion;
 				
@@ -184,8 +197,11 @@ while (!file_text_eof(_file)) {
 			}
 			var _bullet = ds_map_create();
 			_bullet[? "name"] = _name;
-			_bullet[? "target"] = string_length(_target) ? string_digits(_target) : -1;
-			ds_list_add_map(_bullets, _bullet);
+			if (string_length(_target)) _bullet[? "target"] = real(_target);
+			ds_list_add(_bullets, _bullet);
+			
+	
+			log("Added bullet: ", json_encode(_bullet));
 			
 		break; #endregion;
 			
@@ -220,13 +236,15 @@ while (!file_text_eof(_file)) {
 			var _map = ds_map_create();
 			_map[? "name"] = _name;
 			_map[? "text"] = _text;
-			_map[? "status"] = _status;
+			_map[? "status"] = _status != "" ? _status : "nsd";
 			ds_list_add_map(dialogue, _map);
 		
 		break; #endregion
 	}
 }
 
+ds_list_destroy(_bullets);
+ds_stack_destroy(_state_stack);
 file_text_close(_file);
 
 dialogue_count = ds_list_size(dialogue);
@@ -246,17 +264,43 @@ text_length = 0;
 text_timer	= 0;
 text_time	= room_speed * .02;
 text_name_padding = 4;
+text_per_second = string_length("Some of the contestants a");
+text_nsd_type = 0;
+text_surf = -1;
 
 #endregion;
 
 #region nonstop debate
 
-nsd_font = fnt_big;
+// NonStop Debate Type
+enum NSDT {
+	SLIDE_RIGHT,
+	SLIDE_LEFT,
+	GROW,
+	SLIDE_UP,
+	SIZE
+}
+
+nsd_start_x	   = 0; nsd_end_x	 = 0;
+nsd_start_y	   = 0; nsd_end_y	 = 0;
+nsd_start_ang  = 0; nsd_end_ang	 = 0;
+nsd_start_size = 1; nsd_end_size = 1;
+
+nsd_font = fnt_normal;
 draw_set_font(nsd_font);
 nsd_height = string_height("ASD(/=ha97sudhnIPSAD");
 nsd_begin_index = 0;
+nsd_hover = -1;
+nsd_hover_timer = 0;
+nsd_hover_time = room_speed * .24;
+nsd_clen = point_distance(0, 0, 12, 12);
 
 #endregion;
+
+cursor_previous = window_get_cursor();
+window_set_cursor(cr_none);
+cursor_surf = -1;
+cursor_off_val = 12;
 
 #region debug
 

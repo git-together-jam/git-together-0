@@ -34,6 +34,8 @@ if room = rm_Overworld {
 
 #region Game shader effect
 
+// Drawing the app surface
+application_surface_draw_enable(!shaderEnabled);
 gpu_set_tex_filter(shaderEnabled);
 
 if (shaderEnabled) {
