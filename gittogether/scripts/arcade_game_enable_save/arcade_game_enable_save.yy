@@ -1,5 +1,5 @@
 {
-    "id": "95a7aaba-2f03-43ac-9edc-d53ad4dcaf6d",
+    "id": "d15c2e2e-b904-4495-8a4c-e604ee60abe9",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "arcade_game_enable_save",
