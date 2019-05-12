@@ -6,7 +6,7 @@
 // Draw only if we are in the Overworld
 
 if room = rm_Overworld {
-	
+
 	draw_set_font(fnt_pixel)
 
 	// Setup temporary variables
@@ -19,7 +19,7 @@ if room = rm_Overworld {
 
 	// Putting this here to neaten up the offets a bit
 	var _coinXOffset = guiXOffset + _ticketSprXOffset + _ticketStringXOffset;
-	
+
 	draw_set_valign(fa_middle);
 	// Tickets
 	draw_sprite(spr_GUITicket, 0, guiXOffset, guiYOffset);
@@ -75,3 +75,17 @@ draw_text_center(
 );
 
 draw_set_font(_font);
+
+//Draw arcade game screen effect:
+arcade = room != rm_Overworld;
+application_surface_draw_enable(!arcade);
+gpu_set_tex_filter(arcade);
+
+if (arcade)
+{
+	shader_set(shd_retro);
+	draw_surface_ext(application_surface,0,0,1/RES_S,1/RES_S,0,-1,1);
+	shader_reset();
+}
+
+gpu_set_tex_filter(false);
