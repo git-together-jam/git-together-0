@@ -9,7 +9,8 @@
         "ddf8cc01-0881-4be5-8fff-257fca35b966",
         "d4990db5-94b8-4351-b4ed-425f0248fb45",
         "7206799e-87b1-47a0-a46d-5bcf35e4619d",
-        "8e0ad934-a9a1-405b-aff0-e10711c1d354"
+        "8e0ad934-a9a1-405b-aff0-e10711c1d354",
+        "fdb762d1-92c7-428a-be53-17c2dee866ea"
     ],
     "filterType": "GMObject",
     "folderName": "World Objects",
