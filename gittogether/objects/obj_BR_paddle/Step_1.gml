@@ -1,6 +1,12 @@
 // Horizontal movement
 var hsp = moveSpeed * global.iMoveX;
 
+//Mouse support
+if (memMouseX != mouse_x) {
+	memMouseX = mouse_x;
+	hsp = mouse_x - x;
+}
+
 // Collisions
 if (hsp > 0) {
 	repeat(hsp) {

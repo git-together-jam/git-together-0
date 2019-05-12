@@ -11,7 +11,7 @@ switch(state) {
 		x = obj_BR_paddle.x;
 		
 		// Shooting the ball
-		if (keyboard_check(vk_space)) {
+		if (global.iSelect || global.iMouse_LP) {
 			state = BR_States.moving;
 			dir = irandom_range(45, 135);
 			spd = moveSpeed;

@@ -1,35 +1,38 @@
 
-if (text_length != text_target_length && !--text_timer) {
-	text += string_char_at(text_target, ++text_length);
+if (text_length < text_target_length && !--text_timer) {
+	//text += string_char_at(text_target, ++text_length);
+	text_length++;
 	text_timer = text_time;
 }
 
-if (mouse_check_button_pressed(mb_left) || global.iSelect) {
+if (event_timer >= 0 && --event_timer < 0) {
+	dialogue_index++;
+	event_user(0);
+}
+
+if ((mouse_check_button_pressed(mb_left) || global.iSelect) && event_timer < 0) {
 	text_timer -= room_speed * .04;
 
 	if (text_length >= text_target_length) {
 		dialogue_index++;
-		text = "";
-		if (dialogue_index < dialogue_count - 1) {
-			var _dial = dialogue[| dialogue_index];
-			text_target = dr_prepare_text_target(_dial[? "text"], room_width - text_padding * 2);
-		} else text_target = "The End";
-		text_target_length = string_length(text_target);
-		text_length = 0;
-		log(text_target);
+		event_user(0);
 	
 	} else {
-		text = text_target;
 		text_length = text_target_length;
 	}
+}
+
+if (keyboard_check_pressed(ord("M"))) {
+	
+	dialogue_index += 5;
+	event_user(0);
 }
 
 if (dialogue_index < dialogue_count - 1) {
 	var _dial = dialogue[| dialogue_index];
 	var _name = _dial[? "name"];
-	if (_name != undefined) {
-		log("_dial: ", json_encode(_dial));	
-		var _char = characters[? _name];
+	var _char = characters[? _name];
+	if (_char != undefined) {
 		var _target = _char[? "seat"];
 	
 		if (_target - seat_offset > seat_count / 2) { // go left
@@ -43,4 +46,9 @@ if (dialogue_index < dialogue_count - 1) {
 		if (seat_offset < 0) seat_offset = seat_count;
 		if (seat_offset > seat_count) seat_offset = 0;
 	}
+	
+	if (_name == "nsd_begin") {
+		seat_offset = (seat_offset - .64 / room_speed + seat_count) % seat_count;
+		seat_angle = lerp(seat_angle, 32, .07);
+	} else seat_angle = lerp(seat_angle, 0, .07);
 }

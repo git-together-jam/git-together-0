@@ -7,20 +7,43 @@ _sys_save_init(true);
 // Make sure to add your game here
 // arcade_game_add(type, name, arcade_machine_sprite, game_room)
 
-// Example Arcade Game
-var basic = arcade_game_add("Basic 1", spr_ArcadeBasic1, rm_B1_Main);
-arcade_game_set_transition(basic, TransType.screenFade, c_black);
+// Basic - Noone
+var _basic = arcade_game_add("Basic 1", spr_ArcadeBasic1, rm_B1_Main);
+arcade_game_set_transition(_basic, TransType.screenFade, c_black);
+arcade_game_enable_shader(_basic, false);
 
-arcade_game_add("Dungandrompa", spr_arcade_dungandompa, rm_dungandrompa);
+// Dungandrompa - TonyStr
+var _dr = arcade_game_add("Dungandrompa", spr_arcade_dungandompa, rm_dungandrompa);
+arcade_game_set_transition(_dr, TransType.checkerboard, c_black);
+arcade_game_set_title(_dr, fnt_big, c_white);
+arcade_game_enable_shader(_dr, true, shd_retro);
 
-arcade_game_add("Asteroids", spr_arcade_asteroids, rm_Asteroids);
+// Asteroids - Sahaun
+var _ast = arcade_game_add("Asteroids", spr_arcade_asteroids, rm_Asteroids);
+arcade_game_set_transition(_ast, TransType.circle, c_white);
+arcade_game_set_title(_ast, fnt_pixel, c_gray);
+arcade_game_enable_shader(_ast, true, shd_retro);
 
-arcade_game_add("Breakout", spr_arcade_breakout, rm_BR_game);
+// Breakout - Qweleo
+var _breakout = arcade_game_add("Breakout", spr_arcade_breakout, rm_BR_game);
+arcade_game_enable_shader(_breakout, true, shd_retro);
 
-arcade_game_add("Pong", spr_arcade_pong, rm_pong);
+// Pong - Xor
+var _pong = arcade_game_add("Pong", spr_arcade_pong, rm_pong);
+arcade_game_enable_shader(_pong, true, shd_retro);
 
-arcade_game_add("Frogger", spr_arcade_frogger, rm_frogger);
+// Frogger - Andy
+var _frogger = arcade_game_add("Frogger", spr_arcade_frogger, rm_frogger);
+arcade_game_enable_shader(_frogger, true, shd_retro);
 
-arcade_game_add("Wking", spr_arcade_wking, rm_wking_menu);
+// Wking - Levgon
+var _wking = arcade_game_add("Wking", spr_arcade_wking, rm_wk_menu);
+arcade_game_set_transition(_wking, TransType.circle, c_white);
 
-arcade_game_add("Yosi", spr_arcade_machine, rm_yosi);
+// Yosi - Yosi
+var _yosi = arcade_game_add("Yosi", spr_arcade_machine_yosi, rm_yosi);
+arcade_game_enable_shader(_yosi, true, shd_retro);
+
+// Adventure - Surg
+var _adv = arcade_game_add("Adventure", spr_arcade_pong, rm_ad_start);
+arcade_game_enable_shader(_adv, true, shd_retro);

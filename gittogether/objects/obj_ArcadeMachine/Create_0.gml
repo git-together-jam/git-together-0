@@ -1,3 +1,4 @@
-/// @desc 
+///@desc Initialize shader variables.
 
-sprite_index = global.GameSpr[type];
+uniRect = shader_get_uniform(shd_arcade,"rect");
+uniTime = shader_get_uniform(shd_arcade,"time");

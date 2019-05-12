@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "obj_ArcadeMachine",
     "eventList": [
-        
+        {
+            "id": "8f3d5efe-0917-45d6-a5c3-d48118d9e885",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "ddf8cc01-0881-4be5-8fff-257fca35b966"
+        },
+        {
+            "id": "60ab60df-46d4-485c-b41d-44a0ed786b79",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "ddf8cc01-0881-4be5-8fff-257fca35b966"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
