@@ -13,8 +13,10 @@ arcade_game_set_transition(_basic, TransType.screenFade, c_black);
 arcade_game_enable_shader(_basic, false);
 
 // Dungandrompa - TonyStr
-var _dun = arcade_game_add("Dungandrompa", spr_arcade_dungandompa, rm_dungandrompa);
-arcade_game_enable_shader(_dun, true, shd_retro);
+var _dr = arcade_game_add("Dungandrompa", spr_arcade_dungandompa, rm_dungandrompa);
+arcade_game_set_transition(_dr, TransType.checkerboard, c_black);
+arcade_game_set_title(_dr, fnt_big, c_white);
+arcade_game_enable_shader(_dr, true, shd_retro);
 
 // Asteroids - Sahaun
 var _ast = arcade_game_add("Asteroids", spr_arcade_asteroids, rm_Asteroids);
@@ -45,5 +47,3 @@ arcade_game_enable_shader(_yosi, true, shd_retro);
 // Adventure - Surg
 var _adv = arcade_game_add("Adventure", spr_arcade_pong, rm_ad_start);
 arcade_game_enable_shader(_adv, true, shd_retro);
-
-
