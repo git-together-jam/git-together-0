@@ -12,6 +12,8 @@ global.iMoveY = (keyboard_check(ord("S")) || keyboard_check(vk_down) ||
 // Input
 global.iSelect =	(keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) ||
 					gamepad_button_check_pressed(global.Controller,gp_face1));
+global.iExitInit =	(keyboard_check_pressed(vk_escape) ||
+					gamepad_button_check_pressed(global.Controller,gp_start));
 global.iExit =		(keyboard_check(vk_escape) ||
 					gamepad_button_check(global.Controller,gp_start));
 

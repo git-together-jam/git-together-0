@@ -1,4 +1,4 @@
-if (global.iExit) {
+if (global.iExitInit || (global.iExit && (exitTimer != exitTime))) {
 	exitTimer--;
 	exitTimerDisplayAlpha = min(exitTimerDisplayAlpha + 0.2, 1);
 	exitTimerMaxTime = exitTimer;
