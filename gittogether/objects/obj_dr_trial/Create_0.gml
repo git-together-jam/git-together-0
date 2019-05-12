@@ -220,7 +220,7 @@ while (!file_text_eof(_file)) {
 			var _map = ds_map_create();
 			_map[? "name"] = _name;
 			_map[? "text"] = _text;
-			_map[? "status"] = _status;
+			_map[? "status"] = _status != "" ? _status : "nsd";
 			ds_list_add_map(dialogue, _map);
 		
 		break; #endregion
@@ -251,7 +251,7 @@ text_name_padding = 4;
 
 #region nonstop debate
 
-nsd_font = fnt_big;
+nsd_font = fnt_normal;
 draw_set_font(nsd_font);
 nsd_height = string_height("ASD(/=ha97sudhnIPSAD");
 nsd_begin_index = 0;

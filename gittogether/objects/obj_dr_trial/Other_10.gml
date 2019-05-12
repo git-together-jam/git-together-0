@@ -19,5 +19,12 @@ if (dialogue_index < dialogue_count - 1) {
 			break;
 	}
 	text_target_length = dr_prepare_text_target(_dial[? "text"], room_width - text_padding * 2, text_list, dialogue_state);
+	
+	var _ls = ds_list_size(text_list);
+	log("dialogue (" + string(_ls) + "): [");
+	for (var i = 0; i < _ls; i++) {
+		log("	", json_encode(text_list[| i]) + ( i < _ls - 1 ? "," : " "));
+	}
+	log("]");
 } // else text_target = "The End";
 text_length = 0;

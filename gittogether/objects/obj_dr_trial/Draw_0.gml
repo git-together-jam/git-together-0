@@ -45,7 +45,7 @@ if (_dial[? "status"] == "event") {
 
 var _len = 0;
 var _size = ds_list_size(text_list);
-draw_set_font(text_font);
+draw_set_font(_dial[? "status"] == "nsd" ? nsd_font : text_font);
 for (var i = 0; i < _size; i++) {
 	var _text = text_list[| i];
 	var _str  = _text[? "text"];
@@ -57,7 +57,7 @@ for (var i = 0; i < _size; i++) {
 	}
 	_len += _ilen;
 
-	draw_text(_x + _text[? "x"], _y + _text[? "y"], _str);
+	draw_text_col(_x + _text[? "x"], _y + _text[? "y"], _str, _text[? "bulletpoint"] != undefined ? $21c1f2 : draw_get_color());
 }
 draw_set_color($ffffff);
 draw_set_alpha(1);
