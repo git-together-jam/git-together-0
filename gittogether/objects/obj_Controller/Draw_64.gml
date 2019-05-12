@@ -44,6 +44,20 @@ if (miniTitleAlpha > 0) {
 	miniTitleAlpha -= 0.02;
 }
 
+//Draw arcade game screen effect:
+arcade = room != rm_Overworld;
+application_surface_draw_enable(!arcade);
+gpu_set_tex_filter(arcade);
+
+if (arcade)
+{
+	shader_set(shd_retro);
+	draw_surface_ext(application_surface,0,0,1/RES_S,1/RES_S,0,-1,1);
+	shader_reset();
+}
+
+gpu_set_tex_filter(false);
+
 //Draw exit bar in the center of the screen
 
 var _x = display_get_gui_width()  div 2,
@@ -75,17 +89,3 @@ draw_text_center(
 );
 
 draw_set_font(_font);
-
-//Draw arcade game screen effect:
-arcade = room != rm_Overworld;
-application_surface_draw_enable(!arcade);
-gpu_set_tex_filter(arcade);
-
-if (arcade)
-{
-	shader_set(shd_retro);
-	draw_surface_ext(application_surface,0,0,1/RES_S,1/RES_S,0,-1,1);
-	shader_reset();
-}
-
-gpu_set_tex_filter(false);
