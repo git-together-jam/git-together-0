@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "00158525-5b5d-448a-90fa-b16371409749",
+            "Value": {
+                "id": "f2d8b8a4-f142-4842-8b6a-fc3f58dda163",
+                "resourcePath": "scripts\\arcade_game_enable_shader\\arcade_game_enable_shader.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "00b352ff-a576-4272-9403-464c37698b52",
             "Value": {
                 "id": "c5cf4c78-40a1-4259-984b-b44488ccd9ac",
@@ -103,19 +111,19 @@
             }
         },
         {
-            "Key": "096bb146-e833-463b-b2e9-edab824ac767",
-            "Value": {
-                "id": "fb42e901-94e4-4d4e-a195-541d546813fc",
-                "resourcePath": "scripts\\arcade_game_set_title\\arcade_game_set_title.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "07bbe52b-ed3f-49ff-ae81-069383639c72",
             "Value": {
                 "id": "885fac7e-b84f-42ec-b4c4-f345d866f889",
                 "resourcePath": "objects\\obj_wk_grasstile\\obj_wk_grasstile.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "096bb146-e833-463b-b2e9-edab824ac767",
+            "Value": {
+                "id": "fb42e901-94e4-4d4e-a195-541d546813fc",
+                "resourcePath": "scripts\\arcade_game_set_title\\arcade_game_set_title.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1903,6 +1911,14 @@
             }
         },
         {
+            "Key": "d4f5f318-e161-4b77-97c2-851e63051a30",
+            "Value": {
+                "id": "2426be40-e84e-4857-bd91-cc392f41e666",
+                "resourcePath": "views\\d4f5f318-e161-4b77-97c2-851e63051a30.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d565571e-bdff-43c8-978d-74b0f5a062d4",
             "Value": {
                 "id": "54a53784-be7e-4333-8158-186b876b2af2",
@@ -2372,6 +2388,11 @@
         "6ba5a2fa-8be7-4c2d-8018-a18baa20edee",
         "6ef509e2-28b6-4f11-8b6b-11a6a34e55a0",
         "14eff6d1-ef6e-4f46-a62f-7283075bc117",
+        "dc54a773-006a-4641-89f5-981816b289dd",
+        "d9d450bb-e90f-4429-829e-f81116f485cf",
+        "096bb146-e833-463b-b2e9-edab824ac767",
+        "95a7aaba-2f03-43ac-9edc-d53ad4dcaf6d",
+        "00158525-5b5d-448a-90fa-b16371409749",
         "ffbaaeb0-b0a4-40fe-855a-013e9b779ee0",
         "7309583b-7abc-46e8-b5f1-0d90a23c50d0",
         "65526157-4bac-4418-9f21-0edaee11b00b",
@@ -2416,11 +2437,7 @@
         "3b2a4cb6-765f-496c-99c6-3a88c1dc00eb",
         "409e849a-61f2-42b8-8882-6a5b4dce65a7",
         "049184d5-853f-4f34-a703-23d9acb516cb",
-        "83653018-a142-4148-b276-dc43a2fbf3b7",
-        "dc54a773-006a-4641-89f5-981816b289dd",
-        "d9d450bb-e90f-4429-829e-f81116f485cf",
-        "95a7aaba-2f03-43ac-9edc-d53ad4dcaf6d",
-        "096bb146-e833-463b-b2e9-edab824ac767"
+        "83653018-a142-4148-b276-dc43a2fbf3b7"
     ],
     "tutorial": ""
 }

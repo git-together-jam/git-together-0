@@ -11,6 +11,10 @@ view_set_camera(0, cam);
 
 if (room == rm_Overworld) {
 	
+	// Disable Shader
+	shaderEnabled = false;
+	
+	// Place machines
 	if (!machinesPlaced) ds_list_shuffle(global.ArcadeMachineList);
 	
 	var _arcade_locations = overworld_get_arcade_locations();
@@ -39,10 +43,13 @@ if (room == rm_Overworld) {
 			transCol  = _map[? "transCol"];
 			titleFont = _map[? "titleFont"];
 			titleCol  = _map[? "titleCol"];
+			
+			shaderEnabled = _map[? "shaderEnabled"];
+			shaderSet	  = _map[? "shaderSet"];
 		}
 	}
-	
 	machinesPlaced = true;
 }
 
-
+// Drawing the app surface
+application_surface_draw_enable(!shaderEnabled);
