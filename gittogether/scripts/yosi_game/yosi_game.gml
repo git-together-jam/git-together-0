@@ -49,6 +49,7 @@ enum YosiLaser
 //Init
 if (argument[0] == YosiFunction.init)
 	{
+	randomize();
 	surf = surface_create(room_width,room_height);
 	game_state = YosiGameState.title;
 	distance = 0;
@@ -186,7 +187,7 @@ if (argument[0] == YosiFunction.init)
 					[YosiObType.laser,room_width+50,room_height-20,0],
 					[YosiObType.laser,room_width+50,room_height-50,0],
 					],
-				110,
+				130,
 					[
 					[YosiObType.laser,room_width+50,YosiHeightHalf-18,0],
 					[YosiObType.laser,room_width+50,YosiHeightHalf+18,0],
@@ -209,13 +210,73 @@ if (argument[0] == YosiFunction.init)
 					],
 				240,
 				],
+				//6
+				[
+				60,
+					[
+					[YosiObType.laser,room_width+50,YosiHeightHalf + 32,1],
+					[YosiObType.laser,room_width+50,YosiHeightHalf - 32,-1],
+					],
+				240,
+				],
+				//7
+				[
+				90,
+					[
+					[YosiObType.laser,room_width+50,YosiHeightHalf-18,0],
+					[YosiObType.laser,room_width+50,YosiHeightHalf+18,0],
+					],
+				130,
+					[
+					[YosiObType.laser,room_width+50,20,0],
+					[YosiObType.laser,room_width+50,50,0],
+					[YosiObType.laser,room_width+50,room_height-20,0],
+					[YosiObType.laser,room_width+50,room_height-50,0],
+					],
+				240,
+				],
+				//8
+				[
+				50,
+					[
+					[YosiObType.laser,room_width+50,20,0],
+					],
+				30,
+					[
+					[YosiObType.laser,room_width+50,80,0],
+					],
+				30,
+					[
+					[YosiObType.laser,room_width+50,140,0],
+					],
+				30,
+					[
+					[YosiObType.laser,room_width+50,120,0],
+					],
+				30,
+					[
+					[YosiObType.laser,room_width+50,60,0],
+					],
+				30,
+					[
+					[YosiObType.laser,room_width+50,100,0],
+					],
+				30,
+					[
+					[YosiObType.laser,room_width+50,40,0],
+					],
+				30,
+					[
+					[YosiObType.laser,room_width+50,160,0],
+					],
+				230,
+				],
 			],
 		];
 	section = 0;
 	sub = 0;
 	phase = 0;
 	frame = 180;
-	draw_set_font(fnt_pixel);
 	draw_set_color(c_white);
 	}
 //Main Loop
@@ -252,8 +313,9 @@ else if (argument[0] == YosiFunction.main)
 		switch(game_state)
 			{
 			case YosiGameState.title:
-				draw_text_center(room_width/2,room_height/2,"PRESS SPACE",1,1,0,c_white,abs(round(sin(current_time/300))));
-				if (global.iSelect) 
+				draw_set_font(fnt_big);
+				draw_text_center(room_width/2,room_height/2,"PRESS START",1,1,0,c_white,abs(round(sin(current_time/300))));
+				if (global.iSelect || global.iMouse_LP || global.iMoveY) 
 					{
 					game_state = YosiGameState.playing;
 					player[@YosiPlayer.state] = YosiPlayerState.playing;
@@ -261,11 +323,9 @@ else if (argument[0] == YosiFunction.main)
 				break;
 			case YosiGameState.playing:
 				//Move the ground every frame
-				ceiling_y = 20 + sin(current_time / 1000)*5;
-				floor_y = room_height - 20 + cos(current_time / 1000)*5;
+				ceiling_y = 20 + dsin(distance)*min(5,distance / 500);
+				floor_y = room_height - 20 + dsin(distance)*min(5,distance / 500);
 				yosi_game(YosiFunction.move_ground);
-				//debug
-				if (mouse_check_button_pressed(mb_left)) {ds_list_add(obstacle_list,yosi_game(YosiFunction.new_laser,mouse_x,mouse_y,0));}
 				//Create new obstacles from blueprint
 				if (yosi_game(YosiFunction.blueprint_read))
 					{
@@ -314,7 +374,7 @@ else if (argument[0] == YosiFunction.main)
 										{
 										_ob[@YosiLaser.hsp] = 0;
 										_ob[@YosiLaser.timer] += 1;
-										if (_ob[YosiLaser.timer] > 120)
+										if (_ob[YosiLaser.timer] > 90)
 											{
 											_ob[@YosiLaser.state] = 1;
 											_ob[@YosiLaser.timer] = 0;
@@ -332,7 +392,7 @@ else if (argument[0] == YosiFunction.main)
 									_ob[@YosiLaser.hsp] = 0;
 									//Count timer until laser is done
 									_ob[@YosiLaser.timer] += 1;
-									if (_ob[YosiLaser.timer] > 60)
+									if (_ob[YosiLaser.timer] > 90)
 										{
 										_ob[@YosiLaser.state] = 2;
 										break;
@@ -348,7 +408,7 @@ else if (argument[0] == YosiFunction.main)
 							//Movement
 							_ob[@YosiLaser.X] += _ob[YosiLaser.hsp];
 							_ob[@YosiLaser.Y] += _ob[YosiLaser.vsp];
-							//Bounce off sides
+							//Bounce off floor & ceiling
 							if (_ob[YosiLaser.Y] > room_height-YosiBlocksize && _ob[YosiLaser.vsp] > 0)
 								_ob[@YosiLaser.vsp] *= -1;
 							if (_ob[YosiLaser.Y] < 0 && _ob[YosiLaser.vsp] < 0)
@@ -357,7 +417,13 @@ else if (argument[0] == YosiFunction.main)
 							yosi_game(YosiFunction.rect,_ob[YosiLaser.X],_ob[YosiLaser.Y],YosiBlocksize,YosiBlocksize,true);
 							if (_ob[YosiLaser.state] == 1)
 								{
-								yosi_game(YosiFunction.rect,0,_ob[YosiLaser.Y],_ob[YosiLaser.X],YosiBlocksize);
+								var _pulse = sin(distance);
+								yosi_game(YosiFunction.rect,-1,_ob[YosiLaser.Y]-_pulse,_ob[YosiLaser.X],YosiBlocksize+(_pulse*2));
+								}
+							if (_ob[YosiLaser.state] == 0 && _ob[YosiLaser.timer] > 0)
+								{
+								var _amount = (_ob[YosiLaser.timer]/90) * (YosiBlocksize div 2);
+								yosi_game(YosiFunction.rect,-1,_ob[YosiLaser.Y]+_amount,_ob[YosiLaser.X],YosiBlocksize-(_amount*2),true);
 								}
 							//Collision with player
 							if (_ob[YosiLaser.state] == 1 && player[YosiPlayer.state] == YosiPlayerState.playing && 
@@ -406,7 +472,10 @@ else if (argument[0] == YosiFunction.main)
 					case YosiPlayerState.playing:
 						//Jetpack
 						distance++;
-						if (global.iMoveY < 0)
+						if (global.iMoveY < 0 || 
+							mouse_check_button(mb_left) || 
+							keyboard_check(vk_space) || 
+							gamepad_button_check(global.Controller,gp_face1))
 							{
 							player[@YosiPlayer.vsp] -= 0.25;
 							}
@@ -433,19 +502,24 @@ else if (argument[0] == YosiFunction.main)
 				//Draw player
 				yosi_game(YosiFunction.rect,player[@YosiPlayer.X],player[@YosiPlayer.Y],YosiBlocksize,YosiBlocksize);
 				//Draw score
+				draw_set_font(fnt_big);
 				draw_rectangle_color(0,1,40,17,c_black,c_black,c_black,c_black,false);
 				draw_text_transformed(3,5,string(distance),0.5,0.5,0);
 				break;
 			case YosiGameState.lose:
 				draw_clear(c_black);
 				//Results
+				draw_set_font(fnt_big);
 				draw_text_center(room_width/2,64,"YOU LOSE",1,1,0,c_white,1);
 				draw_text_center(room_width/2,96 + round(sin(current_time/500)*4),"Score: " + string(distance),0.5,0.5,0,c_white,1);
+				if (global.iSelect) end_minigame();
 				break;
 			}
 		surface_reset_target();
 		//Draw the surface
+		shader_set(shd_retro);
 		draw_surface(surf,0,0);
+		shader_reset();
 		}
 	//Garbage Collector
 	var i=0;

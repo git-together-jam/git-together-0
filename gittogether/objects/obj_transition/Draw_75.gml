@@ -35,3 +35,16 @@ switch (type) {
 	default:
 	break;
 }
+
+if (drawTitle) {
+	// Set Font
+	draw_set_font(titleFont);
+	
+	// Draw Text
+	draw_text_center(RES_W/2, RES_H/2, titleText, 1, 1, 0, titleCol, titleAlpha);
+
+	// Reduce alpha
+	titleAlpha -= 0.01;
+
+	draw_set_font(-1);
+}

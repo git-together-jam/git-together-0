@@ -13,7 +13,7 @@ draw_set_font(fnt_pixel);
 if !start then draw_text_transformed(RES_W*.5,20,"Ready?",3,3,0);
 
 //Draw scores.
-draw_set_font(fntBig);
+draw_set_font(fnt_big);
 draw_text_transformed(RES_W*.2,4,playerScore,1,1,0);
 draw_text_transformed(RES_W*.8,4,enemyScore ,1,1,0);
 

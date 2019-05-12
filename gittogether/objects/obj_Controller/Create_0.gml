@@ -2,15 +2,19 @@
 
 randomize();
 
+// Shader
+shaderEnabled = false;
+shaderSet = -1;
+
 // Arcade machine vars
 miniTitleAlpha = 0;
-miniName = "";
-maxMachinesPerRow = 8;
 machinesPlaced = false;
 
 // Exiting a minigame
-exitTime = .5*room_speed;
+exitTime = 1*room_speed;
 exitTimer = exitTime;
+exitTimerDisplayAlpha = 0;
+exitTimerMaxTime = exitTime;
 
 // Globals
 global.Coins = sys_save_global_read("Coins", 100);

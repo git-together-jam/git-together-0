@@ -37,5 +37,17 @@ y = clamp(y,_bbox_top,room_height-_bbox_bottom);
 arcade = instance_place(x, y-4, obj_ArcadeMachine);
 
 if (global.iSelect && arcade) {
-	start_minigame(arcade.gameRoom, arcade.name, arcade.trans, arcade.transCol);
+
+	obj_Controller.shaderEnabled = arcade.shaderEnabled;
+	obj_Controller.shaderSet = arcade.shaderSet;
+	
+	start_minigame(arcade.gameRoom, arcade.name, arcade.trans, arcade.transCol,
+				   arcade.titleFont, arcade.titleCol);
+}
+
+//Animation
+if (arcade) {
+	arcadeSelectTime += 2.5;
+} else {
+	arcadeSelectTime = 0;
 }

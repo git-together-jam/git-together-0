@@ -42,8 +42,15 @@ characters = json_decode(string_concat(@'{
 seat = ["tony", "math", "jxm", "pope", "sahaun", "yellowaf", "minty"];
 seat_offset = 0;
 seat_count	= array_length_1d(seat);
+seat_angle  = 0;
+seat_len = point_distance(0, 0, room_width, room_height) / 2;
+seat_dir = point_direction(0, 0, room_width, room_height);
+seat_width = room_width * .7;
 
 #endregion;
+
+event_time = room_speed * 5;
+event_timer = -1;
 
 #region dialogue
 
@@ -57,10 +64,25 @@ var _bullets = ds_list_create();
 while (!file_text_eof(_file)) {
 	var _str = file_text_readln(_file);
 	
-	if (string_pos("[BULLETS]", _str) == 1)  { _read_state = 1; continue; ds_list_destroy_maps(_bullets) }
-	if (string_pos("[/BULLETS]", _str) == 1) { continue; }
-	if (string_pos("[NSD]", _str) == 1)	     { _read_state = 2; continue; }
-	if (string_pos("[/NSD]", _str) == 1)	 { _read_state = 0; continue; }
+	if (string_pos("[BULLETS]", _str) == 1)  { 
+		_read_state = 1; 
+		ds_list_destroy_maps(_bullets);
+		continue;
+	}
+	if (string_pos("[/BULLETS]", _str) == 1) continue;
+	if (string_pos("[NSD]", _str) == 1) { 
+		_read_state = 2;
+		var _map = ds_map_create();
+		_map[? "name"] = "nsd_begin";
+		_map[? "text"] = "Make your argument!";
+		_map[? "status"] = "event";
+		ds_list_add_map(dialogue, _map);
+		continue; 
+	}
+	if (string_pos("[/NSD]", _str) == 1) { 
+		_read_state = 0; 
+		continue; 
+	}
 	
 	switch (_read_state) {
 		
