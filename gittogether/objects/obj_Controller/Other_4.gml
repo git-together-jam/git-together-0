@@ -33,10 +33,12 @@ if (room == rm_Overworld) {
 		with (_machine) {
 			var _map = _arcade;
 			sprite_index = _map[? "sprite"];
-			gameRoom = _map[? "room"];
-			name	 = _map[? "name"];
-			trans	 = _map[? "trans"];
-			transCol = _map[? "transCol"];
+			gameRoom  = _map[? "room"];
+			name	  = _map[? "name"];
+			trans	  = _map[? "trans"];
+			transCol  = _map[? "transCol"];
+			titleFont = _map[? "titleFont"];
+			titleCol  = _map[? "titleCol"];
 		}
 	}
 	

@@ -28,7 +28,7 @@ if (arcade) {
 		c_black,
 	);
 	var _font = draw_get_font();
-	draw_set_font(fntNormal);
+	draw_set_font(fnt_normal);
 	draw_text_center(
 		_cam_x + _cam_hw,
 		_cam_y + min(20,arcadeSelectTime),
