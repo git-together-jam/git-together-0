@@ -1,7 +1,7 @@
-/// @func arcade_game_enable_shader(game_id, bool, shader*)
+/// @func arcade_game_enable_shader(game_id, bool, [shader])
 /// @param game_id
 /// @param bool
-/// @param shader*
+/// @param [shader]
 
 var _map = global.ArcadeMachineList[| argument[0]];
 

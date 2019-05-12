@@ -19,9 +19,14 @@ The associated functions and arguments are as follows.
 	- game_id : Your unique game_id, stored in the variable.
 	- bool    : Boolean - Enable/Disable the save system.
 	
-	>> Note : No need to use this one if you do not want saves in your game.
+	[Note : No need to use this one if you do not want saves in your game.]
 	
 3. arcade_game_set_title(game_id, font, color)
 	- game_id : Your unique game_id, stored in the variable.
 	- font    : Font used to draw the title.
 	- color   : Color of the font used to draw the title
+	
+4. arcade_game_enable_shader(game_id, bool, [shader])
+	- game_id : Your unique game_id, stored in the variable.
+	- bool    : Boolean - Enable/Disable using shader on your game screen.
+	- shader  : The shader to use on your game screen. [Argument only needed if shader is enabled.]
