@@ -22,8 +22,7 @@ arcade_game_add("Pong", spr_arcade_pong, rm_pong);
 
 arcade_game_add("Frogger", spr_arcade_frogger, rm_frogger);
 
-var _wking = arcade_game_add("Wking", spr_arcade_wking, rm_wk_menu);
-arcade_game_set_transition(_wking, TransType.circle, c_white);
+arcade_game_add("Wking", spr_arcade_wking, rm_wking_menu);
 
 arcade_game_add("Yosi", spr_arcade_machine_yosi, rm_yosi);
 

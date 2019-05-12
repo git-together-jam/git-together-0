@@ -11,8 +11,7 @@
         "b5a695aa-ecd8-4879-91ce-c0ba89e0231c",
         "ba9206bf-0da3-4924-b075-566bae5a14f4",
         "85cd2268-d570-4912-acb3-b7af2187dc1b",
-        "5004a696-58db-46ed-bbad-359c511fa268",
-        "030a609e-2529-4059-a405-dbe37c3a0eea"
+        "5004a696-58db-46ed-bbad-359c511fa268"
     ],
     "filterType": "GMObject",
     "folderName": "__ Minigame Objects",
