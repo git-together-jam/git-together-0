@@ -103,19 +103,19 @@
             }
         },
         {
-            "Key": "096bb146-e833-463b-b2e9-edab824ac767",
-            "Value": {
-                "id": "fb42e901-94e4-4d4e-a195-541d546813fc",
-                "resourcePath": "scripts\\arcade_game_set_title\\arcade_game_set_title.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "07bbe52b-ed3f-49ff-ae81-069383639c72",
             "Value": {
                 "id": "885fac7e-b84f-42ec-b4c4-f345d866f889",
                 "resourcePath": "objects\\obj_wk_grasstile\\obj_wk_grasstile.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "096bb146-e833-463b-b2e9-edab824ac767",
+            "Value": {
+                "id": "fb42e901-94e4-4d4e-a195-541d546813fc",
+                "resourcePath": "scripts\\arcade_game_set_title\\arcade_game_set_title.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1508,6 +1508,14 @@
                 "id": "8d3ffc26-d12d-4163-87ac-664b6b3db318",
                 "resourcePath": "views\\ac07e147-a55f-4a17-bc1d-cc82cd8d12b2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ac086a6e-0107-4dda-866d-74f7575419ac",
+            "Value": {
+                "id": "9f590d59-4bf3-40c9-8ff4-d27b5e86baa4",
+                "resourcePath": "objects\\obj_viking_test\\obj_viking_test.yy",
+                "resourceType": "GMObject"
             }
         },
         {
