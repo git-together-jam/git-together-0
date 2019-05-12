@@ -56,35 +56,75 @@ event_timer = -1;
 
 dialogue = ds_list_create();
 dialogue_index = 0;
+dialogue_state = 0;
 
 var _file = file_text_open_read("dungandrompa_dialogue.txt");
-var _read_state = 0;
+// var _read_state = 0;
 var _bullets = ds_list_create();
+var _state_stack = ds_stack_create();
+ds_stack_push(_state_stack, dialogue_state);
 
 while (!file_text_eof(_file)) {
 	var _str = file_text_readln(_file);
+	var _str_len = string_length(_str);
 	
-	if (string_pos("[BULLETS]", _str) == 1)  { 
-		_read_state = 1; 
-		ds_list_destroy_maps(_bullets);
+	#region tag matchin'
+	
+	if (string_char_at(_str, 1) == "[" && string_char_at(_str, _str_len - 2) == "]") {
+		if (string_char_at(_str, 2) == "/") {
+			ds_stack_pop(_state_stack);
+		}
+		
+		var _tag = string_copy(_str, 2, _str_len - 4);
+		switch (_tag) {
+			
+			case "BULLETS": #region;
+			
+				ds_stack_push(_state_stack, 1); 
+				ds_list_destroy_maps(_bullets);
+				
+			break; #endregion;
+				
+			case "NSD": #region;
+			
+				ds_stack_push(_state_stack, 2);
+				var _map = ds_map_create();
+				_map[? "name"] = "nsd_begin";
+				_map[? "text"] = "Make your argument!";
+				_map[? "status"] = "event";
+				ds_list_add_map(dialogue, _map);
+				
+			break; #endregion;
+				
+			case "/NSD": #region;
+			
+				var _map = ds_map_create();
+				_map[? "name"] = "tony";
+				_map[? "text"] = choose(
+					"Crap! I need to look for a flaw in their arguments",
+					"There must be some contradiction in there somewhere!",
+					"I have to break up this conflict somehow!",
+					"Shubbadubbadingdong ping pang",
+					"Maybe if I keep shut and don't say anything, they'll all go away",
+					"I'm clearly always right, so I have to fix this!"
+				);
+				_map[? "status"] = "self";
+				ds_list_add_map(dialogue, _map);
+				
+				var _map = ds_map_create();
+				_map[? "name"] = "nsd_end";
+				_map[? "text"] = "";
+				_map[? "status"] = "event";
+				ds_list_add_map(dialogue, _map);
+			
+			break; #endregion;
+		}
 		continue;
 	}
-	if (string_pos("[/BULLETS]", _str) == 1) continue;
-	if (string_pos("[NSD]", _str) == 1) { 
-		_read_state = 2;
-		var _map = ds_map_create();
-		_map[? "name"] = "nsd_begin";
-		_map[? "text"] = "Make your argument!";
-		_map[? "status"] = "event";
-		ds_list_add_map(dialogue, _map);
-		continue; 
-	}
-	if (string_pos("[/NSD]", _str) == 1) { 
-		_read_state = 0; 
-		continue; 
-	}
 	
-	switch (_read_state) {
+	#endregion;
+	
+	switch (ds_stack_top(_state_stack)) {
 		
 		case 0: #region normal dialogue
 		
@@ -206,6 +246,15 @@ text_length = 0;
 text_timer	= 0;
 text_time	= room_speed * .02;
 text_name_padding = 4;
+
+#endregion;
+
+#region nonstop debate
+
+nsd_font = fnt_big;
+draw_set_font(nsd_font);
+nsd_height = string_height("ASD(/=ha97sudhnIPSAD");
+nsd_begin_index = 0;
 
 #endregion;
 

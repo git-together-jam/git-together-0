@@ -10,7 +10,9 @@ _sys_save_init(true);
 // Example Arcade Game
 arcade_game_add("Basic 1", spr_ArcadeBasic1, rm_B1_Main);
 
-arcade_game_add("Dungandrompa", spr_arcade_dungandompa, rm_dungandrompa);
+var _dr = arcade_game_add("Dungandrompa", spr_arcade_dungandompa, rm_dungandrompa);
+arcade_game_set_transition(_dr, TransType.checkerboard, c_black);
+arcade_game_set_title(_dr, fnt_big, c_white);
 
 var _asteroids = arcade_game_add("Asteroids", spr_arcade_asteroids, rm_Asteroids);
 arcade_game_set_transition(_asteroids, TransType.circle, c_black);

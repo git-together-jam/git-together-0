@@ -12,8 +12,7 @@
         "94e1002f-fc9a-4962-8f89-3f464ee212bd",
         "72c2880d-6d27-4fca-8e74-ed38c7b7a660",
         "d31fb2d7-299a-4a3e-bb75-316258c20278",
-        "31ec74e0-9159-4046-aa13-3946a9d2025c",
-        "43160ecb-004e-4123-8f1a-6dca039b1fc3"
+        "31ec74e0-9159-4046-aa13-3946a9d2025c"
     ],
     "filterType": "GMScript",
     "folderName": "Datastructures",
