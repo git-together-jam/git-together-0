@@ -10,3 +10,4 @@ enum WkStates {
 hsp = 0;
 vsp = 0;
 state = 0;
+facing = 0;
