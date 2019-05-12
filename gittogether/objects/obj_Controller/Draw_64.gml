@@ -62,7 +62,14 @@ gpu_set_tex_filter(false);
 
 var _x = display_get_gui_width()  div 2,
 	_y = display_get_gui_height() div 2;
-
+draw_rect(
+	0,
+	0,
+	display_get_gui_width(),
+	display_get_gui_height(),
+	c_black,
+	exitTimerDisplayAlpha * 0.5,
+);
 draw_round_bar(
 	_x,
 	_y,
@@ -73,10 +80,8 @@ draw_round_bar(
 	exitTimerDisplayAlpha,
 	4,
 );
-
 var _font = draw_get_font();
 draw_set_font(fntNormal);
-
 draw_text_center(
 	_x,
 	_y,
@@ -87,5 +92,4 @@ draw_text_center(
 	c_white,
 	exitTimerDisplayAlpha,
 );
-
 draw_set_font(_font);

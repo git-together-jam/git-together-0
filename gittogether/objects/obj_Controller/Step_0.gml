@@ -10,5 +10,6 @@ else {
 if (exitTimer <= 0) {
 	end_minigame();
 	exitTimer = exitTime;
+	exitTimerMaxTime = exitTime;
 	miniTitleAlpha = 0;
 }

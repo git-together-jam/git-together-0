@@ -12,7 +12,7 @@ machinesPlaced = false;
 exitTime = 1*room_speed;
 exitTimer = exitTime;
 exitTimerDisplayAlpha = 0;
-exitTimerMaxTime = 0;
+exitTimerMaxTime = exitTime;
 
 // Globals
 global.Coins = sys_save_global_read("Coins", 100);
