@@ -2,7 +2,7 @@
     "id": "466ab03f-bc33-4663-87e0-5286e0d76141",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_wk_vkingthrow",
+    "name": "spr_wk_vikingthrow",
     "For3D": false,
     "HTile": false,
     "VTile": false,
