@@ -279,7 +279,7 @@ else if (argument[0] == YosiFunction.main)
 			{
 			case YosiGameState.title:
 				draw_text_center(room_width/2,room_height/2,"PRESS START",1,1,0,c_white,abs(round(sin(current_time/300))));
-				if (global.iSelect || global.iMouseL_P || global.iMoveY) 
+				if (global.iSelect || global.iMouse_LP || global.iMoveY) 
 					{
 					game_state = YosiGameState.playing;
 					player[@YosiPlayer.state] = YosiPlayerState.playing;

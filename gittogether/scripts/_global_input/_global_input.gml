@@ -18,5 +18,7 @@ global.iExit =		(keyboard_check(vk_escape) ||
 					gamepad_button_check(global.Controller,gp_start));
 
 // Mouse input
-global.iMouseL_P =	(mouse_check_button_pressed(mb_left) ||
+global.iMouse_LP =	(mouse_check_button_pressed(mb_left) ||
 					gamepad_button_check_pressed(global.Controller,gp_face2));
+global.iMouse_RP =	(mouse_check_button_pressed(mb_right) ||
+					gamepad_button_check_pressed(global.Controller,gp_face3));
