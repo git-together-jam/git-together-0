@@ -4,8 +4,6 @@ randomize();
 
 // Arcade machine vars
 miniTitleAlpha = 0;
-miniName = "";
-maxMachinesPerRow = 8;
 machinesPlaced = false;
 
 // Exiting a minigame
