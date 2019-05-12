@@ -66,7 +66,7 @@ draw_round_bar(
 	_y,
 	45,
 	7,
-	((exitTime - exitTimerMaxTime) / exitTime),
+	((exitTime - (exitTimerMaxTime-2)) / exitTime),
 	c_white,
 	exitTimerDisplayAlpha,
 	4,
