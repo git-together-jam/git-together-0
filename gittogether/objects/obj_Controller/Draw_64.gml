@@ -34,15 +34,17 @@ if room = rm_Overworld {
 //draw_text(8, 8, "TICKETS : " + string(global.Tickets));
 //draw_text(8, 8, "COINS : " + string(global.Coins));
 
-if (miniTitleAlpha > 0) {
-	draw_set_font(fntBig);
+
+/*if (miniTitleAlpha > 0) {
+	draw_set_font(fnt_big);
 
 	var str = "Minigame\n\n" + miniName;
 	draw_text_center(RES_W/2, RES_H/2, str, 1, 1, 0, c_dkgray, miniTitleAlpha);
 
 	// Reduce alpha
 	miniTitleAlpha -= 0.02;
-}
+}*/
+
 
 //Draw arcade game screen effect:
 arcade = room != rm_Overworld;
@@ -81,7 +83,7 @@ draw_round_bar(
 	4,
 );
 var _font = draw_get_font();
-draw_set_font(fntNormal);
+draw_set_font(fnt_normal);
 draw_text_center(
 	_x,
 	_y,
