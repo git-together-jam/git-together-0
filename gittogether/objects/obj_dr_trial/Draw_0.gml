@@ -33,7 +33,7 @@ var _y = room_height * .8;
 
 if (_dial[? "status"] == "event") {
 	var _last = text_list[| ds_list_size(text_list) - 1];
-	_x = (1 - event_timer / event_time) * room_width * .5;
+	_x = (1 - event_timer / event_time) * room_width * .5 + room_width * .125;
 	var _sin = sin((event_timer / event_time) * pi);
 	draw_set_alpha(min(_sin * 2.3, 1));
 	_y = (room_height - _last[? "y"] - text_height) / 2;
@@ -45,6 +45,7 @@ if (_dial[? "status"] == "event") {
 
 var _len = 0;
 var _size = ds_list_size(text_list);
+draw_set_font(text_font);
 for (var i = 0; i < _size; i++) {
 	var _text = text_list[| i];
 	var _str  = _text[? "text"];

@@ -6,5 +6,4 @@
 var _map = global.ArcadeMachineList[| argument[0]];
 
 _map[? "shaderEnabled"] = argument[1];
-
 _map[? "shaderSet"] = (argument[1] && (argument_count > 2)) ? argument[2] : -1;

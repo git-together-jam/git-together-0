@@ -119,14 +119,6 @@
             }
         },
         {
-            "Key": "096bb146-e833-463b-b2e9-edab824ac767",
-            "Value": {
-                "id": "fb42e901-94e4-4d4e-a195-541d546813fc",
-                "resourcePath": "scripts\\arcade_game_set_title\\arcade_game_set_title.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "0a8e16ed-584c-45d4-8606-706d994cb964",
             "Value": {
                 "id": "2ff11873-4caf-444d-8b8a-2fbf4087e77e",
@@ -236,6 +228,14 @@
                 "id": "7e2999e1-e4a6-45e6-a1c9-3edd34e92ed5",
                 "resourcePath": "sprites\\spr_trash_can_shadow\\spr_trash_can_shadow.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "191d6518-583c-48cc-b428-4fd1c9922cca",
+            "Value": {
+                "id": "872816ac-06d7-4e06-a993-029e7ffaaf76",
+                "resourcePath": "scripts\\arcade_game_set_transition\\arcade_game_set_transition.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1303,14 +1303,6 @@
             }
         },
         {
-            "Key": "95a7aaba-2f03-43ac-9edc-d53ad4dcaf6d",
-            "Value": {
-                "id": "e1aaba90-ee7b-4def-8bff-7b31f5e6ca30",
-                "resourcePath": "scripts\\arcade_game_enable_save\\arcade_game_enable_save.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "96369e11-5919-42b2-9c7b-15a154366f26",
             "Value": {
                 "id": "f377cc48-95fe-4f82-9257-40c8082e8eb2",
@@ -1423,6 +1415,14 @@
             }
         },
         {
+            "Key": "a27b9b01-d184-4bdb-8979-6bac253323a1",
+            "Value": {
+                "id": "edd29c12-1a55-4943-9043-a415417ae58a",
+                "resourcePath": "scripts\\arcade_game_set_title\\arcade_game_set_title.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a2d04d5c-41a9-481c-aba5-f3c169385193",
             "Value": {
                 "id": "270db862-31f8-4169-9f71-3d23e1eaa2d5",
@@ -1508,6 +1508,14 @@
                 "id": "ffc2bdaf-e1f9-4a57-b948-86a4bbf58dc7",
                 "resourcePath": "objects\\obj_wk_stoneback\\obj_wk_stoneback.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "aac7c953-e27c-4f99-9783-0e7b18419191",
+            "Value": {
+                "id": "37cd3a49-29b5-4812-95cb-81fb2966ac95",
+                "resourcePath": "scripts\\arcade_game_add\\arcade_game_add.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1863,6 +1871,14 @@
             }
         },
         {
+            "Key": "d15c2e2e-b904-4495-8a4c-e604ee60abe9",
+            "Value": {
+                "id": "57b93940-47f4-4423-ba73-2beeb959c7b8",
+                "resourcePath": "scripts\\arcade_game_enable_save\\arcade_game_enable_save.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d2835bbf-5884-4f67-bb2a-85920e5bf9a5",
             "Value": {
                 "id": "c1602ca7-7b99-4300-b4c9-7e4dd2a20180",
@@ -1975,14 +1991,6 @@
             }
         },
         {
-            "Key": "d9d450bb-e90f-4429-829e-f81116f485cf",
-            "Value": {
-                "id": "6a695798-655f-4d7f-885a-193287bb3c9f",
-                "resourcePath": "scripts\\arcade_game_set_transition\\arcade_game_set_transition.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "da4c4aa9-b26d-459f-9eea-8e719c94aba3",
             "Value": {
                 "id": "c0debbd9-ed5e-4d30-b55a-6fa48aa0bd53",
@@ -2012,14 +2020,6 @@
                 "id": "489d4764-4434-4298-b902-4ebd837a8fa8",
                 "resourcePath": "objects\\obj_frog_water\\obj_frog_water.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "dc54a773-006a-4641-89f5-981816b289dd",
-            "Value": {
-                "id": "6b263d06-a07b-4619-a46f-a6f6dac97672",
-                "resourcePath": "scripts\\arcade_game_add\\arcade_game_add.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -2404,10 +2404,10 @@
         "6ba5a2fa-8be7-4c2d-8018-a18baa20edee",
         "6ef509e2-28b6-4f11-8b6b-11a6a34e55a0",
         "14eff6d1-ef6e-4f46-a62f-7283075bc117",
-        "dc54a773-006a-4641-89f5-981816b289dd",
-        "d9d450bb-e90f-4429-829e-f81116f485cf",
-        "096bb146-e833-463b-b2e9-edab824ac767",
-        "95a7aaba-2f03-43ac-9edc-d53ad4dcaf6d",
+        "aac7c953-e27c-4f99-9783-0e7b18419191",
+        "d15c2e2e-b904-4495-8a4c-e604ee60abe9",
+        "a27b9b01-d184-4bdb-8979-6bac253323a1",
+        "191d6518-583c-48cc-b428-4fd1c9922cca",
         "00158525-5b5d-448a-90fa-b16371409749",
         "ffbaaeb0-b0a4-40fe-855a-013e9b779ee0",
         "7309583b-7abc-46e8-b5f1-0d90a23c50d0",
@@ -2427,16 +2427,12 @@
         "72c2880d-6d27-4fca-8e74-ed38c7b7a660",
         "d31fb2d7-299a-4a3e-bb75-316258c20278",
         "31ec74e0-9159-4046-aa13-3946a9d2025c",
-        "43160ecb-004e-4123-8f1a-6dca039b1fc3",
         "ac4d89ad-8617-4e5e-b95d-aec818302582",
         "b292ed51-a525-480f-ab78-ced1b8def08b",
         "659355d7-471e-490e-a68c-71c96eb06071",
-        "a91eb8a5-4c4b-4440-be5b-c0121a7b290b",
-        "f06116af-68fa-4580-9a0e-a22c945e32f5",
-        "481d1d60-541b-405a-a848-f2b94c6bef41",
-        "74175d0d-51c9-4051-85fd-f786d5bd048d",
         "a377b671-3821-4a93-b255-28cb70870251",
         "4bdec8f9-d301-49d4-9042-e0ccba8da6b3",
+        "43160ecb-004e-4123-8f1a-6dca039b1fc3",
         "f396d9fe-7497-4409-b738-6b5673e8b6af",
         "4390655e-0d59-48b6-aa1d-10b66ca6546a",
         "8bc8fcc5-ac80-4e2a-b2e4-34f805c5b23b",
@@ -2450,6 +2446,10 @@
         "451bff07-312b-48d1-90bd-6d8a6d21dcb4",
         "e6a35c3e-4adb-4a60-aaff-c29efa441d35",
         "4aae1cea-ab33-4805-9d5d-e51b7aadf938",
+        "a91eb8a5-4c4b-4440-be5b-c0121a7b290b",
+        "f06116af-68fa-4580-9a0e-a22c945e32f5",
+        "481d1d60-541b-405a-a848-f2b94c6bef41",
+        "74175d0d-51c9-4051-85fd-f786d5bd048d",
         "3b2a4cb6-765f-496c-99c6-3a88c1dc00eb",
         "409e849a-61f2-42b8-8882-6a5b4dce65a7",
         "049184d5-853f-4f34-a703-23d9acb516cb",
