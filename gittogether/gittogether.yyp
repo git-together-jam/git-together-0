@@ -1511,14 +1511,6 @@
             }
         },
         {
-            "Key": "ac086a6e-0107-4dda-866d-74f7575419ac",
-            "Value": {
-                "id": "9f590d59-4bf3-40c9-8ff4-d27b5e86baa4",
-                "resourcePath": "objects\\obj_viking_test\\obj_viking_test.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "ac4d89ad-8617-4e5e-b95d-aec818302582",
             "Value": {
                 "id": "6967223a-40c4-455a-a49c-682388ca5536",
