@@ -2,9 +2,18 @@
     "id": "a0d993fa-611e-4179-acf2-e96a6965241b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "viking",
+    "name": "obj_wk_viking",
     "eventList": [
-        
+        {
+            "id": "02d3e2e8-ffa6-4497-9c42-6e1a6b1157a9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "a0d993fa-611e-4179-acf2-e96a6965241b"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

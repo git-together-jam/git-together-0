@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "26185586-6e6c-4185-9925-b2f686056530",
+            "Value": {
+                "id": "364de984-0d8b-4de2-99e7-5d8ad84997d1",
+                "resourcePath": "scripts\\scr_wk_camera\\scr_wk_camera.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "26e8617a-373b-4f8a-b75a-231d1e713c54",
             "Value": {
                 "id": "1057795a-1dce-4808-acc7-e2c2ff8d5327",
@@ -1378,7 +1386,7 @@
             "Key": "a0d993fa-611e-4179-acf2-e96a6965241b",
             "Value": {
                 "id": "acec1a8e-68a9-449e-a634-356fb39431c7",
-                "resourcePath": "objects\\viking\\viking.yy",
+                "resourcePath": "objects\\obj_wk_viking\\obj_wk_viking.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1655,6 +1663,14 @@
             }
         },
         {
+            "Key": "bc6a00ea-928c-4ef2-bd4f-a86c3ad2862a",
+            "Value": {
+                "id": "ea744f3e-ce42-4c04-97b1-ab9867af64e2",
+                "resourcePath": "objects\\Camera\\Camera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bd9874dd-6643-485d-bb94-135fe1bb854d",
             "Value": {
                 "id": "bdd05d2a-c306-4214-af1b-a5679d16a3a3",
@@ -1900,6 +1916,14 @@
                 "id": "290c5005-b2c3-400e-abae-7919f6f4d359",
                 "resourcePath": "objects\\obj_Trashcan\\obj_Trashcan.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d503ac99-876f-4924-be4f-0f70c0afa98b",
+            "Value": {
+                "id": "b39d218f-b752-46cf-afeb-f1e9cb44d232",
+                "resourcePath": "views\\d503ac99-876f-4924-be4f-0f70c0afa98b.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2417,6 +2441,7 @@
         "409e849a-61f2-42b8-8882-6a5b4dce65a7",
         "049184d5-853f-4f34-a703-23d9acb516cb",
         "83653018-a142-4148-b276-dc43a2fbf3b7",
+        "26185586-6e6c-4185-9925-b2f686056530",
         "dc54a773-006a-4641-89f5-981816b289dd",
         "d9d450bb-e90f-4429-829e-f81116f485cf",
         "95a7aaba-2f03-43ac-9edc-d53ad4dcaf6d",
