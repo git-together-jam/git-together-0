@@ -278,8 +278,8 @@ else if (argument[0] == YosiFunction.main)
 		switch(game_state)
 			{
 			case YosiGameState.title:
-				draw_text_center(room_width/2,room_height/2,"PRESS SPACE",1,1,0,c_white,abs(round(sin(current_time/300))));
-				if (global.iSelect) 
+				draw_text_center(room_width/2,room_height/2,"PRESS START",1,1,0,c_white,abs(round(sin(current_time/300))));
+				if (global.iSelect || global.iMouseL_P || global.iMoveY) 
 					{
 					game_state = YosiGameState.playing;
 					player[@YosiPlayer.state] = YosiPlayerState.playing;
@@ -290,8 +290,6 @@ else if (argument[0] == YosiFunction.main)
 				ceiling_y = 20 + dsin(distance)*min(5,distance / 500);
 				floor_y = room_height - 20 + dsin(distance)*min(5,distance / 500);
 				yosi_game(YosiFunction.move_ground);
-				//debug
-				if (mouse_check_button_pressed(mb_left)) {ds_list_add(obstacle_list,yosi_game(YosiFunction.new_laser,mouse_x,mouse_y,0));}
 				//Create new obstacles from blueprint
 				if (yosi_game(YosiFunction.blueprint_read))
 					{
@@ -432,7 +430,10 @@ else if (argument[0] == YosiFunction.main)
 					case YosiPlayerState.playing:
 						//Jetpack
 						distance++;
-						if (global.iMoveY < 0)
+						if (global.iMoveY < 0 || 
+							mouse_check_button(mb_left) || 
+							keyboard_check(vk_space) || 
+							gamepad_button_check(global.Controller,gp_face1))
 							{
 							player[@YosiPlayer.vsp] -= 0.25;
 							}
