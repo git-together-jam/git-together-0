@@ -1,0 +1,6 @@
+# GML files should have crlf line endings because...Windows or something
+*.gml text eol=crlf
+
+# Other project files set to binary to avoid touching line endings also collapse diffs
+*.yyp binary
+*.yy binary

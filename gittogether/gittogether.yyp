@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "14eff6d1-ef6e-4f46-a62f-7283075bc117",
+            "Value": {
+                "id": "a347e660-6488-4f6d-81ab-bdcf447e788b",
+                "resourcePath": "scripts\\overworld_get_arcade_locations\\overworld_get_arcade_locations.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "17e6ba71-e84d-4cfb-8483-d6f8edff3203",
             "Value": {
                 "id": "7e2999e1-e4a6-45e6-a1c9-3edd34e92ed5",
@@ -268,6 +276,14 @@
                 "id": "c03eed1a-9d1d-4af1-b691-6ba36ef27e14",
                 "resourcePath": "notes\\Game Creation Guide.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "281ddd5b-a274-483d-bdcc-6db84c8ade7c",
+            "Value": {
+                "id": "137416a0-91eb-4c97-bb23-285c5358efec",
+                "resourcePath": "sprites\\spr_arcade_machine_area\\spr_arcade_machine_area.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1887,6 +1903,14 @@
             }
         },
         {
+            "Key": "fdb762d1-92c7-428a-be53-17c2dee866ea",
+            "Value": {
+                "id": "faeaa488-8a04-4a13-855b-06c01b86617c",
+                "resourcePath": "objects\\obj_arcade_area\\obj_arcade_area.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fe040975-222f-41fa-b78b-7d7e1e259bd4",
             "Value": {
                 "id": "2393f7f8-bca6-48c1-accf-d7a99f0337aa",
@@ -1907,6 +1931,7 @@
         "b0b0b4fa-c9ce-4569-89e5-e2c3cec7a4d0",
         "6ba5a2fa-8be7-4c2d-8018-a18baa20edee",
         "6ef509e2-28b6-4f11-8b6b-11a6a34e55a0",
+        "14eff6d1-ef6e-4f46-a62f-7283075bc117",
         "ffbaaeb0-b0a4-40fe-855a-013e9b779ee0",
         "7309583b-7abc-46e8-b5f1-0d90a23c50d0",
         "65526157-4bac-4418-9f21-0edaee11b00b",
