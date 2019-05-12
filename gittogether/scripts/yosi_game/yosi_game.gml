@@ -468,6 +468,7 @@ else if (argument[0] == YosiFunction.main)
 				//Results
 				draw_text_center(room_width/2,64,"YOU LOSE",1,1,0,c_white,1);
 				draw_text_center(room_width/2,96 + round(sin(current_time/500)*4),"Score: " + string(distance),0.5,0.5,0,c_white,1);
+				if (global.iSelect) end_minigame();
 				break;
 			}
 		surface_reset_target();

@@ -16,6 +16,6 @@ instance_destroy(obj_Transition);
 // Start
 room_goto_transition(rm,trans,transCol);
 
-// Set data
+/*/ Set data
 obj_Controller.miniName = name;
 obj_Controller.miniTitleAlpha = 2;
