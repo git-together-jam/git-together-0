@@ -10,6 +10,19 @@ if (dialogue_index < dialogue_count - 1) {
 			event_time = room_speed * 5;
 			event_timer = event_time;
 			dialogue_state = 2;
+			
+			nsd_bullets = _dial[? "bullets"];
+		
+			#region debug
+
+			var _ls = ds_list_size(nsd_bullets);
+			log("nsd_bullets (" + string(_ls) + "): [");
+			for (var i = 0; i < _ls; i++) {
+				log("	", json_encode(nsd_bullets[| i]) + ( i < _ls - 1 ? "," : " "));
+			}
+			log("]");
+
+			#endregion;
 			break;
 			
 		case "nsd_end":

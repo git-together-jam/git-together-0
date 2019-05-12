@@ -63,6 +63,7 @@ var _file = file_text_open_read("dungandrompa_dialogue.txt");
 // var _read_state = 0;
 var _bullets = ds_list_create();
 var _state_stack = ds_stack_create();
+var _nsd = -1;
 ds_stack_push(_state_stack, dialogue_state);
 
 while (!file_text_eof(_file)) {
@@ -82,7 +83,15 @@ while (!file_text_eof(_file)) {
 			case "BULLETS": #region;
 			
 				ds_stack_push(_state_stack, 1); 
-				ds_list_destroy_maps(_bullets);
+				
+			break; #endregion;
+				
+			case "/BULLETS": #region;
+			
+				var _list = ds_list_create();
+				ds_list_copy(_list, _bullets);
+				_nsd[? "bullets"] = _list;
+				ds_list_clear(_bullets);
 				
 			break; #endregion;
 				
@@ -93,7 +102,10 @@ while (!file_text_eof(_file)) {
 				_map[? "name"] = "nsd_begin";
 				_map[? "text"] = "Make your argument!";
 				_map[? "status"] = "event";
+				_map[? "bullets"] = -1;
 				ds_list_add_map(dialogue, _map);
+				
+				_nsd = _map;
 				
 			break; #endregion;
 				
@@ -185,8 +197,11 @@ while (!file_text_eof(_file)) {
 			}
 			var _bullet = ds_map_create();
 			_bullet[? "name"] = _name;
-			_bullet[? "target"] = string_length(_target) ? string_digits(_target) : -1;
-			ds_list_add_map(_bullets, _bullet);
+			if (string_length(_target)) _bullet[? "target"] = real(_target);
+			ds_list_add(_bullets, _bullet);
+			
+	
+			log("Added bullet: ", json_encode(_bullet));
 			
 		break; #endregion;
 			
@@ -228,6 +243,8 @@ while (!file_text_eof(_file)) {
 	}
 }
 
+ds_list_destroy(_bullets);
+ds_stack_destroy(_state_stack);
 file_text_close(_file);
 
 dialogue_count = ds_list_size(dialogue);

@@ -87,6 +87,13 @@ draw_surface_ext(
 	_floating ? min(sin((1 - event_timer / event_time) * pi) * 62, 1) : 1
 );
 
+#region bullets
+
+//var _size = ds_list_size();
+//for (var i = 0; i <)
+
+#endregion;
+
 #region cursor
 
 var _text_hover = text_list[| nsd_hover];
