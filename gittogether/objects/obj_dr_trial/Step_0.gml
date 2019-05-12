@@ -1,4 +1,6 @@
 
+timer++;
+
 if (text_length < text_target_length && !--text_timer) {
 	//text += string_char_at(text_target, ++text_length);
 	text_length++;

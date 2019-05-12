@@ -30,6 +30,8 @@ if (dialogue_index < dialogue_count - 1) {
 
 var _x = text_padding;
 var _y = room_height * .8;
+var _ang = 0;
+var _siz = 1;
 
 if (_dial[? "status"] == "event") {
 	var _last = text_list[| ds_list_size(text_list) - 1];
@@ -39,13 +41,22 @@ if (_dial[? "status"] == "event") {
 	_y = (room_height - _last[? "y"] - text_height) / 2;
 	
 	draw_rect(0, room_height * .5 - _sin * text_height, room_width, room_height * .5 + _sin * text_height, $100205, .6);
+} else if (dialogue_state == 2) {
+	
+	_x	 =  lerp(nsd_start_x,    nsd_end_x, 1 - event_timer / event_time) - min(string_width(_dial[? "text"]), room_width - text_padding * 2) / 2;
+	_y	 =  lerp(nsd_start_y,    nsd_end_y, 1 - event_timer / event_time);
+	_ang = (lerp(nsd_start_ang,  nsd_start_ang + angle_difference(nsd_start_ang, nsd_end_ang), 1 - event_timer / event_time) + 360) % 360;
+	_siz =	lerp(nsd_start_size, nsd_end_size, 1 - event_timer / event_time);
+
 } else {
 	draw_rect(0, room_height * .79, room_width, room_height, $100205, .6);
 }
 
+var _floating = dialogue_state == 2 && _dial[? "status"] != "event";
 var _len = 0;
 var _size = ds_list_size(text_list);
 draw_set_font(_dial[? "status"] == "nsd" ? nsd_font : text_font);
+text_surf = surface_clear_set(text_surf, room_width - text_padding * 2, room_height * .2, c_black, 0);
 for (var i = 0; i < _size; i++) {
 	var _text = text_list[| i];
 	var _str  = _text[? "text"];
@@ -56,8 +67,32 @@ for (var i = 0; i < _size; i++) {
 		_size = 0; // to break early, but after iteration
 	}
 	_len += _ilen;
-
-	draw_text_col(_x + _text[? "x"], _y + _text[? "y"], _str, _text[? "bulletpoint"] != undefined ? $21c1f2 : draw_get_color());
+	
+	var _col = _text[? "bulletpoint"] != undefined ? $21c1f2 : draw_get_color();
+	var _tx = _text[? "x"];
+	var _ty = _text[? "y"];
+	if (_floating) draw_rect(_tx, _ty, _tx + string_width(_str), _ty + nsd_height, c_black, .7);
+	draw_text_col(_tx + _floating, _ty + _floating, _str, _col);
 }
+surface_reset_target();
 draw_set_color($ffffff);
 draw_set_alpha(1);
+draw_set_halign(fa_left);
+
+draw_surface_ext(
+	text_surf, 
+	_x, _y,
+	_siz, _siz,
+	_ang, c_white, 
+	_floating ? min(sin((1 - event_timer / event_time) * pi) * 62, 1) : 1
+);
+
+
+var _spr = dialogue_state == 2 ? spr_dr_nsd_cursor : spr_dr_cursor
+var _offx = sprite_get_xoffset(_spr);
+var _offy = sprite_get_yoffset(_spr);
+cursor_surf = surface_clear_set(cursor_surf, 32, 32, c_black, 0);
+draw_sprite(_spr, 0, _offx, _offy);
+if (dialogue_state == 2) draw_sprite_ext(_spr, 1, _offx, _offy, 1, 1, (timer / room_speed) * 90, c_white, 1);
+surface_reset_target();
+draw_surface(cursor_surf, mouse_x - _offx, mouse_y - _offy);

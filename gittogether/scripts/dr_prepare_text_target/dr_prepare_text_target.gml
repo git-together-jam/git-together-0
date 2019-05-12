@@ -14,6 +14,7 @@ var _str_new = "";
 var _last_newline_index = 1;
 var _y = 0;
 var _x = 0;
+var _line_sep = 2 + (_state == 2) * 3;
 
 var _bullet_index = 0;
 var _target_index = 0;
@@ -86,7 +87,7 @@ for (var i = 1; i <= _len; i++) {
 					_map[? "text"] = string_copy(_str_new, _target_index + 1, min(_str_new_len - _target_index, j - 2));
 					_map[? "x"] = _x;
 					_map[? "y"] = _y;
-					_y += text_height + 2;
+					_y += text_height + _line_sep;
 					_x = 0;
 					_map[? "bulletpoint"] = _bullet_index; // no increment to align with next
 					ds_list_add_map(_list, _map);
@@ -100,7 +101,7 @@ for (var i = 1; i <= _len; i++) {
 					_map[? "text"] = string_copy(_str_new, 1, j - 1);
 					_map[? "x"] = _x;
 					_map[? "y"] = _y;
-					_y += text_height + 2;
+					_y += text_height + _line_sep;
 					_x = 0;
 					ds_list_add_map(_list, _map);
 				
