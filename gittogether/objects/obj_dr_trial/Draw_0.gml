@@ -87,12 +87,26 @@ draw_surface_ext(
 	_floating ? min(sin((1 - event_timer / event_time) * pi) * 62, 1) : 1
 );
 
+#region cursor
+
+var _text_hover = text_list[| nsd_hover];
 
 var _spr = dialogue_state == 2 ? spr_dr_nsd_cursor : spr_dr_cursor
 var _offx = sprite_get_xoffset(_spr);
 var _offy = sprite_get_yoffset(_spr);
 cursor_surf = surface_clear_set(cursor_surf, 32, 32, c_black, 0);
-draw_sprite(_spr, 0, _offx, _offy);
-if (dialogue_state == 2) draw_sprite_ext(_spr, 1, _offx, _offy, 1, 1, (timer / room_speed) * 90, c_white, 1);
+draw_sprite_ext(_spr, 0, _offx, _offy, 1, 1, 90 - (nsd_hover_timer / nsd_hover_time) * 45, c_white, 1);
+if (dialogue_state == 2) draw_sprite_ext(_spr, 1, _offx, _offy, 1, 1, ((timer / room_speed) % 1) * 90 * (1 - (nsd_hover_timer / nsd_hover_time)), c_white, 1);
 surface_reset_target();
-draw_surface(cursor_surf, mouse_x - _offx, mouse_y - _offy);
+draw_surface_ext(
+	cursor_surf, 
+	mouse_x - _offx - (nsd_hover_timer / nsd_hover_time) * 4,
+	mouse_y - _offy - (nsd_hover_timer / nsd_hover_time) * 4,
+	1 + (nsd_hover_timer / nsd_hover_time) * .2, 
+	1 + (nsd_hover_timer / nsd_hover_time) * .2, 
+	0, 
+	merge_color($25C8ff, $0050ff, (nsd_hover_timer / nsd_hover_time)), 
+	1
+);
+
+#endregion;

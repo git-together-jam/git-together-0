@@ -273,6 +273,10 @@ nsd_font = fnt_normal;
 draw_set_font(nsd_font);
 nsd_height = string_height("ASD(/=ha97sudhnIPSAD");
 nsd_begin_index = 0;
+nsd_hover = -1;
+nsd_hover_timer = 0;
+nsd_hover_time = room_speed * .24;
+nsd_clen = point_distance(0, 0, 12, 12);
 
 #endregion;
 

@@ -96,7 +96,7 @@ yellowaf: *I don't think that's the kind of game he wants us to make*
 yellowaf: We've been given a git repository
 yellowaf: you *can't put a board game on a machine*.
 minty: Why not?
-minty: There's *nothing stopping us* from making a digital version of *Choo Choo Train - Learn Math Fun!*
+minty: There's *nothing stopping us* from making a digital version of *Choo Choo Train - Learning Math is Fun!*
 math: Except certain death.
 [/NSD]
 tony: No, that's wrong!
