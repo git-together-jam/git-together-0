@@ -1,7 +1,6 @@
 /// @func yosi_game(parameters...)
 /// @arg parameters...
 /// @desc LOL
-
 #macro YosiBasics hsp,vsp,X,Y,length
 #macro YosiBlocksize 16
 #macro YosiHeightHalf 90
