@@ -63,6 +63,16 @@ jxm: If you make a game that satisfies me,
 jxm: You will be freed.
 jxm: However, I will not judge lightly.
 jxm: So, enough with this prologue, let the game begin!
+tony.self: THIRD-WALL-BREAKING TIME
+tony.self: Alright, so, now comes your first *nonstop debate*.
+tony.self: Here, people speak autmoatically, meaning you do not need to click to advance text.
+tony.self: Some of the contestants will have weakpoints in their arguments.
+tony.self: These *are highlighted in orange*. You have to choose the right truth bullet to shoot at the right weakpoint.
+tony.self: Oh, that's right, you'll get some number of truth bullets for each trial.
+tony.self: These are statements or clues that can be used as counter arguments.
+tony.self: If you shoot the wrong truth bullet at the wrong statement, you'll be deducted a healthpoint.
+tony.self: Alright, you ready?
+tony.self: No? Too bad
 [NSD]
 [BULLETS]
 Games aren't real
@@ -84,10 +94,9 @@ sahaun: or an action adventure game...
 sahaun: Then we could simply *remake three in a row*!
 yellowaf: *I don't think that's the kind of game he wants us to make*
 yellowaf: We've been given a git repository
-yellowaf: you *can't put a board game on a machine*
+yellowaf: you *can't put a board game on a machine*.
 minty: Why not?
-minty: There's *nothing stopping* us from making a digital version of 
-minty: *Choo Choo Train - Learn Math Fun!*
+minty: There's *nothing stopping us* from making a digital version of *Choo Choo Train - Learning Math is Fun!*
 math: Except certain death.
 [/NSD]
 tony: No, that's wrong!

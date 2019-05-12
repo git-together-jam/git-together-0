@@ -51,6 +51,7 @@ seat_width = room_width * .7;
 
 event_time = room_speed * 5;
 event_timer = -1;
+timer = 0;
 
 #region dialogue
 
@@ -220,7 +221,7 @@ while (!file_text_eof(_file)) {
 			var _map = ds_map_create();
 			_map[? "name"] = _name;
 			_map[? "text"] = _text;
-			_map[? "status"] = _status;
+			_map[? "status"] = _status != "" ? _status : "nsd";
 			ds_list_add_map(dialogue, _map);
 		
 		break; #endregion
@@ -246,17 +247,42 @@ text_length = 0;
 text_timer	= 0;
 text_time	= room_speed * .02;
 text_name_padding = 4;
+text_per_second = string_length("Some of the contestants are h");
+text_nsd_type = 0;
+text_surf = -1;
 
 #endregion;
 
 #region nonstop debate
 
-nsd_font = fnt_big;
+// NonStop Debate Type
+enum NSDT {
+	SLIDE_RIGHT,
+	SLIDE_LEFT,
+	GROW,
+	SLIDE_UP,
+	SIZE
+}
+
+nsd_start_x	   = 0; nsd_end_x	 = 0;
+nsd_start_y	   = 0; nsd_end_y	 = 0;
+nsd_start_ang  = 0; nsd_end_ang	 = 0;
+nsd_start_size = 1; nsd_end_size = 1;
+
+nsd_font = fnt_normal;
 draw_set_font(nsd_font);
 nsd_height = string_height("ASD(/=ha97sudhnIPSAD");
 nsd_begin_index = 0;
+nsd_hover = -1;
+nsd_hover_timer = 0;
+nsd_hover_time = room_speed * .24;
+nsd_clen = point_distance(0, 0, 12, 12);
 
 #endregion;
+
+cursor_previous = window_get_cursor();
+window_set_cursor(cr_none);
+cursor_surf = -1;
 
 #region debug
 

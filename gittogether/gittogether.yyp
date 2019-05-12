@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "0aa36344-abee-4499-8877-823e764f498b",
+            "Value": {
+                "id": "c54cffcb-739d-48c1-8e66-48ee138994db",
+                "resourcePath": "scripts\\point_in_rectangle_safe\\point_in_rectangle_safe.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0b43f4a7-21d6-4931-a990-bf2eced18f39",
             "Value": {
                 "id": "8bc58a65-c3e5-4f83-9a6f-ea5101d059c0",
@@ -828,6 +836,14 @@
                 "id": "335b5da6-6de2-41b4-9902-bde2401910eb",
                 "resourcePath": "rooms\\rm_dungandrompa\\rm_dungandrompa.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "5b621bb7-7a13-4f02-b413-77cf0d8dd646",
+            "Value": {
+                "id": "1a7802a1-39e0-44e3-8860-fd685bf2986e",
+                "resourcePath": "sprites\\spr_dr_nsd_cursor\\spr_dr_nsd_cursor.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1748,6 +1764,14 @@
                 "id": "4416314d-a112-47d5-9d34-bd9218393e3e",
                 "resourcePath": "objects\\obj_wk_stone\\obj_wk_stone.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c23baf1f-2262-4650-b504-4df6e7cf1975",
+            "Value": {
+                "id": "ed016087-d4e6-4745-8a7a-c408b9ac168a",
+                "resourcePath": "sprites\\spr_dr_cursor\\spr_dr_cursor.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
