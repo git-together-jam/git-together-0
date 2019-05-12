@@ -11,6 +11,38 @@ if (_xinput!=0) and (_yinput!=0){
 	spd[0]=_xinput*2
 	spd[1]=_yinput*-2
 }
+if _xinput=0{
+	if _yinput>0{
+		image_index=0
+	}
+	if _yinput<0{
+		image_index=2
+	}
+}
+if _yinput=0{
+	if _xinput>0{
+		image_index=1
+	}
+	if _xinput<0{
+		image_index=3
+	}
+}
+if _xinput>0{
+	if _yinput>0{
+		image_index=4
+	}
+	if _yinput<0{
+		image_index=5
+	}
+}	
+if _xinput<0{
+	if _yinput>0{
+		image_index=7
+	}
+	if _yinput<0{
+		image_index=6
+	}
+}
 //Old code, has some collision bugs
 /*
 if place_meeting(x,y+spd[1],obj_ad_wall) or place_meeting(x,y+spd[1],obj_ad_wall){
