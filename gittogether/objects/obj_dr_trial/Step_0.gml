@@ -1,6 +1,9 @@
 
 timer++;
 
+cursor_offx = cursor_off_val * sin((timer * .54 / room_speed) * pi / 2) * 2;
+cursor_offy = cursor_off_val * sin((timer * .54 / room_speed) * pi);
+
 if (text_length < text_target_length && !--text_timer) {
 	//text += string_char_at(text_target, ++text_length);
 	text_length++;
@@ -37,7 +40,7 @@ if (dialogue_state == 2) {
 		var _dir2 = point_direction(0, 0, _tx + _str_width, _ty + nsd_height);
 	
 		if (point_in_rectangle_safe(
-			mouse_x, mouse_y, 
+			mouse_x + cursor_offx, mouse_y + cursor_offy, 
 			_x + lengthdir_x(_len1 * _siz, _dir1 + _ang),
 			_y + lengthdir_y(_len1 * _siz, _dir1 + _ang),
 			_x + lengthdir_x(_len2 * _siz, _dir2 + _ang),

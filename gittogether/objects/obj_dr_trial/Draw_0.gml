@@ -100,8 +100,8 @@ if (dialogue_state == 2) draw_sprite_ext(_spr, 1, _offx, _offy, 1, 1, ((timer / 
 surface_reset_target();
 draw_surface_ext(
 	cursor_surf, 
-	mouse_x - _offx - (nsd_hover_timer / nsd_hover_time) * 4,
-	mouse_y - _offy - (nsd_hover_timer / nsd_hover_time) * 4,
+	mouse_x - _offx - (nsd_hover_timer / nsd_hover_time) * 4 + cursor_offx,
+	mouse_y - _offy - (nsd_hover_timer / nsd_hover_time) * 4 + cursor_offy,
 	1 + (nsd_hover_timer / nsd_hover_time) * .2, 
 	1 + (nsd_hover_timer / nsd_hover_time) * .2, 
 	0, 
