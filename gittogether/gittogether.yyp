@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-        
+
     ],
     "option_ecma": false,
     "parentProject": {
@@ -25,7 +25,7 @@
             }
         ],
         "hiddenResources": [
-            
+
         ],
         "projectPath": "${base_project}"
     },
@@ -755,6 +755,14 @@
             "Value": {
                 "id": "d68a06b7-5e2e-42c3-bf1b-6890481d439a",
                 "resourcePath": "shaders\\shd_retro\\shd_retro.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "619bb7c4-e529-4cd7-9b21-8c45251b8906",
+            "Value": {
+                "id": "6dba080a-af52-43b7-9cf3-6f6000547947",
+                "resourcePath": "shaders\\shd_arcade\\shd_arcade.yy",
                 "resourceType": "GMShader"
             }
         },
