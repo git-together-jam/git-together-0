@@ -49,6 +49,7 @@ enum YosiLaser
 //Init
 if (argument[0] == YosiFunction.init)
 	{
+	randomize();
 	surf = surface_create(room_width,room_height);
 	game_state = YosiGameState.title;
 	distance = 0;
@@ -261,8 +262,8 @@ else if (argument[0] == YosiFunction.main)
 				break;
 			case YosiGameState.playing:
 				//Move the ground every frame
-				ceiling_y = 20 + sin(current_time / 1000)*5;
-				floor_y = room_height - 20 + cos(current_time / 1000)*5;
+				ceiling_y = 20 + dsin(distance)*min(5,distance / 500);
+				floor_y = room_height - 20 + dsin(distance)*min(5,distance / 500);
 				yosi_game(YosiFunction.move_ground);
 				//debug
 				if (mouse_check_button_pressed(mb_left)) {ds_list_add(obstacle_list,yosi_game(YosiFunction.new_laser,mouse_x,mouse_y,0));}
@@ -445,7 +446,9 @@ else if (argument[0] == YosiFunction.main)
 			}
 		surface_reset_target();
 		//Draw the surface
+		shader_set(shd_retro);
 		draw_surface(surf,0,0);
+		shader_reset();
 		}
 	//Garbage Collector
 	var i=0;
