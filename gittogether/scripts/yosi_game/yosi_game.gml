@@ -210,6 +210,31 @@ if (argument[0] == YosiFunction.init)
 					],
 				240,
 				],
+				//6
+				[
+				60,
+					[
+					[YosiObType.laser,room_width+50,YosiHeightHalf,1],
+					[YosiObType.laser,room_width+50,YosiHeightHalf,-1],
+					],
+				240,
+				],
+				//7
+				[
+				90,
+					[
+					[YosiObType.laser,room_width+50,YosiHeightHalf-18,0],
+					[YosiObType.laser,room_width+50,YosiHeightHalf+18,0],
+					],
+				110,
+					[
+					[YosiObType.laser,room_width+50,20,0],
+					[YosiObType.laser,room_width+50,50,0],
+					[YosiObType.laser,room_width+50,room_height-20,0],
+					[YosiObType.laser,room_width+50,room_height-50,0],
+					],
+				240,
+				],
 			],
 		];
 	section = 0;
