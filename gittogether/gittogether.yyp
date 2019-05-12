@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-
+        
     ],
     "option_ecma": false,
     "parentProject": {
@@ -25,7 +25,7 @@
             }
         ],
         "hiddenResources": [
-
+            
         ],
         "projectPath": "${base_project}"
     },
@@ -236,6 +236,14 @@
                 "id": "bd050a0b-4d72-4a48-a4bc-d2fac02c1549",
                 "resourcePath": "notes\\Save System.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "20ee25c4-6de3-4f0e-ad73-cc71516a8c91",
+            "Value": {
+                "id": "831dd14f-656e-42c3-865d-6375f10efc07",
+                "resourcePath": "sprites\\spr_arcade_machine_yosi\\spr_arcade_machine_yosi.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -679,6 +687,14 @@
             }
         },
         {
+            "Key": "619bb7c4-e529-4cd7-9b21-8c45251b8906",
+            "Value": {
+                "id": "6dba080a-af52-43b7-9cf3-6f6000547947",
+                "resourcePath": "shaders\\shd_arcade\\shd_arcade.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "61a350a5-1029-4eab-9384-10a0e588d478",
             "Value": {
                 "id": "3764b883-2cfd-467a-a052-48534b01bff2",
@@ -755,14 +771,6 @@
             "Value": {
                 "id": "d68a06b7-5e2e-42c3-bf1b-6890481d439a",
                 "resourcePath": "shaders\\shd_retro\\shd_retro.yy",
-                "resourceType": "GMShader"
-            }
-        },
-        {
-            "Key": "619bb7c4-e529-4cd7-9b21-8c45251b8906",
-            "Value": {
-                "id": "6dba080a-af52-43b7-9cf3-6f6000547947",
-                "resourcePath": "shaders\\shd_arcade\\shd_arcade.yy",
                 "resourceType": "GMShader"
             }
         },
