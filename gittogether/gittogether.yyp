@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-        
+
     ],
     "option_ecma": false,
     "parentProject": {
@@ -25,7 +25,7 @@
             }
         ],
         "hiddenResources": [
-            
+
         ],
         "projectPath": "${base_project}"
     },
@@ -92,6 +92,22 @@
                 "id": "fb42e901-94e4-4d4e-a195-541d546813fc",
                 "resourcePath": "scripts\\arcade_game_set_title\\arcade_game_set_title.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "07bbe52b-ed3f-49ff-ae81-069383639c72",
+            "Value": {
+                "id": "885fac7e-b84f-42ec-b4c4-f345d866f889",
+                "resourcePath": "objects\\obj_wk_grasstile\\obj_wk_grasstile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0a8e16ed-584c-45d4-8606-706d994cb964",
+            "Value": {
+                "id": "2ff11873-4caf-444d-8b8a-2fbf4087e77e",
+                "resourcePath": "objects\\obj_wk_tree\\obj_wk_tree.yy",
+                "resourceType": "GMObject"
             }
         },
         {
