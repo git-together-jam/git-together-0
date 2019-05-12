@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "3a534d90-75b8-4d8a-a7fe-d5745419b4ba",
+            "Value": {
+                "id": "2c8c5edb-a065-4b0b-bcdb-0b8c517757ee",
+                "resourcePath": "scripts\\draw_round_bar\\draw_round_bar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3acfae12-09cc-4238-9772-b558d2cb2180",
             "Value": {
                 "id": "7d83eda0-a9af-434d-94ae-2f66b935fc3c",
@@ -1940,6 +1948,7 @@
         "ee65e55d-a512-4e42-9151-706710feceac",
         "70662d2b-255c-466b-b2a6-22deb7cfb4fa",
         "d701c979-43b1-4e01-b6ff-1ef9a0d36728",
+        "3a534d90-75b8-4d8a-a7fe-d5745419b4ba",
         "36dccd08-12c2-457a-9637-c5306277ff83",
         "2130b0a1-9d21-4fd9-a424-e7cae58506b6",
         "577e71c6-0a7d-4c0d-9a26-6a850b390bd4",
