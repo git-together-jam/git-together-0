@@ -1,4 +1,4 @@
-/// @func argame_game_set_title(game_id, font, color)
+/// @func arcade_game_set_title(game_id, font, color)
 /// @param game_id
 /// @param font
 /// @param color
