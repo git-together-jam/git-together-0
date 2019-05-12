@@ -64,7 +64,7 @@ for (var i = 1; i <= _len; i++) {
 		}
 	}
 	
-	if (string_width(_str_new + _chr) > _width) {
+	if (string_width(_str_new + _chr) + _x > _width) {
 		var _str_new_len = string_length(_str_new);
 		for (var j = _str_new_len; j > 1; j--) {
 			if (string_char_at(_str_new, j) == " ") {
@@ -98,7 +98,7 @@ for (var i = 1; i <= _len; i++) {
 				} else {
 					var _map = ds_map_create();
 					_map[? "text"] = string_copy(_str_new, 1, j - 1);
-					_map[? "x"] = 0;
+					_map[? "x"] = _x;
 					_map[? "y"] = _y;
 					_y += text_height + 2;
 					_x = 0;

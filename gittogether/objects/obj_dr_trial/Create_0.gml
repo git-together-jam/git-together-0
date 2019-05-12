@@ -246,6 +246,7 @@ text_length = 0;
 text_timer	= 0;
 text_time	= room_speed * .02;
 text_name_padding = 4;
+text_per_second = string_length("Some of the contestants are h");
 
 #endregion;
 
