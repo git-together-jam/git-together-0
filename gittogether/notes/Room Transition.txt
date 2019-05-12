@@ -9,9 +9,9 @@ Arguments:
 1. Target Room - Sets the target room to go to
 
 2. Type
-	a. TransType.screenFade : Screen fade to color
+	a. TransType.screenFade   : Screen fade to color
 	b. TransType.checkerboard : Checkerboard squares in-out from vertex
-	c. TransType.cirle : Circle in-out from center
+	c. TransType.circle		  : Circle in-out from center
 	
 	d. TransType.rand : Chooses a random one from the existing transition types
 	e. TransType.none : No transition, pretty boring

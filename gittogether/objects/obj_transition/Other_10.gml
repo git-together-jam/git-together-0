@@ -29,6 +29,7 @@ switch (type) {
 	#region None
 	case TransType.none:
 		event_user(15);
+		instance_destroy();
 	break;
 	#endregion
 	default:
