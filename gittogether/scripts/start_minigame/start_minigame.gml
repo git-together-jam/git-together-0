@@ -20,7 +20,3 @@ instance_destroy(obj_Transition);
 // Start
 room_goto_transition(rm, trans, transCol,
 					 text, titleFont, titleCol);
-
-/*/ Set data
-obj_Controller.miniName = name;
-obj_Controller.miniTitleAlpha = 2;
