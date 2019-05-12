@@ -18,6 +18,9 @@
 3. There, you have a basic system ready. But, it only has the default boring properties.
    - Transition : TransType.none
    - Transition Color : c_black
+   - Title Font : fnt_big
+   - Title Font Color : c_black
+   - Game Shader enabled? : true - shd_retro
    - Save system enabled? : false
    
    To change the default properties and add more effects on your arcade machines, see the note "Arcade Machine Functions".

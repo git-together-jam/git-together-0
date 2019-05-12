@@ -2,6 +2,10 @@
 
 randomize();
 
+// Shader
+shaderEnabled = false;
+shaderSet = -1;
+
 // Arcade machine vars
 miniTitleAlpha = 0;
 machinesPlaced = false;
