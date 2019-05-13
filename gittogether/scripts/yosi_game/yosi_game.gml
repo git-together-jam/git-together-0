@@ -319,6 +319,7 @@ else if (argument[0] == YosiFunction.main)
 					{
 					game_state = YosiGameState.playing;
 					player[@YosiPlayer.state] = YosiPlayerState.playing;
+					if (!audio_is_playing(snd_yosi_theme))audio_play_sound(snd_yosi_theme,10,true);
 					}
 				break;
 			case YosiGameState.playing:
@@ -507,6 +508,7 @@ else if (argument[0] == YosiFunction.main)
 				draw_text_transformed(3,5,string(distance),0.5,0.5,0);
 				break;
 			case YosiGameState.lose:
+				if (audio_is_playing(snd_yosi_theme))audio_stop_sound(snd_yosi_theme);
 				draw_clear(c_black);
 				//Results
 				draw_set_font(fnt_big);
