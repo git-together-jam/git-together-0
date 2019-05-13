@@ -783,6 +783,14 @@
             }
         },
         {
+            "Key": "57659f93-434d-4157-a65f-9ee233716c2b",
+            "Value": {
+                "id": "3627011d-048e-490a-babd-6a5e47fbc02e",
+                "resourcePath": "objects\\lifes\\lifes.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "577e71c6-0a7d-4c0d-9a26-6a850b390bd4",
             "Value": {
                 "id": "0b0e172b-1631-420f-a797-c016cf21d5b9",
