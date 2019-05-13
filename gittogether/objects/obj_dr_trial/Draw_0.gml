@@ -20,10 +20,22 @@ if (dialogue_index < dialogue_count - 1) {
 	
 	if (_char != undefined) {
 		draw_set_font(text_font);
+		
+		var _y = room_height * .79 - text_height - text_name_padding;
+		
+		if (dialogue_state == 2) {
+			var _h = nsd_bullet_height;
+			_y = room_height - _h * 2 - _h * ds_list_size(nsd_bullets);
+		}
 
 		var _full_name = _char[? "full_name"];
-		draw_rect(0, room_height * .8 - text_height - text_name_padding * 2, text_padding * 2 + string_width(_full_name), room_height * .79, $100005, .6);
-		draw_text(text_padding, room_height * .79 - text_height - text_name_padding, _full_name);
+		draw_rect(
+			0, _y - text_name_padding - 1, 
+			text_padding * 2 + string_width(_full_name), 
+			_y + text_height + text_name_padding, 
+			$100005, .6
+		);
+		draw_text(text_padding, _y, _full_name);
 		if (_dial[? "status"] == "self") draw_set_color($f18746);
 	}
 }
@@ -89,8 +101,26 @@ draw_surface_ext(
 
 #region bullets
 
-//var _size = ds_list_size();
-//for (var i = 0; i <)
+if (dialogue_state == 2) {
+	draw_set_font(text_font);
+	var _size = ds_list_size(nsd_bullets);
+	var _h = nsd_bullet_height;
+	var _sw = sprite_get_width(spr_dr_bullet);
+	for (var i = 0; i < _size; i++) {
+		var _bullet = nsd_bullets[| i];
+		var _str = _bullet[? "name"];
+		var _w = string_width(_str);
+		var _x = 4 + (nsd_bullet_selected == i) * 3;
+		var _y = room_height - 4 - ((_size - i + 2) % _size) * _h - _h;
+		draw_sprite(spr_dr_bullet, 0, _x, _y);	
+		draw_sprite_ext(
+			spr_dr_bullet, 1, _x + 4, _y, 
+			(_w) / _sw, 1, 0, c_white, 1
+		);
+		draw_sprite(spr_dr_bullet, 2, _x + _w + 4, _y);
+		draw_text(_x + 4, _y + 2, _str);
+	}
+}
 
 #endregion;
 

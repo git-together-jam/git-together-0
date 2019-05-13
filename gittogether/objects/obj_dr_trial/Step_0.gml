@@ -50,6 +50,15 @@ if (dialogue_state == 2) {
 			if (_text[? "bulletpoint"] != undefined) break;
 		}
 	}
+	
+	var _bswitch = global.iMoveY;
+	var _size = ds_list_size(nsd_bullets);
+	if (_bswitch != 0 && _bswitch != nsd_bswitch_prev) {
+		nsd_bullet_selected = (nsd_bullet_selected + _size + sign(_bswitch)) % _size;
+	}
+	
+	nsd_bswitch_prev = _bswitch;
+	// nsd_bullet_offset = lerp(nsd_bullet_offset, _size - nsd_bullet_selected + _size div 2, .12);
 }
 
 nsd_hover_timer = clamp(nsd_hover_timer + (nsd_hover >= 0) * 2 - 1, 0, nsd_hover_time);
