@@ -2,7 +2,7 @@
     "id": "c8afa864-a9fd-40d4-a270-77b3e33701e1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_wk_default",
+    "name": "obj_wk_error",
     "eventList": [
         
     ],

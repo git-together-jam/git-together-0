@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_wk_woodback",
     "eventList": [
-        
+        {
+            "id": "d758082e-d257-42cc-9670-a9926b353c2d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "4a0b5591-f4ae-4423-96af-d65c38362ebf"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
