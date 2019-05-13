@@ -711,6 +711,14 @@
             }
         },
         {
+            "Key": "4bc32e80-5d4e-4014-acf4-3d557cda9017",
+            "Value": {
+                "id": "471a21a6-c3c2-49ce-a23e-58ab45904202",
+                "resourcePath": "views\\4bc32e80-5d4e-4014-acf4-3d557cda9017.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4bdec8f9-d301-49d4-9042-e0ccba8da6b3",
             "Value": {
                 "id": "fecca240-0807-4f77-b878-d8c6f9f3e811",
@@ -1052,6 +1060,14 @@
                 "id": "c0e74a99-bc0c-482b-8cf1-c8d8d5dfeb7a",
                 "resourcePath": "sprites\\spr_arcade_shadow\\spr_arcade_shadow.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "714eb7ca-dfa0-496e-b113-5fce16509cc2",
+            "Value": {
+                "id": "0f4763d1-0744-4d71-8154-c1429c0a2d07",
+                "resourcePath": "sounds\\snd_yosi_theme\\snd_yosi_theme.yy",
+                "resourceType": "GMSound"
             }
         },
         {
