@@ -45,6 +45,9 @@ if (global.iSelect && arcade && !startedGame) {
 				   arcade.titleFont, arcade.titleCol);
 				   
 	startedGame = true;
+	//save position
+	global.Overworldx = x;
+	global.Overworldy = y;
 }
 
 //Animation

@@ -20,6 +20,8 @@ exitTimerMaxTime = exitTime;
 global.Coins = sys_save_global_read("Coins", 100);
 global.Tickets = sys_save_global_read("Tickets", 0);
 //global.CheatsUsed = sys_save_global_read("CheatsUsed",0);
+global.Overworldx = 320;
+global.Overworldy = 176;
 
 // Controller Support
 global.Controller = gamepad_get_first(0);

@@ -11,3 +11,7 @@ startedGame = false;
 
 //Animation
 arcadeSelectTime = 0;
+
+//x and y position saved by controller
+x = global.Overworldx;
+y = global.Overworldy;
