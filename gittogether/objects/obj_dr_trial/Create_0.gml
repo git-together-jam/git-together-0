@@ -1,6 +1,7 @@
 
 event_time = room_speed * 5;
 event_timer = -1;
+event_timer_running = true;
 timer = 0; // increments infinitely
 
 #region Characters
@@ -263,6 +264,7 @@ text_target_length = dr_prepare_text_target(_dial[? "text"], room_width - text_p
 text_length = 0;
 text_timer	= 0;
 text_time	= room_speed * .02;
+text_timer_running = true;
 text_name_padding = 4;
 text_per_second = string_length("Some of the contestants a");
 text_nsd_type = 0;
@@ -302,7 +304,11 @@ nsd_bswitch_prev = 0;
 nsd_shoot_x = 0;
 nsd_shoot_y = 0;
 nsd_shoot_timer = 0;
-nsd_shoot_time = room_speed * .67;
+nsd_shoot_time = room_speed * .47;
+nsd_shoot_time_spent = 0;
+
+nsd_uni_uvs = shader_get_uniform(shd_dr_counter, "uvs");
+nsd_uni_offx = shader_get_uniform(shd_dr_counter, "offx");
 
 #endregion;
 

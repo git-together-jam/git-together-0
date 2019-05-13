@@ -161,8 +161,8 @@ if (dialogue_state == 2) draw_sprite_ext(_spr, 1, _offx, _offy, 1, 1, ((timer / 
 surface_reset_target();
 draw_surface_ext(
 	cursor_surf, 
-	mouse_x - _offx - (nsd_hover_timer / nsd_hover_time) * 4 + cursor_offx,
-	mouse_y - _offy - (nsd_hover_timer / nsd_hover_time) * 4 + cursor_offy,
+	(nsd_shoot_timer > 0 ? nsd_shoot_x : mouse_x + cursor_offx) - _offx - (nsd_hover_timer / nsd_hover_time) * 4,
+	(nsd_shoot_timer > 0 ? nsd_shoot_y : mouse_y + cursor_offy) - _offy - (nsd_hover_timer / nsd_hover_time) * 4,
 	1 + (nsd_hover_timer / nsd_hover_time) * .2, 
 	1 + (nsd_hover_timer / nsd_hover_time) * .2, 
 	0, 
@@ -174,55 +174,21 @@ draw_surface_ext(
 
 if (nsd_shoot_timer > 0) {
 	
+	log("nsd_shoot_timer:", nsd_shoot_timer);
 	var _frac = nsd_shoot_timer / nsd_shoot_time;
-	var _len1 = _frac * room_width / 3;
-	var _len2 = _len1 + sprite_get_width(spr_dr_counter);
-	var _dir1 = 15;
-	var _dir2 = 345;
+	var _swidth = sprite_get_width(spr_dr_counter);
 	var _x = nsd_shoot_x;
 	var _y = nsd_shoot_y;
 	
-	var _xr1 = lengthdir_x(_len1, _dir1);
-	var _xr2 = lengthdir_x(_len2, _dir1);
-	
-	draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_dr_counter, 0));
-	
-	draw_vertex_texture(
-		_x + _xr1, 
-		_y + lengthdir_y(_len1, _dir1), 
-		0, 0
+	shader_set(shd_dr_counter);
+	var _tex = sprite_get_texture(spr_dr_counter, 0);
+	shader_set_uniform_f_array(nsd_uni_uvs, texture_get_uvs(_tex));
+	shader_set_uniform_f(nsd_uni_offx, (1 - _frac) * _swidth * texture_get_texel_width(_tex));
+	draw_sprite_ext(
+		spr_dr_counter, 0, 
+		_x, _y, // - sprite_get_height(spr_dr_counter) / 2,
+		1, 2.8, 340,
+		c_white, 1
 	);
-	
-	draw_vertex_texture(
-		_x + _xr2, 
-		_y + lengthdir_y(_len2, _dir1), 
-		1, 0
-	);
-	
-	draw_vertex_texture(
-		_x + _xr1, _y, 
-		0, .5
-	);
-	
-	draw_vertex_texture(
-		_x + _xr2, _y, 
-		1, .5
-	);
-	
-	draw_vertex_texture(
-		_x + _xr1, 
-		_y + lengthdir_y(_len1, _dir2), 
-		0, 1
-	);
-	
-	draw_vertex_texture(
-		_x + _xr2, 
-		_y + lengthdir_y(_len2, _dir2), 
-		1, 1
-	);
-	
-	draw_primitive_end();
+	shader_reset();
 }
-
-nsd_shoot_x = mouse_x + cursor_offx;
-nsd_shoot_y = mouse_y + cursor_offy;

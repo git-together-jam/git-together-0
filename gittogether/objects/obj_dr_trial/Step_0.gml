@@ -1,16 +1,22 @@
 
 timer++;
 
-cursor_offx = cursor_off_val * sin((timer * .54 / room_speed) * pi / 2) * 2;
-cursor_offy = cursor_off_val * sin((timer * .54 / room_speed) * pi);
-
-if (text_length < text_target_length && !--text_timer) {
-	//text += string_char_at(text_target, ++text_length);
+if (text_length < text_target_length && text_timer_running && !--text_timer) {
 	text_length++;
 	text_timer = text_time;
 }
 
-if (nsd_shoot_timer > 0) nsd_shoot_timer--;
+if (nsd_shoot_timer > 0) {
+	nsd_shoot_timer--;
+	nsd_shoot_time_spent++;
+	window_mouse_set(
+		((nsd_shoot_x - cursor_offx) / room_width)  * window_get_width(), 
+		((nsd_shoot_y - cursor_offy) / room_height) * window_get_height()
+	);
+} else {
+	cursor_offx = cursor_off_val * sin(((timer - nsd_shoot_time_spent) * .54 / room_speed) * pi / 2) * 2;
+	cursor_offy = cursor_off_val * sin(((timer - nsd_shoot_time_spent) * .54 / room_speed) * pi);
+}
 
 nsd_hover = -1;
 if (dialogue_state == 2) {
@@ -85,7 +91,7 @@ if (dialogue_state == 2) {
 
 nsd_hover_timer = clamp(nsd_hover_timer + (nsd_hover >= 0) * 2 - 1, 0, nsd_hover_time);
 
-if (event_timer >= 0 && --event_timer < 0) {
+if (event_timer >= 0 && event_timer_running && --event_timer < 0) {
 	dialogue_index++;
 	event_user(0);
 }
