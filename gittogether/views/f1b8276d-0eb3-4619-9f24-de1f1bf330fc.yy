@@ -10,7 +10,9 @@
         "87bb7f4b-fe5b-490c-89bd-6274b4ff4336",
         "ae9552b6-1964-4e5d-a42c-11cbb5546b9d",
         "d2835bbf-5884-4f67-bb2a-85920e5bf9a5",
-        "be0695f7-c714-4594-8c07-346886330a4a"
+        "be0695f7-c714-4594-8c07-346886330a4a",
+        "c23baf1f-2262-4650-b504-4df6e7cf1975",
+        "5b621bb7-7a13-4f02-b413-77cf0d8dd646"
     ],
     "filterType": "GMSprite",
     "folderName": "Dungandrompa",

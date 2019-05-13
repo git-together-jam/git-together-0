@@ -34,6 +34,8 @@ if room = rm_Overworld {
 
 #region Game shader effect
 
+// Drawing the app surface
+application_surface_draw_enable(!shaderEnabled);
 gpu_set_tex_filter(shaderEnabled);
 
 if (shaderEnabled) {
@@ -66,7 +68,7 @@ draw_round_bar(
 	_y,
 	45,
 	7,
-	((exitTime - exitTimerMaxTime) / exitTime),
+	((exitTime - (exitTimerMaxTime-2)) / exitTime),
 	c_white,
 	exitTimerDisplayAlpha,
 	4,

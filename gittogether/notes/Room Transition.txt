@@ -4,18 +4,21 @@
 
 Instead of calling room_goto(), you'd need to call room_goto_transition().
 
+[Note: OA = Optional Argument : Denoted by an asterisk(*)]
+
 Arguments:
 	
-1. Target Room - Sets the target room to go to
+1. Target Room
+	- Sets the target room to go to
 
 2. Type
-	a. TransType.screenFade : Screen fade to color
+	a. TransType.screenFade   : Screen fade to color
 	b. TransType.checkerboard : Checkerboard squares in-out from vertex
-	c. TransType.cirle : Circle in-out from center
+	c. TransType.circle		  : Circle in-out from center
 	
 	d. TransType.rand : Chooses a random one from the existing transition types
 	e. TransType.none : No transition, pretty boring
 	
-3. Color*
-	- Optional argument : can be used to set the color of the transition
+3. Color* [OA]
+	- Sets the color of the transition
 	- Default color is black
