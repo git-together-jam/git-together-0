@@ -20,8 +20,8 @@ arcade_game_enable_shader(_dr, true, shd_retro);
 
 // Asteroids - Sahaun
 var _ast = arcade_game_add("Asteroids", spr_arcade_asteroids, rm_Asteroids);
-arcade_game_set_transition(_ast, TransType.circle, c_white);
-arcade_game_set_title(_ast, fnt_pixel, c_gray);
+arcade_game_set_transition(_ast, TransType.circle, c_black);
+arcade_game_set_title(_ast, fnt_normal, c_ltgray);
 arcade_game_enable_shader(_ast, true, shd_retro);
 
 // Breakout - Qweleo

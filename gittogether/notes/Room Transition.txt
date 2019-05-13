@@ -6,8 +6,10 @@ Instead of calling room_goto(), you'd need to call room_goto_transition().
 
 [Note: OA = Optional Argument : Denoted by an asterisk(*)]
 
+Function: room_goto_transition(target_room, type, col*, title_text*, title_font*, title_col*)
+
 Arguments:
-	
+
 1. Target Room
 	- Sets the target room to go to
 
@@ -22,3 +24,15 @@ Arguments:
 3. Color* [OA]
 	- Sets the color of the transition
 	- Default color is black
+	
+4. Title Text* [OA]
+	- Sets the text to show as title during transition
+	[Example: Used for showing the minigame names]
+	
+5. Title Font* [OA]
+	- Sets the font of the text to show as title during transition
+	[Example: Used for showing the minigame names]
+	
+6. Title Color* [OA]
+	- Sets the color of the text to show as title during transition
+	[Example: Used for showing the minigame names]
