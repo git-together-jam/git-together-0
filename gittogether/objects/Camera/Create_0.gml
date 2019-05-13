@@ -1,1 +1,2 @@
-levelroom = 1
+sectionx = 0
+sectiony = 0
