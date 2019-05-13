@@ -2,37 +2,53 @@
 if (moveTimer <= 0){
 	xMove = 0;
 	yMove = 0;
-	if(global.iMoveX != 0){
-		moveTimer = moveTime;
-		xscale = .6;
-		yscale = 1.4;
-		image_angle = -global.iMoveX*90;
-		xMove = global.iMoveX*moveSpeed;
-		yMove = 0;
-	}
-	else if(global.iMoveY != 0){
-		moveTimer = moveTime;
-		xscale = .6;
-		yscale = 1.4;
-		image_angle = (global.iMoveY*90) + 90;
-		xMove = 0;
-		yMove = global.iMoveY*moveSpeed;
+	if (control){
+		if(global.iMoveX != 0){
+			moveTimer = moveTime;
+			xscale = .6;
+			yscale = 1.4;
+			image_angle = -global.iMoveX*90;
+			xMove = global.iMoveX*moveSpeed;
+			yMove = 0;
+			audio_play_sound_varied(snd_frog_jump,50,false);
+		}
+		else if(global.iMoveY != 0){
+			moveTimer = moveTime;
+			xscale = .6;
+			yscale = 1.4;
+			image_angle = (global.iMoveY*90) + 90;
+			xMove = 0;
+			yMove = global.iMoveY*moveSpeed;
+			audio_play_sound_varied(snd_frog_jump,50,false);
+		}
 	}
 }
 //On the river
 if (instance_place(x,y,obj_frog_water)){
 	if (instance_place(x,y,obj_frog_turtle)){
 		with (instance_place(x,y,obj_frog_turtle)){
+			if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
 			if (other.moveTimer <= 0) other.xMove += vx;
 		}
 	}else{
 		room_goto_transition(rm_frogger,TransType.checkerboard,c_black);
+		if (control)audio_play_sound(snd_frog_lose,100,false);
+		control = false;
 	}
+}
+//On the road or offscreen
+if (instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width){
+	room_goto_transition(rm_frogger,TransType.checkerboard,c_black);
+	if (control)audio_play_sound(snd_frog_lose,100,false);
+	control = false;
 }
 
 x+=xMove;
 y+=yMove;
 moveTimer--;
+
+//no offscreen shenanigans
+y = clamp(y,0,(room_height div 16)*16)
 	
 
 //squash and stretch

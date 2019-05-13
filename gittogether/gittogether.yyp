@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "053645a2-6603-4994-bf71-1f9f5ba58420",
+            "Value": {
+                "id": "9a948711-9244-4257-9b13-119f76859422",
+                "resourcePath": "objects\\obj_frog_truckkun\\obj_frog_truckkun.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "05943763-beb4-4d10-9dbf-a0ae8ee4e477",
             "Value": {
                 "id": "bb3a10a1-bf25-4f81-a953-44a9cb706766",
@@ -322,7 +330,7 @@
             "Key": "1e8d5542-56d6-4778-b58f-544171d4fd99",
             "Value": {
                 "id": "b5e6a61d-3c10-41a1-a0dd-ff32274e5ee0",
-                "resourcePath": "objects\\obj_frog_turtle_spawn\\obj_frog_turtle_spawn.yy",
+                "resourcePath": "objects\\obj_frog_water_spawn\\obj_frog_water_spawn.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -452,6 +460,14 @@
                 "id": "c00248ec-db7f-430a-926a-290cbb5a9a3b",
                 "resourcePath": "views\\2bcfd5ba-e7a4-436c-9405-cbdb290092f2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2d39902d-e5fc-4d38-9e21-97f77e7b9ee6",
+            "Value": {
+                "id": "bfbc0114-da81-4fab-ba80-80b81564ce9b",
+                "resourcePath": "sounds\\snd_frog_theme\\snd_frog_theme.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -807,6 +823,14 @@
             }
         },
         {
+            "Key": "4c8430f3-d12f-4450-afbd-3d86dbfc1f52",
+            "Value": {
+                "id": "ee384fee-8246-4984-8774-c1baa7d6cbcc",
+                "resourcePath": "scripts\\audio_play_sound_varied\\audio_play_sound_varied.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4e463fa5-6b06-4e52-a70a-ef1fc3fa1d3e",
             "Value": {
                 "id": "2f179abf-70ab-4989-bd35-887da855eb0d",
@@ -1115,6 +1139,14 @@
             "Value": {
                 "id": "64352f88-6b94-475c-9e83-0d7c00799075",
                 "resourcePath": "views\\6847ab87-1c5d-4331-910e-e77b6da90b98.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "69347d60-3b74-475b-9478-9e13ae8be7c5",
+            "Value": {
+                "id": "c4a762d8-5825-4c9e-9b61-ebcd2928b4f2",
+                "resourcePath": "views\\69347d60-3b74-475b-9478-9e13ae8be7c5.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1863,6 +1895,14 @@
             }
         },
         {
+            "Key": "bbb85639-31db-4105-b288-46a292878af4",
+            "Value": {
+                "id": "f81f2c3c-b414-4551-82e5-086d971d8ce8",
+                "resourcePath": "views\\bbb85639-31db-4105-b288-46a292878af4.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bbc3f1b9-d201-4942-865d-6d36a5a5ef30",
             "Value": {
                 "id": "26dc7f82-c10c-44b5-9baa-54ea09137036",
@@ -1884,6 +1924,14 @@
                 "id": "3319ea9b-2efd-4a83-8b40-e04a0772201b",
                 "resourcePath": "sprites\\spr_dr_pope\\spr_dr_pope.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bdaa0b0d-b571-46a2-98e5-e83f90167c2a",
+            "Value": {
+                "id": "128b6592-e707-415f-b7df-1781cc63c7e5",
+                "resourcePath": "sounds\\snd_frog_lose\\snd_frog_lose.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -2367,6 +2415,14 @@
             }
         },
         {
+            "Key": "e82786bc-5b0b-4690-823d-a9864ade6b08",
+            "Value": {
+                "id": "bbae78ca-978e-4336-8104-c29deb27a57f",
+                "resourcePath": "sprites\\spr_frog_truckkun\\spr_frog_truckkun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e962da59-2fae-4856-8b9c-10f8640d4aca",
             "Value": {
                 "id": "cea42404-06a7-4699-99c5-e7a273b865b7",
@@ -2479,6 +2535,14 @@
             }
         },
         {
+            "Key": "f194bdf1-9d2a-488c-874e-03e1709400c0",
+            "Value": {
+                "id": "f8374877-ca72-4306-81f3-32868c3bf7c5",
+                "resourcePath": "sounds\\snd_frog_jump\\snd_frog_jump.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f1b8276d-0eb3-4619-9f24-de1f1bf330fc",
             "Value": {
                 "id": "8754dbc6-6729-40b4-93f0-e6c1c78af2b9",
@@ -2567,6 +2631,14 @@
             }
         },
         {
+            "Key": "f8c2487b-fff7-43f7-9876-951fa39f8c09",
+            "Value": {
+                "id": "fa8aab9d-7049-45d7-a6a3-a7adaaa47eec",
+                "resourcePath": "sounds\\snd_frog_win\\snd_frog_win.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f94a34d2-3908-4b32-872f-c9cc5b05bce9",
             "Value": {
                 "id": "fc771923-3d1b-4558-abbe-ad9f7f58f051",
@@ -2604,6 +2676,14 @@
                 "id": "a5023f22-e122-430c-a197-0c485df65489",
                 "resourcePath": "views\\fb17ea4e-4b5e-4c83-96e3-54e2b3f37926.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fc1b7efe-592e-4ce5-bdff-1f99996e3515",
+            "Value": {
+                "id": "50910d3d-6cd2-44ad-b229-a6bd217a8622",
+                "resourcePath": "objects\\obj_frog_road_spawn\\obj_frog_road_spawn.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2666,6 +2746,7 @@
         "70662d2b-255c-466b-b2a6-22deb7cfb4fa",
         "d701c979-43b1-4e01-b6ff-1ef9a0d36728",
         "3a534d90-75b8-4d8a-a7fe-d5745419b4ba",
+        "4c8430f3-d12f-4450-afbd-3d86dbfc1f52",
         "36dccd08-12c2-457a-9637-c5306277ff83",
         "2130b0a1-9d21-4fd9-a424-e7cae58506b6",
         "577e71c6-0a7d-4c0d-9a26-6a850b390bd4",
