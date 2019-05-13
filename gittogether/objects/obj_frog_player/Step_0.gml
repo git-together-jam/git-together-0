@@ -25,7 +25,7 @@ if (moveTimer <= 0){
 }
 //On the river
 if (instance_place(x,y,obj_frog_water)){
-	if (instance_place(x,y,obj_frog_turtle)){
+	if (instance_place(x,y,obj_frog_turtle) && control){
 		with (instance_place(x,y,obj_frog_turtle)){
 			if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
 			if (other.moveTimer <= 0) other.xMove += vx;
@@ -42,7 +42,14 @@ if (instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width){
 	if (control)audio_play_sound(snd_frog_lose,100,false);
 	control = false;
 }
+//die
+if (!control){
+	image_angle += sign(xscale)*10;
+	xscale = lerp(xscale,0,.2);
+	yscale = lerp(yscale,0,.2);
+}
 
+//move
 x+=xMove;
 y+=yMove;
 moveTimer--;
