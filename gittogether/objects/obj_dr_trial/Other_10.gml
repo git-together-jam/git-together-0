@@ -32,7 +32,13 @@ if (dialogue_index < dialogue_count - 1) {
 			text_timer = 0;
 			break;
 	}
-	text_target_length = dr_prepare_text_target(_dial[? "text"], room_width - text_padding * 2, text_list, dialogue_state);
+	
+	text_target_length = dr_prepare_text_target(
+		_dial[? "text"], 
+		room_width - text_padding * 2, 
+		text_list, 
+		_dial[? "status"] == "event" ? 0 : dialogue_state
+	);
 	
 	if (dialogue_state == 2 && _dial[? "name"] != "nsd_begin") {
 		event_time = (text_target_length / text_per_second) * room_speed + room_speed * .82;

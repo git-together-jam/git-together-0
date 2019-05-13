@@ -1,4 +1,8 @@
 
+#region Characters
+
+var _tsurf_color = c_white;
+
 if (dialogue_index < dialogue_count - 1) {
 	
 	var _soffr = round(seat_offset);
@@ -36,33 +40,76 @@ if (dialogue_index < dialogue_count - 1) {
 			$100005, .6
 		);
 		draw_text(text_padding, _y, _full_name);
-		if (_dial[? "status"] == "self") draw_set_color($f18746);
+		if (_dial[? "status"] == "self") _tsurf_color = $f18746;
 	}
 }
 
-var _x = text_padding;
-var _y = room_height * .8;
-var _ang = 0;
-var _siz = 1;
+#endregion;
 
-if (_dial[? "status"] == "event") {
+#region Bullets
+
+if (dialogue_state == 2) {
+	draw_set_font(text_font);
+	var _size = ds_list_size(nsd_bullets);
+	var _h = nsd_bullet_height;
+	var _sw = sprite_get_width(spr_dr_bullet);
+	for (var i = 0; i < _size; i++) {
+		var _bullet = nsd_bullets[| i];
+		var _str = _bullet[? "name"];
+		var _w = string_width(_str);
+		var _ihover = nsd_bullet_selected == i;
+		
+		var _x = 4 + _ihover * 4;
+		var _y = room_height - 4 - ((_size - i + 2) % _size) * _h - text_padding;
+		
+		draw_sprite(spr_dr_bullet, 0, _x, _y);	
+		draw_sprite_ext(
+			spr_dr_bullet, 1, _x + 4, _y, 
+			(_w) / _sw, 1, 0, c_white, 1
+		);
+		draw_sprite(spr_dr_bullet, 2, _x + _w + 4, _y);
+		draw_text_col(_x + 4, _y + 2, _str, _ihover ? $25C8ff : $ffffff);
+	}
+}
+
+#endregion;
+
+#region Text Background and Text Surface Variables
+
+var _tsx = text_padding;
+var _tsy = room_height * .8;
+var _tsang = 0;
+var _tssiz = 1;
+
+if (_dial[? "status"] == "event") { #region	Event Background
+	
 	var _last = text_list[| ds_list_size(text_list) - 1];
-	_x = (1 - event_timer / event_time) * room_width * .5 + room_width * .125;
+	_tsx = (1 - event_timer / event_time) * room_width * .5 + room_width * .125;
 	var _sin = sin((event_timer / event_time) * pi);
 	draw_set_alpha(min(_sin * 2.3, 1));
-	_y = (room_height - _last[? "y"] - text_height) / 2;
+	_tsy = (room_height - _last[? "y"] - text_height) / 2;
 	
 	draw_rect(0, room_height * .5 - _sin * text_height, room_width, room_height * .5 + _sin * text_height, $100205, .6);
-} else if (dialogue_state == 2) {
 	
-	_x	 =  lerp(nsd_start_x,    nsd_end_x, 1 - event_timer / event_time) - min(string_width(_dial[? "text"]), room_width - text_padding * 2) / 2;
-	_y	 =  lerp(nsd_start_y,    nsd_end_y, 1 - event_timer / event_time);
-	_ang = (lerp(nsd_start_ang,  nsd_start_ang + angle_difference(nsd_start_ang, nsd_end_ang), 1 - event_timer / event_time) + 360) % 360;
-	_siz =	lerp(nsd_start_size, nsd_end_size, 1 - event_timer / event_time);
+#endregion;
+} else if (dialogue_state == 2) {	#region	NSD Text Variables
+	
+	_tsx	 =  lerp(nsd_start_x,    nsd_end_x, 1 - event_timer / event_time) - min(string_width(_dial[? "text"]), room_width - text_padding * 2) / 2;
+	_tsy	 =  lerp(nsd_start_y,    nsd_end_y, 1 - event_timer / event_time);
+	_tsang = (lerp(nsd_start_ang,  nsd_start_ang + angle_difference(nsd_start_ang, nsd_end_ang), 1 - event_timer / event_time) + 360) % 360;
+	_tssiz =	lerp(nsd_start_size, nsd_end_size, 1 - event_timer / event_time);
 
-} else {
+#endregion;
+} else {							#region	Default Text Background		
+	
 	draw_rect(0, room_height * .79, room_width, room_height, $100205, .6);
+	
+#endregion;
 }
+
+#endregion;
+
+#region Text Surface
 
 var _floating = dialogue_state == 2 && _dial[? "status"] != "event";
 var _len = 0;
@@ -80,7 +127,7 @@ for (var i = 0; i < _size; i++) {
 	}
 	_len += _ilen;
 	
-	var _col = _text[? "bulletpoint"] != undefined ? $21c1f2 : draw_get_color();
+	var _col = _text[? "bulletpoint"] != undefined ? $21c1f2 : _tsurf_color;
 	var _tx = _text[? "x"];
 	var _ty = _text[? "y"];
 	if (_floating) draw_rect(_tx, _ty, _tx + string_width(_str), _ty + nsd_height, c_black, .7);
@@ -93,40 +140,17 @@ draw_set_halign(fa_left);
 
 draw_surface_ext(
 	text_surf, 
-	_x, _y,
-	_siz, _siz,
-	_ang, c_white, 
+	_tsx, _tsy,
+	_tssiz, _tssiz,
+	_tsang, c_white, 
 	_floating ? min(sin((1 - event_timer / event_time) * pi) * 62, 1) : 1
 );
 
-#region bullets
-
-if (dialogue_state == 2) {
-	draw_set_font(text_font);
-	var _size = ds_list_size(nsd_bullets);
-	var _h = nsd_bullet_height;
-	var _sw = sprite_get_width(spr_dr_bullet);
-	for (var i = 0; i < _size; i++) {
-		var _bullet = nsd_bullets[| i];
-		var _str = _bullet[? "name"];
-		var _w = string_width(_str);
-		var _x = 4 + (nsd_bullet_selected == i) * 3;
-		var _y = room_height - 4 - ((_size - i + 2) % _size) * _h - _h;
-		draw_sprite(spr_dr_bullet, 0, _x, _y);	
-		draw_sprite_ext(
-			spr_dr_bullet, 1, _x + 4, _y, 
-			(_w) / _sw, 1, 0, c_white, 1
-		);
-		draw_sprite(spr_dr_bullet, 2, _x + _w + 4, _y);
-		draw_text(_x + 4, _y + 2, _str);
-	}
-}
-
 #endregion;
 
-#region cursor
+#region Cursor
 
-var _text_hover = text_list[| nsd_hover];
+// var _text_hover = text_list[| nsd_hover];
 
 var _spr = dialogue_state == 2 ? spr_dr_nsd_cursor : spr_dr_cursor
 var _offx = sprite_get_xoffset(_spr);
@@ -147,3 +171,58 @@ draw_surface_ext(
 );
 
 #endregion;
+
+if (nsd_shoot_timer > 0) {
+	
+	var _frac = nsd_shoot_timer / nsd_shoot_time;
+	var _len1 = _frac * room_width / 3;
+	var _len2 = _len1 + sprite_get_width(spr_dr_counter);
+	var _dir1 = 15;
+	var _dir2 = 345;
+	var _x = nsd_shoot_x;
+	var _y = nsd_shoot_y;
+	
+	var _xr1 = lengthdir_x(_len1, _dir1);
+	var _xr2 = lengthdir_x(_len2, _dir1);
+	
+	draw_primitive_begin_texture(pr_trianglestrip, sprite_get_texture(spr_dr_counter, 0));
+	
+	draw_vertex_texture(
+		_x + _xr1, 
+		_y + lengthdir_y(_len1, _dir1), 
+		0, 0
+	);
+	
+	draw_vertex_texture(
+		_x + _xr2, 
+		_y + lengthdir_y(_len2, _dir1), 
+		1, 0
+	);
+	
+	draw_vertex_texture(
+		_x + _xr1, _y, 
+		0, .5
+	);
+	
+	draw_vertex_texture(
+		_x + _xr2, _y, 
+		1, .5
+	);
+	
+	draw_vertex_texture(
+		_x + _xr1, 
+		_y + lengthdir_y(_len1, _dir2), 
+		0, 1
+	);
+	
+	draw_vertex_texture(
+		_x + _xr2, 
+		_y + lengthdir_y(_len2, _dir2), 
+		1, 1
+	);
+	
+	draw_primitive_end();
+}
+
+nsd_shoot_x = mouse_x + cursor_offx;
+nsd_shoot_y = mouse_y + cursor_offy;

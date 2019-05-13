@@ -1,5 +1,9 @@
 
-#region characters
+event_time = room_speed * 5;
+event_timer = -1;
+timer = 0; // increments infinitely
+
+#region Characters
 
 characters = json_decode(string_concat(@'{ 
 	"tony": {
@@ -49,11 +53,7 @@ seat_width = room_width * .7;
 
 #endregion;
 
-event_time = room_speed * 5;
-event_timer = -1;
-timer = 0; // increments infinitely
-
-#region dialogue
+#region Dialogue
 
 dialogue = ds_list_create();
 dialogue_index = 0;
@@ -251,7 +251,7 @@ dialogue_count = ds_list_size(dialogue);
 
 #endregion;
 
-#region text
+#region Text
 
 text_padding = 12;
 text_list	= ds_list_create();
@@ -297,17 +297,27 @@ nsd_hover_time = room_speed * .24;
 
 nsd_bullet_height = 14;
 nsd_bullet_selected = 0;
-nsd_bullet_offset = 2;
 nsd_bswitch_prev = 0;
 
+nsd_shoot_x = 0;
+nsd_shoot_y = 0;
+nsd_shoot_timer = 0;
+nsd_shoot_time = room_speed * .67;
+
 #endregion;
+
+#region Cursor
 
 cursor_previous = window_get_cursor();
 window_set_cursor(cr_none);
 cursor_surf = -1;
 cursor_off_val = 12;
+cursor_offx = 0;
+cursor_offy = 0;
 
-#region debug
+#endregion;
+
+#region Debug
 
 var _ls = ds_list_size(dialogue);
 log("dialogue (" + string(_ls) + "): [");

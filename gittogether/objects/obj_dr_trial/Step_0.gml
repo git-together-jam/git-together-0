@@ -10,8 +10,13 @@ if (text_length < text_target_length && !--text_timer) {
 	text_timer = text_time;
 }
 
+if (nsd_shoot_timer > 0) nsd_shoot_timer--;
+
 nsd_hover = -1;
 if (dialogue_state == 2) {
+	
+	#region Text Hover
+	
 	var _dial = dialogue[| dialogue_index];
 	var _x	 =  lerp(nsd_start_x,    nsd_end_x, 1 - event_timer / event_time) - min(string_width(_dial[? "text"]), room_width - text_padding * 2) / 2;
 	var _y	 =  lerp(nsd_start_y,    nsd_end_y, 1 - event_timer / event_time);
@@ -51,14 +56,31 @@ if (dialogue_state == 2) {
 		}
 	}
 	
+	#endregion;
+	
+	#region Bullet Selection
+	
 	var _bswitch = global.iMoveY;
+	if (_bswitch == 0) _bswitch = mouse_wheel_down() - mouse_wheel_up();
 	var _size = ds_list_size(nsd_bullets);
 	if (_bswitch != 0 && _bswitch != nsd_bswitch_prev) {
 		nsd_bullet_selected = (nsd_bullet_selected + _size + sign(_bswitch)) % _size;
 	}
 	
 	nsd_bswitch_prev = _bswitch;
-	// nsd_bullet_offset = lerp(nsd_bullet_offset, _size - nsd_bullet_selected + _size div 2, .12);
+	
+	#endregion;
+	
+	#region Bullet Shooting
+	
+	if (mouse_check_button_pressed(mb_left) && nsd_shoot_timer <= 0) {
+		nsd_shoot_x = mouse_x + cursor_offx;
+		nsd_shoot_y = mouse_y + cursor_offy;
+
+		nsd_shoot_timer = nsd_shoot_time;
+	}
+	
+	#endregion;
 }
 
 nsd_hover_timer = clamp(nsd_hover_timer + (nsd_hover >= 0) * 2 - 1, 0, nsd_hover_time);
