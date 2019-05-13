@@ -11,9 +11,8 @@ y += global.iMoveY*spd;
 Made a hack to the mouse movement here
 So that way it doesn't intefere with the global inputs.
 */
-if (memMouseY != mouse_y) {
-	memMouseY = mouse_y;
-	y = mouse_y;
+if (abs(memMouseY-mouse_y)>.1) {
+	memMouseY = memMouseY*.8+.2*mouse_y;
+	y = memMouseY;
 }
-
 y = clamp(y,0,room_height);
