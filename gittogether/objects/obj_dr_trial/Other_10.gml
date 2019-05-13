@@ -10,8 +10,10 @@ if (dialogue_index < dialogue_count - 1) {
 			event_time = room_speed * 5;
 			event_timer = event_time;
 			dialogue_state = 2;
+			last_bullet_index = 0;
 			
 			nsd_bullets = _dial[? "bullets"];
+			nsd_timer = 0;
 		
 			#region debug
 
@@ -30,9 +32,16 @@ if (dialogue_index < dialogue_count - 1) {
 			dialogue_index = nsd_begin_index + 1;
 			_dial = dialogue[| dialogue_index];
 			text_timer = 0;
+			last_bullet_index = 0;
 			break;
 	}
-	text_target_length = dr_prepare_text_target(_dial[? "text"], room_width - text_padding * 2, text_list, dialogue_state);
+	
+	text_target_length = dr_prepare_text_target(
+		_dial[? "text"], 
+		room_width - text_padding * 2, 
+		text_list, 
+		_dial[? "status"] == "event" ? 0 : dialogue_state
+	);
 	
 	if (dialogue_state == 2 && _dial[? "name"] != "nsd_begin") {
 		event_time = (text_target_length / text_per_second) * room_speed + room_speed * .82;

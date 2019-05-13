@@ -78,7 +78,7 @@ tony.self: No? Too bad
 Games aren't real
 Digital games
 Educational games
-Juju said: 4
+Juju mentioned: 4
 Game of thrones
 [/BULLETS]
 sahaun: Alright, so we know he wants a game.
@@ -99,6 +99,14 @@ minty: Why not?
 minty: There's *nothing stopping us* from making a digital version of *Choo Choo Train - Learning Math is Fun!*
 math: Except certain death.
 [/NSD]
+tony: No, that's wrong!
+tony: If you remember from earlier when Juju spoke,
+tony: He said...
+jxm.self: You will make a game, 
+jxm.self: like *three-in-a-row* or whatever...
+tony: and that means a game like three-in-a-row is exactly what he wants!
+tony.self: The following stuff comes way later
+tony.self: I've not written the stuff between yet
 tony: No, that's wrong!
 tony: If we approach this completely blindly, it may end in disaster, yes, 
 tony: however, if we get stuck discussing semantics we'll never make anything!

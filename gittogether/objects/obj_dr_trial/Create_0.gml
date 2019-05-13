@@ -1,5 +1,10 @@
 
-#region characters
+event_time = room_speed * 5;
+event_timer = -1;
+event_timer_running = true;
+timer = 0; // increments infinitely
+
+#region Characters
 
 characters = json_decode(string_concat(@'{ 
 	"tony": {
@@ -49,11 +54,7 @@ seat_width = room_width * .7;
 
 #endregion;
 
-event_time = room_speed * 5;
-event_timer = -1;
-timer = 0; // increments infinitely
-
-#region dialogue
+#region Dialogue
 
 dialogue = ds_list_create();
 dialogue_index = 0;
@@ -251,7 +252,7 @@ dialogue_count = ds_list_size(dialogue);
 
 #endregion;
 
-#region text
+#region Text
 
 text_padding = 12;
 text_list	= ds_list_create();
@@ -263,6 +264,7 @@ text_target_length = dr_prepare_text_target(_dial[? "text"], room_width - text_p
 text_length = 0;
 text_timer	= 0;
 text_time	= room_speed * .02;
+text_timer_running = true;
 text_name_padding = 4;
 text_per_second = string_length("Some of the contestants a");
 text_nsd_type = 0;
@@ -293,16 +295,42 @@ nsd_begin_index = 0;
 nsd_hover = -1;
 nsd_hover_timer = 0;
 nsd_hover_time = room_speed * .24;
-nsd_clen = point_distance(0, 0, 12, 12);
+
+nsd_hit_timer = -1;
+
+nsd_timer = 0;
+nsd_bullet_out_time = room_speed * .24;
+
+last_bullet_index = 0;
+
+nsd_bullets = ds_list_create();
+nsd_bullet_height = 14;
+nsd_bullet_selected = 0;
+nsd_bswitch_prev = 0;
+
+nsd_shoot_x = 0;
+nsd_shoot_y = 0;
+nsd_shoot_timer = 0;
+nsd_shoot_time = room_speed * .47;
+nsd_shoot_time_spent = 0;
+
+nsd_uni_uvs = shader_get_uniform(shd_dr_counter, "uvs");
+nsd_uni_offx = shader_get_uniform(shd_dr_counter, "offx");
 
 #endregion;
+
+#region Cursor
 
 cursor_previous = window_get_cursor();
 window_set_cursor(cr_none);
 cursor_surf = -1;
 cursor_off_val = 12;
+cursor_offx = 0;
+cursor_offy = 0;
 
-#region debug
+#endregion;
+
+#region Debug
 
 var _ls = ds_list_size(dialogue);
 log("dialogue (" + string(_ls) + "): [");
