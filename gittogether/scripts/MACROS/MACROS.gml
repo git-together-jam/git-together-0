@@ -1,5 +1,7 @@
 gml_pragma("global", "MACROS()");
 
+#macro DEF_COIN_COST 3
+
 #macro RES_W 320
 #macro RES_H 180
 #macro RES_S 4

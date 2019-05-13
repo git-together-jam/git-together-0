@@ -15,7 +15,7 @@ var transCol  = argument[3];
 var titleFont = argument[4];
 var titleCol  = argument[5];
 
-instance_destroy(obj_Transition);
+//instance_destroy(obj_Transition);
 
 // Start
 room_goto_transition(rm, trans, transCol,
