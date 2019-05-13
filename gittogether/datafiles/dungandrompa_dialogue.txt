@@ -63,12 +63,22 @@ jxm: If you make a game that satisfies me,
 jxm: You will be freed.
 jxm: However, I will not judge lightly.
 jxm: So, enough with this prologue, let the game begin!
+tony.self: THIRD-WALL-BREAKING TIME
+tony.self: Alright, so, now comes your first *nonstop debate*.
+tony.self: Here, people speak autmoatically, meaning you do not need to click to advance text.
+tony.self: Some of the contestants will have weakpoints in their arguments.
+tony.self: These *are highlighted in orange*. You have to choose the right truth bullet to shoot at the right weakpoint.
+tony.self: Oh, that's right, you'll get some number of truth bullets for each trial.
+tony.self: These are statements or clues that can be used as counter arguments.
+tony.self: If you shoot the wrong truth bullet at the wrong statement, you'll be deducted a healthpoint.
+tony.self: Alright, you ready?
+tony.self: No? Too bad
 [NSD]
 [BULLETS]
 Games aren't real
 Digital games
 Educational games
-Juju said: 4
+Juju mentioned: 4
 Game of thrones
 [/BULLETS]
 sahaun: Alright, so we know he wants a game.
@@ -84,12 +94,19 @@ sahaun: or an action adventure game...
 sahaun: Then we could simply *remake three in a row*!
 yellowaf: *I don't think that's the kind of game he wants us to make*
 yellowaf: We've been given a git repository
-yellowaf: you *can't put a board game on a machine*
+yellowaf: you *can't put a board game on a machine*.
 minty: Why not?
-minty: There's *nothing stopping* us from making a digital version of 
-minty: *Choo Choo Train - Learn Math Fun!*
+minty: There's *nothing stopping us* from making a digital version of *Choo Choo Train - Learning Math is Fun!*
 math: Except certain death.
 [/NSD]
+tony: No, that's wrong!
+tony: If you remember from earlier when Juju spoke,
+tony: He said...
+jxm.self: You will make a game, 
+jxm.self: like *three-in-a-row* or whatever...
+tony: and that means a game like three-in-a-row is exactly what he wants!
+tony.self: The following stuff comes way later
+tony.self: I've not written the stuff between yet
 tony: No, that's wrong!
 tony: If we approach this completely blindly, it may end in disaster, yes, 
 tony: however, if we get stuck discussing semantics we'll never make anything!

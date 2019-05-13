@@ -20,8 +20,8 @@ arcade_game_enable_shader(_dr, true, shd_retro);
 
 // Asteroids - Sahaun
 var _ast = arcade_game_add("Asteroids", spr_arcade_asteroids, rm_Asteroids);
-arcade_game_set_transition(_ast, TransType.circle, c_white);
-arcade_game_set_title(_ast, fnt_pixel, c_gray);
+arcade_game_set_transition(_ast, TransType.circle, c_black);
+arcade_game_set_title(_ast, fnt_normal, c_ltgray);
 arcade_game_enable_shader(_ast, true, shd_retro);
 
 // Breakout - Qweleo
@@ -47,3 +47,7 @@ arcade_game_enable_shader(_yosi, true, shd_retro);
 // Adventure - Surg
 var _adv = arcade_game_add("Adventure", spr_arcade_pong, rm_ad_start);
 arcade_game_enable_shader(_adv, true, shd_retro);
+
+// Earth's Last Defense - Naxos
+var _eld = arcade_game_add("Earth's Last Defense", spr_arcade_eld, rm_eld);
+arcade_game_enable_shader(_eld, true, shd_arcade);

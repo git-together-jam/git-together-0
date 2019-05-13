@@ -50,6 +50,3 @@ if (room == rm_Overworld) {
 	}
 	machinesPlaced = true;
 }
-
-// Drawing the app surface
-application_surface_draw_enable(!shaderEnabled);
