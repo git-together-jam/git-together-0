@@ -8,4 +8,5 @@ tank_width = bbox_right - bbox_left - 8;
 
 fuel_level = 100;
 
+
 y = floor(y*0.5)*2;
