@@ -48,9 +48,9 @@ if (global.iSelect && arcade && !startedGame) {
 					   arcade.titleFont, arcade.titleCol);
 				   
 		startedGame = true;
-	//save position
-	global.Overworldx = x;
-	global.Overworldy = y;
+		//save position
+		global.Overworldx = x;
+		global.Overworldy = y;
 	} else {
 		room_goto_transition(rm_Overworld, TransType.screenFade, c_black,
 							"NOT ENOUGH COINS!", fnt_big, c_white);
