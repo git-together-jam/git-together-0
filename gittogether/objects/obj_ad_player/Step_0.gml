@@ -61,11 +61,11 @@ if keyboard_check_pressed(ord("Z")) and (canattack=1){
 			case 0: image_angle=0; x+=7;y-=4; break;
 			case 1: image_angle=270; x+=20;y+=7; break;
 			case 2: image_angle=180;x+=9;y+=20; break;
-			case 3: image_angle=90; break;
-			case 4: image_angle=-45; break;
-			case 5: image_angle=-135; break;
-			case 6: image_angle=135; break;
-			case 7: image_angle=45; break;
+			case 3: image_angle=90;x-=4;y+=9; break;
+			case 4: image_angle=-45;x+=19;y-=4; break;
+			case 5: image_angle=-135;x+=20;y+=19; break;
+			case 6: image_angle=135;x-=3;y+=20; break;
+			case 7: image_angle=45;x-=4;y-=3; break;
 		}
 	}
 }

@@ -8,6 +8,10 @@ else {
 	exitTimerDisplayAlpha = max(exitTimerDisplayAlpha - 0.05, 0);
 }
 if (exitTimer <= 0) {
+	if room=rm_Overworld{
+		game_end()
+		exit
+		}
 	end_minigame();
 	exitTimer = exitTime;
 	exitTimerMaxTime = exitTime;
