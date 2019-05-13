@@ -6,6 +6,7 @@ var _section_height = 528;
 
 var _x_pass = 16
 var _y_pass = 32
+
 var _cam_w = camera_get_view_width (view_camera[0])
 var _cam_h = camera_get_view_height (view_camera[0])
 
@@ -13,16 +14,18 @@ var _cam_x = obj_wk_viking.x - (_cam_w / 2);
 var _cam_y = obj_wk_viking.y - (_cam_h / 2);
 
 
-var _cam_x = clamp(_cam_x, ((_section_width + _cam_w)  * sectionx), (((_section_width + _cam_w) * sectionx) + _section_width))
-var _cam_y = clamp(_cam_y, (-(((_section_height + _cam_h) * sectiony) + _section_height)), (-(((_section_height + _cam_h) * sectiony))))
+
+_cam_x = clamp(_cam_x, ((_section_width + _cam_w)  * sectionx), (((_section_width + _cam_w) * sectionx) + _section_width))
+_cam_y = clamp(_cam_y, (-(((_section_height + _cam_h) * sectiony) + _section_height)), (-(((_section_height + _cam_h) * sectiony))))
+
+_cam_x = lerp(camera_get_view_x(view_camera[0]), _cam_x, 0.1)
+_cam_y = lerp(camera_get_view_y(view_camera[0]), _cam_y, 0.1)
 
 camera_set_view_pos(view_camera[0], _cam_x, _cam_y);
 
-//the min/max x is fixed
 var _min_x = (((_section_width + _cam_w) * sectionx) -_x_pass)
 var _max_x = (((_section_width + _cam_w) * sectionx) + _section_width + _cam_w + _x_pass)
 
-//this breaks my code and my teeth
 var _max_y = (-((_section_height + _cam_h) * sectiony + _section_height + _y_pass))
 var _min_y = (-((_section_height + _cam_h) * sectiony  - _cam_h - _y_pass))
 
