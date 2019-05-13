@@ -1,7 +1,7 @@
 if (wk_Action = 0) {
 if (global.iMoveY = 1) {
 	wk_Jumpstrenght = 0
-	if (((place_meeting(x, y + 1, obj_wk_woodtile)) && (!place_meeting(x, y + 48, obj_wk_error))) || (place_meeting(x, y -16, obj_wk_woodtile))) {
+	if (((place_meeting(x, y + 1, obj_wk_woodtile)) && (!position_meeting(x, y + 32, obj_wk_error))) || (place_meeting(x, y -16, obj_wk_woodtile))) {
 		y += wk_Gravity
 	}
 } else {
