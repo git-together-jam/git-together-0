@@ -1599,6 +1599,14 @@
             }
         },
         {
+            "Key": "a42d31ac-347d-496f-b682-b47ca129ce1b",
+            "Value": {
+                "id": "4ee5b082-4745-47af-9ae7-249c865986b0",
+                "resourcePath": "sprites\\spr_dr_counter_tonystr\\spr_dr_counter_tonystr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a71c6fe7-c960-423b-98a3-d73abd8114ec",
             "Value": {
                 "id": "568d6d43-bbe0-4848-9870-226e29b230c9",

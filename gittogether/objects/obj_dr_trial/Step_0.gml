@@ -6,6 +6,32 @@ if (text_length < text_target_length && text_timer_running && !--text_timer) {
 	text_timer = text_time;
 }
 
+if (nsd_hit_timer >= 0) nsd_hit_timer++;
+
+if (nsd_hit_timer > room_speed * 2) {
+	var _dial = dialogue[| ++dialogue_index];
+	var _start_index = dialogue_index
+	while (_dial[? "name"] != "nsd_end") {
+		_dial = dialogue[| ++dialogue_index];
+		if (_dial == undefined) {
+			log("========= ERROR =========");
+			log("_start_index:", _start_index);
+			log("_dname:", _dname);
+			show_error("dial is undefined", true);
+		}
+	}
+	
+	dialogue_index	+= 1;
+	nsd_hit_timer	= -1;
+	event_timer		= -1;
+	dialogue_state	= 0;
+	last_bullet_index = 0;
+	nsd_timer = 0;
+	// seat_offset -= 1;
+	
+	event_user(0);
+}
+
 if (nsd_shoot_timer > 0) {
 	nsd_shoot_timer--;
 	nsd_shoot_time_spent++;
@@ -13,13 +39,15 @@ if (nsd_shoot_timer > 0) {
 		((nsd_shoot_x - cursor_offx) / room_width)  * window_get_width(), 
 		((nsd_shoot_y - cursor_offy) / room_height) * window_get_height()
 	);
-} else {
+} else if (dialogue_state == 2) {
 	cursor_offx = cursor_off_val * sin(((timer - nsd_shoot_time_spent) * .54 / room_speed) * pi / 2) * 2;
 	cursor_offy = cursor_off_val * sin(((timer - nsd_shoot_time_spent) * .54 / room_speed) * pi);
 }
 
 nsd_hover = -1;
 if (dialogue_state == 2) {
+	
+	nsd_timer++;
 	
 	#region Text Hover
 	
@@ -93,15 +121,16 @@ nsd_hover_timer = clamp(nsd_hover_timer + (nsd_hover >= 0) * 2 - 1, 0, nsd_hover
 
 var _text = text_list[| nsd_hover];
 var _bullet = nsd_bullets[| nsd_bullet_selected];
-if (_bullet != undefined) log("_bullet[? \"target\"]:", _bullet[? "target"]);
-if (_text != undefined) log("_text[? \"bulletpoint\"]:", _text[? "bulletpoint"]);
-if (nsd_shoot_timer < nsd_shoot_time * .6 && 
+if (nsd_shoot_timer < nsd_shoot_time * .6  && 
+	nsd_shoot_timer > nsd_shoot_time * .06 &&
+	nsd_hit_timer < 0 &&
 	_bullet != undefined && _text != undefined &&
 	_bullet[? "target"] != undefined &&
 	_bullet[? "target"] == _text[? "bulletpoint"]) {
 
-	log("you hit the right one!");
+	log("You hit the right argument!");
 	event_timer_running = false;
+	nsd_hit_timer = 0;
 	
 }
 
@@ -133,15 +162,15 @@ if (dialogue_index < dialogue_count - 1) {
 	var _name = _dial[? "name"];
 	var _char = characters[? _name];
 	if (_char != undefined) {
-		var _target = _char[? "seat"];
+		var _target = real(_char[? "seat"]);
 	
 		if (_target - seat_offset > seat_count / 2) { // go left
 			seat_offset = lerp(seat_offset, seat_offset - _target, .12);
-		
 		} else if (_target - seat_offset < -seat_count / 2) { // go left
-			seat_offset = lerp(seat_offset, seat_offset - _target, .12);
-		
-		} else seat_offset = lerp(seat_offset, _target, .12);
+			seat_offset = lerp(seat_offset, _target - seat_offset, .12);
+		} else {
+			seat_offset = lerp(seat_offset, _target, .12);
+		}
 	
 		if (seat_offset < 0) seat_offset = seat_count;
 		if (seat_offset > seat_count) seat_offset = 0;

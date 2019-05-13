@@ -13,6 +13,7 @@ if (dialogue_index < dialogue_count - 1) {
 			last_bullet_index = 0;
 			
 			nsd_bullets = _dial[? "bullets"];
+			nsd_timer = 0;
 		
 			#region debug
 

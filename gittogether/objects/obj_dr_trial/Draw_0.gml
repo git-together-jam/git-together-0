@@ -59,7 +59,7 @@ if (dialogue_state == 2) {
 		var _w = string_width(_str);
 		var _ihover = nsd_bullet_selected == i;
 		
-		var _x = 4 + _ihover * 4;
+		var _x = 4 + _ihover * 4 + min((nsd_timer - (((_size - i + 2) % _size) * 1.4 + 1) * nsd_bullet_out_time) / nsd_bullet_out_time, 0) * _w;
 		var _y = room_height - 4 - ((_size - i + 2) % _size) * _h - text_padding;
 		
 		draw_sprite(spr_dr_bullet, 0, _x, _y);	
@@ -132,7 +132,7 @@ for (var i = 0; i < _size; i++) {
 	var _ty = _text[? "y"];
 	if (_floating) draw_rect(_tx, _ty, _tx + string_width(_str), _ty + nsd_height, c_black, .7);
 	draw_text_col(_tx + _floating, _ty + _floating, _str, _col);
-}
+}																					 
 surface_reset_target();
 draw_set_color($ffffff);
 draw_set_alpha(1);
@@ -156,7 +156,7 @@ var _spr = dialogue_state == 2 ? spr_dr_nsd_cursor : spr_dr_cursor
 var _offx = sprite_get_xoffset(_spr);
 var _offy = sprite_get_yoffset(_spr);
 cursor_surf = surface_clear_set(cursor_surf, 32, 32, c_black, 0);
-draw_sprite_ext(_spr, 0, _offx, _offy, 1, 1, 90 - (nsd_hover_timer / nsd_hover_time) * 45, c_white, 1);
+draw_sprite_ext(_spr, 0, _offx, _offy, 1, 1, 360 - (nsd_hover_timer / nsd_hover_time) * 45, c_white, 1);
 if (dialogue_state == 2) draw_sprite_ext(_spr, 1, _offx, _offy, 1, 1, ((timer / room_speed) % 1) * 90 * (1 - (nsd_hover_timer / nsd_hover_time)), c_white, 1);
 surface_reset_target();
 draw_surface_ext(
@@ -171,6 +171,59 @@ draw_surface_ext(
 );
 
 #endregion;
+
+#region Hit Bubble
+
+var _max = room_speed * .7;
+if (nsd_hit_timer >= 0 && nsd_hit_timer < _max) {
+	
+	var _vcount = 64;
+	var _width = nsd_hit_timer * .9 + 15;
+	var _rad = nsd_hit_timer * 1.2;
+	
+	draw_primitive_begin(pr_trianglestrip);
+	
+	for (var i = 0; i <= _vcount; i++) {
+		
+		var _ldx = lengthdir_x(1, (i / _vcount) * 360);
+		var _ldy = lengthdir_y(1, (i / _vcount) * 360);
+		
+		draw_vertex_color(
+			nsd_shoot_x + _ldx * (_rad),
+			nsd_shoot_y + _ldy * (_rad),
+			$f713f3, 
+			.7 - (nsd_hit_timer + 18) / _max
+		);
+		
+		draw_vertex_color(
+			nsd_shoot_x + _ldx * (_rad + _width),
+			nsd_shoot_y + _ldy * (_rad + _width),
+			$a569f4,
+			.7 - nsd_hit_timer / _max
+		);
+	}
+	
+	draw_primitive_end();
+}
+
+#endregion;
+
+#region Hit Counter Window
+
+var _min = room_speed * .5;
+if (nsd_hit_timer > _min && nsd_hit_timer < _min + room_speed * 2) {
+	draw_sprite(
+		spr_dr_counter_tonystr, 0, 
+		340 - min((nsd_hit_timer - _min) / (room_speed * .2), 1) * 340 - 
+		((nsd_hit_timer - _min) / (room_speed)) * 16 -
+		clamp((nsd_hit_timer - _min - room_speed * 1.3) / (room_speed * .3), 0, 1) * 340, 
+		sin((nsd_hit_timer / (room_speed * .045)) * pi) * 1.4
+	);	
+}
+
+#endregion;
+
+#region Counter
 
 if (nsd_shoot_timer > 0) {
 	
@@ -191,3 +244,5 @@ if (nsd_shoot_timer > 0) {
 	);
 	shader_reset();
 }
+
+#endregion;
