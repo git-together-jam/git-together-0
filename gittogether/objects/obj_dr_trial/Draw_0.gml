@@ -94,10 +94,10 @@ if (_dial[? "status"] == "event") { #region	Event Background
 #endregion;
 } else if (dialogue_state == 2) {	#region	NSD Text Variables
 	
-	_tsx	 =  lerp(nsd_start_x,    nsd_end_x, 1 - event_timer / event_time) - min(string_width(_dial[? "text"]), room_width - text_padding * 2) / 2;
-	_tsy	 =  lerp(nsd_start_y,    nsd_end_y, 1 - event_timer / event_time);
+	_tsx   =  lerp(nsd_start_x,    nsd_end_x, 1 - event_timer / event_time) - min(string_width(_dial[? "text"]), room_width - text_padding * 2) / 2;
+	_tsy   =  lerp(nsd_start_y,    nsd_end_y, 1 - event_timer / event_time);
 	_tsang = (lerp(nsd_start_ang,  nsd_start_ang + angle_difference(nsd_start_ang, nsd_end_ang), 1 - event_timer / event_time) + 360) % 360;
-	_tssiz =	lerp(nsd_start_size, nsd_end_size, 1 - event_timer / event_time);
+	_tssiz =  lerp(nsd_start_size, nsd_end_size, 1 - event_timer / event_time);
 
 #endregion;
 } else {							#region	Default Text Background		
@@ -174,7 +174,6 @@ draw_surface_ext(
 
 if (nsd_shoot_timer > 0) {
 	
-	log("nsd_shoot_timer:", nsd_shoot_timer);
 	var _frac = nsd_shoot_timer / nsd_shoot_time;
 	var _swidth = sprite_get_width(spr_dr_counter);
 	var _x = nsd_shoot_x;

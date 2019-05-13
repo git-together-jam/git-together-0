@@ -10,6 +10,7 @@ if (dialogue_index < dialogue_count - 1) {
 			event_time = room_speed * 5;
 			event_timer = event_time;
 			dialogue_state = 2;
+			last_bullet_index = 0;
 			
 			nsd_bullets = _dial[? "bullets"];
 		
@@ -30,6 +31,7 @@ if (dialogue_index < dialogue_count - 1) {
 			dialogue_index = nsd_begin_index + 1;
 			_dial = dialogue[| dialogue_index];
 			text_timer = 0;
+			last_bullet_index = 0;
 			break;
 	}
 	

@@ -91,6 +91,20 @@ if (dialogue_state == 2) {
 
 nsd_hover_timer = clamp(nsd_hover_timer + (nsd_hover >= 0) * 2 - 1, 0, nsd_hover_time);
 
+var _text = text_list[| nsd_hover];
+var _bullet = nsd_bullets[| nsd_bullet_selected];
+if (_bullet != undefined) log("_bullet[? \"target\"]:", _bullet[? "target"]);
+if (_text != undefined) log("_text[? \"bulletpoint\"]:", _text[? "bulletpoint"]);
+if (nsd_shoot_timer < nsd_shoot_time * .6 && 
+	_bullet != undefined && _text != undefined &&
+	_bullet[? "target"] != undefined &&
+	_bullet[? "target"] == _text[? "bulletpoint"]) {
+
+	log("you hit the right one!");
+	event_timer_running = false;
+	
+}
+
 if (event_timer >= 0 && event_timer_running && --event_timer < 0) {
 	dialogue_index++;
 	event_user(0);

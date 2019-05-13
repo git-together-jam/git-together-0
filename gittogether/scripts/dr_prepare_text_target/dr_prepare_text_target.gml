@@ -16,7 +16,6 @@ var _y = 0;
 var _x = 0;
 var _line_sep = 2 + (_state == 2) * 3;
 
-var _bullet_index = 0;
 var _target_index = 0;
 var _target_found = false;
 
@@ -55,7 +54,7 @@ for (var i = 1; i <= _len; i++) {
 			_map[? "x"] = _x;
 			_map[? "y"] = _y;
 			_x += string_width(_strc);
-			_map[? "bulletpoint"] = _bullet_index++;
+			_map[? "bulletpoint"] = last_bullet_index++;
 			ds_list_add_map(_list, _map);
 			
 			_str_new = "";
@@ -79,7 +78,7 @@ for (var i = 1; i <= _len; i++) {
 						_map[? "y"] = _y;
 						_x += string_width(_str1);
 						// _y += text_height + 2;
-						// _map[? "bulletpoint"] = _bullet_index; // no increment to align with next
+						// _map[? "bulletpoint"] = last_bullet_index; // no increment to align with next
 						ds_list_add_map(_list, _map);
 					}
 					
@@ -89,7 +88,7 @@ for (var i = 1; i <= _len; i++) {
 					_map[? "y"] = _y;
 					_y += text_height + _line_sep;
 					_x = 0;
-					_map[? "bulletpoint"] = _bullet_index; // no increment to align with next
+					_map[? "bulletpoint"] = last_bullet_index; // no increment to align with next
 					ds_list_add_map(_list, _map);
 				
 					_str_new = string_copy(_str_new, j + 1, _str_new_len - j + 1);

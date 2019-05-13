@@ -297,6 +297,9 @@ nsd_hover_timer = 0;
 nsd_hover_time = room_speed * .24;
 // nsd_clen = point_distance(0, 0, 12, 12);
 
+last_bullet_index = 0;
+
+nsd_bullets = ds_list_create();
 nsd_bullet_height = 14;
 nsd_bullet_selected = 0;
 nsd_bswitch_prev = 0;
