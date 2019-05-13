@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "0a83a0f6-7dfe-49bf-91fc-9f07c4354514",
+            "Value": {
+                "id": "1a67f15e-eb60-4afd-bbc8-6c2f3ba0c1dc",
+                "resourcePath": "rooms\\rm_frogger2\\rm_frogger2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0a8e16ed-584c-45d4-8606-706d994cb964",
             "Value": {
                 "id": "2ff11873-4caf-444d-8b8a-2fbf4087e77e",
@@ -844,6 +852,14 @@
                 "id": "0deadf80-4bc6-4e11-9f86-aa5266ab0aea",
                 "resourcePath": "views\\4e99c7aa-46da-4e98-a196-392a6a3e1a7e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4f65ad33-e01d-4ea8-8117-2e51521be9dd",
+            "Value": {
+                "id": "00c9eebe-225b-4200-9e79-a6befa12a446",
+                "resourcePath": "sprites\\spr_frog_goal\\spr_frog_goal.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2596,6 +2612,14 @@
                 "id": "7585f953-195c-446e-a9cd-30c65ae928fb",
                 "resourcePath": "notes\\Room Transition.yy",
                 "resourceType": "GMNotes"
+            }
+        },
+        {
+            "Key": "f5a5cc80-a9d0-4df1-b2c7-2c7a1cf96862",
+            "Value": {
+                "id": "3489d08f-f930-4daf-8439-b87ebf28df4e",
+                "resourcePath": "objects\\obj_frog_goal\\obj_frog_goal.yy",
+                "resourceType": "GMObject"
             }
         },
         {

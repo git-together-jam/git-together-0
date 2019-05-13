@@ -16,6 +16,7 @@ if (exitTimer <= 0) {
 		game_end();
 	} else {
 		end_minigame();
+		audio_stop_all();
 		exitTimer = exitTime;
 		exitTimerMaxTime = exitTime;
 		miniTitleAlpha = 0;

@@ -25,24 +25,45 @@ if (moveTimer <= 0){
 }
 //On the river
 if (instance_place(x,y,obj_frog_water)){
-	if (instance_place(x,y,obj_frog_turtle)){
+	if (instance_place(x,y,obj_frog_turtle) && control){
 		with (instance_place(x,y,obj_frog_turtle)){
 			if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
 			if (other.moveTimer <= 0) other.xMove += vx;
 		}
 	}else{
-		room_goto_transition(rm_frogger,TransType.checkerboard,c_black);
+		room_goto_transition(room,TransType.checkerboard,c_black);
 		if (control)audio_play_sound(snd_frog_lose,100,false);
 		control = false;
 	}
 }
 //On the road or offscreen
 if (instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width){
-	room_goto_transition(rm_frogger,TransType.checkerboard,c_black);
+	room_goto_transition(room,TransType.checkerboard,c_black);
 	if (control)audio_play_sound(snd_frog_lose,100,false);
 	control = false;
 }
+//die
+if (!control){
+	image_angle += sign(xscale)*10;
+	xscale = lerp(xscale,0,.2);
+	yscale = lerp(yscale,0,.2);
+}
+//goal
+if (instance_exists(obj_frog_goal)){
+	if (instance_place(x,y,obj_frog_goal) && control){
+		control = false;
+		if (room == rm_frogger) room_goto_transition(room_next(room),TransType.circle,c_black);
+		else end_minigame();
+		audio_play_sound(snd_frog_win,100,false);
+		with (instance_place(x,y,obj_frog_goal)){
+			image_xscale = lerp(image_xscale,0,.2);
+			image_yscale = lerp(image_yscale,0,.2);
+		}
+	}
+}
+		
 
+//move
 x+=xMove;
 y+=yMove;
 moveTimer--;
