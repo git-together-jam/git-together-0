@@ -27,7 +27,7 @@ if (moveTimer <= 0){
 if (instance_place(x,y,obj_frog_water)){
 	if (instance_place(x,y,obj_frog_turtle)){
 		with (instance_place(x,y,obj_frog_turtle)){
-			if (other.xMove != 0) other.xMove += .3*vx;
+			if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
 			if (other.moveTimer <= 0) other.xMove += vx;
 		}
 	}else{
@@ -36,10 +36,19 @@ if (instance_place(x,y,obj_frog_water)){
 		control = false;
 	}
 }
+//On the road or offscreen
+if (instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width){
+	room_goto_transition(rm_frogger,TransType.checkerboard,c_black);
+	if (control)audio_play_sound(snd_frog_lose,100,false);
+	control = false;
+}
 
 x+=xMove;
 y+=yMove;
 moveTimer--;
+
+//no offscreen shenanigans
+y = clamp(y,0,(room_height div 16)*16)
 	
 
 //squash and stretch

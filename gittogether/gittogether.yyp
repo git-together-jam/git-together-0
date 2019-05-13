@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "053645a2-6603-4994-bf71-1f9f5ba58420",
+            "Value": {
+                "id": "9a948711-9244-4257-9b13-119f76859422",
+                "resourcePath": "objects\\obj_frog_truckkun\\obj_frog_truckkun.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "05943763-beb4-4d10-9dbf-a0ae8ee4e477",
             "Value": {
                 "id": "bb3a10a1-bf25-4f81-a953-44a9cb706766",
@@ -322,7 +330,7 @@
             "Key": "1e8d5542-56d6-4778-b58f-544171d4fd99",
             "Value": {
                 "id": "b5e6a61d-3c10-41a1-a0dd-ff32274e5ee0",
-                "resourcePath": "objects\\obj_frog_turtle_spawn\\obj_frog_turtle_spawn.yy",
+                "resourcePath": "objects\\obj_frog_water_spawn\\obj_frog_water_spawn.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2407,6 +2415,14 @@
             }
         },
         {
+            "Key": "e82786bc-5b0b-4690-823d-a9864ade6b08",
+            "Value": {
+                "id": "bbae78ca-978e-4336-8104-c29deb27a57f",
+                "resourcePath": "sprites\\spr_frog_truckkun\\spr_frog_truckkun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e962da59-2fae-4856-8b9c-10f8640d4aca",
             "Value": {
                 "id": "cea42404-06a7-4699-99c5-e7a273b865b7",
@@ -2660,6 +2676,14 @@
                 "id": "a5023f22-e122-430c-a197-0c485df65489",
                 "resourcePath": "views\\fb17ea4e-4b5e-4c83-96e3-54e2b3f37926.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fc1b7efe-592e-4ce5-bdff-1f99996e3515",
+            "Value": {
+                "id": "50910d3d-6cd2-44ad-b229-a6bd217a8622",
+                "resourcePath": "objects\\obj_frog_road_spawn\\obj_frog_road_spawn.yy",
+                "resourceType": "GMObject"
             }
         },
         {
