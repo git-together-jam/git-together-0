@@ -18,8 +18,8 @@ var _cam_y = obj_wk_viking.y - (_cam_h / 2);
 _cam_x = clamp(_cam_x, ((_section_width + _cam_w)  * sectionx), (((_section_width + _cam_w) * sectionx) + _section_width))
 _cam_y = clamp(_cam_y, (-(((_section_height + _cam_h) * sectiony) + _section_height)), (-(((_section_height + _cam_h) * sectiony))))
 
-_cam_x = lerp(camera_get_view_x(view_camera[0]), _cam_x, 0.1)
-_cam_y = lerp(camera_get_view_y(view_camera[0]), _cam_y, 0.1)
+_cam_x = lerp(camera_get_view_x(view_camera[0]), _cam_x, 0.08)
+_cam_y = lerp(camera_get_view_y(view_camera[0]), _cam_y, 0.08)
 
 camera_set_view_pos(view_camera[0], _cam_x, _cam_y);
 
