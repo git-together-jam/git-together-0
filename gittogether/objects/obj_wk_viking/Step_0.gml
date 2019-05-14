@@ -1,4 +1,18 @@
+if !(wk_Action = 0) {
+	sprite_index = spr_wk_vikingthrow
+}
 if (wk_Action = 0) {
+if (global.iMouse_LP = 1) {
+	instance_activate_object(obj_wk_sword)
+	obj_wk_sword.wk_swordtime = 50
+	sprite_index = spr_wk_vikingthrow
+	wk_Action = 1
+}
+if (global.iMouse_RP = 1) {
+	instance_activate_object(obj_wk_ball)
+	sprite_index = spr_wk_vikingthrow
+	wk_Action = 2
+}
 if (global.iMoveY = 1) {
 	wk_Jumpstrenght = 0
 	if (((place_meeting(x, y + 1, obj_wk_woodtile)) && (!position_meeting(x, y + 32, obj_wk_error))) || (place_meeting(x, y -16, obj_wk_woodtile))) {
@@ -57,8 +71,8 @@ if (wk_Jumpstrenght > 0 ) {
 }
 
 if (y > 200) {
-	x = 23
-	y = 144
+	x = wk_spawnx
+	y = wk_spawny
 	wk_life -= 1
 }
 }

@@ -1,8 +1,8 @@
 {
-    "id": "57659f93-434d-4157-a65f-9ee233716c2b",
+    "id": "252f854a-f0f4-425d-b4b8-d4891b3f6620",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "lifes",
+    "name": "obj_wk_gameover",
     "eventList": [
         
     ],
