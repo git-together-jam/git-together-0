@@ -879,6 +879,14 @@
             }
         },
         {
+            "Key": "5e4c2328-2449-454f-9a2b-b3f67c754e54",
+            "Value": {
+                "id": "598a9693-7d1c-4f76-b449-999539ec37e1",
+                "resourcePath": "sprites\\spr_wk_snailhouse\\spr_wk_snailhouse.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5ea76bd9-e3c3-4eb3-a135-59e64017a2ab",
             "Value": {
                 "id": "2bba1441-ab8a-4ad8-909e-7b4fd6b7d776",
@@ -1155,6 +1163,14 @@
             "Value": {
                 "id": "9b977f68-fabb-4cc8-a807-29c11324028f",
                 "resourcePath": "sprites\\spr_arcade_front\\spr_arcade_front.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "76874a6f-f620-4abf-9f55-d150508e4868",
+            "Value": {
+                "id": "46a685fe-5d7a-488c-8fad-491be05fd792",
+                "resourcePath": "sprites\\spr_wk_crabclaws\\spr_wk_crabclaws.yy",
                 "resourceType": "GMSprite"
             }
         },
