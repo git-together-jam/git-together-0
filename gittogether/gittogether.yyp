@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "16c8c48f-1dd1-4059-94cc-d10d9e890b9f",
+            "Value": {
+                "id": "5e49ef10-9741-490e-ad75-ddd5793f1e31",
+                "resourcePath": "sprites\\spr_frog_log\\spr_frog_log.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "17e6ba71-e84d-4cfb-8483-d6f8edff3203",
             "Value": {
                 "id": "7e2999e1-e4a6-45e6-a1c9-3edd34e92ed5",
@@ -407,6 +415,14 @@
             }
         },
         {
+            "Key": "243e8479-a52d-40bb-9f8b-2a03e02c70d3",
+            "Value": {
+                "id": "a288a3d8-e279-4894-ba19-cf6b877120bb",
+                "resourcePath": "rooms\\rm_frogger4\\rm_frogger4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "24bfda76-1fcb-4942-8a9a-47a9e0d3de16",
             "Value": {
                 "id": "beec3972-6f20-4a66-a3c7-548e3f7d6dad",
@@ -500,6 +516,14 @@
                 "id": "68d396a4-4600-4f4a-9125-8148ed5b56cc",
                 "resourcePath": "rooms\\rm_frogger\\rm_frogger.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "300158b3-c37f-448a-8578-4308f1e1cc4b",
+            "Value": {
+                "id": "862de0cb-778a-4558-9daf-6a5a266e67d1",
+                "resourcePath": "objects\\obj_frog_turtle_spawn\\obj_frog_turtle_spawn.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1839,6 +1863,14 @@
             }
         },
         {
+            "Key": "b113515b-a131-4061-8891-ce882bae2024",
+            "Value": {
+                "id": "6e37fbbf-caaf-4b6a-92be-dd8761238d01",
+                "resourcePath": "objects\\obj_frog_log_spawn\\obj_frog_log_spawn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b136127b-9a4a-442c-a01c-1ecee3367c07",
             "Value": {
                 "id": "0ea6c2f6-f2e0-45b1-9ad2-711a0b5ee744",
@@ -2100,6 +2132,14 @@
                 "id": "e4d32a04-c57d-4fe1-9858-7a3689fdd58f",
                 "resourcePath": "objects\\obj_wk_default\\obj_wk_default.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ca54d68e-6fd4-4d74-8b70-8b1a044f7e29",
+            "Value": {
+                "id": "09295414-779f-4ef0-b733-6f70ddd69b9b",
+                "resourcePath": "rooms\\rm_frogger3\\rm_frogger3.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

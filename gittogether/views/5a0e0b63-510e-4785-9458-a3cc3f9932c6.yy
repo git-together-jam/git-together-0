@@ -9,7 +9,8 @@
         "db13ddde-a0fa-4013-b891-175918d3164f",
         "d578456f-e081-4854-9f02-1dd4518871ce",
         "e82786bc-5b0b-4690-823d-a9864ade6b08",
-        "4f65ad33-e01d-4ea8-8117-2e51521be9dd"
+        "4f65ad33-e01d-4ea8-8117-2e51521be9dd",
+        "16c8c48f-1dd1-4059-94cc-d10d9e890b9f"
     ],
     "filterType": "GMSprite",
     "folderName": "Frogger",
