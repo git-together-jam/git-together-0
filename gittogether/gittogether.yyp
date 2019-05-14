@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "0ebccb1e-5f8c-4b68-8f91-616e6ea73868",
+            "Value": {
+                "id": "e0bfae66-6db7-4673-9973-dddb328e7fcb",
+                "resourcePath": "scripts\\frog_wave\\frog_wave.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0f39b67e-75c9-4a1f-91a1-0776ef149978",
             "Value": {
                 "id": "5505b700-7767-42ac-b1e0-fb7035d8a6f5",
@@ -751,6 +759,14 @@
             }
         },
         {
+            "Key": "43cb4639-7273-4707-b323-62b592842766",
+            "Value": {
+                "id": "a551f4bd-a636-4097-9bcc-5084318367ff",
+                "resourcePath": "scripts\\frog_seconds_to_time_string\\frog_seconds_to_time_string.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "443376b9-750b-4df8-a6a6-e9e997e6f489",
             "Value": {
                 "id": "c529d012-4d9e-406f-b785-87d54e0b267d",
@@ -946,7 +962,7 @@
             "Key": "533a7a1a-6e42-4ffd-9e80-ba31a475e785",
             "Value": {
                 "id": "e2563ff0-5bf3-456c-ae8b-39d1617ca52d",
-                "resourcePath": "scripts\\scr_frog_die\\scr_frog_die.yy",
+                "resourcePath": "scripts\\frog_die\\frog_die.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1468,6 +1484,14 @@
                 "id": "89b25402-71c2-4325-90ef-4cf54914aa7b",
                 "resourcePath": "scripts\\yosi_game\\yosi_game.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "84004d02-8935-469e-aa05-65db5875b02a",
+            "Value": {
+                "id": "d180606b-81ae-40ff-b651-5a9a6d911dc0",
+                "resourcePath": "rooms\\rm_frogger1\\rm_frogger1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2984,6 +3008,8 @@
         "049184d5-853f-4f34-a703-23d9acb516cb",
         "83653018-a142-4148-b276-dc43a2fbf3b7",
         "533a7a1a-6e42-4ffd-9e80-ba31a475e785",
+        "0ebccb1e-5f8c-4b68-8f91-616e6ea73868",
+        "43cb4639-7273-4707-b323-62b592842766",
         "8d2ae318-b0f9-4b0d-8251-6bcc3d18f39c",
         "0aa36344-abee-4499-8877-823e764f498b"
     ],

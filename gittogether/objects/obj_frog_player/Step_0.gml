@@ -35,14 +35,14 @@ if (instance_place(x,y,obj_frog_water)){
 				var die = true;
 			}
 		}
-		if (die) scr_frog_die();
+		if (die) frog_die();
 	}else if (moveTimer <= 2){
-		scr_frog_die();
+		frog_die();
 	}
 }
 //On the road or offscreen
-if (instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width){
-	scr_frog_die();
+if ((instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width) && moveTimer <= 2){
+	frog_die();
 }
 //die
 if (!control){
