@@ -31,18 +31,18 @@ if (instance_place(x,y,obj_frog_water)){
 			if (image_index <= 54){
 				if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
 				if (other.moveTimer <= 0) other.xMove += vx;
-			}else{
+			}else if (other.moveTimer <= 2){
 				var die = true;
 			}
 		}
-		if (die) scr_frog_die();
-	}else{
-		scr_frog_die();
+		if (die) frog_die();
+	}else if (moveTimer <= 2){
+		frog_die();
 	}
 }
 //On the road or offscreen
-if (instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width){
-	scr_frog_die();
+if ((instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width) && moveTimer <= 2){
+	frog_die();
 }
 //die
 if (!control){
