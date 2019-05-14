@@ -36,24 +36,26 @@ y = clamp(y,_bbox_top,room_height-_bbox_bottom);
 // Play with arcade machine
 arcade = instance_place(x, y-4, obj_ArcadeMachine);
 
-if (global.iSelect && arcade && !startedGame) {
+if (!instance_exists(obj_Transition)) {
+	if (global.iSelect && arcade && !startedGame) {
 	
-	if (global.Coins >= DEF_COIN_COST) {
-		global.Coins -= DEF_COIN_COST;
+		if (global.Coins >= DEF_COIN_COST) {
+			global.Coins -= DEF_COIN_COST;
 		
-		obj_Controller.shaderEnabled = arcade.shaderEnabled;
-		obj_Controller.shaderSet = arcade.shaderSet;
+			obj_Controller.shaderEnabled = arcade.shaderEnabled;
+			obj_Controller.shaderSet = arcade.shaderSet;
 	
-		start_minigame(arcade.gameRoom, arcade.name, arcade.trans, arcade.transCol,
-					   arcade.titleFont, arcade.titleCol);
+			start_minigame(arcade.gameRoom, arcade.name, arcade.trans, arcade.transCol,
+						   arcade.titleFont, arcade.titleCol);
 				   
-		startedGame = true;
-		//save position
-		global.Overworldx = x;
-		global.Overworldy = y;
-	} else {
-		room_goto_transition(rm_Overworld, TransType.screenFade, c_black,
-							"NOT ENOUGH COINS!", fnt_big, c_white);
+			startedGame = true;
+			//save position
+			global.Overworldx = x;
+			global.Overworldy = y;
+		} else {
+			room_goto_transition(rm_Overworld, TransType.screenFade, c_black,
+								"NOT ENOUGH COINS!", fnt_big, c_white);
+		}
 	}
 }
 
