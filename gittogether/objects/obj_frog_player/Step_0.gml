@@ -28,7 +28,7 @@ if (instance_place(x,y,obj_frog_water)){
 	if (instance_place(x,y,obj_frog_turtle) && control){
 		var die = false;
 		with (instance_place(x,y,obj_frog_turtle)){
-			if (image_index <= 9){
+			if (image_index <= 54){
 				if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
 				if (other.moveTimer <= 0) other.xMove += vx;
 			}else{

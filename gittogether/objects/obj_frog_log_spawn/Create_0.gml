@@ -11,6 +11,6 @@ repeat(2) {
 	var _inst = instance_create_layer(random_range(0,room_width),y,"Turtles",obj_frog_turtle);
 	with (_inst){
 		vx = other.type*other.turtleMoveSpeed;
-		sprite_index = spr_frog_log;
+		sprite_index = choose(spr_frog_log,spr_frog_llog);
 	}
 }
