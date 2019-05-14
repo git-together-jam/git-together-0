@@ -26,21 +26,23 @@ if (moveTimer <= 0){
 //On the river
 if (instance_place(x,y,obj_frog_water)){
 	if (instance_place(x,y,obj_frog_turtle) && control){
+		var die = false;
 		with (instance_place(x,y,obj_frog_turtle)){
-			if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
-			if (other.moveTimer <= 0) other.xMove += vx;
+			if (image_index <= 9){
+				if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
+				if (other.moveTimer <= 0) other.xMove += vx;
+			}else{
+				var die = true;
+			}
 		}
+		if (die) scr_frog_die();
 	}else{
-		room_goto_transition(room,TransType.checkerboard,c_black);
-		if (control)audio_play_sound(snd_frog_lose,100,false);
-		control = false;
+		scr_frog_die();
 	}
 }
 //On the road or offscreen
 if (instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width){
-	room_goto_transition(room,TransType.checkerboard,c_black);
-	if (control)audio_play_sound(snd_frog_lose,100,false);
-	control = false;
+	scr_frog_die();
 }
 //die
 if (!control){
@@ -52,7 +54,7 @@ if (!control){
 if (instance_exists(obj_frog_goal)){
 	if (instance_place(x,y,obj_frog_goal) && control){
 		control = false;
-		if (room == rm_frogger) room_goto_transition(room_next(room),TransType.circle,c_black);
+		if (room == rm_frogger) room_goto_transition(room_next(room),TransType.circle,c_black,room_nm,fnt_big,c_white);
 		else end_minigame();
 		audio_play_sound(snd_frog_win,100,false);
 		with (instance_place(x,y,obj_frog_goal)){
@@ -75,4 +77,3 @@ y = clamp(y,0,(room_height div 16)*16)
 //squash and stretch
 xscale = approach(xscale,1,.05);
 yscale = approach(yscale,1,.05);
-
