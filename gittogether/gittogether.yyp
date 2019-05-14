@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "142a830e-e111-4498-a86d-b6f3b65c9360",
+            "Value": {
+                "id": "46b3726b-9bc3-47b8-8c33-6843f25a4e43",
+                "resourcePath": "views\\142a830e-e111-4498-a86d-b6f3b65c9360.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "14eff6d1-ef6e-4f46-a62f-7283075bc117",
             "Value": {
                 "id": "a347e660-6488-4f6d-81ab-bdcf447e788b",
@@ -884,6 +892,14 @@
                 "id": "68dbe921-c27f-469c-8049-6d62f3511aee",
                 "resourcePath": "sprites\\spr_table_round\\spr_table_round.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "533a7a1a-6e42-4ffd-9e80-ba31a475e785",
+            "Value": {
+                "id": "e2563ff0-5bf3-456c-ae8b-39d1617ca52d",
+                "resourcePath": "scripts\\scr_frog_die\\scr_frog_die.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2807,6 +2823,7 @@
         "409e849a-61f2-42b8-8882-6a5b4dce65a7",
         "049184d5-853f-4f34-a703-23d9acb516cb",
         "83653018-a142-4148-b276-dc43a2fbf3b7",
+        "533a7a1a-6e42-4ffd-9e80-ba31a475e785",
         "0aa36344-abee-4499-8877-823e764f498b"
     ],
     "tutorial": ""

@@ -26,21 +26,23 @@ if (moveTimer <= 0){
 //On the river
 if (instance_place(x,y,obj_frog_water)){
 	if (instance_place(x,y,obj_frog_turtle) && control){
+		var die = false;
 		with (instance_place(x,y,obj_frog_turtle)){
-			if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
-			if (other.moveTimer <= 0) other.xMove += vx;
+			if (image_index <= 9){
+				if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
+				if (other.moveTimer <= 0) other.xMove += vx;
+			}else{
+				var die = true;
+			}
 		}
+		if (die) scr_frog_die();
 	}else{
-		room_goto_transition(room,TransType.checkerboard,c_black);
-		if (control)audio_play_sound(snd_frog_lose,100,false);
-		control = false;
+		scr_frog_die();
 	}
 }
 //On the road or offscreen
 if (instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width){
-	room_goto_transition(room,TransType.checkerboard,c_black);
-	if (control)audio_play_sound(snd_frog_lose,100,false);
-	control = false;
+	scr_frog_die();
 }
 //die
 if (!control){
