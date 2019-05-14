@@ -759,6 +759,14 @@
             }
         },
         {
+            "Key": "46e9a86b-6c2a-4e90-8cbd-4eba299c190e",
+            "Value": {
+                "id": "68425d45-0c19-4612-8229-ec14df1d23b0",
+                "resourcePath": "objects\\obj_eld_controller\\obj_eld_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "46fdab57-41bd-49fb-a828-b59633f23c84",
             "Value": {
                 "id": "0e7d18e1-f844-438e-b6e3-f48f3a175d47",
@@ -1223,6 +1231,14 @@
             }
         },
         {
+            "Key": "6fcd137f-2014-42db-a81e-27e976e221a2",
+            "Value": {
+                "id": "58d0239e-4543-4b92-8eaa-66b68923a538",
+                "resourcePath": "views\\6fcd137f-2014-42db-a81e-27e976e221a2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "70662d2b-255c-466b-b2a6-22deb7cfb4fa",
             "Value": {
                 "id": "7d5be7e7-b2b6-4d3b-aab7-177fed15cd9c",
@@ -1452,6 +1468,14 @@
                 "id": "e14c725f-1211-46cd-801e-1e3719729e23",
                 "resourcePath": "views\\8c9ded7c-dc77-4bc1-bbe5-22cc2852cd8e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8d2ae318-b0f9-4b0d-8251-6bcc3d18f39c",
+            "Value": {
+                "id": "cd088c28-6918-4888-bfef-98a8565a05b3",
+                "resourcePath": "scripts\\eld_init_tracks\\eld_init_tracks.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1700,6 +1724,14 @@
                 "id": "09c6148c-cba3-45be-934c-4ef660ca5709",
                 "resourcePath": "sprites\\spr_wk_woodtile\\spr_wk_woodtile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a916da21-8f7c-4a18-9795-7d271646e6f7",
+            "Value": {
+                "id": "462fd59b-a36b-48ec-9c27-907b02298d65",
+                "resourcePath": "datafiles_yy\\eld_waves.json.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -2607,6 +2639,14 @@
             }
         },
         {
+            "Key": "f3e44578-9e4a-409a-a8c6-9810b1ee185d",
+            "Value": {
+                "id": "5bd66c13-c9cb-4013-95ca-24ab26601702",
+                "resourcePath": "sprites\\spr_eld_track_marker\\spr_eld_track_marker.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "bf067808-1460-4d11-ace3-937f2ac3b888",
@@ -2824,6 +2864,7 @@
         "049184d5-853f-4f34-a703-23d9acb516cb",
         "83653018-a142-4148-b276-dc43a2fbf3b7",
         "533a7a1a-6e42-4ffd-9e80-ba31a475e785",
+        "8d2ae318-b0f9-4b0d-8251-6bcc3d18f39c",
         "0aa36344-abee-4499-8877-823e764f498b"
     ],
     "tutorial": ""
