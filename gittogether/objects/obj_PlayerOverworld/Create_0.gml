@@ -1,6 +1,6 @@
 /// @description 
 // Properties
-moveSpeed = 2;
+moveSpeed = 3;
 
 // Variables
 hsp = 0;

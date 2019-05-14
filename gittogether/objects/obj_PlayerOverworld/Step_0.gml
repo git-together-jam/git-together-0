@@ -1,8 +1,11 @@
 /// @description
 #region Movement 
 // Movement
-hsp = global.iMoveX * moveSpeed;
-vsp = global.iMoveY * moveSpeed;
+var _moveDir = point_direction(0,0,global.iMoveX,global.iMoveY);
+if (global.iMoveX == 0 && global.iMoveY == 0) var _moveDist = 0;
+else var _moveDist = 1;
+hsp = lengthdir_x(_moveDist,_moveDir) * moveSpeed;
+vsp = lengthdir_y(_moveDist,_moveDir) * moveSpeed;
 
 // Check for collisions and move one pixel at a time.
 // Horizontal:
