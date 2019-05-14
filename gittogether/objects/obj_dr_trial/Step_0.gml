@@ -21,6 +21,7 @@ if (nsd_hit_timer > room_speed * 2) {
 		}
 	}
 	
+	event_timer_running = true;
 	dialogue_index	+= 1;
 	nsd_hit_timer	= -1;
 	event_timer		= -1;
@@ -46,6 +47,9 @@ if (nsd_shoot_timer > 0) {
 
 nsd_hover = -1;
 if (dialogue_state == 2) {
+	
+	cam_offx = lerp(cam_offx, cam_targetx, .02);
+	cam_offy = lerp(cam_offy, cam_targety, .02);
 	
 	nsd_timer++;
 	
@@ -115,6 +119,10 @@ if (dialogue_state == 2) {
 	}
 	
 	#endregion;
+
+} else {
+	cam_offx = lerp(cam_offx, 0, .1);
+	cam_offy = lerp(cam_offy, 0, .1);
 }
 
 nsd_hover_timer = clamp(nsd_hover_timer + (nsd_hover >= 0) * 2 - 1, 0, nsd_hover_time);
@@ -126,7 +134,8 @@ if (nsd_shoot_timer < nsd_shoot_time * .6  &&
 	nsd_hit_timer < 0 &&
 	_bullet != undefined && _text != undefined &&
 	_bullet[? "target"] != undefined &&
-	_bullet[? "target"] == _text[? "bulletpoint"]) {
+	string_pos("," + string(_text[? "bulletpoint"]) + ",", _bullet[? "target"]) >= 1
+) {
 
 	log("You hit the right argument!");
 	event_timer_running = false;
