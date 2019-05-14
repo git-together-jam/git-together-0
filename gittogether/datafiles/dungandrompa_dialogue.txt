@@ -1,5 +1,5 @@
 tony.self: The familiar look of an empty repository stood before me.
-tony.self: This is where I'll spend the next week, 
+tony.self: This is where I'll spend the next week,
 tony.self: developing my coding skills and making new friends.
 tony.self: I am however a bit intimidated
 tony.self: All the contributors are highly talented individuals specializing in different areas of code.
@@ -14,12 +14,13 @@ tony.self: ...
 minty: ...
 yellowaf: ...
 math: Hello? Who are you? What's going on?
+yosi: Ugh...
 yellowaf: It would appear we've fallen asleep, and someone brought us here
 minty: Yeah about that, where is here?
 jxm: Welcome to the famous git-together gamejam!
 tony: !!
 tony: But then this has to be...
-jxm: Shut up and let me speak. 
+jxm: Shut up and let me speak.
 jxm: You've all come here of your own free will.
 jxm: Now you will make a game, of your own free will.
 pope: What if I will not?
@@ -28,8 +29,8 @@ minty: You make me will me make it?
 jxm: That's right
 minty: How do me make will me make of free will it from you?
 jxm: Oh it's simple really
-jxm: You will make a game, 
-jxm: like three-in-a-row or whatever, 
+jxm: You will make a game,
+jxm: like three-in-a-row or whatever,
 jxm: in in one week. Or..
 jxm: I will kill you all.
 tony: !!
@@ -50,26 +51,28 @@ sahaun: And what is a game?
 jxm: Huh? ...
 jxm: You don't know what a game is?
 sahaun: If my life is riding on this task, I need to know exactly how I can prevent death.
-sahaun: Is three in a row a game? Is Tetris a game? Is conversation a game?
+sahaun: Is Duke of Defence a game? Is Tetris a game? Is conversation a game?
 jxm: ...
 pope: Hah! Who would make a game about conversation?
 pope: That's the lamest idea I've ever heard!
 yellowaf: Even so, it is an issue that needs answering.
-yellowaf: If that pug's idea of a game does not match our idea of a game, 
+yellowaf: If that pug's idea of a game does not match our idea of a game,
 yellowaf: we're risking a lot more than sleep without supper.
+yosi: Mmh, I'm not sure we need to know what a game is to make one...
 jxm: I have decided!
 jxm: Figuring out what a game is will be part of your task!
+yosi: ...
 jxm: If you make a game that satisfies me,
 jxm: You will be freed.
 jxm: However, I will not judge lightly.
 jxm: So, enough with this prologue, let the game begin!
 tony.self: THIRD-WALL-BREAKING TIME
 tony.self: Alright, so, now comes your first *nonstop debate*.
-tony.self: Here, people speak autmoatically, meaning you do not need to click to advance text.
+tony.self: Here, people speak consecutively, meaning text advances on its own without being clicked.
 tony.self: Some of the contestants will have weakpoints in their arguments.
 tony.self: These *are highlighted in orange*. You have to choose the right truth bullet to shoot at the right weakpoint.
 tony.self: Oh, that's right, you'll get some number of truth bullets for each trial.
-tony.self: These are statements or clues that can be used as counter arguments.
+tony.self: These are statements or clues that can be used as counter arguments, shot with the left mouse button.
 tony.self: If you shoot the wrong truth bullet at the wrong statement, you'll be deducted a healthpoint.
 tony.self: Alright, you ready?
 tony.self: No? Too bad
@@ -88,10 +91,10 @@ pope: It's just *something you can play*!
 math: But you can play all kinds of things
 minty: Like a flute
 sahaun: Or a *board game*
-sahaun: If a board game is considered a game 
+sahaun: If a board game is considered a game
 sahaun: just as much as a first person shooter
-sahaun: or an action adventure game...
-sahaun: Then we could simply *remake three in a row*!
+yosi: or a 3d platformer
+sahaun: ...then we could simply *remake three in a row*!
 yellowaf: *I don't think that's the kind of game he wants us to make*
 yellowaf: We've been given a git repository
 yellowaf: you *can't put a board game on a machine*.
@@ -101,52 +104,80 @@ math: Except certain death.
 [/NSD]
 tony: No, that's wrong!
 tony: If you remember from earlier when Juju spoke,
-tony: He said...
-jxm.self: You will make a game, 
+tony: he said...
+jxm.self: You will make a game,
 jxm.self: like *three-in-a-row* or whatever...
-tony: and that means a game like three-in-a-row is exactly what he wants!
-tony.self: The following stuff comes way later
-tony.self: I've not written the stuff between yet
+tony: which means a game like three-in-a-row is exactly what he wants!
+minty: Hey-
+math: That's right! I heard it with my own ears!
+minty: Hey guys-
+sahaun: So we can indeed remake three in a row!
+minty: HEY GUYS!
+yellowaf: What, Minty?
+minty: Did you know that only 1 in 10 people know binary?
+yellowaf: Huh?
+yellowaf: Was that all you were screaming for?
+minty: The other half doesn't. :D
+pope: God dammit, you just did exactly what he wanted...
+yosi: No, I think he's trying to say something.
+math: Say what? Another dumb binary joke?
+yosi: I fear Minty's impaired speech skills forces him to communicate in codes
+minty: Haha codes
+yosi: I believe what he's really trying to say, is that he doesn't quite understand what's going on.
+yosi: The binary joke has the deeper meaning of 1/10 being small at a glance, 
+yosi: but big when seen from another angle.
+yosi: Minty may be trying to say that he will be of little help, but that with some help, he can become a lot more.
+pope: Or he just likes to annoy us with his stupid jokes.
+minty: Nyeh?
+sahaun: Why is this even the current focus of discussion?
+sahaun: I thought we were gonna make a game.
+math: We have to get Minty on board before we move on.
+pope: Oh for god's sake. Juju, give him the rules again.
+jxm: You have two choices.
+jxm: Either you make a game, and I like it, or I kill you.
+minty: I still don't get it.
+minty: How would you kill me?
+jxm: I'll drown you.
+math: But he's a penguin, don't they survive under water?
+yellowaf: That's a good point.
+yellowaf: It would not contribute anything other than making his fur wet.
+pope: Would it, though?
+pope: Sure, he'd be wet if he was taken out of the water, but he wouldn't be wet while he's under the water.
+pope: An object is only wet when there is water sticking to the surface of it.
+math: But there will be a whole ocean sticking to the surface of his fur
+math: How does that not count as wet?
+[NSD]
+[BULLETS]
+Water is wet!: 7,9
+Water isn't wet!: 8,10
+It's both!: 7,8,9,10
+[/BULLETS]
+yosi: No, he's right. If you're *fully submerged* in water, 
+yosi: there's *no telling you apart* from the water.
+yellowaf: Of course there is. 
+yellowaf: I can *poke you with a stick* under the water, 
+yellowaf: and the stick would not pass through you, 
+yellowaf: but it'd cut the water effortlessly.
+math: Yeah, *Humans aren't liquid.*
+math: *We don't just dissolve the moment we come in contact with water.*
+sahaun: Maybe you don't.
+pope: We may not be liquid, but *our bodies are 60% water*.
+pope: 60% is way more than the amount of water that needs to stick to something to be considered wet.
+pope: Which means sheer *contact alone is not enough to define wetness*.
+yellowaf: Look, man. Water is wet. You can't deny it.
+pope: Oh? I can't deny it huh?
+yellowaf: Don't-
+pope: *Water isn't wet.*
+yellowaf: *Water is wet.*
+yosi: *Water isn't wet.*
+math: *Water is wet.*
+[/NSD]
 tony: No, that's wrong!
-tony: If we approach this completely blindly, it may end in disaster, yes, 
-tony: however, if we get stuck discussing semantics we'll never make anything!
-tony: Let's make up a structure for some things like resources, management and a general game direction.
-tony: Then we focus our energy on creating rather than arguing!
-yellowaf: He's right. A game needs creating more than anything.
-sahaun: I suppose you're right.
-pope: Whatever gets you plebs working.
-minty: Plebs?! What do you mean, plebs?
-pope: Common folk! Infidels! Commoners! Proletariat! Sheep!
-pope: Call yourselves whatever you like, just see to making that damned game already
-pope: You have wasted far too much of my time.
-math: Wait a minute, are you saying you won't participate?
-pope: Participate? Me? Ahahaha! I am the pope!
-pope: God's messenger! conqueror of discord! Master of delusion!
-pope: How dare ye even think I should be involved in such lowly work as game development.
-tony: But if you don't participate, we might not succeed in creating this game.
-math: We'll need every participant we can have!
-tony: If even just one person slacks off, we won't make it in tim-
-yellowaf: I won't participate either
-sahaun: What!?
-tony: !!
-math: !
-minty: ?
-yellowaf: A game needs more than just eager participants
-yellowaf: It needs funding (and networking)
-yellowaf: If you can't scrape together a reasonable pay to hire me, I'm afraid I won't be able to help
-pope: Bwahaha, and what's a "reasonable pay" for a commoner such as yourself?
-pope: $160 an hour? That's less than I spend on shaving cream!
-minty: You shave?
-pope: No
-minty: So why do yo-
-yellowaf: $250 actually
-sahaun: $250!? Are you mad?
-sahaun: How in the world are we to scrape together $250 x 16 x 7?
-math: Do any of you even have money on you? I know I don't have any
-tony: We were all gassed and brought here by surprise, I don't think anyo-
-minty: I have $38700 actually
-tony: What? How?
-math: Careful, Tony, we don't have the full story. 
-math: Minty, do you have that money with you right now
-minty: No...
-math: ...
+tony: Water is wet, and water is not wet.
+tony: Whether water is wet or not is entirely circumstantial.
+tony: In common speech, it may be logical to consider water wet, since wetness is a property based on water.
+tony: Meanwhile, in a mathematical context, it may be more logical to consider water a wetting agent alone;
+tony: able to wet other substances by touch, but not itself.
+tony: However, in a philosophical setting, it's both.
+tony: You can discuss the wetness of water eternally, and never reach a solid conclusion.
+[END]

@@ -4,6 +4,13 @@ event_timer = -1;
 event_timer_running = true;
 timer = 0; // increments infinitely
 
+cam_offx = 0;
+cam_offy = 0;
+cam_targetx = 0;
+cam_targety = 0;
+cam_time = room_speed * 10;
+cam_timer = 0;
+
 #region Characters
 
 characters = json_decode(string_concat(@'{ 
@@ -199,7 +206,7 @@ while (!file_text_eof(_file)) {
 				var _chr = string_char_at(_str, i);
 	
 				if (_name_found) {
-					if (_chr == string_digits(_chr)) _target += _chr;
+					if (string_pos(_chr, ",0123456789") >= 1) _target += _chr;
 				} else {
 					if (_chr == ":") {
 						_name_found = true;
@@ -211,7 +218,8 @@ while (!file_text_eof(_file)) {
 			}
 			var _bullet = ds_map_create();
 			_bullet[? "name"] = _name;
-			if (string_length(_target)) _bullet[? "target"] = real(_target);
+			if (string_length(_target)) _bullet[? "target"] = "," + _target + ",";
+			log("filtered string:", "," + _target + ",");
 			ds_list_add(_bullets, _bullet);
 			
 	
@@ -343,15 +351,15 @@ cursor_offy = 0;
 
 #endregion;
 
-#region Debug
-
+#region Debug [x]
+/*
 var _ls = ds_list_size(dialogue);
 log("dialogue (" + string(_ls) + "): [");
 for (var i = 0; i < _ls; i++) {
 	log("	", json_encode(dialogue[| i]) + ( i < _ls - 1 ? "," : " "));
 }
 log("]");
-
+*/
 #endregion;
 
 // nyeh

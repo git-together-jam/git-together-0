@@ -11,8 +11,8 @@ if (dialogue_index < dialogue_count - 1) {
 		var _char = characters[? seat[_index]];
 		draw_sprite_ext(
 			_char[? "sprite"], 0, 
-			i * seat_width - seat_offset * seat_width - lengthdir_x(seat_len, seat_dir + seat_angle) + seat_width / 2 + (room_width - seat_width) / 2, 
-			-lengthdir_y(seat_len, seat_dir + seat_angle) + room_height / 2,
+			i * seat_width - seat_offset * seat_width - lengthdir_x(seat_len, seat_dir + seat_angle) + seat_width / 2 + (room_width - seat_width) / 2 + cam_offx, 
+			-lengthdir_y(seat_len, seat_dir + seat_angle) + room_height / 2 + cam_offy,
 			1, 1,
 			seat_angle,
 			c_white, 1

@@ -2583,6 +2583,14 @@
             }
         },
         {
+            "Key": "e9c058a1-c356-453d-bee5-93242ce0e4f9",
+            "Value": {
+                "id": "69e90d19-50a2-461f-9a4b-238e1f9b76bd",
+                "resourcePath": "scripts\\string_filter\\string_filter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e9c572ae-da1f-46bf-905c-d33000005682",
             "Value": {
                 "id": "fcfe1418-515f-4be6-92fe-bc5fa3958405",
