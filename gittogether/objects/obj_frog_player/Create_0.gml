@@ -11,3 +11,9 @@ xscale = 1;
 yscale = 1;
 
 if (!audio_is_playing(snd_frog_theme)) audio_play_sound(snd_frog_theme,100,true);
+
+room_nm = "???"
+//room name
+switch(room){
+	case rm_frogger: room_nm = "Level 2\nI like turtles" break;
+}

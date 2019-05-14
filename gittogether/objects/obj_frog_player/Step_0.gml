@@ -54,7 +54,7 @@ if (!control){
 if (instance_exists(obj_frog_goal)){
 	if (instance_place(x,y,obj_frog_goal) && control){
 		control = false;
-		if (room == rm_frogger) room_goto_transition(room_next(room),TransType.circle,c_black);
+		if (room == rm_frogger) room_goto_transition(room_next(room),TransType.circle,c_black,room_nm,fnt_big,c_white);
 		else end_minigame();
 		audio_play_sound(snd_frog_win,100,false);
 		with (instance_place(x,y,obj_frog_goal)){
@@ -77,4 +77,3 @@ y = clamp(y,0,(room_height div 16)*16)
 //squash and stretch
 xscale = approach(xscale,1,.05);
 yscale = approach(yscale,1,.05);
-

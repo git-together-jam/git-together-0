@@ -34,6 +34,7 @@ arcade_game_enable_shader(_pong, true, shd_retro);
 
 // Frogger - Andy
 var _frogger = arcade_game_add("Frogger", spr_arcade_frogger, rm_frogger);
+arcade_game_set_title(_frogger, fnt_big, c_white);
 arcade_game_enable_shader(_frogger, true, shd_retro);
 
 // Wking - Levgon
