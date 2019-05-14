@@ -28,7 +28,7 @@ if (instance_place(x,y,obj_frog_water)){
 	if (instance_place(x,y,obj_frog_turtle) && control){
 		var die = false;
 		with (instance_place(x,y,obj_frog_turtle)){
-			if (image_index <= 9){
+			if (image_index <= 54){
 				if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
 				if (other.moveTimer <= 0) other.xMove += vx;
 			}else{
@@ -54,7 +54,7 @@ if (!control){
 if (instance_exists(obj_frog_goal)){
 	if (instance_place(x,y,obj_frog_goal) && control){
 		control = false;
-		if (room == rm_frogger) room_goto_transition(room_next(room),TransType.circle,c_black,room_nm,fnt_big,c_white);
+		if (room != rm_frogger4) room_goto_transition(room_next(room),TransType.circle,c_black,room_nm,fnt_big,c_white);
 		else end_minigame();
 		audio_play_sound(snd_frog_win,100,false);
 		with (instance_place(x,y,obj_frog_goal)){

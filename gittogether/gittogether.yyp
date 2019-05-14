@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "10273c75-1191-4a56-b4b6-eed79034a110",
+            "Value": {
+                "id": "8d8c90f2-59d8-46b4-8f17-54d53ccf1a81",
+                "resourcePath": "sprites\\spr_frog_turtle1\\spr_frog_turtle1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "10387676-2dd0-4002-9957-3a12558593ef",
             "Value": {
                 "id": "49c85488-5f2e-4868-a875-5cb5cdb45761",
@@ -276,6 +284,14 @@
                 "id": "a347e660-6488-4f6d-81ab-bdcf447e788b",
                 "resourcePath": "scripts\\overworld_get_arcade_locations\\overworld_get_arcade_locations.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "16c8c48f-1dd1-4059-94cc-d10d9e890b9f",
+            "Value": {
+                "id": "5e49ef10-9741-490e-ad75-ddd5793f1e31",
+                "resourcePath": "sprites\\spr_frog_log\\spr_frog_log.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -407,6 +423,14 @@
             }
         },
         {
+            "Key": "243e8479-a52d-40bb-9f8b-2a03e02c70d3",
+            "Value": {
+                "id": "a288a3d8-e279-4894-ba19-cf6b877120bb",
+                "resourcePath": "rooms\\rm_frogger4\\rm_frogger4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "24bfda76-1fcb-4942-8a9a-47a9e0d3de16",
             "Value": {
                 "id": "beec3972-6f20-4a66-a3c7-548e3f7d6dad",
@@ -500,6 +524,14 @@
                 "id": "68d396a4-4600-4f4a-9125-8148ed5b56cc",
                 "resourcePath": "rooms\\rm_frogger\\rm_frogger.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "300158b3-c37f-448a-8578-4308f1e1cc4b",
+            "Value": {
+                "id": "862de0cb-778a-4558-9daf-6a5a266e67d1",
+                "resourcePath": "objects\\obj_frog_turtle_spawn\\obj_frog_turtle_spawn.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -668,6 +700,14 @@
                 "id": "c5e2f137-3863-4ecd-ab86-19cdddce203c",
                 "resourcePath": "scripts\\end_minigame\\end_minigame.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "41c85ce5-9116-4b79-b753-f5121ef5851b",
+            "Value": {
+                "id": "0393548b-9c05-4f33-b3f7-2884d662a5fe",
+                "resourcePath": "sprites\\spr_frog_turtle\\spr_frog_turtle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -959,6 +999,14 @@
             }
         },
         {
+            "Key": "58d28d57-8387-4e33-add3-f2bd5b01b2e8",
+            "Value": {
+                "id": "46852f0c-c4fd-47d6-9411-6043a1291bca",
+                "resourcePath": "sprites\\spr_frog_tile\\spr_frog_tile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "59b93331-1929-4808-9b69-a5bf8340f981",
             "Value": {
                 "id": "90baff3a-5e4e-40a9-97ed-7f1c9c2ad1ec",
@@ -1023,6 +1071,14 @@
             }
         },
         {
+            "Key": "5d7bfd35-486e-4c45-b429-a26463b013cd",
+            "Value": {
+                "id": "ec675e0c-d4db-4b2b-bf76-022776951b57",
+                "resourcePath": "sprites\\spr_frog_car2\\spr_frog_car2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5df48c73-f3fc-4a18-b47d-151c23cb6d5e",
             "Value": {
                 "id": "6723d914-39f8-444b-89ee-59444dd13a39",
@@ -1036,6 +1092,14 @@
                 "id": "2bba1441-ab8a-4ad8-909e-7b4fd6b7d776",
                 "resourcePath": "scripts\\ds_list_destroy_maps\\ds_list_destroy_maps.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5eb09828-2fa9-49a3-ae4d-dacc7675f45a",
+            "Value": {
+                "id": "5802c85c-4586-4ab2-b95d-c9e8db314dc6",
+                "resourcePath": "views\\5eb09828-2fa9-49a3-ae4d-dacc7675f45a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1335,6 +1399,14 @@
             }
         },
         {
+            "Key": "7e3b23e7-3ee1-4b34-87d8-bb24ae00188a",
+            "Value": {
+                "id": "6000e573-22cb-407a-abb7-99e11cc87a52",
+                "resourcePath": "sprites\\spr_frog_llog\\spr_frog_llog.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7ee3ee34-be89-48e0-abf6-7c64994dcff0",
             "Value": {
                 "id": "24d26a46-d449-4f0a-95ac-d2296dbf3e16",
@@ -1436,6 +1508,14 @@
                 "id": "46b24899-4778-43ac-8b11-d292b67ad464",
                 "resourcePath": "views\\8b4a5509-a99b-4ff4-93be-fddfa195edb0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8b72ec99-db84-4977-88b9-4d0c0e398828",
+            "Value": {
+                "id": "54bfa7b1-ca11-4f87-9772-7e2e1d4b2b03",
+                "resourcePath": "objects\\obj_frog_car_spawn\\obj_frog_car_spawn.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1588,6 +1668,14 @@
                 "id": "348c2a95-4807-4541-be65-b63ad39ecbdc",
                 "resourcePath": "objects\\obj_po_player\\obj_po_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9d72009e-1bbb-4402-92db-a7028b173295",
+            "Value": {
+                "id": "93162ea9-0cef-493e-b86f-5c6bd8d32107",
+                "resourcePath": "tilesets\\tile_frog\\tile_frog.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -1836,6 +1924,14 @@
                 "id": "d8e6da26-6dd5-4a6e-9a88-6a9fd76d1aed",
                 "resourcePath": "shaders\\shd_dr_counter\\shd_dr_counter.yy",
                 "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "b113515b-a131-4061-8891-ce882bae2024",
+            "Value": {
+                "id": "6e37fbbf-caaf-4b6a-92be-dd8761238d01",
+                "resourcePath": "objects\\obj_frog_log_spawn\\obj_frog_log_spawn.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2100,6 +2196,14 @@
                 "id": "e4d32a04-c57d-4fe1-9858-7a3689fdd58f",
                 "resourcePath": "objects\\obj_wk_default\\obj_wk_default.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ca54d68e-6fd4-4d74-8b70-8b1a044f7e29",
+            "Value": {
+                "id": "09295414-779f-4ef0-b733-6f70ddd69b9b",
+                "resourcePath": "rooms\\rm_frogger3\\rm_frogger3.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -2487,6 +2591,14 @@
             }
         },
         {
+            "Key": "eb853fad-5891-4385-ba16-fe667f416789",
+            "Value": {
+                "id": "9a610af8-8551-4e83-b185-cf9f608771cd",
+                "resourcePath": "sprites\\spr_frog_car1\\spr_frog_car1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ebd76277-edad-48b9-9c82-f09889d0980a",
             "Value": {
                 "id": "fd2a3ee5-a785-4dd0-93e7-4e0db172395d",
@@ -2532,6 +2644,14 @@
                 "id": "44c5af7f-8d72-4d4e-affc-2bf744f1628f",
                 "resourcePath": "scripts\\draw_rect_outline\\draw_rect_outline.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ee6d25ba-1aa9-4540-89d3-ccfc57afd64c",
+            "Value": {
+                "id": "eb8429cb-0b1f-43f8-9131-4e9603bacdea",
+                "resourcePath": "objects\\obj_frog_truck_spawn\\obj_frog_truck_spawn.yy",
+                "resourceType": "GMObject"
             }
         },
         {
