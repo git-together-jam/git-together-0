@@ -4,4 +4,4 @@ image_index = irandom_range(0,image_number-1);
 vx = 0;
 vy = 0;
 
-if (instance_place(x,y,obj_frog_turtle)) instance_destroy(id);
+instanceCheck = false;
