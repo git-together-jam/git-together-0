@@ -42,8 +42,14 @@ if (instance_place(x,y,obj_frog_water)){
 		frog_die();
 	}
 }
-//On the road or offscreen
-if (instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width){
+//On the road
+if (instance_place(x,y,obj_frog_truckkun)){
+	frog_die();
+}
+//offscreen
+if ((room_type == 0 && (x<0 || x>room_width)) ||
+	(room_type == 1 && (y<0 || y>room_height))||
+	(room_type == 2 && (x<0 || x>room_width || y<0 || y>room_height))){
 	frog_die();
 }
 //die

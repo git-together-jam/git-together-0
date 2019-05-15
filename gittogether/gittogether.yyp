@@ -927,6 +927,14 @@
             }
         },
         {
+            "Key": "4d79d54e-1b6e-45e5-ad3b-095e1c8f019c",
+            "Value": {
+                "id": "fca96318-c72b-413a-b75f-29812734e13e",
+                "resourcePath": "sprites\\spr_frog_road_sym\\spr_frog_road_sym.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4e463fa5-6b06-4e52-a70a-ef1fc3fa1d3e",
             "Value": {
                 "id": "2f179abf-70ab-4989-bd35-887da855eb0d",
@@ -1687,6 +1695,14 @@
             }
         },
         {
+            "Key": "954619e9-f784-4d49-85ff-2967b768b0b9",
+            "Value": {
+                "id": "c032fd4e-85ed-4f27-9711-69dd913aff71",
+                "resourcePath": "sprites\\spr_frog_turtle_sym\\spr_frog_turtle_sym.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "96369e11-5919-42b2-9c7b-15a154366f26",
             "Value": {
                 "id": "f377cc48-95fe-4f82-9257-40c8082e8eb2",
@@ -1764,6 +1780,14 @@
                 "id": "93162ea9-0cef-493e-b86f-5c6bd8d32107",
                 "resourcePath": "tilesets\\tile_frog\\tile_frog.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "9d7b75d1-7bca-430d-84be-7e803ce288a0",
+            "Value": {
+                "id": "a375e0bc-b882-4246-aa42-938faa466a36",
+                "resourcePath": "sprites\\spr_frog_water_sym\\spr_frog_water_sym.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
