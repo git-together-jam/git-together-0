@@ -6,7 +6,10 @@
     "children": [
         "533a7a1a-6e42-4ffd-9e80-ba31a475e785",
         "0ebccb1e-5f8c-4b68-8f91-616e6ea73868",
-        "43cb4639-7273-4707-b323-62b592842766"
+        "43cb4639-7273-4707-b323-62b592842766",
+        "cbeeeca1-1024-46c1-9d0e-9555d6955752",
+        "624eaf2e-979b-4d86-b241-8f3d28c33e4d",
+        "5b23b35a-ce85-40cd-ad03-039c3367e8e0"
     ],
     "filterType": "GMScript",
     "folderName": "Frogger",

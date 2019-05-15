@@ -11,6 +11,7 @@ if (moveTimer <= 0){
 			xMove = global.iMoveX*moveSpeed;
 			yMove = 0;
 			audio_play_sound_varied(snd_frog_jump,50,false);
+			emit_dust(1.6,x,y,-global.iMoveX,-global.iMoveX,-.5,.5,depth+1,c_white);
 		}
 		else if(global.iMoveY != 0){
 			moveTimer = moveTime;
@@ -20,9 +21,10 @@ if (moveTimer <= 0){
 			xMove = 0;
 			yMove = global.iMoveY*moveSpeed;
 			audio_play_sound_varied(snd_frog_jump,50,false);
+			emit_dust(1.6,x,y,-.5,.5,-global.iMoveY,-global.iMoveY,depth+1,c_white);
 		}
 	}
-}
+}//else{ emit_dust(.5,x,y,-1,1,-1,1,depth+1,c_white);}
 //On the river
 if (instance_place(x,y,obj_frog_water)){
 	if (instance_place(x,y,obj_frog_turtle) && control){
@@ -31,17 +33,17 @@ if (instance_place(x,y,obj_frog_water)){
 			if (image_index <= 54){
 				if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
 				if (other.moveTimer <= 0) other.xMove += vx;
-			}else if (other.moveTimer <= 2){
+			}else{
 				var die = true;
 			}
 		}
 		if (die) frog_die();
-	}else if (moveTimer <= 2){
+	}else{
 		frog_die();
 	}
 }
 //On the road or offscreen
-if ((instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width) && moveTimer <= 2){
+if (instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width){
 	frog_die();
 }
 //die
