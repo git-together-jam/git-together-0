@@ -1,7 +1,7 @@
 /// @description Persistent background controller
 
 randomize();
-
+application_surface_draw_enable(false);
 // Shader
 shaderEnabled = false;
 shaderSet = -1;
