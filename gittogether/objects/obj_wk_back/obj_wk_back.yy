@@ -1,10 +1,19 @@
 {
-    "id": "252f854a-f0f4-425d-b4b8-d4891b3f6620",
+    "id": "491bc478-69e5-41d2-8678-1e08e0749dbb",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_wk_gameover",
+    "name": "obj_wk_back",
     "eventList": [
-        
+        {
+            "id": "c9744c13-a105-46f3-82f7-29bc9bb98ff4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "491bc478-69e5-41d2-8678-1e08e0749dbb"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

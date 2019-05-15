@@ -4,20 +4,11 @@
     "mvc": "1.0",
     "name": "obj_wk_woodback",
     "eventList": [
-        {
-            "id": "d758082e-d257-42cc-9670-a9926b353c2d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "4a0b5591-f4ae-4423-96af-d65c38362ebf"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "491bc478-69e5-41d2-8678-1e08e0749dbb",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
