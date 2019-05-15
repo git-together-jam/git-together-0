@@ -20,4 +20,5 @@ switch(room_next(room)){
 	case rm_frogger2:	room_nm = "Level 2\nI like turtles" break;
 	case rm_frogger3:	room_nm = "Level 3\nHey!\nI'm walkin' here!" break;
 	case rm_frogger4:	room_nm = "Level 4\nDon't ever ford the river" break;
+	case rm_frogger5:	room_nm = "Level 5\nLongways" break;
 }

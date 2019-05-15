@@ -1967,6 +1967,14 @@
             }
         },
         {
+            "Key": "ac9888d6-ac0c-4375-812e-422dc98cffbd",
+            "Value": {
+                "id": "71589db9-33f1-414f-9af4-72bd2631bea3",
+                "resourcePath": "rooms\\rm_frogger5\\rm_frogger5.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "acbc03a2-b769-4765-84b0-f125bebafd11",
             "Value": {
                 "id": "210b9447-2f26-4854-b12e-d2b5aa06347b",

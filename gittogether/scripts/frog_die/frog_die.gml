@@ -3,3 +3,4 @@ if (moveTimer <= 1){
 	if (control)audio_play_sound(snd_frog_lose,100,false);
 	control = false;
 }
+alarm[0] = .1*room_speed;
