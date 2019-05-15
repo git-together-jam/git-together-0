@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "23a4b985-2ef1-4435-8f68-70cdb5ed1507",
+            "Value": {
+                "id": "e2c0d152-beb8-418b-add3-38fe0fe89633",
+                "resourcePath": "views\\23a4b985-2ef1-4435-8f68-70cdb5ed1507.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "243e8479-a52d-40bb-9f8b-2a03e02c70d3",
             "Value": {
                 "id": "a288a3d8-e279-4894-ba19-cf6b877120bb",
@@ -2436,6 +2444,14 @@
                 "id": "57b93940-47f4-4423-ba73-2beeb959c7b8",
                 "resourcePath": "scripts\\arcade_game_enable_save\\arcade_game_enable_save.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d1bd12f9-3074-42a1-8ed1-6488dda98c1c",
+            "Value": {
+                "id": "ccbf7d4c-fda1-4cfb-9e47-9a668bd91a9c",
+                "resourcePath": "sounds\\bgm_dungandrompa\\bgm_dungandrompa.yy",
+                "resourceType": "GMSound"
             }
         },
         {
