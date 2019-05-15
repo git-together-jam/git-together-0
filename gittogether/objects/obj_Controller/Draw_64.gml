@@ -32,24 +32,7 @@ if room = rm_Overworld {
 
 #endregion
 
-#region Game shader effect
 
-// Drawing the app surface
-application_surface_draw_enable(!shaderEnabled);
-gpu_set_tex_filter(shaderEnabled);
-
-if (shaderEnabled) {
-	if (shaderSet != -1) {
-		shader_set(shaderSet);
-		draw_surface_ext(application_surface,0,0,1/RES_S,1/RES_S,0,-1,1);
-		shader_reset();
-	
-	}
-}
-
-gpu_set_tex_filter(false);
-
-#endregion
 
 #region Draw exit bar
 

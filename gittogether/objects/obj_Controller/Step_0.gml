@@ -1,3 +1,7 @@
+
+// During transition, ignore exiting input
+if (instance_exists(obj_Transition)) exit;
+
 if (global.iExitInit || (global.iExit && (exitTimer != exitTime))) {
 	exitTimer--;
 	exitTimerDisplayAlpha = min(exitTimerDisplayAlpha + 0.2, 1);
@@ -8,8 +12,13 @@ else {
 	exitTimerDisplayAlpha = max(exitTimerDisplayAlpha - 0.05, 0);
 }
 if (exitTimer <= 0) {
-	end_minigame();
-	exitTimer = exitTime;
-	exitTimerMaxTime = exitTime;
-	miniTitleAlpha = 0;
+	if (room == rm_Overworld) {
+		game_end();
+	} else {
+		end_minigame();
+		audio_stop_all();
+		exitTimer = exitTime;
+		exitTimerMaxTime = exitTime;
+		miniTitleAlpha = 0;
+	}
 }
