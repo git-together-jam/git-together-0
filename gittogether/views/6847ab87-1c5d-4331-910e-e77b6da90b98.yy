@@ -10,7 +10,9 @@
         "76874a6f-f620-4abf-9f55-d150508e4868",
         "2855c4cd-a5df-4d02-879d-aec58ade4a9b",
         "e97a4cc8-d506-4ac4-805c-9294209a8b0c",
-        "a75a8b7c-b17d-4aef-befa-91fed260a8a0"
+        "a75a8b7c-b17d-4aef-befa-91fed260a8a0",
+        "b909e5df-99a4-4467-9a9d-77d09623c6c8",
+        "a60f4b9f-9f05-4a3c-aa70-7a5fbe79e222"
     ],
     "filterType": "GMSprite",
     "folderName": "Enimies",

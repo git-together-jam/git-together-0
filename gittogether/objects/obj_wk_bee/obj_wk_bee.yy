@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_wk_bee",
     "eventList": [
-        
+        {
+            "id": "e71810d7-f81a-4c04-8f69-54a8403b6ceb",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "de30151a-c8d4-4fe3-93f3-420774f0af34"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
