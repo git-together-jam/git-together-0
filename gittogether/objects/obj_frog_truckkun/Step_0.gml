@@ -53,6 +53,6 @@ if (explode) {
 	instance_destroy(id);
 }
 
-if (instance_place(x,y,obj_frog_truckkun)){
+if (instance_place(x,y,obj_frog_truckkun) || instance_place(x,y,obj_frog_water)){
 	explode = true;
 }

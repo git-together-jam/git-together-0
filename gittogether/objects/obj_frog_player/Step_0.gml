@@ -26,7 +26,7 @@ if (moveTimer <= 0){
 	}
 }//else{ emit_dust(.5,x,y,-1,1,-1,1,depth+1,c_white);}
 //On the river
-if (instance_place(x,y,obj_frog_water)){
+if (instance_position(bbox_right,bbox_bottom,obj_frog_water) && instance_position(bbox_right,bbox_top,obj_frog_water) && instance_position(bbox_left,bbox_bottom,obj_frog_water) && instance_position(bbox_left,bbox_top,obj_frog_water)){
 	if (instance_place(x,y,obj_frog_turtle) && control){
 		var die = false;
 		with (instance_place(x,y,obj_frog_turtle)){
