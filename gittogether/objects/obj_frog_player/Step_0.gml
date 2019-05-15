@@ -11,6 +11,7 @@ if (moveTimer <= 0){
 			xMove = global.iMoveX*moveSpeed;
 			yMove = 0;
 			audio_play_sound_varied(snd_frog_jump,50,false);
+			emit_dust(1.6,x,y,-global.iMoveX,-global.iMoveX,-.5,.5,depth+1,c_white);
 		}
 		else if(global.iMoveY != 0){
 			moveTimer = moveTime;
@@ -20,9 +21,10 @@ if (moveTimer <= 0){
 			xMove = 0;
 			yMove = global.iMoveY*moveSpeed;
 			audio_play_sound_varied(snd_frog_jump,50,false);
+			emit_dust(1.6,x,y,-.5,.5,-global.iMoveY,-global.iMoveY,depth+1,c_white);
 		}
 	}
-}
+}//else{ emit_dust(.5,x,y,-1,1,-1,1,depth+1,c_white);}
 //On the river
 if (instance_place(x,y,obj_frog_water)){
 	if (instance_place(x,y,obj_frog_turtle) && control){
@@ -30,18 +32,28 @@ if (instance_place(x,y,obj_frog_water)){
 		with (instance_place(x,y,obj_frog_turtle)){
 			if (image_index <= 54){
 				if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
-				if (other.moveTimer <= 0) other.xMove += vx;
-			}else if (other.moveTimer <= 2){
+				if (other.yMove != 0) other.yMove += .3*vy;
+				if (other.moveTimer <= 0){
+					other.xMove += vx;
+					other.yMove += vy;
+				}
+			}else{
 				var die = true;
 			}
 		}
 		if (die) frog_die();
-	}else if (moveTimer <= 2){
+	}else{
 		frog_die();
 	}
 }
-//On the road or offscreen
-if ((instance_place(x,y,obj_frog_truckkun) || x<0 || x>room_width) && moveTimer <= 2){
+//On the road
+if (instance_place(x,y,obj_frog_truckkun)){
+	frog_die();
+}
+//offscreen
+if ((room_type == 0 && (x<0 || x>room_width)) ||
+	(room_type == 1 && (y<0 || y>room_height))||
+	(room_type == 2 && (x<0 || x>room_width || y<0 || y>room_height))){
 	frog_die();
 }
 //die
@@ -54,7 +66,7 @@ if (!control){
 if (instance_exists(obj_frog_goal)){
 	if (instance_place(x,y,obj_frog_goal) && control){
 		control = false;
-		if (room != rm_frogger4) room_goto_transition(room_next(room),TransType.circle,c_black,room_nm,fnt_big,c_white);
+		if (room != lastLevel) room_goto_transition(room_next(room),TransType.circle,c_black,room_nm,fnt_big,c_white);
 		else end_minigame();
 		audio_play_sound(snd_frog_win,100,false);
 		with (instance_place(x,y,obj_frog_goal)){
@@ -71,7 +83,8 @@ y+=yMove;
 moveTimer--;
 
 //no offscreen shenanigans
-y = clamp(y,0,(room_height div 16)*16)
+if (room_type == 0) y = clamp(y,0,(room_height div 16)*16)
+if (room_type == 1) x = clamp(x,0,(room_width div 16)*16)
 	
 
 //squash and stretch

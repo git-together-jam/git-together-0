@@ -61,7 +61,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "70bcc529-cc79-456d-a744-4fb947bb54bb",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "room_type",
+            "varType": 1
+        }
+    ],
     "solid": false,
     "spriteId": "6bf86b0a-15aa-44ea-9d2e-ac1357ebcdde",
     "visible": true

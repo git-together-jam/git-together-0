@@ -1,0 +1,1 @@
+global.froggerTime = 0;

@@ -15,7 +15,9 @@ if string_length(hourstring) == 1
 minutestring = string(minutes)
 if string_length(minutestring) == 1
    minutestring = string_insert("0", minutestring, 0)
-secondstring = string(seconds)
+if seconds mod 1 = 0 
+	secondstring = string(seconds)+".00"
+else secondstring = string(seconds)
 if seconds < 10
    secondstring = string_insert("0", secondstring, 0)
 if hours > 0
