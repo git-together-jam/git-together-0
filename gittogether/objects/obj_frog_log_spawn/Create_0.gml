@@ -19,7 +19,7 @@ if hori{
 		}
 	}
 }else{
-	repeat(2) {
+	repeat(1) {
 		var _inst = instance_create_layer(x,random_range(0,room_height),"Turtles",obj_frog_turtle);
 		with (_inst){
 			image_angle = 270;

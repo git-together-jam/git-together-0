@@ -19,7 +19,7 @@ if hori{
 		}
 	}
 }else{
-	repeat(2) {
+	repeat(1) {
 		var _inst = instance_create_layer(x,random_range(0,room_height),"Truck_kun",obj_frog_truckkun);
 		with (_inst){
 			image_angle = 270;

@@ -32,7 +32,11 @@ if (instance_place(x,y,obj_frog_water)){
 		with (instance_place(x,y,obj_frog_turtle)){
 			if (image_index <= 54){
 				if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
-				if (other.moveTimer <= 0) other.xMove += vx;
+				if (other.yMove != 0) other.yMove += .3*vy;
+				if (other.moveTimer <= 0){
+					other.xMove += vx;
+					other.yMove += vy;
+				}
 			}else{
 				var die = true;
 			}
@@ -62,7 +66,7 @@ if (!control){
 if (instance_exists(obj_frog_goal)){
 	if (instance_place(x,y,obj_frog_goal) && control){
 		control = false;
-		if (room != rm_frogger4) room_goto_transition(room_next(room),TransType.circle,c_black,room_nm,fnt_big,c_white);
+		if (room != lastLevel) room_goto_transition(room_next(room),TransType.circle,c_black,room_nm,fnt_big,c_white);
 		else end_minigame();
 		audio_play_sound(snd_frog_win,100,false);
 		with (instance_place(x,y,obj_frog_goal)){
@@ -79,7 +83,8 @@ y+=yMove;
 moveTimer--;
 
 //no offscreen shenanigans
-y = clamp(y,0,(room_height div 16)*16)
+if (room_type == 0) y = clamp(y,0,(room_height div 16)*16)
+if (room_type == 1) x = clamp(x,0,(room_width div 16)*16)
 	
 
 //squash and stretch
