@@ -51,4 +51,4 @@ arcade_game_enable_shader(_adv, true, shd_retro);
 
 // Earth's Last Defense - Naxos
 var _eld = arcade_game_add("Earth's Last Defense", spr_arcade_eld, rm_eld);
-arcade_game_enable_shader(_eld, true, shd_arcade);
+arcade_game_enable_shader(_eld, true, shd_retro);

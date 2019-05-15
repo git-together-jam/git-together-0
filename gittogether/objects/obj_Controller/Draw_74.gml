@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+if (room == rm_Overworld) exit;
+
+application_surface_draw_enable(!shaderEnabled);
+
 #region Game shader effect
 
 // Drawing the app surface

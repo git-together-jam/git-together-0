@@ -1,10 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-#region setup
-alarm_set(0,1);
-#endregion
-
 #region shader data
 application_texture = surface_get_texture(application_surface);
 application_texel_width = texture_get_texel_width(application_texture);
