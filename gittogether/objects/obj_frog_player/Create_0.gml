@@ -24,4 +24,4 @@ switch(room_next(room)){
 	case rm_frogger5:	room_nm = "Level 5\nVertigo Warning" break;
 	case rm_frogger6:	room_nm = "Level 6\nUhhhhh......" break;
 }
-lastLevel = rm_frogger5;
+lastLevel = rm_frogger6;
