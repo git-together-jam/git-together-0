@@ -1199,6 +1199,14 @@
             }
         },
         {
+            "Key": "60aba74a-98f2-460f-9781-d80bcaa2953d",
+            "Value": {
+                "id": "33034dbf-e178-453c-aa3f-6c68058789dd",
+                "resourcePath": "objects\\obj_frog_explosion\\obj_frog_explosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "619bb7c4-e529-4cd7-9b21-8c45251b8906",
             "Value": {
                 "id": "6dba080a-af52-43b7-9cf3-6f6000547947",
@@ -1623,6 +1631,14 @@
             }
         },
         {
+            "Key": "88d51241-07ce-4a86-aae2-694367216b3f",
+            "Value": {
+                "id": "ae712571-7bc5-4cc9-a106-446db769f830",
+                "resourcePath": "sprites\\spr_frog_explosion\\spr_frog_explosion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "895a09d2-ab01-4e3a-80d2-9f007abf9121",
             "Value": {
                 "id": "f3780ecb-f136-4409-9bf2-fda7952aed7c",
@@ -1935,6 +1951,14 @@
             }
         },
         {
+            "Key": "a53bcfb4-7588-4b86-9664-81f58d617d82",
+            "Value": {
+                "id": "ab35d429-325d-4cd5-8959-3c35d7c36dda",
+                "resourcePath": "objects\\obj_frog_fireball\\obj_frog_fireball.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a71c6fe7-c960-423b-98a3-d73abd8114ec",
             "Value": {
                 "id": "568d6d43-bbe0-4848-9870-226e29b230c9",
@@ -2076,6 +2100,14 @@
                 "id": "56a80d12-a4db-4b8d-bc9d-70c117b3701e",
                 "resourcePath": "objects\\obj_yosi\\obj_yosi.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ae8a137f-a6e0-43ad-bd3c-52973c7baf42",
+            "Value": {
+                "id": "2aedff1c-704c-4c95-b900-0b3a6ad15c57",
+                "resourcePath": "views\\ae8a137f-a6e0-43ad-bd3c-52973c7baf42.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2343,18 +2375,18 @@
             }
         },
         {
+            "Key": "c13bc21b-519c-47e7-9426-532f8ca22daa",
+            "Value": {
+                "id": "6f9f712d-7763-4849-a3c1-81b8099c5871",
+                "resourcePath": "rooms\\rm_frogger6\\rm_frogger6.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "c23baf1f-2262-4650-b504-4df6e7cf1975",
             "Value": {
                 "id": "ed016087-d4e6-4745-8a7a-c408b9ac168a",
                 "resourcePath": "sprites\\spr_dr_cursor\\spr_dr_cursor.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "c32b68cc-42fe-458d-944d-a1b303c80422",
-            "Value": {
-                "id": "a85b0bcf-30be-4145-9c64-8a55de30ff25",
-                "resourcePath": "sprites\\sprite101\\sprite101.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2396,6 +2428,14 @@
                 "id": "3640a770-ca2a-43c3-b450-b5980f8607cc",
                 "resourcePath": "views\\c72a2308-cf8e-4534-a0b8-f265d0c67925.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c7e6bfa1-a237-4590-ad53-92806026fdaf",
+            "Value": {
+                "id": "278b19f4-b914-4982-9265-d07bc91f667f",
+                "resourcePath": "sprites\\spr_frog_fireball\\spr_frog_fireball.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

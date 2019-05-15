@@ -31,8 +31,8 @@ if (instance_place(x,y,obj_frog_water)){
 		var die = false;
 		with (instance_place(x,y,obj_frog_turtle)){
 			if (image_index <= 54){
-				if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
-				if (other.yMove != 0) other.yMove += .3*vy;
+				if (other.xMove != 0) other.xMove += .2*vx; //dont question this magic okay
+				if (other.yMove != 0) other.yMove += .2*vy;
 				if (other.moveTimer <= 0){
 					other.xMove += vx;
 					other.yMove += vy;
