@@ -10,7 +10,7 @@ control = true;
 xscale = 1;
 yscale = 1;
 
-if (!instance_exists(obj_frog_controller)) instance_create_layer(0,0,"Frog",obj_frog_controller);
+if (!instance_exists(obj_frog_controller)) instance_create_layer(0,0,"Truck_kun",obj_frog_controller);
 if (!audio_is_playing(snd_frog_theme)) audio_play_sound(snd_frog_theme,100,true);
 
 room_nm = "???"
