@@ -52,8 +52,8 @@ if (instance_place(x,y,obj_frog_truckkun)){
 }
 //offscreen
 if ((room_type == 0 && (x<0 || x>room_width)) ||
-	(room_type == 1 && (y<0 || y>room_height))||
-	(room_type == 2 && (x<0 || x>room_width || y<0 || y>room_height))){
+	(room_type == 1 && (y<-1 || y>room_height))||
+	(room_type == 2 && (x<0 || x>room_width || y<-1 || y>room_height))){
 	frog_die();
 }
 //die
