@@ -25,3 +25,10 @@ switch(room_next(room)){
 	case rm_frogger6:	room_nm = "Level 6\nUhhhhh......" break;
 }
 lastLevel = rm_frogger6;
+
+
+//room_type variable 
+//0 - vertical
+//1 - horizontal
+//2 - both
+//3 - neither

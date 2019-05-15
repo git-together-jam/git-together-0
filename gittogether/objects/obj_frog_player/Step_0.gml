@@ -83,8 +83,8 @@ y+=yMove;
 moveTimer--;
 
 //no offscreen shenanigans
-if (room_type == 0) y = clamp(y,0,(room_height div 16)*16)
-if (room_type == 1) x = clamp(x,0,(room_width div 16)*16)
+if (is(room_type,0,3)) y = clamp(y,0,(room_height div 16)*16)
+if (is(room_type,1,3)) x = clamp(x,0,(room_width div 16)*16)
 	
 
 //squash and stretch
