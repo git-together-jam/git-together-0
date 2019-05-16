@@ -56,6 +56,7 @@ var _eld = arcade_game_add(global.ELDTitle, spr_arcade_eld, rm_eld);
 arcade_game_set_title(_eld, fnt_big, c_white);
 arcade_game_set_transition(_eld, TransType.circle, c_black);
 arcade_game_enable_shader(_eld, true, shd_arcade);
+<<<<<<< HEAD
 arcade_game_enable_save(_eld, true);
 
 // Snake - havik
@@ -65,3 +66,6 @@ arcade_game_enable_shader( _snake, true, shd_retro);
 arcade_game_add(Game.eld, "Earth's Last Defense", spr_arcade_eld, rm_eld);
 arcade_game_enable_shader(Game.eld, true, shd_retro);
 >>>>>>> parent of 7af74da... Merge branch 'master' into Sahaun
+=======
+arcade_game_enable_save(_eld, true);
+>>>>>>> parent of b12ad90... Merge pull request #39 from meseta/Sahaun
