@@ -38,7 +38,7 @@ arcade_game_set_title(_frogger, fnt_big, c_white);
 arcade_game_enable_shader(_frogger, true, shd_retro);
 
 // Wking - Levgon
-var _wking = arcade_game_add("Wking", spr_arcade_wking, rm_wk_menu);
+var _wking = arcade_game_add("Wking Demo", spr_arcade_wking, rm_wk_menu);
 arcade_game_set_transition(_wking, TransType.circle, c_white);
 
 // Yosi - Yosi
