@@ -18,7 +18,7 @@ exitTimerMaxTime = exitTime;
 
 // Globals
 global.Coins = sys_save_global_read("Coins", 100);
-global.Tickets = sys_save_global_read("Tickets", 0);
+//global.Tickets = sys_save_global_read("Tickets", 0);
 //global.CheatsUsed = sys_save_global_read("CheatsUsed",0);
 
 // Controller Support

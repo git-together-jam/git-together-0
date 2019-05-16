@@ -1983,6 +1983,14 @@
             }
         },
         {
+            "Key": "c5cd7616-e9a2-4dfd-910e-9b33524db5cd",
+            "Value": {
+                "id": "1731d00a-c048-46c8-9495-ac4b6d159d20",
+                "resourcePath": "objects\\obj_showcase\\obj_showcase.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c5ed9a52-4385-46b2-9b64-951aec94c839",
             "Value": {
                 "id": "a3251c71-d941-4700-9428-2525ed74be8f",
