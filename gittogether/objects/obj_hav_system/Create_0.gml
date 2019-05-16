@@ -13,6 +13,9 @@ hSNAKE_LIST = ds_list_create();
 
 snake_seg = 0;
 
+#macro hav_WHITE $dccbc0 // c0cbdc
+#macro hav_BLACK $251418 // 181425
+
 #macro TARGET 70
 
 ended = false;
@@ -25,7 +28,17 @@ instance_create_layer( 0, 0, "particles", obj_hav_start);
 //repeat(4) {
 //	hav_add_seg();
 //}
-
+notifs = ds_list_create();
+ds_list_add( notifs, 
+	"Ouch that hurt!",
+	"SEND BACKUP!",
+	"This snake will be the end of us",
+	"You'll never get us all",
+	"Stop, it's pointless, you'll never win",
+	"The duckie army will survive!",
+	"Strike me down, I shall be-QUACK"
+);
+show_debug_message("ERE - " + string( ds_list_size( notifs)));
 
 enum hWorld { Void, Snake, Eat };
 ds_grid_clear( hGAME_GRID, hWorld.Void);

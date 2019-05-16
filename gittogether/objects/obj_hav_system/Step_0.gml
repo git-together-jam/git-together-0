@@ -69,31 +69,19 @@ if alarm[8] == -1 && game_state = hGameState.Play {
 	cur_direction = new_direction;
 	
 		var _num_blocks = ds_list_size( SNAKE_LIST);
-			for( var i = 0; i < _num_blocks; i++){				
+		for( var i = 0; i < _num_blocks; i++){				
 				
-				with( SNAKE_LIST[| i]){
-					
-					if hold == false  {
-						
-						switch DIR_LIST[| ds_list_size( DIR_LIST) - ( my_pos + 1)] {
-							case 0:	new_x += hGRID_CELL_S; break;
-							case 1:	new_y -= hGRID_CELL_S; break;
-							case 2:	new_x -= hGRID_CELL_S; break;
-							case 3:	new_y += hGRID_CELL_S; break;
-						}
-						old_x = x;
-						old_y = y;
-						
-					} else {
-						
-						hold = false;	
-						
-					}
-				
+			with( SNAKE_LIST[| i]){					
+				switch DIR_LIST[| ds_list_size( DIR_LIST) - ( my_pos + 1)] {
+					case 0:	new_x += hGRID_CELL_S; break;
+					case 1:	new_y -= hGRID_CELL_S; break;
+					case 2:	new_x -= hGRID_CELL_S; break;
+					case 3:	new_y += hGRID_CELL_S; break;
 				}
-				
+				old_x = x;
+				old_y = y;						
+			}
 		}	
-		
 		alarm[8] = TURN_TIME;
 		
 }			

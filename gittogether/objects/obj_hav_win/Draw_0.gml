@@ -10,7 +10,7 @@ draw_roundrect_ext( 30, 50, room_width - 30, room_height - 50, 10, 10, false);
 
 
 draw_set_alpha( 1.0);
-draw_set_color( c_white);
+draw_set_color( hav_WHITE);
 draw_set_halign( fa_center);
 draw_set_valign( fa_center);
 draw_set_font( fnt_normal);

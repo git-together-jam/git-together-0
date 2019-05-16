@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+
 
 
 
@@ -12,18 +11,30 @@ if other.my_pos == 0 {
 	with( instance_create_layer( _x, _y, "snake", obj_hav_snake)){	
 	}	
 	
+	var _notif = "";
 	with( obj_hav_system){
 		my_score++;
 		turn_time_change += 0.35;
-		TURN_TIME = max( 5.0, room_speed / (turn_time_base + turn_time_change) );	
+		TURN_TIME = max( 5.0, room_speed / (turn_time_base + turn_time_change) );
+		
+		if other.x > 60 && irandom(4) == 1 {
+			var _size = ds_list_size( notifs);
+			if _size > 0 {
+				var _index = irandom( _size - 1);
+				_notif = ds_list_find_value( notifs, _index);
+				ds_list_delete( notifs, _index);
+				
+			}
+		}		
+		
 	}
+	hav_notif( _notif);
 
 	instance_destroy();
 	
+
+	
 	var _size = 2;
-	//var _dir = 270 + irandom( -30, 30);
-	//part_type_shape(PSYSTEM_PULSE, choose( pt_shape_line));
-	//part_type_direction(PSYSTEM_PULSE, 240, 300, 0, 15);
 	part_type_color3(PSYSTEM_PULSE, c_yellow, c_yellow, c_yellow);
 	part_emitter_region( PSYSTEM, PSYSTEM_EMITTER_1, x - _size, x + _size, y - _size, y + _size, ps_shape_ellipse, ps_distr_gaussian);
 	part_emitter_burst( PSYSTEM, PSYSTEM_EMITTER_1, PSYSTEM_PULSE, 20);	
