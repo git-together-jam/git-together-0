@@ -8,7 +8,7 @@ _sys_save_init(true);
 // arcade_game_add(type, name, arcade_machine_sprite, game_room)
 
 // Basic - Noone
-var _basic = arcade_game_add("Basic 1", spr_ArcadeBasic1, rm_B1_Main);
+var _basic = arcade_game_add("Basic", spr_ArcadeBasic1, rm_B1_Main);
 arcade_game_set_transition(_basic, TransType.screenFade, c_black);
 arcade_game_enable_shader(_basic, false);
 
