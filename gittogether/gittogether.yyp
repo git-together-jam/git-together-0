@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-        
+
     ],
     "option_ecma": false,
     "parentProject": {
@@ -25,7 +25,7 @@
             }
         ],
         "hiddenResources": [
-            
+
         ],
         "projectPath": "${base_project}"
     },
@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "130b5751-5b06-4c74-bf65-732458a219a1",
+            "Value": {
+                "id": "35f8329c-0441-4bec-b06a-4936b00f52ae",
+                "resourcePath": "sprites\\bathroom_sign\\bathroom_sign.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "13f77556-d138-44d9-8946-a4aa33ea7a88",
             "Value": {
                 "id": "126e8d5a-7999-4191-8464-ec2ee187425c",
@@ -527,14 +535,6 @@
             }
         },
         {
-            "Key": "232b41dd-f9cc-4735-91ed-626f1febd986",
-            "Value": {
-                "id": "43270cd8-b1ca-4c89-8778-81da1d5e73f4",
-                "resourcePath": "views\\232b41dd-f9cc-4735-91ed-626f1febd986.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "243e8479-a52d-40bb-9f8b-2a03e02c70d3",
             "Value": {
                 "id": "a288a3d8-e279-4894-ba19-cf6b877120bb",
@@ -743,6 +743,14 @@
             }
         },
         {
+            "Key": "34ef10b8-63f0-4f07-818d-c63ac9a917f6",
+            "Value": {
+                "id": "9f0e4ded-d191-490b-a3fd-5f3245f01709",
+                "resourcePath": "scripts\\hav_newgame\\hav_newgame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "35168ed6-5141-450f-8889-7ad38144918e",
             "Value": {
                 "id": "9c91d140-8514-46c4-9d9d-5acd9fe0526d",
@@ -788,6 +796,14 @@
                 "id": "feac4604-ca3c-4c57-8795-b80bb6fc3c14",
                 "resourcePath": "views\\385e3946-9b5a-4ec0-9119-5a48f91f8c83.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "388b2517-af32-4e4d-b13a-e43e9fe0e390",
+            "Value": {
+                "id": "096acb2b-1bdb-4aed-bd1d-df594816ca0b",
+                "resourcePath": "objects\\obj_bathroom_sign\\obj_bathroom_sign.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1279,6 +1295,14 @@
             }
         },
         {
+            "Key": "55c7f025-a316-4b24-8053-4a1b477133be",
+            "Value": {
+                "id": "8df1fd74-b259-44fa-9b7a-1ac43c47d0c9",
+                "resourcePath": "sounds\\snd_toilet_flushing_with_gurggles\\snd_toilet_flushing_with_gurggles.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "55d7af7f-def3-479b-b739-8080b58e852d",
             "Value": {
                 "id": "69b64852-e798-4ce1-a4e0-907fa1f32e0e",
@@ -1291,6 +1315,14 @@
             "Value": {
                 "id": "53cec74a-b9bc-4758-adc8-cf1f89519e0f",
                 "resourcePath": "objects\\obj_frog_turtle\\obj_frog_turtle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "56f2180b-92c1-4c7a-a62e-da6da71d8011",
+            "Value": {
+                "id": "809eb003-1cd4-4785-b17f-171e4365a555",
+                "resourcePath": "objects\\obj_wall_area\\obj_wall_area.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2231,6 +2263,14 @@
             }
         },
         {
+            "Key": "937b0d9b-f5f8-4c7b-b9ee-883dfb66d260",
+            "Value": {
+                "id": "7bdeb318-c103-4d4d-adaf-85d243dbda6f",
+                "resourcePath": "objects\\obj_hav_win\\obj_hav_win.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "93a7bb02-4c67-4e83-ad04-c8d16406eb02",
             "Value": {
                 "id": "05014877-8fd7-405e-b5c9-7c56c7286cb6",
@@ -2751,6 +2791,14 @@
             }
         },
         {
+            "Key": "b2d56b42-3ebc-4fc7-ad47-dc8a7c9e1856",
+            "Value": {
+                "id": "0703802c-099c-4f79-a702-f6336a0a9171",
+                "resourcePath": "objects\\obj_hav_end\\obj_hav_end.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b2e2a629-ccc3-4015-8736-c2a8d535b9a3",
             "Value": {
                 "id": "86008049-a29d-471f-b51f-37abd3292fc3",
@@ -3151,6 +3199,14 @@
             }
         },
         {
+            "Key": "ca7301b5-64b3-4e04-9e14-5d303d251042",
+            "Value": {
+                "id": "652395a2-09e9-4320-a1e3-7e89ff9839eb",
+                "resourcePath": "scripts\\hav_win\\hav_win.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "caf52ba3-47ff-41a7-adb3-bf4e95ad8760",
             "Value": {
                 "id": "b819202c-d3da-4644-aeb1-4d5a7e1ef44b",
@@ -3439,6 +3495,14 @@
             }
         },
         {
+            "Key": "dae1a095-323c-4b98-94ba-720751528a20",
+            "Value": {
+                "id": "08424137-c182-4f12-80a0-b6f3f7c6e3ca",
+                "resourcePath": "objects\\obj_bathroom_area\\obj_bathroom_area.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "db13ddde-a0fa-4013-b891-175918d3164f",
             "Value": {
                 "id": "4caa546c-ff02-4028-aa9c-a7568199c1c4",
@@ -3572,6 +3636,14 @@
                 "id": "487b115f-7c7c-4343-b489-597a7733dd10",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e55ba2f5-d1d6-4f39-bbdf-4a32ca054b2c",
+            "Value": {
+                "id": "275d2040-5e52-4f45-a221-61215fc8ad29",
+                "resourcePath": "views\\e55ba2f5-d1d6-4f39-bbdf-4a32ca054b2c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -4074,6 +4146,8 @@
         "c0a2a8cf-5a4c-4f9e-a38e-46233cb01c07",
         "c78f7613-2893-46c7-bec3-69102a4e9ffc",
         "6fd6a6b0-ed22-4033-a812-7112b0df7c63",
+        "ca7301b5-64b3-4e04-9e14-5d303d251042",
+        "34ef10b8-63f0-4f07-818d-c63ac9a917f6",
         "fed45f69-8848-46f9-a310-d8b9732a35db",
         "f8eb5d35-b990-45c1-b572-f3767184ca68",
         "0aa36344-abee-4499-8877-823e764f498b",

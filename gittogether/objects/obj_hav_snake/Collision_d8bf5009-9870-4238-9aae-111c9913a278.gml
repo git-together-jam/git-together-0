@@ -2,4 +2,6 @@
 // You can write your code in this editor
 
 
-hav_gameover();
+if abs( my_pos - other.my_pos) > 2 {
+	hav_gameover();
+}

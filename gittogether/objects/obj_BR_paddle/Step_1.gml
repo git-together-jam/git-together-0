@@ -17,3 +17,7 @@ if (hsp > 0) {
 		if (bbox_left - 1 > 0) x -= 1;
 	}
 }
+
+if (!instance_exists(obj_BR_brick)) {
+	end_minigame(true);
+}

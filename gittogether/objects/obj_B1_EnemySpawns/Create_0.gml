@@ -9,3 +9,5 @@ stillEntering = true;
 
 // Room bound margins
 margin = 32;
+
+escaped = false;
