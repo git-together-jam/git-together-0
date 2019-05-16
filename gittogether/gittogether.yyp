@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-
+        
     ],
     "option_ecma": false,
     "parentProject": {
@@ -25,7 +25,7 @@
             }
         ],
         "hiddenResources": [
-
+            
         ],
         "projectPath": "${base_project}"
     },
@@ -660,6 +660,14 @@
                 "id": "259d4abe-e45c-4ab5-90a9-db2343055cf8",
                 "resourcePath": "objects\\obj_BR_paddle\\obj_BR_paddle.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "31e6e145-c365-43a7-a1af-e24ac269f572",
+            "Value": {
+                "id": "f0bd403d-04b0-423e-93b8-eb2348f5d7bb",
+                "resourcePath": "datafiles_yy\\credits.txt.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
