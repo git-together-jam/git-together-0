@@ -3,7 +3,7 @@ gml_pragma("global", "_game_init()");
 enum Game {
 	clicker, dungandrompa, asteroids, breakout,
 	pong, frogger, wking, yosi,
-	adventure, eld, snake,
+	adventure, eld, snake, credits,
 	
 	length_
 }
@@ -69,3 +69,8 @@ arcade_game_enable_save(Game.eld, true);
 // Snake - havik
 arcade_game_add(Game.snake, "Snake", spr_arcade_snake, rm_hav_snake);
 arcade_game_enable_shader(Game.snake, true, shd_retro);
+
+// Credits
+arcade_game_add(Game.credits, "Credits", spr_arcade_credits, rm_credits);
+arcade_game_set_transition(Game.credits, TransType.screenFade, c_black);
+arcade_game_enable_shader(Game.credits, false);

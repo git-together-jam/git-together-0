@@ -20,28 +20,38 @@ for (var i = 0; i <= 9; i++) {
 #endregion;
 
 if (nsd_hit_timer > room_speed * 2) {
-	var _dial = dialogue[| ++dialogue_index];
-	var _start_index = dialogue_index
-	while (_dial[? "name"] != "nsd_end") {
-		_dial = dialogue[| ++dialogue_index];
-		if (_dial == undefined) {
-			log("========= ERROR =========");
-			log("_start_index:", _start_index);
-			log("_dname:", _dname);
-			show_error("dial is undefined", true);
+	if (text_file == "credits.txt") {
+		event_timer_running = true;
+		dialogue_index	= 0;
+		nsd_hit_timer	= -1;
+		event_timer		= -1;
+		dialogue_state	= 0;
+		last_bullet_index = 0;
+		nsd_timer = 0;
+	} else {
+		var _dial = dialogue[| ++dialogue_index];
+		var _start_index = dialogue_index
+		while (_dial[? "name"] != "nsd_end") {
+			_dial = dialogue[| ++dialogue_index];
+			if (_dial == undefined) {
+				log("========= ERROR =========");
+				log("_start_index:", _start_index);
+				log("_dname:", _dname);
+				show_error("dial is undefined", true);
+			}
 		}
+	
+		event_timer_running = true;
+		dialogue_index	+= 1;
+		nsd_hit_timer	= -1;
+		event_timer		= -1;
+		dialogue_state	= 0;
+		last_bullet_index = 0;
+		nsd_timer = 0;
+		// seat_offset -= 1;
+	
+		event_user(0);
 	}
-	
-	event_timer_running = true;
-	dialogue_index	+= 1;
-	nsd_hit_timer	= -1;
-	event_timer		= -1;
-	dialogue_state	= 0;
-	last_bullet_index = 0;
-	nsd_timer = 0;
-	// seat_offset -= 1;
-	
-	event_user(0);
 }
 
 if (nsd_shoot_timer > 0) {
@@ -147,11 +157,16 @@ if (nsd_shoot_timer < nsd_shoot_time * .6  &&
 	_bullet[? "target"] != undefined &&
 	string_pos("," + string(_text[? "bulletpoint"]) + ",", _bullet[? "target"]) >= 1
 ) {
-
-	log("You hit the right argument!");
-	event_timer_running = false;
-	nsd_hit_timer = 0;
-	
+	if (text_file == "credits.txt") {
+		var _dial = dialogue[| dialogue_index];
+		var _char = characters[? _dial[? "name"]];
+		url_open(_char[? "social"]);
+		event_timer_running = false;
+		nsd_hit_timer = 0;
+	} else {
+		event_timer_running = false;
+		nsd_hit_timer = 0;
+	}
 }
 
 if (event_timer >= 0 && event_timer_running && --event_timer < 0) {

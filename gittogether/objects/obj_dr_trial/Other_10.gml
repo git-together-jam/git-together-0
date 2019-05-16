@@ -1,7 +1,7 @@
 /// @desc loads dialogue
 
 ds_list_destroy_maps(text_list);
-if (dialogue_index < dialogue_count - 1) {
+if (dialogue_index < dialogue_count - 2) {
 	
 	var _dial = dialogue[| dialogue_index];
 	switch (_dial[? "name"]) {
@@ -53,7 +53,7 @@ if (dialogue_index < dialogue_count - 1) {
 		cam_targetx = random(_rad * 2) - _rad;
 		cam_targety = random(_rad * 2) - _rad;
 		
-		event_time = (text_target_length / text_per_second) * room_speed + room_speed * .82;
+		event_time = (text_target_length / text_per_second) * room_speed + nsd_mintime;
 		event_timer = event_time;
 		text_length = text_target_length;
 		
@@ -102,5 +102,5 @@ if (dialogue_index < dialogue_count - 1) {
 	//	log("	", json_encode(text_list[| i]) + ( i < _ls - 1 ? "," : " "));
 	//}
 	//log("]");
-} // else text_target = "The End";
+} else end_minigame(true);
 text_length = 0;
