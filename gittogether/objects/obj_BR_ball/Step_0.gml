@@ -48,6 +48,11 @@ switch(state) {
 		if (bbox_bottom > room_height) {
 			//(subtract life/points)
 			
+			with (obj_BR_paddle) {
+				life -= 1;
+				if (life <= 0) end_minigame();
+			}
+			
 			// Stop movement
 			spd = 0;
 			hsp = 0;
