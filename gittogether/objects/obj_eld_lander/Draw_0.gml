@@ -12,3 +12,10 @@ if (laser_length > 0)
 //draw_set_color(c_red);
 //draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 //draw_set_color(c_white);
+
+
+draw_set_color(c_aqua);
+draw_rectangle(10, 10, 10 + 50 * fuel_level * 0.01, 20, false);
+draw_set_color(c_white);
+
+//draw_text(0,30, "num enemies: " + string(instance_number(obj_eld_enemy1)));

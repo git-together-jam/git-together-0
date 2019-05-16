@@ -15,10 +15,10 @@ _sys_save_init(true);
 // Make sure to add your game here
 // arcade_game_add(type, name, arcade_machine_sprite, game_room)
 
-// Basic - Noone
+// Clicker - Noone
 arcade_game_add(Game.clicker, "Clicker", spr_ArcadeBasic1, rm_B1_Main);
 arcade_game_set_transition(Game.clicker, TransType.screenFade, c_black);
-arcade_game_enable_shader(Game.clicker, false);
+arcade_game_enable_shader(Game.clicker, true, shd_retro);
 
 // Dungandrompa - TonyStr
 arcade_game_add(Game.dungandrompa, "Dungandrompa V1", spr_arcade_dungandompa, rm_dungandrompa);
@@ -46,8 +46,8 @@ arcade_game_set_title(Game.frogger, fnt_big, c_white);
 arcade_game_enable_shader(Game.frogger, true, shd_retro);
 
 // Wking - Levgon
-arcade_game_add(Game.wking, "Wking", spr_arcade_wking, rm_wk_menu);
-arcade_game_set_transition(Game.wking, TransType.circle, c_white);
+arcade_game_add(Game.wking, "Wking Demo", spr_arcade_wking, rm_wk_menu);
+arcade_game_set_transition(Game.wking, TransType.circle, c_white
 
 // Yosi - Yosi
 arcade_game_add(Game.yosi, "Yosi", spr_arcade_machine_yosi, rm_yosi);
