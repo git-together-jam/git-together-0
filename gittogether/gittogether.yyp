@@ -671,6 +671,14 @@
             }
         },
         {
+            "Key": "31e6e145-c365-43a7-a1af-e24ac269f572",
+            "Value": {
+                "id": "f0bd403d-04b0-423e-93b8-eb2348f5d7bb",
+                "resourcePath": "datafiles_yy\\credits.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "31ec74e0-9159-4046-aa13-3946a9d2025c",
             "Value": {
                 "id": "67f517f1-4c93-4cb4-b932-d9688c838ca6",
