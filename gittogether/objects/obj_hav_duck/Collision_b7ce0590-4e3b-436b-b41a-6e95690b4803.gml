@@ -15,7 +15,7 @@ if other.my_pos == 0 {
 	with( obj_hav_system){
 		my_score++;
 		turn_time_change += 0.35;
-		TURN_TIME = max( 4.5, room_speed / (turn_time_base + turn_time_change) );	
+		TURN_TIME = max( 5.0, room_speed / (turn_time_base + turn_time_change) );	
 	}
 
 	instance_destroy();
