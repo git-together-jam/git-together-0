@@ -2,6 +2,7 @@
 
 // Save global variables to Save System
 sys_save_global_write("Coins",global.Coins);
+sys_save_global_write("Games Won",global.GamesWon);
 //sys_save_global_write("Tickets",global.Tickets);
 //sys_save_global_write("CheatsUsed",global.CheatsUsed);
 
