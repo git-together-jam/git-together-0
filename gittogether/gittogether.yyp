@@ -727,6 +727,14 @@
             }
         },
         {
+            "Key": "3795985c-3a44-446d-97bc-9e80ef226cea",
+            "Value": {
+                "id": "7989d2a0-0063-4fdf-8d20-a26db96143e7",
+                "resourcePath": "objects\\obj_hav_duck\\obj_hav_duck.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "37b2843d-c097-4d91-b09a-e55a5c1c8da9",
             "Value": {
                 "id": "2cd246a0-33cb-4a79-9a1d-a07b42af18a2",
@@ -2203,6 +2211,14 @@
             "Value": {
                 "id": "d3f50df7-ded9-40c8-8c4d-aa6c5c8cff83",
                 "resourcePath": "sprites\\spr_wk_vikingidle\\spr_wk_vikingidle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9bccf218-9f2e-47a5-9777-56f7d8546fa8",
+            "Value": {
+                "id": "547058d7-1666-4484-afe7-45155c4f89a2",
+                "resourcePath": "sprites\\spr_hav_duck\\spr_hav_duck.yy",
                 "resourceType": "GMSprite"
             }
         },
