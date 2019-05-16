@@ -1,10 +1,19 @@
 {
-    "id": "a0d993fa-611e-4179-acf2-e96a6965241b",
+    "id": "491bc478-69e5-41d2-8678-1e08e0749dbb",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "viking",
+    "name": "obj_wk_back",
     "eventList": [
-        
+        {
+            "id": "c9744c13-a105-46f3-82f7-29bc9bb98ff4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "491bc478-69e5-41d2-8678-1e08e0749dbb"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -24,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "9b4e44e3-f379-4ce3-af6e-e3a214f75913",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
