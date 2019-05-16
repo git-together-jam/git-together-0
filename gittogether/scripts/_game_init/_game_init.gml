@@ -33,7 +33,7 @@ var _pong = arcade_game_add("Pong", spr_arcade_pong, rm_pong);
 arcade_game_enable_shader(_pong, true, shd_retro);
 
 // Frogger - Andy
-var _frogger = arcade_game_add("Speed Frogger", spr_arcade_frogger, rm_frogger);
+var _frogger = arcade_game_add("Frogger", spr_arcade_frogger, rm_frogger);
 arcade_game_set_title(_frogger, fnt_big, c_white);
 arcade_game_enable_shader(_frogger, true, shd_retro);
 
@@ -45,10 +45,10 @@ arcade_game_set_transition(_wking, TransType.circle, c_white);
 var _yosi = arcade_game_add("Yosi", spr_arcade_machine_yosi, rm_yosi);
 arcade_game_enable_shader(_yosi, true, shd_retro);
 
-// Adventure - Surg
+// Adventure - Surg UNFINISHED!
 var _adv = arcade_game_add("Adventure", spr_arcade_pong, rm_ad_start);
 arcade_game_enable_shader(_adv, true, shd_retro);
 
 // Earth's Last Defense - Naxos
 var _eld = arcade_game_add("Earth's Last Defense", spr_arcade_eld, rm_eld);
-arcade_game_enable_shader(_eld, true, shd_arcade);
+arcade_game_enable_shader(_eld, true, shd_retro);

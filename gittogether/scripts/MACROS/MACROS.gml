@@ -12,3 +12,6 @@ gml_pragma("global", "MACROS()");
 // Save System Support
 #macro SAVE_FILE_NAME "game_save.json"
 #macro SAVE_PATH game_save_id + "\\" + SAVE_FILE_NAME
+
+#macro APPLICATION_SURFACE_WIDTH surface_get_width(application_surface)
+#macro APPLICATION_SURFACE_HEIGHT surface_get_height(application_surface)
