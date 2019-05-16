@@ -4,7 +4,7 @@
 #macro hGRID_CELLS_H 17
 #macro hGRID_CELL_S 10
 #macro hGRID_X_OFF 5
-#macro hGRID_Y_OFF 5
+#macro hGRID_Y_OFF 7
 
 #macro hGAME_GRID global.havgg
 hGAME_GRID = ds_grid_create( hGRID_CELLS_W, hGRID_CELLS_H);
@@ -61,8 +61,30 @@ repeat( ds_list_size( SNAKE_LIST) - 1){
 	ds_list_add( DIR_LIST, hDirection.Up);
 }
 			
-#macro TURN_TIME_BASE 4
+turn_time_base = 4;
+turn_time_change = 0;
 #macro TURN_TIME global.tt
-TURN_TIME = room_speed / TURN_TIME_BASE;	
+TURN_TIME = room_speed / turn_time_base;	
 			
 			
+my_score = 0;
+			
+			
+			
+#macro PSYSTEM global.ps
+PSYSTEM = part_system_create_layer("particles", true);
+//part_system_automatic_draw( PSYSTEM, false);
+
+#macro PSYSTEM_PULSE global.ps_pulse
+PSYSTEM_PULSE = part_type_create();
+part_type_shape(PSYSTEM_PULSE, pt_shape_square);
+part_type_size(PSYSTEM_PULSE, 0.05, 0.05, 0, 0.01);
+part_type_color3(PSYSTEM_PULSE, c_yellow, c_yellow, c_yellow);
+part_type_alpha3(PSYSTEM_PULSE, 0.8, 1, 0);
+part_type_speed(PSYSTEM_PULSE, 0.45, 0.6, -0.001, 0);
+part_type_direction(PSYSTEM_PULSE, 0, 359, 0, 10);
+part_type_blend(PSYSTEM_PULSE, true);
+part_type_life(PSYSTEM_PULSE, 20, 35);
+
+#macro PSYSTEM_EMITTER_1 global.psystem_emitter_1
+PSYSTEM_EMITTER_1 = part_emitter_create(PSYSTEM);

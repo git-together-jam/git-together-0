@@ -1655,6 +1655,14 @@
             }
         },
         {
+            "Key": "6fd6a6b0-ed22-4033-a812-7112b0df7c63",
+            "Value": {
+                "id": "a59ec32f-5dde-4078-98ad-472e3986efb4",
+                "resourcePath": "scripts\\hav_gameover\\hav_gameover.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "70662d2b-255c-466b-b2a6-22deb7cfb4fa",
             "Value": {
                 "id": "7d5be7e7-b2b6-4d3b-aab7-177fed15cd9c",
@@ -3905,6 +3913,7 @@
         "33fe4c5e-2c0c-4306-9b76-23e365562653",
         "c0a2a8cf-5a4c-4f9e-a38e-46233cb01c07",
         "c78f7613-2893-46c7-bec3-69102a4e9ffc",
+        "6fd6a6b0-ed22-4033-a812-7112b0df7c63",
         "fed45f69-8848-46f9-a310-d8b9732a35db",
         "f8eb5d35-b990-45c1-b572-f3767184ca68",
         "0aa36344-abee-4499-8877-823e764f498b",

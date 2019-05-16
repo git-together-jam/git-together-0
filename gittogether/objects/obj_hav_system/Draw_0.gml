@@ -19,8 +19,13 @@ draw_set_halign( fa_right);
 draw_set_valign( fa_center);
 
 draw_set_font( fnt_big);
-draw_text( room_width - 20, 30, "SNAKE");
+draw_text( room_width - 10, 30, "SNAKE");
 draw_set_font( fnt_pixel);
-draw_text( room_width - 20, 50, "This snake eats duckies!");
+draw_text( room_width - 10, 50, "Wanna eat some duckies?\nEat 70 duckies to win!");
 
+var _score = string_replace_all( string_format( my_score, 3, 0), " ", "0");
+draw_set_font( fnt_normal);
+draw_text( room_width - 10, 100, "SCORE: " + _score);
 
+draw_set_font( fnt_pixel);
+draw_text( room_width - 20, 150, "Turn Time: " + string( TURN_TIME));
