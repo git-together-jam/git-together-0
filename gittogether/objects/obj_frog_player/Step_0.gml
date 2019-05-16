@@ -65,13 +65,16 @@ if (!control){
 //goal
 if (instance_exists(obj_frog_goal)){
 	if (instance_place(x,y,obj_frog_goal) && control){
-		control = false;
-		if (room != lastLevel) room_goto_transition(room_next(room),TransType.circle,c_black,room_nm,fnt_big,c_white);
-		else end_minigame();
-		audio_play_sound(snd_frog_win,100,false);
-		with (instance_place(x,y,obj_frog_goal)){
-			image_xscale = lerp(image_xscale,0,.2);
-			image_yscale = lerp(image_yscale,0,.2);
+		if (instance_place(x,y,obj_frog_goal).special == "Leaderboards") room_goto_transition(rm_frogger_highscore,TransType.circle,c_black);
+		else{
+			control = false;
+			if (room != lastLevel) room_goto_transition(room_next(room),TransType.circle,c_black,room_nm,fnt_big,c_white);
+			else end_minigame();
+			audio_play_sound(snd_frog_win,100,false);
+			with (instance_place(x,y,obj_frog_goal)){
+				image_xscale = lerp(image_xscale,0,.2);
+				image_yscale = lerp(image_yscale,0,.2);
+			}
 		}
 	}
 }
