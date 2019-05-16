@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-        
+
     ],
     "option_ecma": false,
     "parentProject": {
@@ -25,7 +25,7 @@
             }
         ],
         "hiddenResources": [
-            
+
         ],
         "projectPath": "${base_project}"
     },
@@ -491,6 +491,14 @@
             "Value": {
                 "id": "43270cd8-b1ca-4c89-8778-81da1d5e73f4",
                 "resourcePath": "views\\232b41dd-f9cc-4735-91ed-626f1febd986.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "23a4b985-2ef1-4435-8f68-70cdb5ed1507",
+            "Value": {
+                "id": "e2c0d152-beb8-418b-add3-38fe0fe89633",
+                "resourcePath": "views\\23a4b985-2ef1-4435-8f68-70cdb5ed1507.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -2815,6 +2823,14 @@
             }
         },
         {
+            "Key": "c5cd7616-e9a2-4dfd-910e-9b33524db5cd",
+            "Value": {
+                "id": "1731d00a-c048-46c8-9495-ac4b6d159d20",
+                "resourcePath": "objects\\obj_showcase\\obj_showcase.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c5ed9a52-4385-46b2-9b64-951aec94c839",
             "Value": {
                 "id": "a3251c71-d941-4700-9428-2525ed74be8f",
@@ -2996,6 +3012,14 @@
                 "id": "57b93940-47f4-4423-ba73-2beeb959c7b8",
                 "resourcePath": "scripts\\arcade_game_enable_save\\arcade_game_enable_save.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d1bd12f9-3074-42a1-8ed1-6488dda98c1c",
+            "Value": {
+                "id": "ccbf7d4c-fda1-4cfb-9e47-9a668bd91a9c",
+                "resourcePath": "sounds\\bgm_dungandrompa\\bgm_dungandrompa.yy",
+                "resourceType": "GMSound"
             }
         },
         {

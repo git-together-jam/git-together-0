@@ -11,6 +11,8 @@ cam_targety = 0;
 cam_time = room_speed * 10;
 cam_timer = 0;
 
+if (!audio_is_playing(bgm_dungandrompa)) audio_play_sound(bgm_dungandrompa, 100, true);
+
 #region Characters
 
 characters = json_decode(string_concat(@'{ 
