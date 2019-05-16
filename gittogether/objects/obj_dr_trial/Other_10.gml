@@ -2,10 +2,12 @@
 
 ds_list_destroy_maps(text_list);
 if (dialogue_index < dialogue_count - 1) {
+	
 	var _dial = dialogue[| dialogue_index];
-	log(json_encode(_dial));
 	switch (_dial[? "name"]) {
-		case "nsd_begin":
+		
+		case "nsd_begin": #region
+		
 			nsd_begin_index = dialogue_index;
 			event_time = room_speed * 5;
 			event_timer = event_time;
@@ -25,15 +27,17 @@ if (dialogue_index < dialogue_count - 1) {
 			log("]");
 
 			#endregion;
-			break;
+		
+		break; #endregion;
 			
-		case "nsd_end":
-			// dialogue_state = 0;
+		case "nsd_end": #region
+		
 			dialogue_index = nsd_begin_index + 1;
 			_dial = dialogue[| dialogue_index];
 			text_timer = 0;
 			last_bullet_index = 0;
-			break;
+			
+		break; #endregion;
 	}
 	
 	text_target_length = dr_prepare_text_target(
@@ -44,6 +48,11 @@ if (dialogue_index < dialogue_count - 1) {
 	);
 	
 	if (dialogue_state == 2 && _dial[? "name"] != "nsd_begin") {
+		
+		var _rad = 17;
+		cam_targetx = random(_rad * 2) - _rad;
+		cam_targety = random(_rad * 2) - _rad;
+		
 		event_time = (text_target_length / text_per_second) * room_speed + room_speed * .82;
 		event_timer = event_time;
 		text_length = text_target_length;

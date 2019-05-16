@@ -1,6 +1,14 @@
 if (truckTimer <= 0){
-	var _inst = instance_create_layer(x,y,"Truck_kun",obj_frog_truckkun);
-	with (_inst) vx = other.type*other.truckMoveSpeed;
+	if hori{
+		var _inst = instance_create_layer(x,y,"Truck_kun",obj_frog_truckkun);
+		with (_inst) vx = other.type*truckMoveSpeed;
+	}else{
+		var _inst = instance_create_layer(x,y,"Truck_kun",obj_frog_truckkun);
+		with (_inst){
+			image_angle = 270;
+			vy = other.type*truckMoveSpeed;
+		}
+	}
 	truckTimer = truckTime + random_range(-.5*room_speed,room_speed);
 }else{
 	truckTimer--;

@@ -169,7 +169,7 @@ if (_died_this_frame)
 			
 	if (extra_lives > 0)
 	{
-		respawn_time = _ct + 3.0; // wait 3 seconds
+		respawn_time = _ct + 1.5; // wait 1.5 seconds
 		x = room_width div 2;
 		y = room_height - 40;
 		image_angle = 0;

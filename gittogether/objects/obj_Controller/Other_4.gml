@@ -11,9 +11,6 @@ view_set_camera(0, cam);
 
 if (room == rm_Overworld) {
 	
-	// Disable Shader
-	shaderEnabled = false;
-	
 	// Place machines
 	if (!machinesPlaced) ds_list_shuffle(global.ArcadeMachineList);
 	

@@ -1,9 +1,9 @@
 /// @description Persistent background controller
 
 randomize();
-
+application_surface_draw_enable(false);
 // Shader
-shaderEnabled = false;
+shaderEnabled = true;
 shaderSet = -1;
 
 // Arcade machine vars
