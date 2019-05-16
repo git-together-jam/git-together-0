@@ -4,6 +4,7 @@
 
 new_direction = hDirection.Up;
 my_score = 0;
+turn_time_change = 0;
 var starting_x = hGRID_X_OFF + ( hGRID_CELL_S / 2) + ( hGRID_CELL_S * irandom_range( 5, 15)) - 1;
 var starting_y = hGRID_Y_OFF + ( hGRID_CELL_S / 2) + ( hGRID_CELL_S * irandom_range( 5, 12)) - 1;
 

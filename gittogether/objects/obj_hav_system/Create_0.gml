@@ -13,6 +13,10 @@ hSNAKE_LIST = ds_list_create();
 
 snake_seg = 0;
 
+#macro TARGET 5
+
+ended = false;
+
 enum hGameState { Start, Play, Over, Win }
 game_state = hGameState.Start;
 
@@ -42,6 +46,7 @@ hCONTROL_BLOCK = noone;
 hold = false;
 
 new_direction = hDirection.Up;
+cur_direction = hDirection.Up;
 	
 //var _cs = 65;
 //var _buff = 15;
