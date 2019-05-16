@@ -8,7 +8,7 @@ _sys_save_init(true);
 // arcade_game_add(type, name, arcade_machine_sprite, game_room)
 
 // Basic - Noone
-var _basic = arcade_game_add("Basic 1", spr_ArcadeBasic1, rm_B1_Main);
+var _basic = arcade_game_add("Basic", spr_ArcadeBasic1, rm_B1_Main);
 arcade_game_set_transition(_basic, TransType.screenFade, c_black);
 arcade_game_enable_shader(_basic, false);
 
@@ -38,7 +38,7 @@ arcade_game_set_title(_frogger, fnt_big, c_white);
 arcade_game_enable_shader(_frogger, true, shd_retro);
 
 // Wking - Levgon
-var _wking = arcade_game_add("Wking", spr_arcade_wking, rm_wk_menu);
+var _wking = arcade_game_add("Wking Demo", spr_arcade_wking, rm_wk_menu);
 arcade_game_set_transition(_wking, TransType.circle, c_white);
 
 // Yosi - Yosi
