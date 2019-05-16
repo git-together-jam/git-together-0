@@ -29,6 +29,3 @@ global.Controller = gamepad_get_first(0);
 // For Drawing the GUI
 guiXOffset = 8;
 guiYOffset = RES_H-16;
-
-//set condition for winning
-global.win = false;
