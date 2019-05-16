@@ -8,8 +8,8 @@ cam_offx = 0;
 cam_offy = 0;
 cam_targetx = 0;
 cam_targety = 0;
-cam_time = room_speed * 10;
-cam_timer = 0;
+// cam_time = room_speed * 10;
+// cam_timer = 0;
 
 if (!audio_is_playing(bgm_dungandrompa)) audio_play_sound(bgm_dungandrompa, 100, true);
 
