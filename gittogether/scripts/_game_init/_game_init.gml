@@ -45,7 +45,7 @@ arcade_game_set_transition(_wking, TransType.circle, c_white);
 var _yosi = arcade_game_add("Yosi", spr_arcade_machine_yosi, rm_yosi);
 arcade_game_enable_shader(_yosi, true, shd_retro);
 
-// Adventure - Surg
+// Adventure - Surg UNFINISHED!
 var _adv = arcade_game_add("Adventure", spr_arcade_pong, rm_ad_start);
 arcade_game_enable_shader(_adv, true, shd_retro);
 
