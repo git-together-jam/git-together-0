@@ -56,3 +56,7 @@ arcade_game_set_title(_eld, fnt_big, c_white);
 arcade_game_set_transition(_eld, TransType.circle, c_black);
 arcade_game_enable_shader(_eld, true, shd_arcade);
 arcade_game_enable_save(_eld, true);
+
+// Snake - havik
+var _snake = arcade_game_add("Snake", spr_arcade_snake, rm_hav_snake);
+arcade_game_enable_shader( _snake, true, shd_retro);

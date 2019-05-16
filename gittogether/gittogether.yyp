@@ -759,6 +759,14 @@
             }
         },
         {
+            "Key": "3aaddbe5-b50d-4c63-a7f3-aae00cc07444",
+            "Value": {
+                "id": "8c37367d-b67c-4d0d-8fbf-5fea34d3fa35",
+                "resourcePath": "objects\\obj_hav_system\\obj_hav_system.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3acfae12-09cc-4238-9772-b558d2cb2180",
             "Value": {
                 "id": "7d83eda0-a9af-434d-94ae-2f66b935fc3c",
@@ -1591,6 +1599,14 @@
             }
         },
         {
+            "Key": "6e7fa0b2-9aa8-4f08-b31b-97eaf40023e8",
+            "Value": {
+                "id": "46c7127b-9290-4c1a-bbfe-bee3e6b8cf85",
+                "resourcePath": "views\\6e7fa0b2-9aa8-4f08-b31b-97eaf40023e8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "6ef509e2-28b6-4f11-8b6b-11a6a34e55a0",
             "Value": {
                 "id": "0ee898d5-cec2-4c83-ace9-40f532db8ec8",
@@ -1735,6 +1751,14 @@
             }
         },
         {
+            "Key": "7942bc64-1319-4d25-ab01-e7a28bda4d98",
+            "Value": {
+                "id": "eb200e7d-00ed-40b3-92b2-8c29a47c700c",
+                "resourcePath": "rooms\\rm_hav_snake\\rm_hav_snake.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "7bb4280f-da89-4127-ac8c-fc1b240a08f3",
             "Value": {
                 "id": "8516eda1-c100-4d52-b74f-286852451c56",
@@ -1788,6 +1812,14 @@
                 "id": "637b081c-479a-4fe8-ab58-d3d626c901d8",
                 "resourcePath": "sprites\\spr_wk_smallchain\\spr_wk_smallchain.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "81ee8c80-ab92-4ab4-b32f-d35ae0458ab0",
+            "Value": {
+                "id": "507c3ce8-ef1c-475e-b8be-da847477b942",
+                "resourcePath": "views\\81ee8c80-ab92-4ab4-b32f-d35ae0458ab0.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3036,6 +3068,14 @@
                 "id": "6935783c-fd4c-49a4-bb28-f8a9b49d5a60",
                 "resourcePath": "views\\d34d8bc7-df23-4915-bd1e-dda376cf23b4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d35fcfe5-c045-48fd-9eab-23ff23150360",
+            "Value": {
+                "id": "d2da3000-d829-4ee3-a549-7a1aee694cc7",
+                "resourcePath": "sprites\\spr_arcade_snake\\spr_arcade_snake.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
