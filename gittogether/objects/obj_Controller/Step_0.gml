@@ -17,7 +17,6 @@ if (exitTimer <= 0) {
 	} else {
 		end_minigame(global.win);
 		if (global.win) show_debug_message("WIN RAR")
-		global.win = false;
 		audio_stop_all();
 		exitTimer = exitTime;
 		exitTimerMaxTime = exitTime;
