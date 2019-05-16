@@ -31,36 +31,10 @@ if room = rm_Overworld {
 }
 
 #endregion
-//draw_text(8, 8, "TICKETS : " + string(global.Tickets));
-//draw_text(8, 8, "COINS : " + string(global.Coins));
 
 
-/*if (miniTitleAlpha > 0) {
-	draw_set_font(fnt_big);
 
-	var str = "Minigame\n\n" + miniName;
-	draw_text_center(RES_W/2, RES_H/2, str, 1, 1, 0, c_dkgray, miniTitleAlpha);
-
-	// Reduce alpha
-	miniTitleAlpha -= 0.02;
-}*/
-
-
-//Draw arcade game screen effect:
-arcade = room != rm_Overworld;
-application_surface_draw_enable(!arcade);
-gpu_set_tex_filter(arcade);
-
-if (arcade)
-{
-	shader_set(shd_retro);
-	draw_surface_ext(application_surface,0,0,1/RES_S,1/RES_S,0,-1,1);
-	shader_reset();
-}
-
-gpu_set_tex_filter(false);
-
-//Draw exit bar in the center of the screen
+#region Draw exit bar
 
 var _x = display_get_gui_width()  div 2,
 	_y = display_get_gui_height() div 2;
@@ -77,7 +51,7 @@ draw_round_bar(
 	_y,
 	45,
 	7,
-	((exitTime - exitTimerMaxTime) / exitTime),
+	((exitTime - (exitTimerMaxTime-2)) / exitTime),
 	c_white,
 	exitTimerDisplayAlpha,
 	4,
@@ -95,3 +69,5 @@ draw_text_center(
 	exitTimerDisplayAlpha,
 );
 draw_set_font(_font);
+
+#endregion

@@ -17,7 +17,7 @@ if (argument_count) {
 			case ":": _spac = " ";	break;
 		}
 		
-		_out += _spac + string(argument[i]);
+		_out += _spac + (argument[i] == undefined ? "undefined" : string(argument[i]));
 	}
 }
 

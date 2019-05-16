@@ -11,7 +11,8 @@
         "cb288e13-f497-44c2-a6e2-24c956ea3119",
         "96369e11-5919-42b2-9c7b-15a154366f26",
         "b708bf13-6679-4929-b127-aa007fa8cd7c",
-        "20ee25c4-6de3-4f0e-ad73-cc71516a8c91"
+        "20ee25c4-6de3-4f0e-ad73-cc71516a8c91",
+        "7f5d665a-80a9-480d-9d33-c2c517906760"
     ],
     "filterType": "GMSprite",
     "folderName": "Arcade Machines",
