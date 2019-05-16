@@ -2,6 +2,13 @@
 // You can write your code in this editor
 var _ct = current_time * 0.001;
 
+if (obj_eld_controller.game_over) 
+{
+	if (audio_is_playing(snd_eld_lander_thrust))
+		audio_stop_sound(snd_eld_lander_thrust);
+	exit;
+}
+
 if (am_alive == false)
 {
 	if (_ct > respawn_time and extra_lives > 0)
@@ -13,6 +20,7 @@ if (am_alive == false)
 		image_angle = 0;
 		xvel = 0;
 		yvel = 0;
+		fuel_level = max(30, fuel_level); // get back at least 30% fuel after dying
 	}
 	else
 		exit;
@@ -82,9 +90,34 @@ if (global.iMouse_LP and fuel_level > ELD_LASER_COST)
 	}
 }
 
+// LASER BLASTS, 50% OFF FIRE SALE, ONE DAY ONLY
+if (global.iMouse_RP and fuel_level > ELD_LASER_COST * 4)
+{
+	fuel_level -= ELD_LASER_COST * 4;
+	
+	var _ang = 0;
+	for (var i = 0; i < 8; ++i)
+	{
+		with (instance_create_layer(x,y, "Instances", obj_eld_laser))
+		{
+			direction = _ang;
+			image_angle = _ang;
+			speed = 3;
+		}
+		_ang += 45;		
+	}
+	audio_play_sound(snd_eld_laser_2, 0, false);
+}
+
+
+
+////////////////////////
+// COLLIDIN IN STUFF
+////////////////////////
 var _died_this_frame = false;
 
-if (place_meeting(x,y,obj_eld_enemy1) and !_invincible) _died_this_frame = true;
+if (place_meeting(x,y,obj_eld_enemy1) and !_invincible and !on_pad) 
+	_died_this_frame = true;
 
 var _inst = instance_place(x+xvel, y+max(1.0, abs(yvel)) * sign(yvel), obj_eld_fuel_station);
 if (_inst != noone)
@@ -117,6 +150,9 @@ else
 	y += yvel;
 }
 
+// kill player if flying too low
+if (y > room_height * 2) _died_this_frame = true;
+
 // if we died this frame
 if (_died_this_frame)
 {
@@ -129,17 +165,24 @@ if (_died_this_frame)
 	audio_play_sound(snd_eld_lander_explode, 0, false);
 			
 	// do explody effect some time here
+	eld_create_explosion(x, y, 20);
 			
 	if (extra_lives > 0)
 	{
 		respawn_time = _ct + 3.0; // wait 3 seconds
 		x = room_width div 2;
-		y = room_height - 30;
+		y = room_height - 40;
 		image_angle = 0;
 	}
 	else
 	{
 		// GAME OVER MAN
+		obj_eld_controller.game_over = true;
+		
+		var _high_score = sys_save_arcade_read(global.ELDTitle, "HighScore", 0);
+		var _final_score = obj_eld_controller.eld_score * (1 + extra_lives);
+		if (_final_score > _high_score)
+			sys_save_arcade_write(global.ELDTitle, "HighScore", _final_score);
 	}
 }
 

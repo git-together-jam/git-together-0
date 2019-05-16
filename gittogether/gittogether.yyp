@@ -463,6 +463,14 @@
             }
         },
         {
+            "Key": "2690153d-4ae7-4188-be8e-0ee8e887c707",
+            "Value": {
+                "id": "7c95119c-217a-42d1-a28c-f2116e564598",
+                "resourcePath": "sprites\\spr_eld_fuel_pad\\spr_eld_fuel_pad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "26e8617a-373b-4f8a-b75a-231d1e713c54",
             "Value": {
                 "id": "1057795a-1dce-4808-acc7-e2c2ff8d5327",
@@ -2271,6 +2279,14 @@
             }
         },
         {
+            "Key": "c75d2995-b20f-4bd2-b3bd-cacafafa39f1",
+            "Value": {
+                "id": "c8ef1b3e-4d66-4506-87de-c78f9a193702",
+                "resourcePath": "scripts\\eld_create_explosion\\eld_create_explosion.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c8afa864-a9fd-40d4-a270-77b3e33701e1",
             "Value": {
                 "id": "e4d32a04-c57d-4fe1-9858-7a3689fdd58f",
@@ -2839,6 +2855,14 @@
             }
         },
         {
+            "Key": "f4e29559-1e15-48b6-ad63-aeafc5c3eabf",
+            "Value": {
+                "id": "b4e2951b-e0d4-44da-a059-4755ecc7039f",
+                "resourcePath": "objects\\obj_eld_debris\\obj_eld_debris.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f4f0ecce-815f-4b7e-ba54-ba1a63b6366b",
             "Value": {
                 "id": "7585f953-195c-446e-a9cd-30c65ae928fb",
@@ -3042,6 +3066,7 @@
         "533a7a1a-6e42-4ffd-9e80-ba31a475e785",
         "8d2ae318-b0f9-4b0d-8251-6bcc3d18f39c",
         "5090a1f1-91e5-4cf3-837c-4b6d1a9e43c9",
+        "c75d2995-b20f-4bd2-b3bd-cacafafa39f1",
         "0aa36344-abee-4499-8877-823e764f498b"
     ],
     "tutorial": ""

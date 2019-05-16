@@ -50,5 +50,9 @@ var _adv = arcade_game_add("Adventure", spr_arcade_pong, rm_ad_start);
 arcade_game_enable_shader(_adv, true, shd_retro);
 
 // Earth's Last Defense - Naxos
-var _eld = arcade_game_add("Earth's Last Defense", spr_arcade_eld, rm_eld);
+global.ELDTitle = "Earth's Last Defense";
+var _eld = arcade_game_add(global.ELDTitle, spr_arcade_eld, rm_eld);
+arcade_game_set_title(_eld, fnt_big, c_white);
+arcade_game_set_transition(_eld, TransType.circle, c_black);
 arcade_game_enable_shader(_eld, true, shd_arcade);
+arcade_game_enable_save(_eld, true);

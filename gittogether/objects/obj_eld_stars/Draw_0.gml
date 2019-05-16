@@ -10,7 +10,7 @@ for (var i = 0; i < numStars; ++i)
 		var _brightness = sin((i + _y)*0.1 + nonces[i]) * 0.5 + 0.5; 
 		draw_sprite_ext(spr_eld_star, 0, i, _y, 1, 1, 0, c_white, _brightness);
 	}
-	stars[i] += 2;//1.5;
+	stars[i] += speeds[i];//1.5;
 	if (stars[i] > _rh)
 		stars[i] = ELD_STAR_BEGIN_HEIGHT;	
 }

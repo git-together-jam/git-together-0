@@ -22,6 +22,17 @@ if (waveState == ELDWaveState.Spawning)
 			}
 		}
 	}
+	else if (!game_won) // no more waves, you win!
+	{
+		game_won = true;
+		game_over = true;
+		alarm[0] = room_speed * 10;
+		
+		var _high_score = sys_save_arcade_read(global.ELDTitle, "HighScore", 0);
+		var _final_score = eld_score * (1 + obj_eld_lander.extra_lives);
+		if (_final_score > _high_score)
+			sys_save_arcade_write(global.ELDTitle, "HighScore", _final_score);
+	}
 }
 else if (waveState == ELDWaveState.Waiting)
 {
@@ -83,5 +94,25 @@ if (fuelpads_in_wave > 0)
 						obj_eld_fuel_station
 					);
 		// uh... guess I don't need _inst after all.. for now XD
+	}
+}
+
+// make enemies depart
+if (next_departure < _ct)
+{
+	next_departure = _ct + random_range(1.5, 3);
+	
+	var _num_enemy = instance_number(obj_eld_enemy1);
+	if (_num_enemy > 0)
+	{
+		var _inst = instance_find(obj_eld_enemy1, irandom(_num_enemy-1));
+		if (_inst.state == ELDEnemyState.Formation)
+		{
+			_inst.state = ELDEnemyState.Breakaway;
+			_inst.trackIndex = 0;
+			var _trackName = departTracks[ irandom_range(0, array_length_1d(departTracks)-1) ];
+			var _track = global.ELDTrackMap[? _trackName];
+			array_copy(_inst.targets, 0, _track, 0, array_length_1d(_track));
+		}
 	}
 }

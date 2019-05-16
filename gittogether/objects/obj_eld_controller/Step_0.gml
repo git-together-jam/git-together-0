@@ -12,3 +12,5 @@ switch(gameState)
 		// RIP
 	break;
 }
+
+if (game_over and alarm[0] < 0) alarm[0] = room_speed * 5.0;

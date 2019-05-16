@@ -14,7 +14,8 @@
         "aa034f7f-87fe-4660-81a4-aa495f12336b",
         "336061b6-4a87-4582-8b5e-39f3420466e3",
         "221aceb6-91a2-4ce6-bb5d-729be4038496",
-        "d84bbc93-520a-4d46-9b0b-dba438755493"
+        "d84bbc93-520a-4d46-9b0b-dba438755493",
+        "2690153d-4ae7-4188-be8e-0ee8e887c707"
     ],
     "filterType": "GMSprite",
     "folderName": "ELD",
