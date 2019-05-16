@@ -107,6 +107,3 @@ game_over = false;
 game_won = false;
 eld_score = 0;
 bugs_zapped = 0;
-
-global.elduser = "";
-global.eldscore = 0;

@@ -28,7 +28,6 @@ for (var i = 1; i <= _len; i++) {
 		if (!_target_found) {
 			_target_found = true;
 			_target_index = string_length(_str_new) + 1;
-			continue;
 		} else {
 			var _is_same_line = string_char_at(_str_new, _target_index) == "*";
 			var _strc = _is_same_line ?
@@ -84,7 +83,7 @@ for (var i = 1; i <= _len; i++) {
 					}
 					
 					var _map = ds_map_create();
-					_map[? "text"] = string_copy(_str_new, _target_index, min(_str_new_len - _target_index, j - _target_index));
+					_map[? "text"] = string_copy(_str_new, _target_index + 1, min(_str_new_len - _target_index, j - 2));
 					_map[? "x"] = _x;
 					_map[? "y"] = _y;
 					_y += text_height + _line_sep;
@@ -95,7 +94,6 @@ for (var i = 1; i <= _len; i++) {
 					_str_new = string_copy(_str_new, j + 1, _str_new_len - j + 1);
 					// _str_new = string_set_byte_at(_str_new, j, ord("\n"))
 					_last_newline_index = j;
-					_target_index = 1; // from beginning of next line
 					
 				} else {
 					var _map = ds_map_create();
@@ -117,7 +115,7 @@ for (var i = 1; i <= _len; i++) {
 	_str_new += _chr;
 }
 	
-if (string_length(_str_new)) {
+if (string_width(_str_new)) {
 	var _map = ds_map_create();
 	_map[? "text"] = _str_new;
 	_map[? "x"] = _x;

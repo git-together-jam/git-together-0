@@ -1,1 +1,0 @@
-if global.iSelect then room_goto_next();

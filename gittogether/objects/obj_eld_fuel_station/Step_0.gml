@@ -1,10 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (room == rm_Overworld){
-	instance_destroy(id);
-	exit;
-}
-
 var _ct = current_time * 0.001;
 
 switch(state) {
@@ -42,6 +37,3 @@ switch(state) {
 		//	instance_destroy();
 	break;
 }
-
-//make controller
-if (!instance_exists(obj_eld_controller)) instance_create_layer(0,0,"Instances",obj_eld_controller);

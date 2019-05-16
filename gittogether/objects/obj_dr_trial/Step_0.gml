@@ -8,17 +8,6 @@ if (text_length < text_target_length && text_timer_running && !--text_timer) {
 
 if (nsd_hit_timer >= 0) nsd_hit_timer++;
 
-#region Skip to Number
-
-for (var i = 0; i <= 9; i++) {
-	if (keyboard_check_pressed(ord(string(i)))) {
-		dialogue_index = floor((i / 10) * dialogue_count);
-		event_user(0);
-	}
-}
-
-#endregion;
-
 if (nsd_hit_timer > room_speed * 2) {
 	var _dial = dialogue[| ++dialogue_index];
 	var _start_index = dialogue_index

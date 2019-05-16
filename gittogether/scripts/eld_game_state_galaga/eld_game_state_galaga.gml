@@ -61,15 +61,9 @@ for (var w = 0; w < _num_ip; ++w)
 		var _pos = _track[0];
 		
 		// create enemy
-		with (instance_create_layer(_pos[0], _pos[1], "Instances", obj_eld_enemy1))
-		{
-			targets = [];
-			posIndex = _subwave[ _deets[2] ];
-			array_copy(targets, 0, _track, 0, array_length_1d(_track));
-		}
-		//var _inst = instance_create_layer(_pos[0], _pos[1], "Instances", obj_eld_enemy1);
-		//_inst.posIndex = _subwave[ _deets[2] ];
-		//array_copy(_inst.targets, 0, _track, 0, array_length_1d(_track));
+		var _inst = instance_create_layer(_pos[0], _pos[1], "Instances", obj_eld_enemy1);
+		_inst.posIndex = _subwave[ _deets[2] ];
+		array_copy(_inst.targets, 0, _track, 0, array_length_1d(_track));
 		
 		// book keeping
 		_deets[@ 2] = _deets[2] + 1;
@@ -116,7 +110,6 @@ if (next_departure < _ct)
 		{
 			_inst.state = ELDEnemyState.Breakaway;
 			_inst.trackIndex = 0;
-			_inst.targets = [];
 			var _trackName = departTracks[ irandom_range(0, array_length_1d(departTracks)-1) ];
 			var _track = global.ELDTrackMap[? _trackName];
 			array_copy(_inst.targets, 0, _track, 0, array_length_1d(_track));
