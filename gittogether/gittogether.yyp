@@ -3167,6 +3167,14 @@
             }
         },
         {
+            "Key": "d378fe22-58db-45ac-ab3a-72071c0992d5",
+            "Value": {
+                "id": "de651453-dc79-42c8-b52b-aafbae5e7d0c",
+                "resourcePath": "objects\\obj_hav_start\\obj_hav_start.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d39f7567-b983-4b2a-ac4c-612f01bd09e9",
             "Value": {
                 "id": "ed12dc74-f5ca-435f-aab8-c647651c2d5d",

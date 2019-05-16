@@ -13,7 +13,10 @@ hSNAKE_LIST = ds_list_create();
 
 snake_seg = 0;
 
+enum hGameState { Start, Play, Over, Win }
+game_state = hGameState.Start;
 
+instance_create_layer( 0, 0, "particles", obj_hav_start);
 
 //repeat(4) {
 //	hav_add_seg();

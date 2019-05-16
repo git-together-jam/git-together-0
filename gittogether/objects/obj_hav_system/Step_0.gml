@@ -1,21 +1,27 @@
 
 
-if keyboard_check_pressed( vk_right) {
-	new_direction = hDirection.Right;
+if keyboard_check_pressed( vk_anykey){
+	game_state = hGameState.Play;	
 }
-if keyboard_check_pressed( vk_up) {
-	new_direction = hDirection.Up;
-}
-if keyboard_check_pressed( vk_left) {
-	new_direction = hDirection.Left;
-}
-if keyboard_check_pressed( vk_down) {
-	new_direction = hDirection.Down;
+
+if game_state == hGameState.Play {
+	if keyboard_check_pressed( vk_right) {
+		new_direction = hDirection.Right;
+	}
+	if keyboard_check_pressed( vk_up) {
+		new_direction = hDirection.Up;
+	}
+	if keyboard_check_pressed( vk_left) {
+		new_direction = hDirection.Left;
+	}
+	if keyboard_check_pressed( vk_down) {
+		new_direction = hDirection.Down;
+	}
 }
 	
 
 
-if alarm[8] == -1 {
+if alarm[8] == -1 && game_state = hGameState.Play {
 	
 	ds_list_add( DIR_LIST, new_direction);
 	

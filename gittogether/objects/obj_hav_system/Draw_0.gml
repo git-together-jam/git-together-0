@@ -31,3 +31,13 @@ draw_text( room_width - 10, 100, "Duckies left: " + _score);
 
 draw_set_font( fnt_pixel);
 draw_text( room_width - 20, 150, "Turn Time: " + string( TURN_TIME));
+
+var _x = 220;
+var _y = 110; 
+var _s = 9;
+
+for( var k = 0; k < 7; k++){	
+	for( var j = 0; j < 10; j++){	
+		draw_sprite_ext( spr_hav_duck, 0, _x + ( _s * j), _y + ( _s * k), 0.7, 0.7, 0, c_white, 1.0);		
+	}	
+}
