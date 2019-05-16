@@ -1327,6 +1327,14 @@
             }
         },
         {
+            "Key": "5b8bbd4a-ef5a-4921-bbcd-96938e4fffcf",
+            "Value": {
+                "id": "5d811b8b-bbe8-432c-bed9-b6aabf624c25",
+                "resourcePath": "sounds\\bgm_dungandrompa\\bgm_dungandrompa.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "5ba7e352-22d2-4dbf-833b-42a37bbe0f17",
             "Value": {
                 "id": "3b44878f-14a8-4676-8e91-e3069a15bc86",
@@ -1996,6 +2004,14 @@
                 "id": "ae712571-7bc5-4cc9-a106-446db769f830",
                 "resourcePath": "sprites\\spr_frog_explosion\\spr_frog_explosion.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "893e4214-e981-45c8-943f-ed0161c913c0",
+            "Value": {
+                "id": "48dc6441-6e43-467e-8fe9-789b68146341",
+                "resourcePath": "views\\893e4214-e981-45c8-943f-ed0161c913c0.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

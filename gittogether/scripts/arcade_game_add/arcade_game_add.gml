@@ -15,6 +15,7 @@ _room   = argument[3];
 
 // Create unique map
 var _map = ds_map_create();
+
 _map[? "type"]		 = _type;
 _map[? "name"]		 = _name;
 _map[? "sprite"]	 = _sprite;
