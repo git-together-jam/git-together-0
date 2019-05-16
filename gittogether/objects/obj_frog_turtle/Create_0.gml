@@ -6,3 +6,5 @@ vy = 0;
 turtleMoveSpeed = .667;
 
 instanceCheck = false;
+
+explode = false;

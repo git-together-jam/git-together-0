@@ -23,5 +23,15 @@ switch(room_next(room)){
 	case rm_frogger4:	room_nm = "Level 4\nDon't ever ford the river" break;
 	case rm_frogger5:	room_nm = "Level 5\nVertigo Warning" break;
 	case rm_frogger6:	room_nm = "Level 6\nUhhhhh......" break;
+	case rm_frogger7:	room_nm = "Last Level\nLog Traffic" break;
+	case rm_frogger8:	room_nm = "Secret Level" break;
+	case rm_frogger_user:	room_nm = "" break;
 }
-lastLevel = rm_frogger5;
+lastLevel = rm_frogger8;
+
+
+//room_type variable 
+//0 - vertical
+//1 - horizontal
+//2 - both
+//3 - neither
