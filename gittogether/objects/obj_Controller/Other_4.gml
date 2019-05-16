@@ -34,7 +34,6 @@ if (room == rm_Overworld) {
 		with (_machine) {
 			var _map = _arcade;
 			sprite_index = _map[? "sprite"];
-			type	  = _map[? "type"];
 			gameRoom  = _map[? "room"];
 			name	  = _map[? "name"];
 			trans	  = _map[? "trans"];

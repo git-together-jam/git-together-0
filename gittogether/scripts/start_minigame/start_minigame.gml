@@ -7,15 +7,15 @@
 /// @arg title_font
 /// @arg title_col
 
-global.GamePlaying = argument[0];
-
 // Args
-var rm		  = argument[1];
-var text	  = "Minigame\n\n" + argument[2];
-var trans	  = argument[3];
-var transCol  = argument[4];
-var titleFont = argument[5];
-var titleCol  = argument[6];
+var rm		  = argument[0];
+var text	  = "Minigame\n\n" + argument[1];
+var trans	  = argument[2];
+var transCol  = argument[3];
+var titleFont = argument[4];
+var titleCol  = argument[5];
+
+//instance_destroy(obj_Transition);
 
 // Start
 room_goto_transition(rm, trans, transCol,
