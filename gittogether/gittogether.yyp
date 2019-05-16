@@ -935,6 +935,14 @@
             }
         },
         {
+            "Key": "3e3d314e-0dc3-4627-9a86-98fbb16040f8",
+            "Value": {
+                "id": "eabb6049-02a5-417d-a180-67acb7f513f0",
+                "resourcePath": "sprites\\spr_hav_background\\spr_hav_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3f05b717-ad16-46bf-b988-db31607c7aea",
             "Value": {
                 "id": "d581c69b-034a-4c65-be81-f3c52e22f1db",
@@ -1612,6 +1620,14 @@
                 "id": "2287330b-037d-4c67-a456-37ba87d9051f",
                 "resourcePath": "rooms\\rm_yosi\\rm_yosi.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "63578d15-d6df-47de-ba97-c2e497dfbdeb",
+            "Value": {
+                "id": "5d4b1a56-070c-49c3-a1b7-7e5cf0fab18f",
+                "resourcePath": "objects\\obj_hav_notif\\obj_hav_notif.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3655,6 +3671,14 @@
             }
         },
         {
+            "Key": "e14e1d51-11a2-4101-9019-05c468324665",
+            "Value": {
+                "id": "36405e25-6400-40ba-bf90-ee03bfa05b31",
+                "resourcePath": "scripts\\hav_notif\\hav_notif.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e1cc918a-c5bf-4272-a9e8-090f8eed0f2d",
             "Value": {
                 "id": "f74a1240-0b9f-4fd4-a8a3-22092e24fbbe",
@@ -4220,6 +4244,7 @@
         "6fd6a6b0-ed22-4033-a812-7112b0df7c63",
         "ca7301b5-64b3-4e04-9e14-5d303d251042",
         "34ef10b8-63f0-4f07-818d-c63ac9a917f6",
+        "e14e1d51-11a2-4101-9019-05c468324665",
         "fed45f69-8848-46f9-a310-d8b9732a35db",
         "f8eb5d35-b990-45c1-b572-f3767184ca68",
         "0aa36344-abee-4499-8877-823e764f498b",
