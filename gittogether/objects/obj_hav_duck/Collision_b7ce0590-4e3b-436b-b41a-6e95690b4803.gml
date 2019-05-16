@@ -24,6 +24,7 @@ if other.my_pos == 0 {
 	//var _dir = 270 + irandom( -30, 30);
 	//part_type_shape(PSYSTEM_PULSE, choose( pt_shape_line));
 	//part_type_direction(PSYSTEM_PULSE, 240, 300, 0, 15);
+	part_type_color3(PSYSTEM_PULSE, c_yellow, c_yellow, c_yellow);
 	part_emitter_region( PSYSTEM, PSYSTEM_EMITTER_1, x - _size, x + _size, y - _size, y + _size, ps_shape_ellipse, ps_distr_gaussian);
 	part_emitter_burst( PSYSTEM, PSYSTEM_EMITTER_1, PSYSTEM_PULSE, 20);	
 	
