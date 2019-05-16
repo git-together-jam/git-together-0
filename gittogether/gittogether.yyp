@@ -34,7 +34,7 @@
             "Key": "0012fd72-5659-4abc-960b-42bd41057aa7",
             "Value": {
                 "id": "104c176b-47dc-417c-8634-932e5a0e0f91",
-                "resourcePath": "objects\\obj_menu\\obj_menu.yy",
+                "resourcePath": "objects\\obj_eld_menu\\obj_eld_menu.yy",
                 "resourceType": "GMObject"
             }
         },
