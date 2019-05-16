@@ -1639,6 +1639,14 @@
             }
         },
         {
+            "Key": "83ccd1e4-4983-4306-9a54-fd8ebbcde08c",
+            "Value": {
+                "id": "2ab76324-a8d1-4472-867a-8dbe9c7baf9f",
+                "resourcePath": "sounds\\snd_credits_theme\\snd_credits_theme.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "84004d02-8935-469e-aa05-65db5875b02a",
             "Value": {
                 "id": "d180606b-81ae-40ff-b651-5a9a6d911dc0",
@@ -2324,6 +2332,14 @@
                 "id": "c25d8166-4032-490e-b15d-bbb28c051d43",
                 "resourcePath": "sprites\\spr_arcade_wking\\spr_arcade_wking.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ba3e8950-c5dc-4f4a-8a9f-82bc936d02db",
+            "Value": {
+                "id": "a093be8b-d0a1-4141-ad37-a9fa22048d08",
+                "resourcePath": "sounds\\snd_overworld_theme\\snd_overworld_theme.yy",
+                "resourceType": "GMSound"
             }
         },
         {
