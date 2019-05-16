@@ -1,64 +1,74 @@
 {
-    "id": "46e9a86b-6c2a-4e90-8cbd-4eba299c190e",
+    "id": "3ee70684-1acb-4f00-bbcc-85a3041c2c31",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_eld_controller",
+    "name": "obj_eld_highscore",
     "eventList": [
         {
-            "id": "fba629ef-2710-402c-8351-481974a6261a",
+            "id": "fc4ecccf-249e-4ad0-aba0-1bc5f898416d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "46e9a86b-6c2a-4e90-8cbd-4eba299c190e"
+            "m_owner": "3ee70684-1acb-4f00-bbcc-85a3041c2c31"
         },
         {
-            "id": "5bddac43-f39d-451d-86f9-073c8df1b4a8",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "46e9a86b-6c2a-4e90-8cbd-4eba299c190e"
-        },
-        {
-            "id": "3917e9fa-253a-45ba-9ddd-5afc3d30a5a7",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 12,
-            "m_owner": "46e9a86b-6c2a-4e90-8cbd-4eba299c190e"
-        },
-        {
-            "id": "8583e762-6908-425d-9d5e-1ec59f4822ba",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "46e9a86b-6c2a-4e90-8cbd-4eba299c190e"
-        },
-        {
-            "id": "b6807a80-682f-44df-88a7-28bc5ed79bd2",
+            "id": "24d7670b-db57-4b7b-89d8-3415333e1627",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 1,
             "eventtype": 2,
-            "m_owner": "46e9a86b-6c2a-4e90-8cbd-4eba299c190e"
+            "m_owner": "3ee70684-1acb-4f00-bbcc-85a3041c2c31"
+        },
+        {
+            "id": "50c224ba-7d8f-413a-90c0-a0d7d0ae5587",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 62,
+            "eventtype": 7,
+            "m_owner": "3ee70684-1acb-4f00-bbcc-85a3041c2c31"
+        },
+        {
+            "id": "bab8b18f-d5b0-4b50-835d-ebf013de4f7e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 2,
+            "m_owner": "3ee70684-1acb-4f00-bbcc-85a3041c2c31"
+        },
+        {
+            "id": "17af18dc-7d7e-4840-b879-2bf4042bbca6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "3ee70684-1acb-4f00-bbcc-85a3041c2c31"
+        },
+        {
+            "id": "e3cc764a-cec4-4286-bf05-78a6dbd0416d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "3ee70684-1acb-4f00-bbcc-85a3041c2c31"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": true,
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
