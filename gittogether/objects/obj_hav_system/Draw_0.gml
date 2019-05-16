@@ -28,7 +28,7 @@ draw_set_halign( fa_center);
 draw_text_transformed( room_width - 58, 67, "Eat the entire duckie\narmy to win. The\nwhole world is depending\non you!", 0.8, 0.8, 0);
 
 draw_set_halign( fa_right);
-var _score = string_replace_all( string_format( 70 - my_score, 2, 0), " ", "0");
+var _score = string_replace_all( string_format( TARGET - my_score, 2, 0), " ", "0");
 draw_set_font( fnt_normal);
 draw_text_transformed( room_width - 13, 100, "~ The Duckie Army ~", 0.8, 0.8, 0);
 
@@ -44,7 +44,7 @@ draw_set_alpha( 0.4);
 draw_set_alpha( 1.0);
 for( var k = 0; k < 7; k++){	
 	for( var j = 0; j < 10; j++){	
-		if j + (k * 10) < 70 - ( my_score) {
+		if j + (k * 10) < TARGET - ( my_score) {
 			draw_sprite_ext( spr_hav_duck, 0, _x + ( _s * j), _y + ( _s * k), 0.7, 0.7, 0, c_white, 1.0);		
 		}
 	}	
