@@ -13,4 +13,14 @@ switch(gameState)
 	break;
 }
 
-if (game_over and alarm[0] < 0) alarm[0] = room_speed * 5.0;
+//sorry this is so messy lol - Andy
+if (room == rm_eld_user) {
+	game_over = false;
+	alarm[1] = -1;
+	show_debug_message(string(alarm[1]))
+}
+
+if (game_over and alarm[1] < 0) alarm[1] = room_speed * 5.0;
+if (game_over and global.iSelect) alarm[1] = 1;
+
+if (room == rm_Overworld) instance_destroy(id);
