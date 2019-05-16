@@ -323,4 +323,93 @@ math: Careful tony, we don't have the full story.
 math: Minty, do you have that money with you right now?
 minty: No...
 math: ...
+tony: Jon...
+pope: What?
+tony: You're a pope, right?
+pope: If you had the ability to read, perhaps you would have noticed that from my nametag already.
+tony: ...anyway, people pay you in tithes, and church donations, right?
+tony: So I imagine you might have quite a lot of money.
+tony: I mean that outfit alone must've cost hundreds of thousands.
+pope: Nah, this is fairly standard cotton, bought fro-
+pope: Hey! What makes you think you have the right to question me, let alone TALK to me.
+pope: You INSULTED me earlier, and now you've done it again!
+pope: You're currently somewhere between pigshit and Minty on the scale of-
+tony: JON LISTEN TO ME!
+pope: Aah!
+[NSD]
+[BULLETS]
+Dead pope is useless: 7,8,9
+Old videos use globalvar
+Pope is rich: 10
+INI files aren't that bad
+[/BULLETS]
+tony: Remember what Juju said?
+tony: He'll KILL us if we don't have a game done by the end of the week.
+tony: The ONLY way we can do that is if you contribute, both in terms of working power and funding.
+pope: Have you forgot my place in society, child?
+pope: *I am...*
+yosi: He is the shining and the light without whom I cannot see.
+pope: *I AM...*
+math: He is the force that made me be.
+pope: *I AM POPE*
+pope: Without *me*, where would you be?
+pope: Still watching tutorials on pixel perfect movement?
+pope: Still experiencing imperfect pixel scaling and ugly black borders?
+pope: Still saving and loading with INI files?
+pope: *I AM THE SAVIOUR OF THE UNGUIDED PEOPLE*
+pope: *I AM THE HOLY MESSENGER OF REASON*
+pope: *I AM THE ONE WHO BRINGS LIGHT TO THE DARKEST OF PROSPECTS*
+pope: Throwing away my time and money at this *is simply unreasonable*.
+pope: How am I to pay for *candles*, 
+pope: *wine*, 
+pope: and other necessary church items
+pope: when you're gonna just take *all my money*?
+[/NSD]
+tony: No, that's wrong!
+tony: If you're dead, you can do nothing!
+tony: You can't pay for candles, you can't pay for wine, and you certainly can't help anyone.
+tony: I respect you for what you've done, but that's exactly why I need you to collaborate.
+tony: You need to survive with the rest of us, so that you can keep helping people.
+pope: ...
+pope: I suppose-
+tony: And that's all we had time for!
+[NSD]
+[BULLETS]
+What?: 3
+Huh?: 1
+What's going on?: 2
+[/BULLETS]
+tony: They didn't make a game, and instead everyone died, the end.
+yellowaf: What?
+minty: Huh?
+jxm: Who let you in *control* of the game?!
+jxm: This game is *over when I say it's over!*
+tony: Nah, no time. *Sleep* awaits me.
+tony: It's 1am and tomorrow is the 17th of may.
+pope: What's so special about the 17th of may?
+tony: That's Norway's national day.
+[/NSD]
+tony: Thanks for playing.
+tony: ...
+tony: What?
+tony: ...
+tony: I say we're done.
+tony: ...
+tony: This isn't working.
+tony: ...
+jxm: You can't control the game!
+jxm: (*turns into meseta*) Only I can!
+jxm.self: Look I told you. It's past 1am and I'm up early tomorrow.
+jxm.self: I gotta sleep man.
+yellowaf: Huh, who are you?
+jxm: I am meseta.
+jxm: I am Juju.
+jxm: Who am I?
+yosi: You're both meseta and juju!
+jxm: Wrong!
+jxm: I am meseta xor juju.
+jxm: dun dun dun
+jxm: THE END
+jxm: ...
+jxm: ...
 [END]

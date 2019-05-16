@@ -53,6 +53,16 @@
             "enumb": 10,
             "eventtype": 7,
             "m_owner": "04316734-9dd7-4337-b7ff-ce89002641c4"
+        },
+        {
+            "id": "6ea9130e-551f-4a96-82c7-66d1f6627a04",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 11,
+            "eventtype": 7,
+            "m_owner": "04316734-9dd7-4337-b7ff-ce89002641c4"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -72,7 +82,34 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        
+        {
+            "id": "e0fe9ea2-0083-480e-bf83-c4dbed5cb474",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "dungandrompa_dialogue.txt",
+            "varName": "text_file",
+            "varType": 2
+        },
+        {
+            "id": "01b4eb2e-c067-4812-880b-1bedc2e68eb5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "room_speed * .82",
+            "varName": "nsd_mintime",
+            "varType": 0
+        }
     ],
     "solid": false,
     "spriteId": "bda2d8c4-5da3-4ab3-bec1-61b07c56fae2",
