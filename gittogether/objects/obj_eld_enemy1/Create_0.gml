@@ -21,5 +21,6 @@ trackIndex = 0;
 
 state = 0;
 
+//dbg_tracker_dot = -1;
 //ds_list_add(targets, [x+30, y+50]);
 //ds_list_add(targets, [x, y]);
