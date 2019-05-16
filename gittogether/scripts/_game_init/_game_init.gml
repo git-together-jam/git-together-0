@@ -8,55 +8,55 @@ _sys_save_init(true);
 // arcade_game_add(type, name, arcade_machine_sprite, game_room)
 
 // Basic - Noone
-var _basic = arcade_game_add("Basic", spr_ArcadeBasic1, rm_B1_Main);
+var _basic = arcade_game_add(0, "Basic", spr_ArcadeBasic1, rm_B1_Main);
 arcade_game_set_transition(_basic, TransType.screenFade, c_black);
 arcade_game_enable_shader(_basic, false);
 
 // Dungandrompa - TonyStr
-var _dr = arcade_game_add("Dungandrompa", spr_arcade_dungandompa, rm_dungandrompa);
+var _dr = arcade_game_add(1, "Dungandrompa", spr_arcade_dungandompa, rm_dungandrompa);
 arcade_game_set_transition(_dr, TransType.checkerboard, c_black);
 arcade_game_set_title(_dr, fnt_big, c_white);
 arcade_game_enable_shader(_dr, true, shd_retro);
 
 // Asteroids - Sahaun
-var _ast = arcade_game_add("Asteroids", spr_arcade_asteroids, rm_Asteroids);
+var _ast = arcade_game_add(2, "Asteroids", spr_arcade_asteroids, rm_Asteroids);
 arcade_game_set_transition(_ast, TransType.circle, c_black);
 arcade_game_set_title(_ast, fnt_normal, c_ltgray);
 arcade_game_enable_shader(_ast, true, shd_retro);
 
 // Breakout - Qweleo
-var _breakout = arcade_game_add("Breakout", spr_arcade_breakout, rm_BR_game);
+var _breakout = arcade_game_add(3, "Breakout", spr_arcade_breakout, rm_BR_game);
 arcade_game_enable_shader(_breakout, true, shd_retro);
 
 // Pong - Xor
-var _pong = arcade_game_add("Pong", spr_arcade_pong, rm_pong);
+var _pong = arcade_game_add(4, "Pong", spr_arcade_pong, rm_pong);
 arcade_game_enable_shader(_pong, true, shd_retro);
 
 // Frogger - Andy
-var _frogger = arcade_game_add("Frogger", spr_arcade_frogger, rm_frogger);
+var _frogger = arcade_game_add(5, "Frogger", spr_arcade_frogger, rm_frogger);
 arcade_game_set_title(_frogger, fnt_big, c_white);
 arcade_game_enable_shader(_frogger, true, shd_retro);
 
 // Wking - Levgon
-var _wking = arcade_game_add("Wking Demo", spr_arcade_wking, rm_wk_menu);
+var _wking = arcade_game_add(6, "Wking Demo", spr_arcade_wking, rm_wk_menu);
 arcade_game_set_transition(_wking, TransType.circle, c_white);
 
 // Yosi - Yosi
-var _yosi = arcade_game_add("Yosi", spr_arcade_machine_yosi, rm_yosi);
+var _yosi = arcade_game_add(7, "Yosi", spr_arcade_machine_yosi, rm_yosi);
 arcade_game_enable_shader(_yosi, true, shd_retro);
 
 // Adventure - Surg UNFINISHED!
-var _adv = arcade_game_add("Adventure", spr_arcade_pong, rm_ad_start);
+var _adv = arcade_game_add(8, "Adventure", spr_arcade_pong, rm_ad_start);
 arcade_game_enable_shader(_adv, true, shd_retro);
 
 // Earth's Last Defense - Naxos
 global.ELDTitle = "Earth's Last Defense";
-var _eld = arcade_game_add(global.ELDTitle, spr_arcade_eld, rm_eld);
+var _eld = arcade_game_add(9, global.ELDTitle, spr_arcade_eld, rm_eld);
 arcade_game_set_title(_eld, fnt_big, c_white);
 arcade_game_set_transition(_eld, TransType.circle, c_black);
 arcade_game_enable_shader(_eld, true, shd_arcade);
 arcade_game_enable_save(_eld, true);
 
 // Snake - havik
-var _snake = arcade_game_add("Snake", spr_arcade_snake, rm_hav_snake);
+var _snake = arcade_game_add(10, "Snake", spr_arcade_snake, rm_hav_snake);
 arcade_game_enable_shader( _snake, true, shd_retro);

@@ -3,7 +3,7 @@
 
 speed = 0;
 var _spacing = ELD_ENEMY_SPACING;
-
+//dbg_tracker_dot = -1;
 switch(state)
 {
 	case ELDEnemyState.Tracking:
@@ -54,6 +54,7 @@ switch(state)
 		}
 		else
 		{
+			//dbg_tracker_dot = [_tx, _ty];
 			var _dx = lengthdir_x(1.0, direction);
 			var _dy = lengthdir_y(1.0, direction);
 			
