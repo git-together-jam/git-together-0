@@ -7,4 +7,4 @@ if (_won) global.Coins += DEF_COIN_REWARD;
 audio_stop_all();
 room_goto_transition(rm_Overworld,TransType.screenFade);
 
-global.win = false;
+global.win = true;
