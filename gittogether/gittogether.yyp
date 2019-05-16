@@ -503,14 +503,6 @@
             }
         },
         {
-            "Key": "232b41dd-f9cc-4735-91ed-626f1febd986",
-            "Value": {
-                "id": "43270cd8-b1ca-4c89-8778-81da1d5e73f4",
-                "resourcePath": "views\\232b41dd-f9cc-4735-91ed-626f1febd986.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "243e8479-a52d-40bb-9f8b-2a03e02c70d3",
             "Value": {
                 "id": "a288a3d8-e279-4894-ba19-cf6b877120bb",
@@ -3484,6 +3476,14 @@
                 "id": "487b115f-7c7c-4343-b489-597a7733dd10",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e55ba2f5-d1d6-4f39-bbdf-4a32ca054b2c",
+            "Value": {
+                "id": "275d2040-5e52-4f45-a221-61215fc8ad29",
+                "resourcePath": "views\\e55ba2f5-d1d6-4f39-bbdf-4a32ca054b2c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
