@@ -5,5 +5,3 @@ userletter = 0;
 
 movetime = .15*room_speed;
 movetimer = movetime;
-
-global.win = true;

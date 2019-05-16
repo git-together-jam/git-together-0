@@ -6,8 +6,7 @@
     "children": [
         "8d2ae318-b0f9-4b0d-8251-6bcc3d18f39c",
         "5090a1f1-91e5-4cf3-837c-4b6d1a9e43c9",
-        "c75d2995-b20f-4bd2-b3bd-cacafafa39f1",
-        "d7eae70f-6e07-4256-bc18-02befe5fead3"
+        "c75d2995-b20f-4bd2-b3bd-cacafafa39f1"
     ],
     "filterType": "GMScript",
     "folderName": "ELD",

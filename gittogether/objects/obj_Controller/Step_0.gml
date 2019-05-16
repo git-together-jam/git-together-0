@@ -15,8 +15,7 @@ if (exitTimer <= 0) {
 	if (room == rm_Overworld) {
 		game_end();
 	} else {
-		end_minigame(global.win);
-		if (global.win) show_debug_message("WIN RAR")
+		end_minigame();
 		audio_stop_all();
 		exitTimer = exitTime;
 		exitTimerMaxTime = exitTime;
