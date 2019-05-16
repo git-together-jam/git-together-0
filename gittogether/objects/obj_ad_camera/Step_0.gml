@@ -19,7 +19,6 @@ for(var i = _start_x; i < _end_x; i += _section_width) {
     }
 }*/
 
-
 if !point_in_rectangle(obj_ad_player.x,obj_ad_player.y,camx,camy,camx+320,camy+176){
 	if point_in_rectangle(obj_ad_player.x,obj_ad_player.y,camx,camy-176,camx+320,camy){
 		camy=camy-176 //up
@@ -34,7 +33,5 @@ if !point_in_rectangle(obj_ad_player.x,obj_ad_player.y,camx,camy,camx+320,camy+1
 		camx=camx+320
 	}
 }
-
-
 
 camera_set_view_pos(view_camera[0], camx, camy);

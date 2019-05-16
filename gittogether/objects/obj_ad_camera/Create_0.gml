@@ -5,3 +5,5 @@ camx=640
 camy=352
 sectionX=0
 sectionY=0
+counter=0
+moving=0
