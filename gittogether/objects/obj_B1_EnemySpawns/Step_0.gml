@@ -19,5 +19,8 @@ else {
 // Click
 if (hover() && global.iMouse_LP) {
 	instance_destroy();
-	obj_B1_Controller.myScore++;
+	with (obj_B1_Controller) {
+		target--;
+		if (target <= 0) end_minigame(true);
+	}
 }
