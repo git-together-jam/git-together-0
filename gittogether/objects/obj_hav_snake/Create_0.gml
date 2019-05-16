@@ -9,6 +9,6 @@ ds_list_add( SNAKE_LIST, id);
 hold = false;
 
 new_x = x;
-new_y = y;
+new_y = y - 1;
 old_x = x;
 old_y = y;
