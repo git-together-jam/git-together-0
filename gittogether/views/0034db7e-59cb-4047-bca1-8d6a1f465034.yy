@@ -7,8 +7,7 @@
         "35168ed6-5141-450f-8889-7ad38144918e",
         "1fc996fe-e226-4eff-b11f-b255368f613b",
         "bdc95493-de01-4344-bf63-6fd053ed973a",
-        "443376b9-750b-4df8-a6a6-e9e997e6f489",
-        "873c97ff-2d7a-4288-a3bf-917cd866b7d4"
+        "443376b9-750b-4df8-a6a6-e9e997e6f489"
     ],
     "filterType": "GMSound",
     "folderName": "ELD",

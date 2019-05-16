@@ -50,6 +50,7 @@ var _adv = arcade_game_add("Adventure", spr_arcade_pong, rm_ad_start);
 arcade_game_enable_shader(_adv, true, shd_retro);
 
 // Earth's Last Defense - Naxos
+<<<<<<< HEAD
 global.ELDTitle = "Earth's Last Defense";
 var _eld = arcade_game_add(global.ELDTitle, spr_arcade_eld, rm_eld);
 arcade_game_set_title(_eld, fnt_big, c_white);
@@ -60,3 +61,7 @@ arcade_game_enable_save(_eld, true);
 // Snake - havik
 var _snake = arcade_game_add("Snake", spr_arcade_snake, rm_hav_snake);
 arcade_game_enable_shader( _snake, true, shd_retro);
+=======
+arcade_game_add(Game.eld, "Earth's Last Defense", spr_arcade_eld, rm_eld);
+arcade_game_enable_shader(Game.eld, true, shd_retro);
+>>>>>>> parent of 7af74da... Merge branch 'master' into Sahaun

@@ -10,7 +10,7 @@ if (fuel_level > 0)
 {
 	draw_set_color(c_aqua);
 	var _right = _bbl+4 + (fuel_level*0.01*tank_width);
-	draw_rectangle(_bbl+4, y, _right, y+3, false);
+	draw_rectangle(_bbl+4, y, _right, y+1, false);
 	draw_set_color(c_white);
 }
 
