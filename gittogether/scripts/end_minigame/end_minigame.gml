@@ -1,10 +1,12 @@
 /// @func end_minigame(won?)
 /// @param won?
 
-var _won = (argument_count > 0) ? argument[0] : false;
-if (_won) {
-	global.Coins += DEF_COIN_REWARD;
-	global.GamesWon = global.GamesWon | (1 << global.GamePlaying);
+if (global.GamePlaying != noone) {
+	var _won = (argument_count > 0) ? argument[0] : false;
+	if (_won) {
+		global.Coins += DEF_COIN_REWARD;
+		global.GamesWon = global.GamesWon | (1 << global.GamePlaying);
+	}
 }
 
 global.GamePlaying = noone;
