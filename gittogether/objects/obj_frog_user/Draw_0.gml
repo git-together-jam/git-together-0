@@ -8,12 +8,12 @@ draw_text(room_width/2,room_height/2-10,"Contgratulations!\nTime: "+frog_seconds
 //letters
 var _size = frog_wave(1.5,2,1,0);
 var _defaultsize = 1.5;
-if (useredit == 0)	draw_text_ext_transformed_color(room_width/2-30,	room_height/2+30,userinput[0],0,100,_size,_size,0,c_white,c_white,c_white,c_white,1);
-else				draw_text_ext_transformed_color(room_width/2-30,	room_height/2+30,userinput[0],0,100,_defaultsize,_defaultsize,0,c_gray,c_gray,c_gray,c_gray,1);
-if (useredit == 1)	draw_text_ext_transformed_color(room_width/2,		room_height/2+30,userinput[1],0,100,_size,_size,0,c_white,c_white,c_white,c_white,1);
-else				draw_text_ext_transformed_color(room_width/2,		room_height/2+30,userinput[1],0,100,_defaultsize,_defaultsize,0,c_gray,c_gray,c_gray,c_gray,1);
-if (useredit == 2)	draw_text_ext_transformed_color(room_width/2+30,	room_height/2+30,userinput[2],0,100,_size,_size,0,c_white,c_white,c_white,c_white,1);
-else				draw_text_ext_transformed_color(room_width/2+30,	room_height/2+30,userinput[2],0,100,_defaultsize,_defaultsize,0,c_gray,c_gray,c_gray,c_gray,1);
+if (useredit == 0)	draw_text_ext_transformed_color(room_width/2-30,	room_height/2+30,letters[userinput[0]],0,100,_size,_size,0,c_white,c_white,c_white,c_white,1);
+else				draw_text_ext_transformed_color(room_width/2-30,	room_height/2+30,letters[userinput[0]],0,100,_defaultsize,_defaultsize,0,c_gray,c_gray,c_gray,c_gray,1);
+if (useredit == 1)	draw_text_ext_transformed_color(room_width/2,		room_height/2+30,letters[userinput[1]],0,100,_size,_size,0,c_white,c_white,c_white,c_white,1);
+else				draw_text_ext_transformed_color(room_width/2,		room_height/2+30,letters[userinput[1]],0,100,_defaultsize,_defaultsize,0,c_gray,c_gray,c_gray,c_gray,1);
+if (useredit == 2)	draw_text_ext_transformed_color(room_width/2+30,	room_height/2+30,letters[userinput[2]],0,100,_size,_size,0,c_white,c_white,c_white,c_white,1);
+else				draw_text_ext_transformed_color(room_width/2+30,	room_height/2+30,letters[userinput[2]],0,100,_defaultsize,_defaultsize,0,c_gray,c_gray,c_gray,c_gray,1);
 
 if (useredit == 3)	draw_text_ext_transformed_color(room_width/2+120,	room_height/2+65,"Enter",0,200,_size/2,_size/2,0,c_white,c_white,c_white,c_white,1);
 else				draw_text_ext_transformed_color(room_width/2+120,	room_height/2+65,"Enter",0,200,_defaultsize/2,_defaultsize/2,0,c_gray,c_gray,c_gray,c_gray,1);
