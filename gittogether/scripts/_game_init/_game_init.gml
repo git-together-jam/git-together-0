@@ -62,5 +62,5 @@ global.ELDTitle = "Earth's Last Defense";
 arcade_game_add(Game.eld, "Earth's Last Defense", spr_arcade_eld, rm_eld);
 arcade_game_set_title(Game.eld, fnt_big, c_white);
 arcade_game_set_transition(Game.eld, TransType.circle, c_black);
-arcade_game_enable_shader(Game.eld, true, shd_arcade);
+arcade_game_enable_shader(Game.eld, true, shd_retro);
 arcade_game_enable_save(Game.eld, true);
