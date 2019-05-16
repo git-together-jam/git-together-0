@@ -2,7 +2,7 @@
 {
     "name": "rm_eld",
     "id": "24bfda76-1fcb-4942-8a9a-47a9e0d3de16",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
