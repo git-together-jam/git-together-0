@@ -47,7 +47,7 @@ arcade_game_enable_shader(Game.frogger, true, shd_retro);
 
 // Wking - Levgon
 arcade_game_add(Game.wking, "Wking Demo", spr_arcade_wking, rm_wk_menu);
-arcade_game_set_transition(Game.wking, TransType.circle, c_white
+arcade_game_set_transition(Game.wking, TransType.circle, c_white);
 
 // Yosi - Yosi
 arcade_game_add(Game.yosi, "Yosi", spr_arcade_machine_yosi, rm_yosi);

@@ -1,4 +1,5 @@
-/// @func arcade_game_add(name, sprite, room)
+/// @func arcade_game_add(type, name, sprite, room)
+/// @param type		- Enum entry
 /// @param name		- String
 /// @param sprite	- Sprite
 /// @param room		- Room of the game
@@ -18,7 +19,6 @@ _map[? "type"]		= _type;
 _map[? "name"]		= _name;
 _map[? "sprite"]	= _sprite;
 _map[? "room"]		= _room;
-show_message(_map[? "room"])
 _map[? "trans"]		= TransType.none;
 _map[? "transCol"]  = c_black;
 _map[? "titleFont"] = fnt_big;
