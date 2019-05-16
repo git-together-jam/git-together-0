@@ -1,5 +1,24 @@
 /// @description Insert description here
 // You can write your code in this editor
+var _ct = current_time * 0.001;
+
+if (am_alive == false)
+{
+	if (_ct > respawn_time and extra_lives > 0)
+	{
+		--extra_lives;
+		am_alive = true;
+
+		invincible_until = _ct + 2.0;
+		image_angle = 0;
+		xvel = 0;
+		yvel = 0;
+	}
+	else
+		exit;
+}
+var _invincible = invincible_until > _ct;
+
 var input_thrust = keyboard_check(vk_space) || gamepad_button_check(global.Controller, gp_face1);
 var input_firing = mouse_check_button(mb_left) || gamepad_button_check(global.Controller, gp_face2);
 
@@ -46,14 +65,33 @@ else
 	}
 }
 
+////////////////////
+// FIRIN' MAH LASER
+////////////////////
+if (global.iMouse_LP and fuel_level > ELD_LASER_COST)
+{
+	fuel_level -= ELD_LASER_COST;
+	
+	var _ang = image_angle + 90;
+	with (instance_create_layer(x,y, "Instances", obj_eld_laser) )
+	{
+		direction = _ang;
+		image_angle = _ang;
+		speed = 3;
+		audio_play_sound(snd_eld_laser_2, 0, false);
+	}
+}
+
+var _died_this_frame = false;
+
+if (place_meeting(x,y,obj_eld_enemy1) and !_invincible) _died_this_frame = true;
+
 var _inst = instance_place(x+xvel, y+max(1.0, abs(yvel)) * sign(yvel), obj_eld_fuel_station);
 if (_inst != noone)
 {
-	if (abs(xvel) > 0.4 || abs(yvel) > 0.4 || image_angle != 0 || _inst.y < y)
+	if (abs(xvel) > 0.4 || abs(yvel) > 0.5 || image_angle != 0 || _inst.y < y)
 	{
-		// explode
-		audio_play_sound(snd_eld_lander_explode, 0, false);
-		room_restart();
+		_died_this_frame = true;
 	}
 	else
 	{
@@ -79,21 +117,29 @@ else
 	y += yvel;
 }
 
-
-////////////////////
-// FIRIN' MAH LASER
-////////////////////
-if (global.iMouse_LP and fuel_level > ELD_LASER_COST)
+// if we died this frame
+if (_died_this_frame)
 {
-	fuel_level -= ELD_LASER_COST;
+	am_alive = false;
 	
-	var _ang = image_angle + 90;
-	with (instance_create_layer(x,y, "Instances", obj_eld_laser) )
+	if (audio_is_playing(snd_eld_lander_thrust))
+		audio_stop_sound(snd_eld_lander_thrust);
+	
+	// explode
+	audio_play_sound(snd_eld_lander_explode, 0, false);
+			
+	// do explody effect some time here
+			
+	if (extra_lives > 0)
 	{
-		direction = _ang;
-		image_angle = _ang;
-		speed = 3;
-		audio_play_sound(snd_eld_laser_2, 0, false);
+		respawn_time = _ct + 3.0; // wait 3 seconds
+		x = room_width div 2;
+		y = room_height - 30;
+		image_angle = 0;
+	}
+	else
+	{
+		// GAME OVER MAN
 	}
 }
 

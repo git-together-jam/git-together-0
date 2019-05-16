@@ -9,6 +9,9 @@ enum ELDEnemyState {
 image_xscale = 0.5;
 image_yscale = 0.5;
 
+var _et = obj_eld_controller.enemySprites;
+sprite_index = _et[ irandom_range(0, array_length_1d(_et)-1) ];
+
 posIndex = 0; // where the enemy ends up, once the track is complete
 
 // the track positions

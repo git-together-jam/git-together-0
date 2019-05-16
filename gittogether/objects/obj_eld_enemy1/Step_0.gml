@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 speed = 0;
+var _spacing = ELD_ENEMY_SPACING;
 
 switch(state)
 {
@@ -19,8 +20,8 @@ switch(state)
 		}
 		else // headed towards formation position
 		{
-			_tx = (posIndex mod 10) * 10.0 + obj_eld_controller.origin_x;
-			_ty = (posIndex div 10) * 10.0 + obj_eld_controller.origin_y;			
+			_tx = (posIndex mod 10) * _spacing + obj_eld_controller.origin_x;
+			_ty = (posIndex div 10) * _spacing + obj_eld_controller.origin_y;			
 		}
 		
 		if (point_distance(x,y, _tx, _ty) < 2)
@@ -54,14 +55,14 @@ switch(state)
 			//direction = _tar_angle;
 			//direction = lerp(direction, _tar_angle, 0.5);
 			image_angle = direction-90;
-			speed = 1;
+			speed = 1.5;
 		}
 		
 	break;
 	
 	case ELDEnemyState.Formation:
-		x = (posIndex mod 10) * 10.0 + obj_eld_controller.origin_x;
-		y = (posIndex div 10) * 10.0 + obj_eld_controller.origin_y;
+		x = (posIndex mod 10) * _spacing + obj_eld_controller.origin_x;
+		y = (posIndex div 10) * _spacing + obj_eld_controller.origin_y;
 	break;
 }
 

@@ -1,6 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+#macro ELD_ENEMY_SPACING 17
+
+enum ELDGameState {
+	Galaga,
+	MissileCommand
+};
+
+enum ELDWaveState {
+	Spawning,
+	Waiting
+};
+
+gameState = ELDGameState.Galaga;
+waveState = ELDWaveState.Spawning;
+
 eld_init_tracks();
 
 // 0  1  2  3  4  5  6  7  8  9
@@ -25,6 +40,22 @@ start_time = current_time * 0.001;
 curr_wave = 0;
 curr_subwave = 0;
 
-initial_x = room_width * 0.5 - 50;
+x = room_width div 2 - 5 * ELD_ENEMY_SPACING;
+initial_x = x;
+
+
 
 origin_x = round(x);
+
+y = ELD_ENEMY_SPACING;
+
+fuelpads_in_wave = 1;
+
+if (!audio_is_playing(snd_eld_music))
+	audio_play_sound(snd_eld_music,0,true);
+	
+enemySprites = [
+	spr_eld_enemy_butter,
+	spr_eld_enemy_long,
+	spr_eld_enemy_sting
+];
