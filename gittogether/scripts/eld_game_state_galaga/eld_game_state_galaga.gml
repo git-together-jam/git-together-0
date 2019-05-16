@@ -1,3 +1,6 @@
+///@arg attractmode
+
+var _attract_mode = argument0;
 
 var _ct = current_time * 0.001;
 
@@ -22,11 +25,16 @@ if (waveState == ELDWaveState.Spawning)
 			}
 		}
 	}
-	else if (!game_won) // no more waves, you win!
+	else if (_attract_mode)
+	{
+		curr_wave = 0;
+		curr_subwave = 0;
+	}
+	else if (!game_won and alarm[1] < 0) // no more waves, you win!
 	{
 		game_won = true;
 		game_over = true;
-		alarm[0] = room_speed * 10;
+		alarm[1] = room_speed * 10;
 		
 		var _high_score = sys_save_arcade_read(global.ELDTitle, "HighScore", 0);
 		var _final_score = eld_score * (1 + obj_eld_lander.extra_lives);

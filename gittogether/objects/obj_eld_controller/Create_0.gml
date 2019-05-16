@@ -4,6 +4,8 @@
 #macro ELD_ENEMY_SPACING 17
 
 enum ELDGameState {
+	Standby,
+	Menu,
 	Galaga,
 	MissileCommand
 };
@@ -13,7 +15,14 @@ enum ELDWaveState {
 	Waiting
 };
 
-gameState = ELDGameState.Galaga;
+enum ELDMenuButtons {
+	Play,
+	Leaderboards
+};
+
+buttonState = ELDMenuButtons.Play;
+buttonSwapCooldown = -1;
+gameState = ELDGameState.Menu;
 waveState = ELDWaveState.Spawning;
 
 eld_init_tracks();
