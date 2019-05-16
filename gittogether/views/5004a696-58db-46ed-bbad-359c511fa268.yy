@@ -6,8 +6,7 @@
     "children": [
         "13f77556-d138-44d9-8946-a4aa33ea7a88",
         "62473740-e9fd-4d2d-ba06-aaa1c3239442",
-        "55d7af7f-def3-479b-b739-8080b58e852d",
-        "5df48c73-f3fc-4a18-b47d-151c23cb6d5e"
+        "55d7af7f-def3-479b-b739-8080b58e852d"
     ],
     "filterType": "GMObject",
     "folderName": "Adventure",

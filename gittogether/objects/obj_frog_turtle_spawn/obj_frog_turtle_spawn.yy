@@ -1,28 +1,28 @@
 {
-    "id": "300158b3-c37f-448a-8578-4308f1e1cc4b",
+    "id": "1e8d5542-56d6-4778-b58f-544171d4fd99",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_frog_turtle_spawn",
     "eventList": [
         {
-            "id": "94e314ff-b626-43ed-8a67-153c5b2163b7",
+            "id": "3f7744c2-c7d7-40ab-82d2-97117a9b254e",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "300158b3-c37f-448a-8578-4308f1e1cc4b"
+            "m_owner": "1e8d5542-56d6-4778-b58f-544171d4fd99"
         },
         {
-            "id": "a3aadabb-141a-4164-a169-0a3b9b0e2264",
+            "id": "b484c682-ea07-4442-8b63-1b938384252e",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "300158b3-c37f-448a-8578-4308f1e1cc4b"
+            "m_owner": "1e8d5542-56d6-4778-b58f-544171d4fd99"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "954619e9-f784-4d49-85ff-2967b768b0b9",
+    "spriteId": "db13ddde-a0fa-4013-b891-175918d3164f",
     "visible": true
 }

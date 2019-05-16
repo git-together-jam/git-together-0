@@ -4,25 +4,18 @@
 varying vec4 v_color;
 varying vec2 v_coord;
 
-//Pixel width/height.
-const vec2 tex = 1./vec2(320,180);
-//Scanline intensity.
+const vec2 texel = 1./vec2(320,180);
 const float amp = .06;
-//Scanline frequency.
-const float frq = 160.;
-
-//Screen curvature.
-const float cur = .1;
-//Screen border width.
-const float bor = .2;
+const float freq = 160.;
+const float curvature = .1;
 
 void main()
 {
-	float distort = 1. + cur * (length(v_coord - .5)+bor-.5);
+	float distort = 1. + curvature * length(v_coord - .5);
 	vec2 coord = (v_coord - .5) * distort + .5;
 	
-	vec3 line = 1.-amp + amp*cos(coord.x*frq*6.2831+vec3(0,2,4.1));
-	float clip = smoothstep(.5+tex.x,.5,abs(coord.x-.5)) * smoothstep(.5+tex.y,.5,abs(coord.y-.5));
+	vec3 line = 1.-amp + amp*cos(coord.x*freq*6.2831+vec3(0,2,4.1));
+	float clip = smoothstep(.5+texel.x,.5,abs(coord.x-.5)) * smoothstep(.5+texel.y,.5,abs(coord.y-.5));
 	
     gl_FragColor = texture2D(gm_BaseTexture,coord) * vec4(v_color.rgb * clip * line,v_color.a);
 }

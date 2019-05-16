@@ -45,7 +45,7 @@ switch (type) {
 	
 	#region None
 	case TransType.none:
-		if (titleAlpha <= 0) instance_destroy();
+		
 	break;
 	#endregion
 	

@@ -1,11 +1,8 @@
 /// @description
 #region Movement 
 // Movement
-var _moveDir = point_direction(0,0,global.iMoveX,global.iMoveY);
-if (global.iMoveX == 0 && global.iMoveY == 0) var _moveDist = 0;
-else var _moveDist = 1;
-hsp = lengthdir_x(_moveDist,_moveDir) * moveSpeed;
-vsp = lengthdir_y(_moveDist,_moveDir) * moveSpeed;
+hsp = global.iMoveX * moveSpeed;
+vsp = global.iMoveY * moveSpeed;
 
 // Check for collisions and move one pixel at a time.
 // Horizontal:
@@ -39,27 +36,9 @@ y = clamp(y,_bbox_top,room_height-_bbox_bottom);
 // Play with arcade machine
 arcade = instance_place(x, y-4, obj_ArcadeMachine);
 
-if (!instance_exists(obj_Transition)) {
-	if (global.iSelect && arcade && !startedGame) {
-	
-		if (global.Coins >= DEF_COIN_COST) {
-			global.Coins -= DEF_COIN_COST;
-		
-			obj_Controller.shaderEnabled = arcade.shaderEnabled;
-			obj_Controller.shaderSet = arcade.shaderSet;
-	
-			start_minigame(arcade.gameRoom, arcade.name, arcade.trans, arcade.transCol,
-						   arcade.titleFont, arcade.titleCol);
-				   
-			startedGame = true;
-			//save position
-			global.Overworldx = x;
-			global.Overworldy = y;
-		} else {
-			room_goto_transition(rm_Overworld, TransType.screenFade, c_black,
-								"NOT ENOUGH COINS!", fnt_big, c_white);
-		}
-	}
+if (global.iSelect && arcade) {
+	start_minigame(arcade.gameRoom, arcade.name, arcade.trans, arcade.transCol,
+				   arcade.titleFont, arcade.titleCol);
 }
 
 //Animation

@@ -21,9 +21,6 @@ _map[? "transCol"]   = c_black;
 _map[? "titleFont"]  = fnt_big;
 _map[? "titleCol"]   = c_black;
 
-_map[? "shaderEnabled"] = false;
-_map[? "shaderSet"]     = -1;
-
 // Add to global list
 ds_list_add_map(global.ArcadeMachineList, _map);
 

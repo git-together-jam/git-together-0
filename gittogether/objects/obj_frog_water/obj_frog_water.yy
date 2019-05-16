@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "obj_frog_water",
     "eventList": [
-        {
-            "id": "52e1a660-ba4d-408b-97dd-cd7da9086b4c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "dc4e5830-6f10-4dbe-869c-daf90837bd5d"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

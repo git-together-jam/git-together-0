@@ -10,12 +10,11 @@ var _x = argument[0],
 	_p = argument[4],
 	_c = argument_count > 5 ? argument[5] : draw_get_color(),
 	_a = argument_count > 6 ? argument[6] : draw_get_alpha(),
-	_prec = argument_count > 7 ? argument[7] : 24,
-	_end = 450 * _p;
+	_prec = argument_count > 7 ? argument[7] : 24;
 	
 draw_primitive_begin(pr_trianglestrip);
 
-for(var i = 90; i < _end; i += _prec) {
+for(var i = 90; i < 450 * _p; i += _prec) {
 	draw_vertex_color(
 		_x + lengthdir_x( _r - _w, i), 
 		_y + lengthdir_y( _r - _w, i),
@@ -27,17 +26,5 @@ for(var i = 90; i < _end; i += _prec) {
 		_c, _a 
 	);
 }
-
-//Last point
-draw_vertex_color(
-	_x + lengthdir_x( _r - _w, _end), 
-	_y + lengthdir_y( _r - _w, _end),
-	_c, _a 
-);
-draw_vertex_color(
-	_x + lengthdir_x( _r + _w, _end), 
-	_y + lengthdir_y( _r + _w, _end),
-	_c, _a 
-);
 
 draw_primitive_end();
