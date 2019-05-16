@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "18e4260d-0e25-435c-895e-41367803877f",
+            "Value": {
+                "id": "0fa1a76f-d011-4834-a4ea-7d1ce87c80cc",
+                "resourcePath": "tilesets\\tile_adventure\\tile_adventure.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "191d6518-583c-48cc-b428-4fd1c9922cca",
             "Value": {
                 "id": "872816ac-06d7-4e06-a993-029e7ffaaf76",
@@ -483,6 +491,14 @@
             "Value": {
                 "id": "8e6e2c92-7f29-41b0-abb7-f9ef59000920",
                 "resourcePath": "sprites\\spr_lightMask32x\\spr_lightMask32x.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "26e48121-3125-4fdc-9598-14b528fd0f05",
+            "Value": {
+                "id": "f894c093-1400-4064-bb93-b1ed8f4f2bea",
+                "resourcePath": "sprites\\spr_ad_wall_tiles\\spr_ad_wall_tiles.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -892,6 +908,14 @@
                 "id": "0799410d-c70a-4a4d-b044-51b9d1ab9d21",
                 "resourcePath": "scripts\\_sys_save_create\\_sys_save_create.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "492461e6-2eaa-46b9-a419-d8863de1b2ac",
+            "Value": {
+                "id": "538e9112-ba71-43f7-9615-83c5f0baa8a2",
+                "resourcePath": "objects\\obj_ad_brute\\obj_ad_brute.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1503,6 +1527,14 @@
             }
         },
         {
+            "Key": "77e969ab-8bc0-4b5a-bd41-4f1a87889ba5",
+            "Value": {
+                "id": "90228066-a0a9-4eb1-abef-1a3344ad4583",
+                "resourcePath": "sprites\\spr_ad_player\\spr_ad_player.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7d582484-91f0-4481-8b3e-44979c7744e5",
             "Value": {
                 "id": "dfc5a84b-7f6b-41f3-b8e4-a118a0af4e69",
@@ -1775,6 +1807,14 @@
             }
         },
         {
+            "Key": "98f4f543-d08c-4160-9df3-5279f31f3426",
+            "Value": {
+                "id": "5372b215-df1f-42c2-a82f-7bbe128a6290",
+                "resourcePath": "sprites\\spr_ad_brute\\spr_ad_brute.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "994aec28-6a86-41c9-a0c4-eb812fd1eeee",
             "Value": {
                 "id": "c947200c-e7bf-4ace-8ed4-fc7c1f06ff68",
@@ -1924,6 +1964,14 @@
                 "id": "9f711c3e-9128-4734-aaef-1a8a25185360",
                 "resourcePath": "views\\a37f184a-53c9-4810-aa3d-a8b76ae67773.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a39420c1-483f-41c3-8dbb-f972d0a64f05",
+            "Value": {
+                "id": "23a4c3ba-5bb2-4cc1-86c3-db2f8bec9237",
+                "resourcePath": "objects\\obj_ad_enwall\\obj_ad_enwall.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2839,19 +2887,19 @@
             }
         },
         {
-            "Key": "ebdc7f56-a23b-4802-9785-652b57165333",
-            "Value": {
-                "id": "c46d4b55-8d2b-4eeb-96b6-c3f0a1bc8d40",
-                "resourcePath": "sprites\\spr_ad_player\\spr_ad_player.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "ec1ba10d-4d3d-4275-9c26-d762ead92ed6",
             "Value": {
                 "id": "67713875-cd74-4bae-b8c5-0812576c1106",
                 "resourcePath": "views\\ec1ba10d-4d3d-4275-9c26-d762ead92ed6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ec75d0c3-e626-4a3f-bbba-e88b2adce8c9",
+            "Value": {
+                "id": "4b2c91b8-876e-4649-87e8-d59a17c4db83",
+                "resourcePath": "sprites\\spr_ad_enwall\\spr_ad_enwall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

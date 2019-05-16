@@ -52,7 +52,7 @@ if _xinput<0{
 #region attack
 if keyboard_check_pressed(ord("Z")) and (canattack=1){
 	alarm[0]=10
-	alarm[1]=15
+	alarm[1]=30
 	canattack=0
 	attack=1
 	with(instance_create_layer(x,y,"Instances",obj_ad_sword))
