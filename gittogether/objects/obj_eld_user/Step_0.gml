@@ -7,8 +7,8 @@ usernm = string_copy(usernm, 1, 3);
 }
 usernm = string_letters(usernm);
 if (global.iSelect && usernm != "" && useredit == 3){
-	global.froggerUser = usernm
-	room_goto(rm_frogger_highscore);
+	global.elduser = usernm
+	room_goto(rm_eld_highscore);
 }
 
 //edit username

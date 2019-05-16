@@ -1,10 +1,8 @@
 /// Initialise loading the online highscores
-player_name = global.froggerUser;
-if (player_name != "")send_score(global.froggerUser,global.froggerTime);
+player_name = global.elduser;
+if (player_name != "")eld_send_score(global.elduser,global.eldscore);
 text = "Please wait for the\nhighscores to load...";
 text2 = "";
 alarm[2] = 2*room_speed;
 wait = false;
 set = false;
-
-sys_save_global_write("frogger secret", true);
