@@ -7,7 +7,8 @@
         "33fe4c5e-2c0c-4306-9b76-23e365562653",
         "c0a2a8cf-5a4c-4f9e-a38e-46233cb01c07",
         "c78f7613-2893-46c7-bec3-69102a4e9ffc",
-        "6fd6a6b0-ed22-4033-a812-7112b0df7c63"
+        "6fd6a6b0-ed22-4033-a812-7112b0df7c63",
+        "34ef10b8-63f0-4f07-818d-c63ac9a917f6"
     ],
     "filterType": "GMScript",
     "folderName": "Snake",

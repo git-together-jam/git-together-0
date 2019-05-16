@@ -711,6 +711,14 @@
             }
         },
         {
+            "Key": "34ef10b8-63f0-4f07-818d-c63ac9a917f6",
+            "Value": {
+                "id": "9f0e4ded-d191-490b-a3fd-5f3245f01709",
+                "resourcePath": "scripts\\hav_newgame\\hav_newgame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "35168ed6-5141-450f-8889-7ad38144918e",
             "Value": {
                 "id": "9c91d140-8514-46c4-9d9d-5acd9fe0526d",
@@ -2663,6 +2671,14 @@
             }
         },
         {
+            "Key": "b2d56b42-3ebc-4fc7-ad47-dc8a7c9e1856",
+            "Value": {
+                "id": "0703802c-099c-4f79-a702-f6336a0a9171",
+                "resourcePath": "objects\\obj_hav_end\\obj_hav_end.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b2e2a629-ccc3-4015-8736-c2a8d535b9a3",
             "Value": {
                 "id": "86008049-a29d-471f-b51f-37abd3292fc3",
@@ -3946,6 +3962,7 @@
         "c0a2a8cf-5a4c-4f9e-a38e-46233cb01c07",
         "c78f7613-2893-46c7-bec3-69102a4e9ffc",
         "6fd6a6b0-ed22-4033-a812-7112b0df7c63",
+        "34ef10b8-63f0-4f07-818d-c63ac9a917f6",
         "fed45f69-8848-46f9-a310-d8b9732a35db",
         "f8eb5d35-b990-45c1-b572-f3767184ca68",
         "0aa36344-abee-4499-8877-823e764f498b",

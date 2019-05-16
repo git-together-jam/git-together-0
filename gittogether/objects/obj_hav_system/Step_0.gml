@@ -1,7 +1,21 @@
 
 
-if keyboard_check_pressed( vk_anykey){
-	game_state = hGameState.Play;	
+if alarm[ 9] == -1 && keyboard_check_pressed( vk_anykey) && keyboard_check_pressed( vk_escape) == false {
+	
+	switch game_state {
+		case hGameState.Start: { 
+			game_state = hGameState.Play;			
+			alarm[ 9] = room_speed / 2;
+		} break;
+		case hGameState.Over: {
+			game_state = hGameState.Start;
+			instance_destroy( obj_hav_end);
+			instance_create_layer( 0, 0, "particles", obj_hav_start);			
+			hav_newgame();
+			alarm[ 9] = room_speed / 2;
+		} break;	
+	}
+
 }
 
 if game_state == hGameState.Play {
