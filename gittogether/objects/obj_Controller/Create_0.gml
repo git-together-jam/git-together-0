@@ -1,7 +1,9 @@
 /// @description Persistent background controller
 
 randomize();
+
 application_surface_draw_enable(false);
+
 // Shader
 shaderEnabled = true;
 shaderSet = -1;
@@ -25,6 +27,10 @@ global.Overworldy = 176;
 
 // Controller Support
 global.Controller = gamepad_get_first(0);
+
+// Showcase stuff
+global.GamePlaying = noone;
+global.GamesWon = sys_save_global_read("Games Won", 0);
 
 // For Drawing the GUI
 guiXOffset = 8;
