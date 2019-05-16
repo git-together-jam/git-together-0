@@ -13,7 +13,7 @@ hSNAKE_LIST = ds_list_create();
 
 snake_seg = 0;
 
-#macro TARGET 5
+#macro TARGET 70
 
 ended = false;
 
