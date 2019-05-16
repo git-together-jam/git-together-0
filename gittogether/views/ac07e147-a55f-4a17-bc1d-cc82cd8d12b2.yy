@@ -16,7 +16,8 @@
         "5245426a-7515-4152-84c1-3fdd41ec8c93",
         "ce727ad7-73c5-4a6a-8ee4-a48eab24076a",
         "f4823aed-0c19-405c-949d-e8514f2bf79d",
-        "17e6ba71-e84d-4cfb-8483-d6f8edff3203"
+        "17e6ba71-e84d-4cfb-8483-d6f8edff3203",
+        "130b5751-5b06-4c74-bf65-732458a219a1"
     ],
     "filterType": "GMSprite",
     "folderName": "Overworld Assets",
