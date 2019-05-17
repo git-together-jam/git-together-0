@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "0967e3ad-9739-4c53-9b17-e696915b62f0",
+            "Value": {
+                "id": "b8e9a3d6-d045-4a8f-854b-ce0f910fe406",
+                "resourcePath": "sprites\\spr_ad_player1\\spr_ad_player1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0a83a0f6-7dfe-49bf-91fc-9f07c4354514",
             "Value": {
                 "id": "1a67f15e-eb60-4afd-bbc8-6c2f3ba0c1dc",
@@ -1207,6 +1215,14 @@
             }
         },
         {
+            "Key": "5ef216de-007c-460f-881a-d187e17f04a0",
+            "Value": {
+                "id": "96983d91-2eef-48bf-863e-b2af2ae11f09",
+                "resourcePath": "sprites\\spr_ad_shooter\\spr_ad_shooter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5f44488b-967e-4a72-bb35-6403cc276a3f",
             "Value": {
                 "id": "a1118a4d-894c-4639-9a55-93a39be2c923",
@@ -1327,6 +1343,14 @@
             }
         },
         {
+            "Key": "679cc7c4-13c7-45e7-b886-e0cd44d8fa04",
+            "Value": {
+                "id": "64772029-4493-4db1-807f-b0fbb438c484",
+                "resourcePath": "sprites\\spr_ad_floor_tiles\\spr_ad_floor_tiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "67d9e922-e8a0-4751-8b59-74cbf8816c4a",
             "Value": {
                 "id": "d68a06b7-5e2e-42c3-bf1b-6890481d439a",
@@ -1356,6 +1380,14 @@
                 "id": "c4a762d8-5825-4c9e-9b61-ebcd2928b4f2",
                 "resourcePath": "views\\69347d60-3b74-475b-9478-9e13ae8be7c5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6a54987c-9f17-4745-9506-c005c5aa9eff",
+            "Value": {
+                "id": "dcfb7ec1-1e80-43aa-9a39-5511a77eac8c",
+                "resourcePath": "sprites\\spr_ad_player2\\spr_ad_player2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1495,6 +1527,14 @@
             }
         },
         {
+            "Key": "74fe9fe7-1948-4beb-bf97-ca156f62a886",
+            "Value": {
+                "id": "cd28434a-d9ac-4c38-9531-a8ce864f961b",
+                "resourcePath": "tilesets\\tile_adventure_floor\\tile_adventure_floor.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "daf05e6a-f0ef-45ac-ad01-a3bd95caeaaa",
@@ -1531,6 +1571,14 @@
             "Value": {
                 "id": "90228066-a0a9-4eb1-abef-1a3344ad4583",
                 "resourcePath": "sprites\\spr_ad_player\\spr_ad_player.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7a42d3aa-c1f1-4945-b2ef-1bbf1ccac5a9",
+            "Value": {
+                "id": "07d3de87-77ab-4f93-8410-7f7e28dd4e80",
+                "resourcePath": "sprites\\spr_ad_bullet\\spr_ad_bullet.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2255,6 +2303,14 @@
             }
         },
         {
+            "Key": "b70acaa1-bd76-4033-9b75-18db55d76bd1",
+            "Value": {
+                "id": "c1c811b6-7d40-425e-be27-f71fac8a8a4a",
+                "resourcePath": "objects\\obj_ad_bullet\\obj_ad_bullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ba7972fc-1f6c-4554-a0e8-faef94a4912d",
             "Value": {
                 "id": "37b7d51a-1d99-4c80-a9be-13950e7bab73",
@@ -2460,6 +2516,14 @@
                 "id": "09295414-779f-4ef0-b733-6f70ddd69b9b",
                 "resourcePath": "rooms\\rm_frogger3\\rm_frogger3.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "ca807a20-d8c0-42a7-b878-265d49968926",
+            "Value": {
+                "id": "1db6b335-a9f6-441b-9197-56c4520d685d",
+                "resourcePath": "objects\\obj_ad_shooter\\obj_ad_shooter.yy",
+                "resourceType": "GMObject"
             }
         },
         {

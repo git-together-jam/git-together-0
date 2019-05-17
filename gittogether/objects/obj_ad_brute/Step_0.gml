@@ -12,18 +12,18 @@ if action=0{
 	action=1
 	alarm[0]=irandom_range(60,90)
 }
-if ((place_meeting(x+spd[0],y,obj_ad_wall)) or (place_meeting(x+spd[0],y,obj_ad_enwall))) {
+if (place_meeting(x+spd[0],y,obj_ad_enwall)) {
 	x = round(x);
-	while((!place_meeting(x+sign(spd[0]),y,obj_ad_wall)) or (!place_meeting(x+sign(spd[0]),y,obj_ad_enwall))) {
+	while(!place_meeting(x+sign(spd[0]),y,obj_ad_enwall)) {
 		x += sign(spd[0]);
 	}
 	spd[0] = 0;
 } else {
 	x += spd[0];
 }
-if ((place_meeting(x,y+spd[1],obj_ad_wall)) or (place_meeting(x,y+spd[1],obj_ad_enwall))) {
+if (place_meeting(x,y+spd[1],obj_ad_enwall)) {
 	y = round(y);
-	while((!place_meeting(x,y+sign(spd[1]),obj_ad_wall)) or (!place_meeting(x,y+sign(spd[1]),obj_ad_wall))) {
+	while(!place_meeting(x,y+sign(spd[1]),obj_ad_enwall)) {
 		y += sign(spd[1]);
 	}
 	spd[1] = 0;
