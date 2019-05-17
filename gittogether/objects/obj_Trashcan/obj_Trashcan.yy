@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_Trashcan",
     "eventList": [
-        
+        {
+            "id": "aec5f0f0-77bb-4905-8877-27cf9222e89e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d4990db5-94b8-4351-b4ed-425f0248fb45"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

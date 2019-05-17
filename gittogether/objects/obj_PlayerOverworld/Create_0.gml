@@ -1,4 +1,7 @@
 /// @description 
+
+
+
 // Properties
 moveSpeed = 3;
 
@@ -7,6 +10,13 @@ hsp = 0;
 vsp = 0;
 
 arcade = noone; // Arcade in collision
+
+// is the player reading a trash can?
+trash_read = false;
+trash_message = "";
+trash_read_time = 0;
+trash_read_time_default = 90;
+
 startedGame = false;
 
 //Animation
