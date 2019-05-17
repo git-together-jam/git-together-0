@@ -727,6 +727,14 @@
             }
         },
         {
+            "Key": "316f094e-d4e2-4a19-9974-f935d5f41fbe",
+            "Value": {
+                "id": "ca5ec208-0cf9-4cb8-954a-ced77e296647",
+                "resourcePath": "views\\316f094e-d4e2-4a19-9974-f935d5f41fbe.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "31e6e145-c365-43a7-a1af-e24ac269f572",
             "Value": {
                 "id": "f0bd403d-04b0-423e-93b8-eb2348f5d7bb",
@@ -959,19 +967,19 @@
             }
         },
         {
-            "Key": "3ee70684-1acb-4f00-bbcc-85a3041c2c31",
-            "Value": {
-                "id": "eeb4389a-0238-4b76-ae5d-34735e7736fd",
-                "resourcePath": "objects\\obj_eld_highscore\\obj_eld_highscore.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "3e3d314e-0dc3-4627-9a86-98fbb16040f8",
             "Value": {
                 "id": "eabb6049-02a5-417d-a180-67acb7f513f0",
                 "resourcePath": "sprites\\spr_hav_background\\spr_hav_background.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3ee70684-1acb-4f00-bbcc-85a3041c2c31",
+            "Value": {
+                "id": "eeb4389a-0238-4b76-ae5d-34735e7736fd",
+                "resourcePath": "objects\\obj_eld_highscore\\obj_eld_highscore.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3719,18 +3727,18 @@
             }
         },
         {
-            "Key": "e1a23be4-8bbf-4b3d-bb16-f69ffdb05853",
-            "Value": {
-                "id": "932dabb6-9e1e-4adf-a785-32cb24ce2105",
-                "resourcePath": "scripts\\eld_send_score\\eld_send_score.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "e14e1d51-11a2-4101-9019-05c468324665",
             "Value": {
                 "id": "36405e25-6400-40ba-bf90-ee03bfa05b31",
                 "resourcePath": "scripts\\hav_notif\\hav_notif.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e1a23be4-8bbf-4b3d-bb16-f69ffdb05853",
+            "Value": {
+                "id": "932dabb6-9e1e-4adf-a785-32cb24ce2105",
+                "resourcePath": "scripts\\eld_send_score\\eld_send_score.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3772,14 +3780,6 @@
                 "id": "487b115f-7c7c-4343-b489-597a7733dd10",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
-            }
-        },
-        {
-            "Key": "e55ba2f5-d1d6-4f39-bbdf-4a32ca054b2c",
-            "Value": {
-                "id": "275d2040-5e52-4f45-a221-61215fc8ad29",
-                "resourcePath": "views\\e55ba2f5-d1d6-4f39-bbdf-4a32ca054b2c.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
