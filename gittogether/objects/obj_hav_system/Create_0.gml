@@ -13,6 +13,8 @@ hSNAKE_LIST = ds_list_create();
 
 snake_seg = 0;
 
+
+
 #macro hav_WHITE $dccbc0 // c0cbdc
 #macro hav_BLACK $251418 // 181425
 

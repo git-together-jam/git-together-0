@@ -16,6 +16,19 @@ var _y = hGRID_Y_OFF - 1;
 //}
 draw_sprite( spr_hav_background, 0, _x, _y);
 
+//if !surface_exists( snake_surf){ snake_surf = surface_create( 200 + hGRID_X_OFF, 170 + hGRID_Y_OFF); }
+
+//surface_set_target( snake_surf);
+//	draw_clear_alpha( c_black, 0.0);
+//	with( obj_hav_snake){
+		//draw_self();	
+//		event_user( 0);
+//	}
+//surface_reset_target();
+
+//draw_surface( snake_surf, 0, 0);//hGRID_X_OFF, hGRID_Y_OFF);
+//draw_surface_part( snake_surf, 220, 0, hGRID_X_OFF, 170 + hGRID_Y_OFF, hGRID_X_OFF, 0);
+
 draw_set_halign( fa_right);
 draw_set_valign( fa_center);
 
