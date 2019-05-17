@@ -2423,6 +2423,14 @@
             }
         },
         {
+            "Key": "91e28bff-6e91-40ef-8e15-27b18ea0c4d6",
+            "Value": {
+                "id": "6e339e54-e7ea-44ca-8add-9d2d329c2c83",
+                "resourcePath": "sounds\\happylight_credits_qst\\happylight_credits_qst.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "928ccf29-2de6-44b5-a5fd-1a2826d62aef",
             "Value": {
                 "id": "0e89aee6-27ac-43af-bd59-b6a013f48cb7",
