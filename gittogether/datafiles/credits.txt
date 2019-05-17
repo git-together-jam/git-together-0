@@ -10,7 +10,7 @@ abae: *Andy Bae* - code
 dtir: *David Tirado* - code
 tabe: *TabularElf* - code
 math: *Grupreet Singh Matharoo* - code
-havik: *Havik* - code
+havik: *havik* - code
 surg: *!Surg* - code
 levg: *Levgon* - code
 qweleo: *qweleo* - code

@@ -1,13 +1,9 @@
 
 
-#macro hGRID_CELLS_W 20
-#macro hGRID_CELLS_H 17
 #macro hGRID_CELL_S 10
 #macro hGRID_X_OFF 5
 #macro hGRID_Y_OFF 6
 
-#macro hGAME_GRID global.havgg
-hGAME_GRID = ds_grid_create( hGRID_CELLS_W, hGRID_CELLS_H);
 #macro hSNAKE_LIST global.havsl
 hSNAKE_LIST = ds_list_create();
 
@@ -25,9 +21,6 @@ game_state = hGameState.Start;
 
 instance_create_layer( 0, 0, "particles", obj_hav_start);
 
-//repeat(4) {
-//	hav_add_seg();
-//}
 notifs = ds_list_create();
 ds_list_add( notifs, 
 	"Ouch that hurt!",
@@ -40,10 +33,6 @@ ds_list_add( notifs,
 );
 show_debug_message("ERE - " + string( ds_list_size( notifs)));
 
-enum hWorld { Void, Snake, Eat };
-ds_grid_clear( hGAME_GRID, hWorld.Void);
-
-
 
 #macro SNAKE_LIST global.sl
 SNAKE_LIST = ds_list_create();
@@ -52,20 +41,14 @@ DIR_LIST = ds_list_create();
 enum hDirection { Right, Up, Left, Down }
 
 
-
 #macro hCONTROL_BLOCK global.havcon
 hCONTROL_BLOCK = noone;
-
-hold = false;
 
 new_direction = hDirection.Up;
 cur_direction = hDirection.Up;
 	
-//var _cs = 65;
-//var _buff = 15;
 var starting_x = hGRID_X_OFF + ( hGRID_CELL_S / 2) + ( hGRID_CELL_S * irandom_range( 5, 15)) - 1;
 var starting_y = hGRID_Y_OFF + ( hGRID_CELL_S / 2) + ( hGRID_CELL_S * irandom_range( 5, 12)) - 1;
-
 
 with( instance_create_layer( starting_x, starting_y, "snake", obj_hav_snake)){	
 }
@@ -75,7 +58,6 @@ with( instance_create_layer( starting_x, starting_y + ( hGRID_CELL_S * 2), "snak
 }
 with( instance_create_layer( starting_x, starting_y + ( hGRID_CELL_S * 3), "snake", obj_hav_snake)){	
 }
-
 
 ds_list_add( DIR_LIST, hDirection.Up);
 repeat( ds_list_size( SNAKE_LIST) - 1){
@@ -87,14 +69,11 @@ turn_time_change = 0;
 #macro TURN_TIME global.tt
 TURN_TIME = room_speed / turn_time_base;	
 			
-			
-my_score = 0;
-			
+my_score = 0;	
 			
 			
 #macro PSYSTEM global.ps
 PSYSTEM = part_system_create_layer("particles", true);
-//part_system_automatic_draw( PSYSTEM, false);
 
 #macro PSYSTEM_PULSE global.ps_pulse
 PSYSTEM_PULSE = part_type_create();

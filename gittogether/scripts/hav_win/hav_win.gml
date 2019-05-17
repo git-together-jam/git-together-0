@@ -1,6 +1,7 @@
 
 
 
+
 if obj_hav_system.game_state == hGameState.Play {
 	
 	ds_list_clear( SNAKE_LIST);
