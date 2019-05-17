@@ -20,6 +20,9 @@ image_yscale = 0.5;
 fuel_level = 100;
 laser_length = 0.0;
 
+var _f = draw_get_font();
+draw_set_font(fnt_normal);
 text_width_fuel = string_width("Fuel") * 0.5 + 2;
+draw_set_font(_f);
 
 high_score = sys_save_arcade_read(global.ELDTitle, "HighScore", 0);
