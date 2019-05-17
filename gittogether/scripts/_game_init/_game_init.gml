@@ -29,8 +29,8 @@ arcade_game_enable_shader(Game.dungandrompa, true, shd_retro);
 
 // Asteroids - Sahaun
 arcade_game_add(Game.asteroids, "Asteroids", spr_arcade_asteroids, rm_Asteroids);
-arcade_game_set_transition(Game.asteroids, TransType.circle, c_black);
-arcade_game_set_title(Game.asteroids, fnt_normal, c_ltgray);
+arcade_game_set_transition(Game.asteroids, TransType.circle, c_ltgray);
+arcade_game_set_title(Game.asteroids, fnt_normal, c_dkgray);
 arcade_game_enable_shader(Game.asteroids, true, shd_retro);
 
 // Breakout - Qweleo
