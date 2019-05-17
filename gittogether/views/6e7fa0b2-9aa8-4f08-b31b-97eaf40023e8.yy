@@ -9,7 +9,8 @@
         "3795985c-3a44-446d-97bc-9e80ef226cea",
         "d378fe22-58db-45ac-ab3a-72071c0992d5",
         "b2d56b42-3ebc-4fc7-ad47-dc8a7c9e1856",
-        "937b0d9b-f5f8-4c7b-b9ee-883dfb66d260"
+        "937b0d9b-f5f8-4c7b-b9ee-883dfb66d260",
+        "63578d15-d6df-47de-ba97-c2e497dfbdeb"
     ],
     "filterType": "GMObject",
     "folderName": "Snake",
