@@ -7,8 +7,6 @@ if snake_seg == 0 {
 
 	with( instance_create_layer( _x, _y, "snake", obj_hav_snake)){
 		my_id = other.snake_seg;
-		cell_x = hav_get_cell_x();
-		cell_y = hav_get_cell_y();
 		ds_list_add( hSNAKE_LIST, id);
 	}
 	snake_seg++;
@@ -33,12 +31,9 @@ if snake_seg == 0 {
 	
 	with( instance_create_layer( _new_x, _new_y, "snake", obj_hav_snake)){
 		my_id = other.snake_seg;
-		cell_x = hav_get_cell_x();
-		cell_y = hav_get_cell_y();
 		ds_list_add( hSNAKE_LIST, id);
 	}
 	snake_seg++;	
 	
 	
 }
-

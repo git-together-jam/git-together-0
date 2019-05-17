@@ -68,3 +68,9 @@ if (arcade) {
 } else {
 	arcadeSelectTime = 0;
 }
+
+if (trash_read_time > 0) {
+	trash_read_time--;
+} else {
+	trash_read = false;
+}

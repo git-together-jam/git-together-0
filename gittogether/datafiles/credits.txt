@@ -10,11 +10,11 @@ abae: *Andy Bae* - code
 dtir: *David Tirado* - code
 tabe: *TabularElf* - code
 math: *Grupreet Singh Matharoo* - code
-havik: *Havik* - code
+havik: *havik* - code
 surg: *!Surg* - code
 levg: *Levgon* - code
 qweleo: *qweleo* - code
-qst: *qst0* - code
+qst: *qst0* - music & code
 naxos: *Naxos* - code
 see: *SeeBeyond* - music
 xor: *Xor* - code & management

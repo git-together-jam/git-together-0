@@ -1,6 +1,7 @@
 
 
 
+
 draw_set_halign( fa_center);
 draw_set_valign( fa_center);
 
@@ -18,5 +19,3 @@ draw_text_transformed( x + xo, y + yo, string( my_text), scale, scale, 0);
 draw_set_color( hav_BLACK);
 draw_text_transformed( x + xo, y + yo, string( my_text), scale, scale, 0);
 draw_set_alpha( 1.0);
-
-//show_debug_message( string( my_text));

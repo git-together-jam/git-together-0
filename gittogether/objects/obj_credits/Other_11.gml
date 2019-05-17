@@ -70,7 +70,7 @@ characters = json_decode(string_concat(@'{
 	"qst": {
 		"full_name": "Qst0",
 		"sprite": ', spr_credits_qst, @',
-		"social": "https://pureemaison.com/en/404",
+		"social": "https://qst0.com",
 		"seat": 11,
 	},
 	"havik": {
