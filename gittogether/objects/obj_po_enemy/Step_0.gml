@@ -9,5 +9,5 @@ shift = shift*.98+random(4)-2;
 
 if instance_exists(obj_po_ball) {
 	
-	vspeed = .94*vspeed+.05*(obj_po_ball.y-yprevious+shift);//*obj_po_ball.start);
+	vspeed = .94*vspeed+.05*(obj_po_ball.y-yprevious+shift*obj_po_ball.start);
 }

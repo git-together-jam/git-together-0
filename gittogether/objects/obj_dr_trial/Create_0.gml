@@ -8,63 +8,15 @@ cam_offx = 0;
 cam_offy = 0;
 cam_targetx = 0;
 cam_targety = 0;
-cam_time = room_speed * 10;
-cam_timer = 0;
+// cam_time = room_speed * 10;
+// cam_timer = 0;
+
+if (!audio_is_playing(bgm_dungandrompa)) audio_play_sound(bgm_dungandrompa, 100, true);
 
 #region Characters
 
-characters = json_decode(string_concat(@'{ 
-	"tony": {
-		"full_name": "TonyStr",
-		"sprite": ', spr_dr_tonystr, @',
-		"seat": 0,
-		"ultimate": "Skin Creator"
-	},
-	"math": {
-		"full_name": "Matharoo",
-		"sprite": ', spr_dr_matharoo, @',
-		"seat": 1,
-		"ultimate": "Community Leader"
-	},
-	"jxm": {
-		"full_name": "Juju",
-		"sprite": ', spr_dr_juju, @',
-		"seat": 2,
-		"ultimate": "???"
-	},
-	"pope": {
-		"full_name": "Jon Pope",
-		"sprite": ', spr_dr_pope, @',
-		"seat": 3,
-		"ultimate": "Pope"
-	},
-	"sahaun": {
-		"full_name": "Sahaun",
-		"sprite": ', spr_dr_sahaun, @',
-		"seat": 4,
-		"ultimate": "Snowman"
-	},
-	"yellowaf": {
-		"full_name": "YellowAfterlife",
-		"sprite": ', spr_dr_yellowaf, @',
-		"seat": 5,
-		"ultimate": "Programming Wizard"
-	},
-	"yosi": {
-		"full_name": "Yosi",
-		"sprite": ', spr_dr_yosi, @',
-		"seat": 6,
-		"ultimate": "Code Obfuscator"
-	},
-	"minty": {
-		"full_name": "Minty Python",
-		"sprite": ', spr_dr_minty, @',
-		"seat": 7,
-		"ultimate": "Penguin"
-	}
-}'));
+event_user(1);
 
-seat = ["tony", "math", "jxm", "pope", "sahaun", "yellowaf", "yosi", "minty"];
 seat_offset = 0;
 seat_count	= array_length_1d(seat);
 seat_angle  = 0;
@@ -80,7 +32,7 @@ dialogue = ds_list_create();
 dialogue_index = 0;
 dialogue_state = 0;
 
-var _file = file_text_open_read("dungandrompa_dialogue.txt");
+var _file = file_text_open_read(text_file);
 // var _read_state = 0;
 var _bullets = ds_list_create();
 var _state_stack = ds_stack_create();
@@ -116,6 +68,7 @@ while (!file_text_eof(_file)) {
 				
 			break; #endregion;
 				
+			case "CREDITS":
 			case "NSD": #region;
 			
 				ds_stack_push(_state_stack, 2);
@@ -130,6 +83,7 @@ while (!file_text_eof(_file)) {
 				
 			break; #endregion;
 				
+			case "/CREDITS":
 			case "/NSD": #region;
 			
 				var _map = ds_map_create();

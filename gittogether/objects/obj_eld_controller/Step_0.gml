@@ -1,58 +1,81 @@
 /// @description Insert description here
 // You can write your code in this editor
-var _ct = current_time * 0.001;
 
-
-// spawn waves / sub waves
-if (curr_wave < array_length_1d(waves))
-{
-	var _wave = waves[curr_wave];
-	var _subwave = _wave[curr_subwave];
-
-	if( _subwave[0] + start_time < _ct )
-	{
-		// wave, subwave, current enemy index, spawn start time
-		ds_list_add(waves_in_progress, [ curr_wave, curr_subwave, 2, _ct ]);
-		curr_subwave += 1;
-		if (curr_subwave >= array_length_1d(_wave))
-		{
-			curr_wave += 1;
-			curr_subwave = 0;
-		}
-	}
+if (room == rm_Overworld) {
+	instance_destroy(id);
+	show_debug_message("poof im gone")
 }
 
-// spawn fighters in subwaves
-var _num_ip = ds_list_size(waves_in_progress);
-
-for (var w = 0; w < _num_ip; ++w)
+switch(gameState)
 {
-	var _deets = waves_in_progress[| w];
-	if ( (_deets[2]-2)*0.2 + _deets[3] < _ct )
-	{
-		// lookup
-		var _wave = waves[ _deets[0] ];
-		var _subwave = _wave[ _deets[1] ];
-		var _track = global.ELDTrackMap[? _subwave[1]];
-		var _pos = _track[0];
+	case ELDGameState.Galaga:
+		eld_game_state_galaga(false);
+	break;
+	
+	case ELDGameState.MissileCommand:
+		// RIP
+	break;
+	
+	case ELDGameState.Standby:
+		if (room == rm_eld)
+			gameState = ELDGameState.Menu;
+	break;
+	
+	case ELDGameState.Menu:
+		eld_game_state_galaga(true);
 		
-		// create enemy
-		var _inst = instance_create_layer(_pos[0], _pos[1], "Instances", obj_eld_enemy1);
-		_inst.posIndex = _subwave[ _deets[2] ];
-		array_copy(_inst.targets, 0, _track, 0, array_length_1d(_track));
+		var anyMove = abs(global.iMoveX) or abs(global.iMoveY);
 		
-		// book keeping
-		_deets[@ 2] = _deets[2] + 1;
-		if (_deets[2] >= array_length_1d(_subwave))
+		--buttonSwapCooldown;
+		if (anyMove and buttonSwapCooldown < 0)
 		{
-			ds_list_delete(waves_in_progress, w);
-			w -= 1;
-			_num_ip -= 1;			
+			buttonSwapCooldown = room_speed div 4;
+			if (buttonState == ELDMenuButtons.Play)
+				buttonState = ELDMenuButtons.Leaderboards;
+			else
+				buttonState = ELDMenuButtons.Play;
 		}
-	}
+		
+		// if they let go, reset press timer
+		if (!anyMove) buttonSwapCooldown = -1;
+		
+		if (global.iSelect)
+		{
+			if (buttonState == ELDMenuButtons.Play)
+			{
+				// Reset state of game from attract state
+				waveState = ELDWaveState.Spawning;
+				gameState = ELDGameState.Galaga
+				instance_create_layer(room_width div 2, room_height - 35, "Player", obj_eld_lander);
+			
+				start_time = current_time * 0.001;
+				curr_wave = 0;
+				curr_subwave = 0;
+				fuelpads_in_wave = 1;
+				next_departure = current_time * 0.001 + 2.0;
+			
+				ds_list_clear(waves_in_progress);
+			
+				with(obj_eld_fuel_station) instance_destroy();
+				with(obj_eld_enemy1) instance_destroy();
+			
+				instance_create_layer(room_width div 2, room_height + 20, "Instances", obj_eld_fuel_station);
+			}
+			else // enter leaderboards
+			{
+				gameState = ELDGameState.Standby;
+				room_goto(rm_eld_highscore);
+			}
+		}			
+	break;
 }
 
-x = initial_x + sin(current_time*0.001) * 5;
+//sorry this is so messy lol - Andy
+if (room == rm_eld_user) {
+	game_over = false;
+	alarm[1] = -1;
+	show_debug_message(string(alarm[1]));
+}
 
-origin_x = round(x);
-origin_y = round(y);
+if (game_over and alarm[1] < 0) alarm[1] = room_speed * 5.0;
+if (game_over and global.iSelect) alarm[1] = 1;

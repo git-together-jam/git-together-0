@@ -24,7 +24,7 @@ sys_save_get_map([arcade]);
 Returns: ds_map or undefined.
 This is specifically for those who want to get a specific ds_map from the Save System.
 If you wish to use Global, just leave it blank. Otherwise, you may use an argument to point towards 
-an arcade game. i.e. sys_save_get_map("Basic 1");
+an arcade game. i.e. sys_save_get_map("Clicker");
 
 //////////////////////////////////////////////////////////////////////////
 -------------------------------- Underlying -----------------------------

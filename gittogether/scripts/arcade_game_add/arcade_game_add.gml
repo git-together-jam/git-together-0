@@ -1,18 +1,22 @@
-/// @func arcade_game_add(name, sprite, room)
+/// @func arcade_game_add(type, name, sprite, room)
+/// @param type		- Enum entry
 /// @param name		- String
 /// @param sprite	- Sprite
 /// @param room		- Room of the game
 
 
 // Setup temporary variables
-var _name, _sprite, _room;
+var _type, _name, _sprite, _room;
 
-_name   = argument[0];
-_sprite = argument[1];
-_room   = argument[2];
+_type   = argument[0];
+_name   = argument[1];
+_sprite = argument[2];
+_room   = argument[3];
 
 // Create unique map
 var _map = ds_map_create();
+
+_map[? "type"]		 = _type;
 _map[? "name"]		 = _name;
 _map[? "sprite"]	 = _sprite;
 _map[? "room"]		 = _room;
@@ -25,7 +29,5 @@ _map[? "shaderEnabled"] = false;
 _map[? "shaderSet"]     = -1;
 
 // Add to global list
-ds_list_add_map(global.ArcadeMachineList, _map);
-
-// Returns the pos of the entry in the list
-return (ds_list_size(global.ArcadeMachineList)-1);
+global.ArcadeMachineList[| _type] = _map;
+ds_list_mark_as_map(global.ArcadeMachineList, _type);

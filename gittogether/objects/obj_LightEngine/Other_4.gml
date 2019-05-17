@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-alarm_set(0,1);
+
 show_debug_message("---------------------------------------- LIGHT DEBUG ----------------------------------------");
 show_debug_message("room: ");
 show_debug_message(room_get_name(room));

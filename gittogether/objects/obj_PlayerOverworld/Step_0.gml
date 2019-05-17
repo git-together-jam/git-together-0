@@ -48,8 +48,8 @@ if (!instance_exists(obj_Transition)) {
 			obj_Controller.shaderEnabled = arcade.shaderEnabled;
 			obj_Controller.shaderSet = arcade.shaderSet;
 	
-			start_minigame(arcade.gameRoom, arcade.name, arcade.trans, arcade.transCol,
-						   arcade.titleFont, arcade.titleCol);
+			start_minigame(arcade.type, arcade.gameRoom, arcade.name, arcade.trans,
+						   arcade.transCol, arcade.titleFont, arcade.titleCol);
 				   
 			startedGame = true;
 			//save position
@@ -67,4 +67,10 @@ if (arcade) {
 	arcadeSelectTime += 2.5;
 } else {
 	arcadeSelectTime = 0;
+}
+
+if (trash_read_time > 0) {
+	trash_read_time--;
+} else {
+	trash_read = false;
 }

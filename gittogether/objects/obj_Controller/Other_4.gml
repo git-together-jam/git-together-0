@@ -11,9 +11,6 @@ view_set_camera(0, cam);
 
 if (room == rm_Overworld) {
 	
-	// Disable Shader
-	shaderEnabled = false;
-	
 	// Place machines
 	if (!machinesPlaced) ds_list_shuffle(global.ArcadeMachineList);
 	
@@ -37,6 +34,7 @@ if (room == rm_Overworld) {
 		with (_machine) {
 			var _map = _arcade;
 			sprite_index = _map[? "sprite"];
+			type	  = _map[? "type"];
 			gameRoom  = _map[? "room"];
 			name	  = _map[? "name"];
 			trans	  = _map[? "trans"];

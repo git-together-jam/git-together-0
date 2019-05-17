@@ -26,13 +26,13 @@ if (moveTimer <= 0){
 	}
 }//else{ emit_dust(.5,x,y,-1,1,-1,1,depth+1,c_white);}
 //On the river
-if (instance_place(x,y,obj_frog_water)){
+if (instance_position(bbox_right,bbox_bottom,obj_frog_water) && instance_position(bbox_right,bbox_top,obj_frog_water) && instance_position(bbox_left,bbox_bottom,obj_frog_water) && instance_position(bbox_left,bbox_top,obj_frog_water)){
 	if (instance_place(x,y,obj_frog_turtle) && control){
 		var die = false;
 		with (instance_place(x,y,obj_frog_turtle)){
 			if (image_index <= 54){
-				if (other.xMove != 0) other.xMove += .3*vx; //dont question this magic okay
-				if (other.yMove != 0) other.yMove += .3*vy;
+				if (other.xMove != 0) other.xMove += .2*vx; //dont question this magic okay
+				if (other.yMove != 0) other.yMove += .2*vy;
 				if (other.moveTimer <= 0){
 					other.xMove += vx;
 					other.yMove += vy;
@@ -52,8 +52,8 @@ if (instance_place(x,y,obj_frog_truckkun)){
 }
 //offscreen
 if ((room_type == 0 && (x<0 || x>room_width)) ||
-	(room_type == 1 && (y<0 || y>room_height))||
-	(room_type == 2 && (x<0 || x>room_width || y<0 || y>room_height))){
+	(room_type == 1 && (y<-1 || y>room_height))||
+	(room_type == 2 && (x<0 || x>room_width || y<-1 || y>room_height))){
 	frog_die();
 }
 //die
@@ -65,13 +65,16 @@ if (!control){
 //goal
 if (instance_exists(obj_frog_goal)){
 	if (instance_place(x,y,obj_frog_goal) && control){
-		control = false;
-		if (room != lastLevel) room_goto_transition(room_next(room),TransType.circle,c_black,room_nm,fnt_big,c_white);
-		else end_minigame();
-		audio_play_sound(snd_frog_win,100,false);
-		with (instance_place(x,y,obj_frog_goal)){
-			image_xscale = lerp(image_xscale,0,.2);
-			image_yscale = lerp(image_yscale,0,.2);
+		if (instance_place(x,y,obj_frog_goal).special == "Leaderboards") room_goto_transition(rm_frogger_highscore,TransType.circle,c_black);
+		else{
+			control = false;
+			if (room != lastLevel) room_goto_transition(room_next(room),TransType.circle,c_black,room_nm,fnt_big,c_white);
+			else end_minigame();
+			audio_play_sound(snd_frog_win,100,false);
+			with (instance_place(x,y,obj_frog_goal)){
+				image_xscale = lerp(image_xscale,0,.2);
+				image_yscale = lerp(image_yscale,0,.2);
+			}
 		}
 	}
 }
@@ -83,8 +86,8 @@ y+=yMove;
 moveTimer--;
 
 //no offscreen shenanigans
-if (room_type == 0) y = clamp(y,0,(room_height div 16)*16)
-if (room_type == 1) x = clamp(x,0,(room_width div 16)*16)
+if (is(room_type,0,3)) y = clamp(y,0,(room_height div 16)*16)
+if (is(room_type,1,3)) x = clamp(x,0,(room_width div 16)*16)
 	
 
 //squash and stretch

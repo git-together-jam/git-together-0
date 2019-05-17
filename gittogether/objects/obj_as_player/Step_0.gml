@@ -1,5 +1,10 @@
 /// @desc 
 
+if (life <= 0) {
+	end_minigame();
+	exit;
+}
+
 // Input (with controller support)
 var _rInput = max(keyboard_check(vk_right), keyboard_check(ord("D")), gamepad_axis_value(global.Controller,gp_axislh) > CONTROLLER_DEADZONE);
 var _uInput = max(keyboard_check(vk_up), keyboard_check(ord("W")), gamepad_axis_value(global.Controller,gp_axislv) < -CONTROLLER_DEADZONE);
@@ -22,6 +27,7 @@ move_wrap(true, true, sprite_width);
 // Shooting
 if (canShoot) {
 	if (_shootInput) {
+		audio_play_sound(snd_as_player_shoot, 100, false);
 		var _xx = x + lengthdir_x(8, direction),
 			_yy = y + lengthdir_y(8, direction);
 		with (instance_create_depth(_xx, _yy, depth, obj_as_bullet)) {
@@ -36,3 +42,26 @@ if (canShoot) {
 		canShoot = true;
 	}
 }
+
+if (!god) {
+	if (place_meeting(x, y, obj_as_rock_parent)) {
+		god = true;
+		alarm[0] = room_speed*3;
+	
+		repeat(irandom_range(8, 12)) {
+			instance_create_depth(x, y, depth, obj_as_particle);
+		}
+		
+		audio_play_sound(snd_as_player_death, 100, false);
+		
+		x = xstart;
+		y = ystart;
+		speed = 0;
+		direction = 0;
+		life--;
+	}
+}
+
+image_blend = god ? c_gray : c_white
+
+if (!instance_exists(obj_as_rock_parent)) end_minigame(true);

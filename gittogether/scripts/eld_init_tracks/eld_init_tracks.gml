@@ -5,7 +5,17 @@ if (full_init)
 
 var _track_layers = [
 	"T00",
-	"T01"
+	"T01",
+	"T02",
+	"T03",
+	"T04",
+	"T05",
+	"T06",
+	"T07",
+	"D00",
+	"D01",
+	"D02",
+	"D03"
 ];
 
 var _num_tracks = array_length_1d(_track_layers);

@@ -9,10 +9,15 @@ if (dialogue_index < dialogue_count - 1) {
 	for (var i = _soffr - 1; i < _soffr + 2; i++) {
 		var _index = (i + seat_count) % seat_count;
 		var _char = characters[? seat[_index]];
+		var _spr = _char[? "sprite"]; 
+		var _swidth = sprite_get_width(_spr);
+		var _sheight = sprite_get_height(_spr);
 		draw_sprite_ext(
-			_char[? "sprite"], 0, 
-			i * seat_width - seat_offset * seat_width - lengthdir_x(seat_len, seat_dir + seat_angle) + seat_width / 2 + (room_width - seat_width) / 2 + cam_offx, 
-			-lengthdir_y(seat_len, seat_dir + seat_angle) + room_height / 2 + cam_offy,
+			_spr, 0, 
+			i * seat_width - seat_offset * seat_width - lengthdir_x(seat_len, seat_dir + seat_angle) + seat_width / 2 + (room_width - seat_width) / 2 + cam_offx
+			- _swidth / 2 + room_width / 2, 
+			-lengthdir_y(seat_len, seat_dir + seat_angle) + room_height / 2 + cam_offy
+			- _sheight / 2 + room_height / 2,
 			1, 1,
 			seat_angle,
 			c_white, 1
