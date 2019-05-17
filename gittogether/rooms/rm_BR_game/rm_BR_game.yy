@@ -2,7 +2,7 @@
 {
     "name": "rm_BR_game",
     "id": "3caee409-a543-48c2-8156-87ed82317ad4",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

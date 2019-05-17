@@ -735,6 +735,14 @@
             }
         },
         {
+            "Key": "311bd45f-170a-4298-a8d3-0c304b463ebd",
+            "Value": {
+                "id": "92628de2-e4f4-4f62-9001-1073a24ced48",
+                "resourcePath": "sounds\\snd_ball_hit\\snd_ball_hit.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "316f094e-d4e2-4a19-9974-f935d5f41fbe",
             "Value": {
                 "id": "ca5ec208-0cf9-4cb8-954a-ced77e296647",
@@ -1204,6 +1212,14 @@
                 "id": "2d8c4e31-0dcc-40db-8437-6bba9f5c7f94",
                 "resourcePath": "objects\\obj_wk_back\\obj_wk_back.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4952afb6-f560-4099-94ba-52237413013f",
+            "Value": {
+                "id": "f67ba52b-33a2-48c9-a4af-9137f9094b90",
+                "resourcePath": "views\\4952afb6-f560-4099-94ba-52237413013f.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2863,6 +2879,14 @@
             }
         },
         {
+            "Key": "ac32bc5e-a160-44ff-8ac5-f54275b00976",
+            "Value": {
+                "id": "8e0cf213-4e9b-4dd2-b3b1-9e7ebfe44a26",
+                "resourcePath": "sounds\\snd_death_breakout\\snd_death_breakout.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "ac4d89ad-8617-4e5e-b95d-aec818302582",
             "Value": {
                 "id": "6967223a-40c4-455a-a49c-682388ca5536",
@@ -3244,6 +3268,14 @@
                 "id": "e2368387-fbcf-48e3-b596-682844769754",
                 "resourcePath": "sprites\\spr_chair_left\\spr_chair_left.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bed75619-bd57-4dcd-a872-9938c8afb4a9",
+            "Value": {
+                "id": "48a320bb-f83d-46a3-8991-e58ff0f9ab9f",
+                "resourcePath": "sounds\\snd_break_out_qst\\snd_break_out_qst.yy",
+                "resourceType": "GMSound"
             }
         },
         {

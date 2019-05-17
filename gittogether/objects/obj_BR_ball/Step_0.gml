@@ -25,8 +25,11 @@ switch(state) {
 		var _brick = instance_place(x + hsp, y + vsp, obj_BR_brick);
 		if (_brick != noone) {
 			dir = collision_normal(x, y, _brick, 12, 1);
+			audio_play_sound(snd_ball_hit, 0, false);
 			instance_destroy(_brick);
+			
 		} else if (place_meeting(x + hsp, y + vsp, obj_BR_paddle)) {
+			audio_play_sound(snd_ball_hit, 0, false)
 			if (bbox_bottom < obj_BR_paddle.bbox_top)
 				dir = point_direction(obj_BR_paddle.x, obj_BR_paddle.y, x, y);
 			else
@@ -40,15 +43,18 @@ switch(state) {
 		// Bounce against walls
 		if (bbox_left < 0 || bbox_right > room_width) {
 			hsp = -hsp;
+			audio_play_sound(snd_ball_hit, 0, false)
 		}
 		if (bbox_top < 0) {
 			vsp = -vsp;
+			audio_play_sound(snd_ball_hit, 0, false)
 		}
 		
 		if (bbox_bottom > room_height) {
 			//(subtract life/points)
 			
 			with (obj_BR_paddle) {
+				audio_play_sound(snd_death_breakout, 0, false)
 				life -= 1;
 				if (life <= 0) end_minigame();
 			}
