@@ -2793,7 +2793,7 @@
         {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
-                "id": "798d2a57-579c-4f52-b8c0-93cd8c22aca8",
+                "id": "4370e01b-3b1c-4b33-931c-aef5acb78853",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
             }
@@ -3481,7 +3481,7 @@
         {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
-                "id": "cca429f0-a820-4552-b7a0-a749ff363e3c",
+                "id": "09ff8f44-36d6-4e16-9563-41ece07456b6",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
             }
