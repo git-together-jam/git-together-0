@@ -3,7 +3,7 @@ draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-draw_text(room_width/2,room_height/2-10,"Contgratulations!\nTime: "+frog_seconds_to_time_string(global.froggerTime/room_speed,false)+"\nEnter a Username:\n");
+draw_text(room_width/2,room_height/2-10,"Contgratulations!\nTime: "+frog_seconds_to_time_string(global.froggerTime/room_speed,false)+"\nEnter a Username:\n\n\n");
 
 //letters
 var _size = frog_wave(1.5,2,1,0);
