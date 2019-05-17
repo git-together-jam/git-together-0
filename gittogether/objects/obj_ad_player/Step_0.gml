@@ -208,5 +208,5 @@ if keyboard_check_pressed(ord("Z")) and (canattack=1){
 }
 #endregion
 if hp=0{
-	start_minigame(rm_ad_start, "Adventure",TransType.screenFade,c_black,fnt_big,c_white)
+	room_goto_transition(rm_ad_start,TransType.screenFade,c_black,"Adventure",fnt_big,c_white)
 }
