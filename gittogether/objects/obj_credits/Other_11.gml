@@ -34,7 +34,7 @@ characters = json_decode(string_concat(@'{
 	"abae": {
 		"full_name": "Andy Bae",
 		"sprite": ', spr_credits_andyb, @',
-		"social": "https://pureemaison.com/en/404",
+		"social": "https://twitter.com/Bae_Yusung",
 		"seat": 5,
 	},
 	"dtir": {
