@@ -30,7 +30,7 @@ if (waveState == ELDWaveState.Spawning)
 		curr_wave = 0;
 		curr_subwave = 0;
 	}
-	else if (!game_won and alarm[1] < 0) // no more waves, you win!
+	else if (!game_won and alarm[1] < 0 and !game_over and !game_lost) // no more waves, you win!
 	{
 		game_won = true;
 		game_over = true;
@@ -38,6 +38,7 @@ if (waveState == ELDWaveState.Spawning)
 		
 		var _high_score = sys_save_arcade_read(global.ELDTitle, "HighScore", 0);
 		var _final_score = eld_score * (1 + obj_eld_lander.extra_lives);
+		global.eldscore = _final_score;
 		if (_final_score > _high_score)
 			sys_save_arcade_write(global.ELDTitle, "HighScore", _final_score);
 	}

@@ -114,6 +114,7 @@ next_departure = current_time * 0.001 + 2.0;
 
 game_over = false;
 game_won = false;
+game_lost = false;
 eld_score = 0;
 bugs_zapped = 0;
 

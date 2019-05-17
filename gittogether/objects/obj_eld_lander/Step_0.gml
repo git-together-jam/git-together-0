@@ -178,10 +178,11 @@ if (_died_this_frame)
 	{
 		// GAME OVER MAN
 		obj_eld_controller.game_over = true;
+		obj_eld_controller.game_lost = true;
 		
 		var _high_score = sys_save_arcade_read(global.ELDTitle, "HighScore", 0);
 		var _final_score = obj_eld_controller.eld_score * (1 + extra_lives);
-		global.eldscore = _final_score
+		global.eldscore = _final_score;
 		if (_final_score > _high_score)
 			sys_save_arcade_write(global.ELDTitle, "HighScore", _final_score);
 	}
