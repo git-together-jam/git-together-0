@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-
+        
     ],
     "option_ecma": false,
     "parentProject": {
@@ -25,7 +25,7 @@
             }
         ],
         "hiddenResources": [
-
+            
         ],
         "projectPath": "${base_project}"
     },
@@ -3071,14 +3071,6 @@
             }
         },
         {
-            "Key": "c0a2a8cf-5a4c-4f9e-a38e-46233cb01c07",
-            "Value": {
-                "id": "15b71678-b57e-4650-be76-d4a0327a0175",
-                "resourcePath": "scripts\\hav_get_cell_x\\hav_get_cell_x.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "c13bc21b-519c-47e7-9426-532f8ca22daa",
             "Value": {
                 "id": "6f9f712d-7763-4849-a3c1-81b8099c5871",
@@ -3156,14 +3148,6 @@
                 "id": "b01026aa-1d1b-4e00-b7e3-fe075045e538",
                 "resourcePath": "sounds\\snd_wk_lost\\snd_wk_lost.yy",
                 "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "c78f7613-2893-46c7-bec3-69102a4e9ffc",
-            "Value": {
-                "id": "0bb1d9b3-feff-49e3-b7c4-8a8ab3de567c",
-                "resourcePath": "scripts\\hav_get_cell_y\\hav_get_cell_y.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -4167,8 +4151,6 @@
         "5090a1f1-91e5-4cf3-837c-4b6d1a9e43c9",
         "c75d2995-b20f-4bd2-b3bd-cacafafa39f1",
         "33fe4c5e-2c0c-4306-9b76-23e365562653",
-        "c0a2a8cf-5a4c-4f9e-a38e-46233cb01c07",
-        "c78f7613-2893-46c7-bec3-69102a4e9ffc",
         "6fd6a6b0-ed22-4033-a812-7112b0df7c63",
         "ca7301b5-64b3-4e04-9e14-5d303d251042",
         "34ef10b8-63f0-4f07-818d-c63ac9a917f6",
