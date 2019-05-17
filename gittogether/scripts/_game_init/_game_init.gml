@@ -3,7 +3,7 @@ gml_pragma("global", "_game_init()");
 enum Game {
 	clicker, dungandrompa, asteroids, breakout,
 	pong, frogger, wking, yosi,
-	adventure, eld, snake, credits,
+	/*adventure,*/ eld, snake, credits,
 	
 	length_
 }
@@ -55,8 +55,8 @@ arcade_game_add(Game.yosi, "Yosi", spr_arcade_machine_yosi, rm_yosi);
 arcade_game_enable_shader(Game.yosi, true, shd_retro);
 
 // Adventure - Surg UNFINISHED!
-arcade_game_add(Game.adventure, "Adventure", spr_arcade_pong, rm_ad_start);
-arcade_game_enable_shader(Game.adventure, true, shd_retro);
+//arcade_game_add(Game.adventure, "Adventure", spr_arcade_pong, rm_ad_start);
+//arcade_game_enable_shader(Game.adventure, true, shd_retro);
 
 // Earth's Last Defense - Naxos
 global.ELDTitle = "Earth's Last Defense";

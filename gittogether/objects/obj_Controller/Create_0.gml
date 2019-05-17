@@ -29,6 +29,7 @@ global.Overworldy = 176;
 global.Controller = gamepad_get_first(0);
 
 // Showcase stuff
+global.GameWonList = ds_list_create();
 global.GamePlaying = noone;
 global.GamesWon = sys_save_global_read("Games Won", 0);
 
