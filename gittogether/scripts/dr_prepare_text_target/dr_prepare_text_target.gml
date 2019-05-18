@@ -18,6 +18,7 @@ var _line_sep = 2 + (_state == 2) * 3;
 
 var _target_index = 0;
 var _target_found = false;
+var _target_y = 0;
 
 draw_set_font(_state == 2 ? nsd_font : text_font);
 
@@ -28,11 +29,12 @@ for (var i = 1; i <= _len; i++) {
 		if (!_target_found) {
 			_target_found = true;
 			_target_index = string_length(_str_new) + 1;
+			_target_y = _y;
 			continue;
 		} else {
-			var _is_same_line = string_char_at(_str_new, _target_index) == "*";
+			var _is_same_line = _target_y == _y;
 			var _strc = _is_same_line ?
-				string_copy(_str_new, _target_index + 1, string_length(_str_new) - _target_index) :
+				string_copy(_str_new, _target_index, string_length(_str_new) - _target_index + 1) :
 				_str_new;
 			var _ls  = ds_list_size(_list);
 			var _prv = _ls ? _list[| _ls - 1] : undefined;
