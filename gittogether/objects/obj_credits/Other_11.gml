@@ -88,26 +88,32 @@ characters = json_decode(string_concat(@'{
 	"tabe": {
 		"full_name": "TabularElf",
 		"sprite": ', spr_credits_maki, @',
-		"social": "https://twitter.com/RealTabularElf",
+		"social": "https://twitter.com/TabularElf",
 		"seat": 14,
+	},
+	"lewm": {
+		"full_name": "Lewmoth",
+		"sprite": ', spr_credits_lewm, @',
+		"social": "https://twitter.com/Lewmothmusic",
+		"seat": 15,
 	},
 	"see": {
 		"full_name": "SeeBeyond",
 		"sprite": ', spr_credits_see, @',
 		"social": "https://twitter.com/BirbCafe",
-		"seat": 15,
+		"seat": 16,
 	},
 	"meseta": {
 		"full_name": "Meseta",
 		"sprite": ', spr_credits_meseta, @',
 		"social": "https://twitter.com/mesetatron",
-		"seat": 16,
+		"seat": 17,
 	}
 }'));
 
 seat = [
 	"tony", "math", "jxm", "sahaun", "yosi", 
 	"abae", "dtir", "qweleo", "levg", "xor", 
-	"naxos", "qst", "havik", "surg", "tabe",
+	"naxos", "qst", "havik", "surg", "tabe", "lewm",
 	"see", "meseta"
 ];

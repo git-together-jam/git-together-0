@@ -12,7 +12,8 @@
         "37b2843d-c097-4d91-b09a-e55a5c1c8da9",
         "bf6efe09-8779-430f-bc5e-6dd418678256",
         "38bcf5b6-9f48-4560-9cdd-6f14a6d35210",
-        "96157256-744a-4daf-adb6-92482a089590"
+        "96157256-744a-4daf-adb6-92482a089590",
+        "d6c77366-83c7-428c-913a-6c085476e20d"
     ],
     "filterType": "GMSprite",
     "folderName": "__ Minigame Sprites",

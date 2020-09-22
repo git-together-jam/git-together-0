@@ -3,7 +3,7 @@ gml_pragma("global", "_game_init()");
 enum Game {
 	clicker, dungandrompa, asteroids, breakout,
 	pong, frogger, wking, yosi,
-	adventure, eld, snake, credits,
+	adventure, eld, snake, clawmachine, credits,
 	
 	length_
 }
@@ -69,6 +69,12 @@ arcade_game_enable_save(Game.eld, true);
 // Snake - havik
 arcade_game_add(Game.snake, "Snake", spr_arcade_snake, rm_hav_snake);
 arcade_game_enable_shader(Game.snake, true, shd_retro);
+
+// Claw Machine - TabularElf
+arcade_game_add(Game.clawmachine, "Claw Machine", spr_arcade_clawmachine, rm_CM_Main1);
+arcade_game_set_transition(Game.clawmachine, TransType.screenFade, c_black);
+arcade_game_set_title(Game.clawmachine, fnt_big, c_white);
+arcade_game_enable_shader(Game.clawmachine, false);
 
 // Credits
 arcade_game_add(Game.credits, "Credits", spr_arcade_credits, rm_credits);

@@ -11,7 +11,8 @@
         "ba19ea24-225f-4e53-acf0-ef6aa7b9f8e1",
         "893e4214-e981-45c8-943f-ed0161c913c0",
         "4f34ab9b-6e4b-4081-af30-9bc41349694d",
-        "4952afb6-f560-4099-94ba-52237413013f"
+        "4952afb6-f560-4099-94ba-52237413013f",
+        "1bae0b0d-48d6-4190-a7a0-51d7dc1dedb3"
     ],
     "filterType": "GMSound",
     "folderName": "__Minigame Sounds",

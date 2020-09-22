@@ -12,6 +12,7 @@ tabe: *TabularElf* - code
 math: *Grupreet Singh Matharoo* - code
 havik: *havik* - code
 surg: *!Surg* - code
+lewm: *Lewmoth* - music
 levg: *Levgon* - code
 qweleo: *qweleo* - code
 qst: *qst0* - music & code
